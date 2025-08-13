@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Nuevo VSM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<style>
+  :root {
+    --fondo-oscuro: rgb(24, 24, 24);
+    --detalle-dorado: rgb(106, 89, 45);
+  }
+</style>
+<body style="background-color: var(--fondo-oscuro);">
+
+  {% include 'navbar.html' %}
+
+  <div class="max-w-3xl mx-auto bg-neutral-900 p-6 rounded-lg shadow mt-2" style="border: 1px solid var(--detalle-dorado); color: var(--detalle-dorado);">
+    <h1 class="text-2xl font-bold mb-4">Nuevo VSM</h1>
+
+    {% if error %}
+      <div class="bg-red-100 text-red-700 p-2 mb-4 rounded">{{ error }}</div>
+    {% endif %}
+
+    <form method="POST">
+      {% csrf_token %}
+
+      <!-- Solicitante (usuario logeado) -->
+      <input type="hidden" name="solicitante" value="{{ user.id }}">
+      <div class="mb-4">
+        <label for="solicitante_nombre" class="block font-semibold mb-1">Solicitante</label>
+        <input type="text" id="solicitante_nombre" name="solicitante_nombre" value="{{ usuario_logeado }}" readonly
+               class="w-full border border-gray-300 rounded p-2 bg-gray-100 cursor-not-allowed">
+      </div>
+
+      <div class="mb-4">
+        <label for="centro_costos" class="block font-semibold mb-1">Centro de Costos</label>
+        <select id="centro_costos" name="centro_costos" class="w-full select2 p-2">
+          <option value="">Seleccione un centro de costos...</option>
+          {% for centro in centro_costos %}
+            <option value="{{ centro.id }}">{{ centro.codigo }} - {{ centro.descripcion }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div class="mb-4">
+        <label for="retirante" class="block font-semibold mb-1">Retirante</label>
+        <select id="retirante" name="solicitante" class="w-full select2">
+          <option value="">Seleccione un retirante...</option>
+          <!-- Opciones se cargarán vía JS -->
+        </select>
+      </div>
+
+      <!-- Observaciones -->
+      <label for="detalles" class="block font-semibold mb-1">Observaciones</label>
+      <textarea id="detalles" name="detalles" rows="3" class="w-full border border-gray-300 rounded mb-4 p-2"></textarea>
+
+      <!-- Bloque búsqueda y cantidad -->
+      <div class="mb-6">
+        <label for="select-producto" class="block font-semibold mb-1">Buscar producto</label>
+        <div class="flex items-center gap-4">
+          <select id="select-producto" class="w-full select2" disabled>
+            <option value="">Escriba para buscar...</option>
+          </select>
+          <input type="number" id="cantidad-producto" class="w-28 border border-gray-300 p-2 rounded" placeholder="Cantidad" min="1">
+          <button type="button" onclick="agregarProductoDesdeSelect()" class="bg-blue-600 text-white px-3 py-2 rounded hover:bg-blue-700">
+            Agregar
+          </button>
+        </div>
+      </div>
+
+      <!-- Tabla de productos seleccionados -->
+      <div class="mt-4">
+        <h2 class="font-semibold mb-2">Productos Seleccionados</h2>
+        <table id="tabla-productos" class="w-full text-left border border-gray-300 rounded">
+          <thead>
+            <tr class="bg-gray-200">
+              <th class="p-2 col-5">Producto</th>
+              <th class="p-2 col-1">Cantidad</th>
+              <th class="p-2 col-1">Acción</th>
+            </tr>
+          </thead>
+          <tbody class="text-white"></tbody>
+        </table>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="mt-6 bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Realizar VSM</button>
+    </form>
+  </div>
+
+
+
+<script>
+  $(document).ready(function () {
+    $('.select2').select2();
+
+    const $productos = $('#select-producto');
+
+    // Al iniciar: deshabilitar select de productos si no hay centro seleccionado
+    if (!$('#centro_costos').val()) {
+      $productos.prop('disabled', true);
+    }
+
+    // Carga de retirantes según centro de costo
+    $('#centro_costos').on('change', function () {
+      const centroId = $(this).val();
+      const $retirante = $('#retirante');
+
+      $retirante.empty().append('<option value="">Cargando...</option>');
+
+      if (centroId) {
+        $.ajax({
+          url: '{% url "obtener_empleados_por_centro" %}',
+          data: { centro_id: centroId },
+          success: function (data) {
+            $retirante.empty().append('<option value="">Seleccione un retirante...</option>');
+            data.empleados.forEach(emp => {
+              const label = `${emp.legajo} - ${emp.apellido.toUpperCase()}, ${emp.nombre}`;
+              $retirante.append(new Option(label, emp.id));
+            });
+          },
+          error: function () {
+            $retirante.empty().append('<option value="">Error al cargar empleados</option>');
+          }
+        });
+
+        // Habilitar productos si hay centro
+        $productos.prop('disabled', false);
+
+      } else {
+        $retirante.empty().append('<option value="">Seleccione un centro primero</option>');
+        $productos.val(null).trigger('change');
+        $productos.prop('disabled', true);
+      }
+    });
+
+    // Adaptación de productos con centro de costo
+    $productos.select2({
+      placeholder: 'Buscar producto...',
+      ajax: {
+        url: '{% url "buscar_productos" %}',
+        dataType: 'json',
+        delay: 250,
+        data: function (params) {
+          return {
+            q: params.term,
+            centro_costo: $('#centro_costos').val() // pasa el centro de costo seleccionado
+          };
+        },
+        processResults: function (data) {
+          return {
+            results: data.results
+          };
+        },
+        cache: true
+      },
+      minimumInputLength: 1
+    });
+  });
+
+  // Hacer la función global para que pueda ser llamada desde onclick
+  function agregarProductoDesdeSelect() {
+    const centroId = $('#centro_costos').val();
+    const select = $('#select-producto');
+    const productoId = select.val();
+    const productoDesc = select.find("option:selected").text();
+    const cantidad = $('#cantidad-producto').val();
+
+    // Bloquear si no hay centro de costo
+    if (!centroId) {
+      alert('Debés seleccionar un centro de costo antes de elegir materiales.');
+      return;
+    }
+
+    if (!productoId || !cantidad || cantidad <= 0) {
+      alert('Debés seleccionar un producto y una cantidad válida.');
+      return;
+    }
+
+    if (document.getElementById(`fila_${productoId}`)) {
+      alert('Este producto ya fue agregado.');
+      return;
+    }
+
+    const fila = `
+      <tr id="fila_${productoId}">
+        <td class="p-2">${productoDesc}</td>
+        <td class="p-2">${cantidad}</td>
+        <td class="p-2">
+          <input type="hidden" name="producto_${productoId}" value="${cantidad}">
+          <button type="button" onclick="eliminarProducto('${productoId}')" class="text-red-600 hover:underline">Eliminar</button>
+        </td>
+      </tr>
+    `;
+
+    document.querySelector('#tabla-productos tbody').insertAdjacentHTML('beforeend', fila);
+
+    $('#select-producto').val(null).trigger('change');
+    $('#cantidad-producto').val('');
+  }
+
+  function eliminarProducto(id) {
+    document.getElementById(`fila_${id}`).remove();
+  }
+</script>
+
+
+</body>
+</html>

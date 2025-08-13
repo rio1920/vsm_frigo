@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Confirmar Entrega</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --fondo-oscuro: rgb(24, 24, 24);
+      --detalle-dorado: rgb(106, 89, 45);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-[var(--fondo-oscuro)] text-white flex flex-col items-center px-4 py-6">
+
+  <div class="w-full max-w-3xl bg-zinc-900 p-6 rounded-2xl shadow-xl border border-[var(--detalle-dorado)]">
+    <h1 class="text-3xl font-semibold text-center text-[var(--detalle-dorado)] mb-6">Confirmar Entrega de VSM</h1>
+
+    <div class="space-y-4">
+      <div class="grid grid-cols-2 gap-4">
+        <p><span class="text-[var(--detalle-dorado)] font-medium">Solicitante:</span> {{ vsm.solicitante }}</p>
+        <p><span class="text-[var(--detalle-dorado)] font-medium">Retirante:</span> {{ vsm.retirante }}</p>
+      </div>
+
+      <table class="min-w-full border border-gray-700 rounded-lg overflow-hidden">
+        <thead class="bg-gray-900 text-[var(--detalle-dorado)] border-b border-[var(--detalle-dorado)]">
+          <tr>
+            <th class="text-[var(--detalle-dorado)] font-medium">Producto</th>
+            <th class="text-[var(--detalle-dorado)] font-medium">Cantidad Solicitada</th>
+            <th class="text-[var(--detalle-dorado)] font-medium">Cantidad Entregada</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for vsm_producto in vsm.vsmproducto_set.all %}
+          <tr>
+            <td>{{ vsm_producto.producto }}</td>
+            <td>{{ vsm_producto.cantidad_solicitada }}</td>
+            <td><input type="number" name="cantidad_entregada_{{ vsm_producto.id }}" class="bg-zinc-800 border border-zinc-700 rounded-xl px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-[var(--detalle-dorado)]"></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <form method="post" class="mt-6 space-y-4">
+        {% csrf_token %}
+        <div>
+          <label for="observaciones_entrega" class="block text-sm font-medium text-[var(--detalle-dorado)] mb-1">Observaciones</label>
+          <textarea name="observaciones_entrega" id="observaciones_entrega" rows="4" class="w-full bg-zinc-800 border border-zinc-700 rounded-xl px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-[var(--detalle-dorado)]"></textarea>
+        </div>
+
+        <button type="submit" class="bg-[var(--detalle-dorado)] hover:bg-yellow-700 transition px-6 py-2 rounded-xl font-medium text-sm">
+          Confirmar Entrega
+        </button>
+
+        <a href="{% url 'rechazar_entrega' vsm.id %}">
+            <button type="button" class="bg-red-600 hover:bg-red-700 transition px-6 py-2 rounded-xl font-medium text-sm">
+            Rechazar entrega
+            </button>
+        </a>
+
+        <a href="{% url 'listar_vsm_pendientes' %}" class="text-sm text-[var(--detalle-dorado)] hover:underline">Volver a Vales Pendientes</a>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

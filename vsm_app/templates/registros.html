@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Historial VSM animado sin espacio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --fondo-oscuro: rgb(24, 24, 24);
+      --detalle-dorado: rgb(106, 89, 45);
+    }
+  </style>
+</head>
+<body class="bg-[var(--fondo-oscuro)] text-white">
+  {% include 'navbar.html' %}
+
+  <h1 class="text-3xl font-bold mb-6 text-center mt-18" style="color: var(--detalle-dorado); margin-top: 18px;">
+    Historial de Vales de Salida de Materiales (VSM)
+  </h1>
+
+  <div class="overflow-x-auto rounded-lg border border-[var(--detalle-dorado)] shadow-lg max-w-6xl mx-auto bg-neutral-900">
+
+    <table class="min-w-full divide-y divide-gray-700">
+      <thead class="bg-[var(--detalle-dorado)]/20">
+        <tr>
+          <th class="px-4 py-3 text-left text-sm font-semibold">Número VSM</th>
+          <th class="px-4 py-3 text-left text-sm font-semibold">Solicitante</th>
+          <th class="px-4 py-3 text-left text-sm font-semibold">Producto</th>
+          <th class="px-4 py-3 text-left text-sm font-semibold">Cantidad Solicitada</th>
+          <th class="px-4 py-3 text-left text-sm font-semibold">Cantidad Entregada</th>
+          <th class="px-4 py-3 text-left text-sm font-semibold">Fecha Solicitud</th>
+          <th class="px-4 py-3 text-left text-sm font-semibold">Estado</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-700" style="overflow: hidden;">
+        <!-- Fila principal -->
+        {% for registro in registros %}
+        <tr class="cursor-pointer hover:bg-[rgb(106,89,45)]/10 transition" onclick="toggleRow('detail-{{ forloop.counter }}')" style="overflow: hidden;">
+            <td class="px-4 py-3">{{ registro.id }}</td>
+            <td class="px-4 py-3">{{ registro.solicitante }}</td>
+            <td class="px-4 py-3">{{ registro.producto.descripcion }}</td>
+            <td class="px-4 py-3">{{ registro.cantidad_solicitada }}</td>
+            <td class="px-4 py-3">
+              {% if registro.cantidad_entregada %}
+                {{ registro.cantidad_entregada }}
+              {% else %}
+                <span class="text-gray-500">0</span>
+              {% endif %}
+            </td>
+            <td class="px-4 py-3">{{ registro.fecha_solicitud }}</td>
+            <td class="px-4 py-3">
+              {% if registro.estado == 'entregado' %}
+
+                <span class="text-green-500 font-semibold">{{ registro.estado }}</span>
+
+              {% elif registro.estado == 'pendiente' %}
+
+                <span class="text-yellow-500 font-semibold">{{ registro.estado }}</span>
+
+              {% elif registro.estado == 'rechazado' %}
+
+                <span class="text-red-500 font-semibold">{{ registro.estado }}</span>
+
+              {% else %}
+
+                <span class="text-white-500 font-semibold">{{ registro.estado }}</span>
+              
+              {% endif %}
+            </td>
+        </tr>
+        
+      
+        <tr>  
+
+        <tr id="detail-{{ forloop.counter }}" class="hidden">
+          <td colspan="8" class="p-0">
+            <div class="overflow-hidden transition-all duration-300 ease-in-out scale-y-0 origin-top bg-neutral-800 px-6 py-4 text-sm text-gray-300 fit-con" id="detail-content-{{ forloop.counter }}">
+              <strong>Detalles</strong><br/>
+              {{ registro.observaciones }}<br/>
+            </div>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+      {% if not registros %}
+      <tbody class="divide-y divide-gray-700">    
+        <tr>
+          <td colspan="6" class="px-4 py-3 text-center text-gray-500">
+            No hay registros de VSM disponibles.
+          </td>
+        </tr>
+      </tbody>
+        {% endif %}
+    </table>
+  </div>
+
+  {% include 'paginator.html' %}
+  
+  <script>
+    function toggleRow(id) {
+      const row = document.getElementById(id);
+      const content = document.getElementById('detail-content-' + id.split('-')[1]);
+
+      if (row.classList.contains('hidden')) {
+        document.querySelectorAll('tr[id^="detail-"]').forEach(r => {
+          r.classList.add('hidden');
+          const c = r.querySelector('div');
+          if (c) c.classList.remove('scale-y-100', 'opacity-100');
+          if (c) c.classList.add('scale-y-0', 'opacity-0');
+        });
+
+        row.classList.remove('hidden');
+        setTimeout(() => {
+          content.classList.remove('scale-y-0', 'opacity-0');
+          content.classList.add('scale-y-100', 'opacity-100');
+        }, 10);
+      } else {
+        content.classList.remove('scale-y-100', 'opacity-100');
+        content.classList.add('scale-y-0', 'opacity-0');
+        setTimeout(() => {
+          row.classList.add('hidden');
+        }, 300);
+      }
+    }
+  </script>
+
+</body>
+</html>

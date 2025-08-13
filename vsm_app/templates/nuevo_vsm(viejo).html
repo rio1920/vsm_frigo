@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Nuevo VSM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+  <style>
+    :root {
+      --fondo-oscuro: rgb(24, 24, 24);
+      --detalle-dorado: rgb(106, 89, 45);
+    }
+
+    /* Estilos para Select2 */
+    .select2-container--default .select2-selection--single {
+      background-color: var(--fondo-oscuro);
+      border: 1px solid var(--detalle-dorado);
+      border-radius: 0.5rem;
+      padding: 0.5rem;
+      height: 42px;
+      display: flex;
+      align-items: center;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+      color: white;
+      line-height: 24px;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__arrow b {
+      border-color: white transparent transparent transparent;
+    }
+
+    .select2-container--default .select2-selection--single:hover {
+      border-color: rgb(146, 122, 65);
+    }
+
+    /* Resultados del dropdown */
+    .select2-results__option {
+      background-color: var(--fondo-oscuro);
+      color: white;
+    }
+
+    .select2-results__option--highlighted {
+      background-color: var(--detalle-dorado);
+      color: white;
+    }
+
+    .detalles {
+      background-color: var(--fondo-oscuro) !important;
+      color: white;
+      border: 1px solid var(--detalle-dorado) !important;
+      border-radius: 0.5rem;
+      padding: 0.5rem !important;
+    }
+
+    .productos_button {
+      background-color: var(--detalle-dorado) !important;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  </style>
+</head>
+<body class="flex-col flex items-center justify-center" style="background-color: var(--fondo-oscuro); margin: 0;">
+
+  {% include 'navbar.html' %}
+
+  <div class="bg-neutral-900 shadow-2xl rounded-2xl p-6 max-w-2xl w-full border border-[rgb(106,89,45)] m-10">
+    <h1 class="text-2xl font-bold mb-6" style="color: white">Nuevo Vale de Salida de Materiales (VSM)</h1>
+
+
+    <form action="#" method="POST" class="space-y-4 text-white">
+      {% csrf_token %}
+
+      <!-- Solicitante -->
+      <div class="mb-4">  
+        <label class="block text-white mb-1">Solicitante: </label>
+
+        <br>
+
+        <span>👤 {{ usuario_logeado }}</span>
+
+      </div>
+      <br>
+      <!-- Retirante -->
+      <div class="mb-4">
+
+
+        <label class="block text-white mb-1">Retirante</label>
+
+        <select id="retirante" name="retirante" class="w-full">
+          <option value="">Seleccione un retirante</option>
+        </select>
+
+        <div id="resultados-retirantes" class="bg-white text-black rounded shadow-md mt-1 max-h-40 overflow-y-auto"></div>
+      </div>
+
+      <!-- Productos y cantidades -->
+      <div class="mb-4">
+        <label class="block font-semibold">Productos:</label>
+        <button type="button" onclick="openModal()" class="bg-gray-700 text-white px-3 py-1 rounded productos_button">
+          Agregar productos
+        </button>
+      </div>
+
+      <div id="productos-container" class="space-y-2 mb-4"></div>
+
+      <!-- Detalles -->
+      <div>
+        <label for="detalles" class="block text-sm font-medium" style="color: white;">Detalles</label>
+        <textarea id="detalles" name="detalles"
+                  placeholder="Ej: Reposición en línea de producción"
+                  rows="3"
+                  class="mt-1 block w-full rounded-lg border border-gray-600 bg-neutral-800 p-2 text-white resize-none detalles"></textarea>
+      </div>
+
+      <!-- Botón -->
+      <div class="pt-4">
+        <button type="submit"
+                class="w-full font-bold py-2 px-4 rounded-lg transition"
+                style="background-color: rgb(106,89,45); color: white;">
+          Emitir Vale
+        </button>
+      </div>
+
+    </form>
+
+    <div class="pt-4">
+      <a href="{% url 'registros' %}" class="text-sm text-gray-400 hover:text-gray-200">Volver al historial</a>
+    </div>
+  </div>
+  {% if error %}
+    <div class="text-red-500">{{ error }}</div>
+  {% endif %}
+</body>
+  
+
+  <!-- Modal -->
+  <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+    <div class="bg-white p-6 rounded shadow-lg w-full max-w-lg">
+      <h3 class="text-lg font-bold mb-4">Seleccionar productos</h3>
+
+      <div class="mb-4">
+        <select id="producto-select" class="w-full border border-gray-300 p-2 rounded">
+          <option value="">Seleccionar producto</option>
+          {% for prod in productos %}
+            <option value="{{ prod.id }}">{{ prod.descripcion }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div id="modal-productos-list" class="space-y-2">
+        <!-- Se agregan acá dentro los seleccionados desde el modal -->
+      </div>
+
+      <div class="mt-6 flex justify-end space-x-2">
+        <button type="button" onclick="closeModal()" class="bg-gray-300 px-3 py-1 rounded">Cancelar</button>
+        <button type="button" onclick="confirmarProductos()" class="bg-blue-600 text-white px-4 py-1 rounded">Confirmar</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById('modal');
+    const select = document.getElementById('producto-select');
+    const modalList = document.getElementById('modal-productos-list');
+    const mainContainer = document.getElementById('productos-container');
+
+    function openModal() {
+      modal.classList.remove('hidden');
+    }
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      select.selectedIndex = 0;
+    }
+
+    select.addEventListener('change', () => {
+      const selectedId = select.value;
+      const selectedText = select.options[select.selectedIndex].text;
+
+      if (!selectedId || document.getElementById('modal_prod_' + selectedId)) return;
+
+      const div = document.createElement('div');
+      div.className = "flex items-center gap-4";
+      div.id = 'modal_prod_' + selectedId;
+      div.innerHTML = `
+        <input type="hidden" data-id="${selectedId}">
+        <span class="w-1/2">${selectedText}</span>
+        <input type="number" placeholder="Cantidad" class="cantidad-input w-1/3 border border-gray-300 p-1 rounded" min="1" data-id="${selectedId}">
+        <button type="button" onclick="this.parentElement.remove()" class="text-red-600 hover:underline">Eliminar</button>
+      `;
+      modalList.appendChild(div);
+      select.selectedIndex = 0;
+    });
+
+    function confirmarProductos() {
+      const inputs = modalList.querySelectorAll('input.cantidad-input');
+      mainContainer.innerHTML = ''; // Limpiamos anterior
+
+      inputs.forEach(input => {
+        const id = input.dataset.id;
+        const cantidad = input.value;
+        const nombre = modalList.querySelector(`#modal_prod_${id} span`).textContent;
+
+        const div = document.createElement('div');
+        div.className = "flex items-center gap-4";
+        div.innerHTML = `
+          <input type="hidden" name="producto" value="${id}">
+          <input type="hidden" name="cantidad_${id}" value="${cantidad}">
+          <span class="w-1/2">${nombre}</span>
+          <span class="text-sm text-white-700">Cantidad: ${cantidad}</span>
+        `;
+        mainContainer.appendChild(div);
+      });
+
+      closeModal();
+    }
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('#retirante').select2({
+        placeholder: 'Seleccione un retirante',
+        ajax: {
+          url: '{% url "buscar_solicitantes" %}',
+          dataType: 'json',
+          delay: 250,
+          data: function(params) {
+            return {
+              q: params.term
+            };
+          },
+          processResults: function(data) {
+            return {
+              results: data.results
+            };
+          },
+          cache: true
+        },
+        minimumInputLength: 1
+      });
+    });
+  </script>
+
+</html>

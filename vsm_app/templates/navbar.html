@@ -1,0 +1,81 @@
+<!-- CDN BOOSTRAP -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel Principal - VSM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --fondo-oscuro: rgb(24, 24, 24);
+      --detalle-dorado: rgb(106, 89, 45);
+    }
+  </style>
+</head>
+<body>
+    <nav class="bg-[rgb(24,24,24)] border-b border-[rgb(106,89,45)] text-white w-full">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Título / Logo -->
+          <div class="flex items-center">
+            <img src="{% static 'images/logo.svg' %}" alt="Logo" class="h-10 w-10 mr-4">
+            <a href="{% url 'home' %}" class="text-xl font-bold text-[rgb(106,89,45)] tracking-wide" style="text-decoration: none;">Sistema VSM</a>
+          </div>
+
+          <!-- Usuario y sesión -->
+          <div class="hidden md:flex items-center space-x-4">
+            {% if username %}
+              <span class="text-sm text-gray-300">👤 {{ username }}</span>
+              <a href="{% url 'keycloak_logout' %}" class="text-sm hover:text-red-400 transition">Cerrar sesión</a>
+            {% else %}
+              <span class="text-sm text-gray-300">👤 Usuario no autenticado</span>
+              <a href="{% url 'keycloak_login' %}" class="text-sm hover:text-blue-400 transition">Iniciar sesión</a>
+            {% endif %}
+          </div>
+
+          <!-- Botón hamburguesa (solo visible en mobile) -->
+          <div class="md:hidden">
+            <button id="menu-toggle" class="text-white focus:outline-none">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Menú desplegable en mobile -->
+        <div id="mobile-menu" class="hidden md:hidden mt-2 space-y-2 px-2 pb-4">
+          <a href="#" class="block hover:text-[rgb(106,89,45)] transition">Nuevo VSM</a>
+          <a href="#" class="block hover:text-[rgb(106,89,45)] transition">Confirmar</a>
+          <a href="#" class="block hover:text-[rgb(106,89,45)] transition">Historial</a>
+
+          <!-- Usuario en mobile -->
+          <div class="mt-4 space-y-1 flex flex-col items-center">
+            {% if username %}
+              <p class="text-sm text-gray-300">👤 {{ username }}</p>
+              <a href="{% url 'keycloak_logout' %}" class="text-sm hover:text-red-400 transition">Cerrar sesión</a>
+            {% else %}
+              <p class="text-sm text-gray-300">👤 Usuario no autenticado</p>
+              <a href="{% url 'keycloak_login' %}" class="text-sm hover:text-blue-400 transition btn btn-primary">Iniciar sesión</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <!-- Script toggle hamburguesa -->
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const toggle = document.getElementById("menu-toggle");
+          const menu = document.getElementById("mobile-menu");
+          toggle.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+          });
+        });
+      </script>
+    </nav>
+  </body>
+</html>
