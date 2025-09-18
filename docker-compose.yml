@@ -1,0 +1,48 @@
+name: vsm_frigo
+
+services:
+
+  db:
+    image: postgres:17.5
+    environment:
+      POSTGRES_USER: vsm
+      POSTGRES_PASSWORD: vsm
+      POSTGRES_DB: vsm_db
+    ports:
+      - "5433:5432"
+    volumes:
+      - data:/var/lib/postgresql/data
+    networks:
+      - backnet
+  
+  api:
+    build: 
+      context: .
+      args:
+        UID: "1000"
+        GID: "1000"
+    volumes:
+      - .:/app
+    networks:
+      - backnet
+    depends_on:
+      - db
+    environment:
+      - POSTGRES_DB=vsm_db
+      - POSTGRES_USER=vsm
+      - POSTGRES_PASSWORD=vsm
+      - POSTGRES_HOST=db
+      - POSTGRES_PORT=5432
+
+  proxy:
+    build: ./proxy
+    ports:
+      - "127.0.0.1:80:80"
+    depends_on:
+      - backnet
+
+
+networks:
+  backnet:
+volumes:
+  data:

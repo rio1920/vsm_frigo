@@ -1,0 +1,20 @@
+## python .dockerignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.migrations/
+*.egg-info/
+.eggs/
+*.bak
+
+media/
+node_modules/
+.venv/

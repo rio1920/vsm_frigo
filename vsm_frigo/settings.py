@@ -103,11 +103,11 @@ NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "vsm_frigo_local",
-        "USER": "postgres",
-        "PASSWORD": "Pilar+2023",
-        "HOST": "localhost",
-        "PORT": "5432",
+        "NAME": os.getenv("POSTGRES_DB", "vsm_db"), #"vsm_frigo_local"
+        "USER": os.getenv("POSTGRES_USER", "vsm"), #"postgres"
+        "PASSWORD": os.getenv("POSTGRES_PASSWORD", "vsm"), #"Pilar+2023"
+        "HOST": os.getenv("POSTGRES_HOST", "db"), #"localhost"
+        "PORT": os.getenv("POSTGRES_PORT", "5432"),
     }
 }
 
