@@ -7,7 +7,7 @@ class VSMProductoInline(admin.TabularInline):
     autocomplete_fields = ['producto']
 
 class VSMAdmin(admin.ModelAdmin):
-    list_display = ['id', 'solicitante','centro_costos', 'fecha_solicitud','retirante', 'mostrar_productos', 'estado', 'active']
+    list_display = ['id', 'solicitante','centro_costos', 'fecha_solicitud','retirante', 'estado', 'active']
     inlines = [VSMProductoInline]
 
     def mostrar_productos(self, obj):
@@ -20,12 +20,12 @@ class CentroCostosAdmin(admin.ModelAdmin):
     search_fields = ('codigo', 'descripcion')
 
 class EmpleadosAdmin(admin.ModelAdmin):
-    list_display = ('legajo', 'nombre', 'apellido', 'empresa', 'cc')
-    search_fields = ('nombre', 'apellido', 'empresa')
-    list_filter = ('cc',)
+    list_display = ('legajo', 'nombre', 'get_cc')
+    search_fields = ('nombre',)
+    list_filter = ()
 
 class MaestroDeMaterialesAdmin(admin.ModelAdmin):
-    list_display = ('codigo', 'descripcion')
+    list_display = ('codigo', 'descripcion', 'clase_sap', 'cantidad_stock')
     search_fields = ('codigo', 'descripcion')
     list_filter = ()
 
@@ -50,6 +50,21 @@ class PermisoRetiroAdmin(admin.ModelAdmin):
     list_display = ('centro_costo',)
     search_fields = ('centro_costo__codigo',)
 
+class TagsProductosAdmin(admin.ModelAdmin):
+    list_display = ('nombre',)
+    search_fields = ('nombre',)
+
+class PerfilDeRiesgoAdmin(admin.ModelAdmin):
+    list_display = ('nombre', 'descripcion')
+    search_fields = ('nombre', 'descripcion')
+
+
+class NroTarjetaInline(admin.ModelAdmin):
+    model = nro_tarjeta
+    extra = 1
+
+admin.site.register(tags_productos, TagsProductosAdmin)
+admin.site.register(PerfilDeRiesgo, PerfilDeRiesgoAdmin)
 admin.site.register(Roles, RolesAdmin)
 admin.site.register(permisos, PermisosAdmin)
 admin.site.register(VSM, VSMAdmin)
@@ -57,5 +72,5 @@ admin.site.register(centro_costos, CentroCostosAdmin)
 admin.site.register(empleados, EmpleadosAdmin)
 admin.site.register(Usuarios, UsuariosAdmin)
 admin.site.register(maestro_de_materiales, MaestroDeMaterialesAdmin)
-admin.site.register(cc_permisos, CcPermisosAdmin)
-admin.site.register(PermisoRetiro, PermisoRetiroAdmin)  
+admin.site.register(PermisoRetiro, PermisoRetiroAdmin)
+admin.site.register(nro_tarjeta, NroTarjetaInline)

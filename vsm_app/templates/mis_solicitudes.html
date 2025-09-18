@@ -1,0 +1,48 @@
+<html>
+<!DOCTYPE html>
+<html lang="es">    
+<head>
+  <meta charset="UTF-8">
+  <title>Vales Rechazados - VSM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --fondo-oscuro: rgb(24, 24, 24);
+      --detalle-dorado: rgb(106, 89, 45);
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/default-colors.css">
+</head>
+<body class="bg-neutral-900 text-white text-center">
+    {% include 'navbar.html' %}
+    <h1 class="text-4xl font-extrabold mb-4 uppercase mt-5" style="color: var(--detalle-dorado);">Mis Solicitudes Pendientes</h1>
+    <div class="container mt-5">
+        <table class="min-w-full border border-gray-700 rounded-lg overflow-hidden">
+            <thead class="bg-gray-900 text-[var(--detalle-dorado)] border-b border-[var(--detalle-dorado)]">
+                <tr>
+                    <th class="px-4 py-2 border-b">ID</th>
+                    <th class="px-4 py-2 border-b">Centro</th>
+                    <th class="px-4 py-2 border-b">Fecha</th>
+                    <th class="px-4 py-2 border-b">Estado</th>
+                    <th class="px-4 py-2 border-b">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for s in solicitudes %}
+                <tr>
+                    <td class="px-4 py-2 border-b">{{ s.id }}</td>
+                    <td class="px-4 py-2 border-b">{{ s.centro_costos }}</td>
+                    <td class="px-4 py-2 border-b">{{ s.fecha_solicitud }}</td>
+                    <td class="px-4 py-2 border-b">{{ s.estado }}</td>
+                    <td class="px-4 py-2 border-b">
+                        <a href="{% url 'editar_solicitud_vsm' s.id %}" class="text-blue-600">Editar</a> |
+                        <a href="{% url 'eliminar_solicitud_vsm' s.id %}" class="text-red-600">Eliminar</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

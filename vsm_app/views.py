@@ -9,23 +9,58 @@ from django.http import JsonResponse
 from django.db.models import Q
 from django.template.loader import render_to_string
 from django.http import HttpResponse
-from .models import empleados
+from .models import empleados, PermisoRetiro, VSM, VSMProducto
+from django.contrib import messages
+from .decorator import permission_required
+from django.utils.safestring import mark_safe
+import json
+
 
 
 def home(request):
-
     return render(request, "home.html")
 
+@permission_required("registros_can_view")
 def registros(request):
-    vales = models.VSM.objects.all().order_by('-fecha_solicitud')
+    vales = (
+        models.VSM.objects
+        .filter(estado__in=['pendiente', 'entregado'], active=True)
+        .prefetch_related('vsmproducto_set__producto')
+        .order_by('-fecha_solicitud')
+    )
     paginator = Paginator(vales, 7)  
 
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
 
+    solicitante = request.GET.get('solicitante', '').strip()
+    retirante = request.GET.get('retirante', '').strip()
+    legajo = request.GET.get('legajo', '').strip()
+    cc = request.GET.get('cc', '').strip()
+    estado = request.GET.get('estado', '').strip()
+
+    if solicitante:
+        vales = vales.filter(solicitante__username__icontains=solicitante) 
+
+    if retirante:
+        vales = vales.filter(retirante__nombre__icontains=retirante)  
+
+    if cc:
+        vales = vales.filter(centro_costos__codigo__icontains=cc)
+
+    if estado and estado != "#":
+        vales = vales.filter(estado=estado)
+
     context = {
+        'vales': vales,
         'registros': page_obj,
-        'page_obj': page_obj
+        'page_obj': page_obj,
+        'filtros': {
+            'solicitante': solicitante,
+            'retirante': retirante,
+            'cc': cc,
+            'estado': estado,
+        }
     }
 
     return render(request, "registros.html", context)
@@ -33,17 +68,21 @@ def registros(request):
 from django.shortcuts import get_object_or_404, redirect
 from django.utils.timezone import now
 
+@permission_required(["facturado_can_create", "no_facturado_can_create"])
 def nuevo_vsm(request):
-    productos = models.maestro_de_materiales.objects.all()
     empleados = models.empleados.objects.all()
     centro_costos = models.centro_costos.objects.all()
-    usuario_logeado = request.user
-    print(request.POST)
+    usuario_logeado = request.user  
+    centro_usuario = usuario_logeado.cc_permitidos.all()
+    productos = models.maestro_de_materiales.objects.all()
 
     if request.method == 'POST':
         solicitante_id = request.POST.get('solicitante')
         observaciones = request.POST.get('detalles', '')
         centro_costos_id = request.POST.get('centro_costos')
+        tipo_entrega = request.POST.get('tipo_entrega')
+        tipo_facturacion = request.POST.get('tipo_facturacion')
+        retirante = request.POST.get('retirante')
 
         if not solicitante_id:
             return render(request, "nuevo_vsm.html", {
@@ -52,17 +91,20 @@ def nuevo_vsm(request):
                 'error': 'Debe seleccionar un solicitante.'
             })
 
-        solicitante = get_object_or_404(models.empleados, id=solicitante_id)
+        retirante_obj = None
+        if retirante:
+            retirante_obj = get_object_or_404(models.empleados, pk=retirante)
 
         vsm = models.VSM.objects.create(
             centro_costos_id=centro_costos_id,
             solicitante=usuario_logeado,
-            retirante=solicitante,
+            retirante=retirante_obj,
             fecha_solicitud=now(),
-            observaciones=observaciones
+            observaciones=observaciones,
+            tipo_entrega=tipo_entrega,
+            tipo_facturacion=tipo_facturacion
         )
 
-        # Iterar por los productos enviados
         for key, value in request.POST.items():
             if key.startswith('producto_'):
                 try:
@@ -78,13 +120,15 @@ def nuevo_vsm(request):
                 except (ValueError, IndexError):
                     continue
 
-        return redirect('home')  
+        messages.success(request, "✅ VSM creado con éxito")
+        return redirect('home')
 
     return render(request, "nuevo_vsm.html", {
         'productos': productos,
         'empleados': empleados,
         'usuario_logeado': usuario_logeado,
-        'centro_costos': centro_costos
+        'centro_costos': centro_costos,
+        'centro_usuario': centro_usuario
     })
 
 
@@ -99,6 +143,7 @@ def detalle_vsm(request, id):
 
     return render(request, "detalle_vsm.html", context)
 
+@permission_required(["facturado_can_edit", "no_facturado_can_edit"])
 def editar_vsm(request, id):
     vsm = models.VSM.objects.get(id=id)
     productos = models.maestro_de_materiales.objects.all()
@@ -117,6 +162,8 @@ def editar_vsm(request, id):
 
     return render(request, "editar_vsm.html", context)
 
+
+@permission_required(["facturado_can_edit", "no_facturado_can_edit"])
 def eliminar_vsm(request, id):
     vsm = models.VSM.objects.get(id=id)
     
@@ -130,75 +177,97 @@ def eliminar_vsm(request, id):
 
     return render(request, "registros.html", context)
 
+@permission_required(["facturado_can_deliver", "no_facturado_can_deliver"])
 def confirmar_entrega(request, vsm_id):
     vsm = models.VSM.objects.prefetch_related('vsmproducto_set__producto').get(id=vsm_id)
+    tarjetas = list(vsm.retirante.nro_tarjeta.values_list("numero", flat=True))
 
     if request.method == 'POST':
-        cantidad_entregada = request.POST.get('cantidad_entregada')
         observaciones_entrega = request.POST.get('observaciones_entrega')
 
-        vsm.cantidad_entregada = cantidad_entregada
+        # recorrer cada producto del VSM
+        for vp in vsm.vsmproducto_set.all():
+            cantidad_str = request.POST.get(f'cantidad_entregada_{vp.id}', 0)
+            try:
+                cantidad = float(cantidad_str) if cantidad_str else 0
+            except ValueError:
+                cantidad = 0
+            vp.cantidad_entregada = cantidad
+            vp.save()
+
         vsm.observaciones_entrega = observaciones_entrega
         vsm.fecha_entrega = timezone.now()
 
-        if float(cantidad_entregada) >= float(vsm.cantidad_solicitada):
-            vsm.estado = 'entregado'
-        else:
-            vsm.estado = 'parcial'
+        entregado_completo = all(
+            (vp.cantidad_entregada) >= 1
+            for vp in vsm.vsmproducto_set.all()
+        )
+
+        vsm.estado = 'entregado' if entregado_completo else 'pendiente'
 
         vsm.save()
 
-        return redirect('home')
+        return JsonResponse({"success": True, "estado": vsm.estado})
 
-    return render(request, 'confirmar_entrega.html', {'vsm': vsm})
+    return render(request, 'confirmar_entrega.html', {'vsm': vsm, "tarjetas_json": mark_safe(json.dumps(tarjetas))})
 
+@permission_required(["facturado_can_deliver", "no_facturado_can_deliver"])
 def rechazar_entrega(request, vsm_id):
-    vsm = get_object_or_404(models.VSM, pk=vsm_id)
+    vsm = get_object_or_404(models.VSM, id=vsm_id)
 
     if request.method == 'POST':
-        vsm.estado = 'Rechazado'
+        motivo = request.POST.get('observaciones_entrega', '')
+        vsm.estado = 'rechazado'
+        vsm.observaciones_entrega = motivo
+        vsm.fecha_entrega = timezone.now()
         vsm.save()
         return redirect('listar_vsm_pendientes')
 
-    return render(request, 'listar_vsm_pendientes.html', {'vsm': vsm})
+    return render(request, 'rechazar_entrega.html', {'vsm': vsm})
 
+@permission_required(["facturado_can_deliver", "no_facturado_can_deliver"])
 def listar_vsm_pendientes(request):
     vales = (
         models.VSM.objects
-        .filter(estado__in=['pendiente', 'parcial'])
-        .prefetch_related('vsmproducto_set__producto')  
+        .filter(estado__in=['pendiente', 'entregado'], active=True)
+        .prefetch_related('vsmproducto_set__producto')
         .order_by('-fecha_solicitud')
     )
 
-    paginator = Paginator(vales, 7)  
+    solicitante = request.GET.get('solicitante', '').strip()
+    retirante = request.GET.get('retirante', '').strip()
+    legajo = request.GET.get('legajo', '').strip()
+    cc = request.GET.get('cc', '').strip()
+    estado = request.GET.get('estado', '').strip()
+
+    if solicitante:
+        vales = vales.filter(solicitante__username__icontains=solicitante) 
+
+    if retirante:
+        vales = vales.filter(retirante__nombre__icontains=retirante)  
+
+    if cc:
+        vales = vales.filter(centro_costos__codigo__icontains=cc)
+
+    if estado and estado != "#":
+        vales = vales.filter(estado=estado)
+
+    paginator = Paginator(vales, 7)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
 
     context = {
         'pendientes': page_obj,
         'page_obj': page_obj,
+        'filtros': {
+            'solicitante': solicitante,
+            'retirante': retirante,
+            'cc': cc,
+            'estado': estado,
+        }
     }
     return render(request, 'listar_vsm_pendientes.html', context)
 
-
-def listar_vsm_rechazados(request):
-    vales = (
-        models.VSM.objects
-        .filter(estado='rechazado')
-        .prefetch_related('vsmproducto_set__producto')  
-        .order_by('-fecha_solicitud')
-    )
-    paginator = Paginator(vales, 7)  
-
-    page_number = request.GET.get('page')
-    page_obj = paginator.get_page(page_number)
-
-    context = {
-        'rechazados': page_obj,
-        'page_obj': page_obj,
-    }
-
-    return render(request, 'listar_vsm_rechazados.html', context)
      
 def detalle_vsm(request, pk):
     vsm = get_object_or_404(VSM, pk=pk)
@@ -227,7 +296,7 @@ def buscar_solicitantes(request):
 
 def obtener_empleados_por_centro(request):
     centro_id = request.GET.get('centro_id')
-    empleados_qs = empleados.objects.filter(cc_id=centro_id).values('id', 'nombre', 'apellido', 'legajo')
+    empleados_qs = empleados.objects.filter(cc_id=centro_id).values('id','nombre','legajo')
     empleados_list = list(empleados_qs)
     return JsonResponse({'empleados': empleados_list})
 
@@ -257,38 +326,94 @@ def buscar_productos(request):
     ]
     return JsonResponse({'results': results})
 
-def nuevo_epp(request):
-    empleados = models.empleados.objects.all()
+def buscar_productos_por_centro(request):
+    query = request.GET.get('q', '')
+    centro_id = request.GET.get('centro_costo')
+    tipo_entrega = request.GET.get('tipo_entrega')  # 👈 nuevo parámetro
+
+    if not centro_id:
+        return JsonResponse({'results': []})
+
+    try:
+        permiso = PermisoRetiro.objects.get(centro_costo_id=centro_id)
+        productos = permiso.producto.filter(descripcion__icontains=query)
+
+        if tipo_entrega == "EPP":
+            productos = productos.filter(clase_sap="EPP")
+        elif tipo_entrega == "INSUMOS":
+            productos = productos.exclude(clase_sap="EPP")
+
+        productos = productos[:20]
+
+    except PermisoRetiro.DoesNotExist:
+        productos = []
+
+    results = [{'id': p.id, 'text': p.descripcion} for p in productos]
+    return JsonResponse({'results': results})
+
+
+def get_materiales_por_centro(request):
+    centro_id = request.GET.get("centro_id")
+
+    if not centro_id:
+        return JsonResponse({"error": "Centro no especificado"}, status=400)
+
+    # Buscar permisos de ese centro
+    permisos = PermisoRetiro.objects.filter(centro_costo_id=centro_id)
+
+    # Obtener todos los materiales vinculados
+    materiales = maestro_de_materiales.objects.filter(permisoretiro__in=permisos).distinct()
+
+    data = [
+        {"id": m.id, "nombre": f"{m.codigo} - {m.descripcion}"}
+        for m in materiales
+    ]
+
+    return JsonResponse(data, safe=False)
+
+
+def editar_pendiente(request, vsm_id):
+    vsm = get_object_or_404(models.VSM, id=vsm_id, estado="pendiente")
     centro_costos = models.centro_costos.objects.all()
-    productos = models.maestro_de_materiales.objects.all()
-    usuario_logeado = request.user
+    empleados = models.empleados.objects.all()
+    tipo_entrega_choices = models.VSM.tipo_entrega
+    tipo_facturacion_choices = models.VSM.tipo_facturacion
 
-    if request.method == 'POST':
-        solicitante_id = request.POST.get('solicitante')
-        centro_costos_id = request.POST.get('centro_costos')
-        detalles = request.POST.get('detalles', '')
+    if request.method == "POST":
+        observaciones = request.POST.get("detalles", "")
+        tipo_entrega = request.POST.get("tipo_entrega")
+        tipo_facturacion = request.POST.get("tipo_facturacion")
+        retirante_id = request.POST.get("retirante")
 
-        if not solicitante_id:
-            return render(request, "nuevo_epp.html", {
-                'empleados': empleados,
-                'error': 'Debe seleccionar un solicitante.'
-            })
+        vsm.observaciones = observaciones
+        vsm.tipo_entrega = tipo_entrega
+        vsm.tipo_facturacion = tipo_facturacion
+        vsm.fecha_modificacion = now()
+        vsm.save()
 
-        solicitante = get_object_or_404(models.empleados, id=solicitante_id)
+        messages.success(request, "✅ VSM editado correctamente")
+        return redirect("registros")
 
-        epp = models.EPP.objects.create(
-            centro_costos_id=centro_costos_id,
-            solicitante=usuario_logeado,
-            retirante=solicitante,
-            fecha_solicitud=now(),
-            detalles=detalles
-        )
+    return render(request, "editar_pendiente.html",
+     {"vsm": vsm, "centro_costos": centro_costos, "empleados": empleados,
+      "tipo_entrega_choices": tipo_entrega_choices, "tipo_facturacion_choices": tipo_facturacion_choices})
 
-        return redirect('home')  
+def rechazar_pendiente(request, vsm_id):
+    vsm = get_object_or_404(models.VSM, id=vsm_id, estado="pendiente")
 
-    return render(request, "nuevo_epp.html", {
-        'empleados': empleados,
-        'usuario_logeado': usuario_logeado,
-        'centro_costos': centro_costos,
-        'productos': productos
-    })
+    if request.method == "POST":
+        motivo = request.POST.get("motivo", "")
+        vsm.estado = "RECHAZADO"
+        vsm.motivo_rechazo = motivo
+        vsm.fecha_modificacion = now()
+        vsm.save()
+
+        messages.error(request, "❌ VSM rechazado correctamente")
+        return redirect("home")
+
+    return render(request, "rechazar_vsm.html", {"vsm": vsm})
+
+def ver_pendiente(request, vsm_id):
+    vsm = get_object_or_404(models.VSM, id=vsm_id)
+    productos = vsm.vsmproducto_set.select_related('producto').all()
+    return render(request, "ver_pendiente.html", {"vsm": vsm, "productos": productos})

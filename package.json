@@ -1,0 +1,28 @@
+{
+  "name": "vsm_frigo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:css": "tailwindcss -i ./vsm_app/static/css/src/input.css -o ./dist.output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rio1920/vsm_frigo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rio1920/vsm_frigo/issues"
+  },
+  "homepage": "https://github.com/rio1920/vsm_frigo#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "tailwindcss": "^4.1.13"
+  },
+  "devDependencies": {
+    "daisyui": "^5.1.10"
+  }
+}

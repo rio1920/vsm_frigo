@@ -4,6 +4,7 @@ import os
 import sys
 from decouple import config
 
+# vsm_frigo/settings.py
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -33,6 +34,8 @@ INSTALLED_APPS = [
     'mozilla_django_oidc',
     'corsheaders',
     'django_browser_reload',
+    'tailwind',
+    'django_cotton.apps.SimpleAppConfig',
 ]
 
 MIDDLEWARE = [
@@ -59,8 +62,15 @@ TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [os.path.join(BASE_DIR, "vsm_app/templates")],
-        "APP_DIRS": True,
         "OPTIONS": {
+            "loaders": [(
+                "django.template.loaders.cached.Loader",
+                [
+                    "django_cotton.cotton_loader.Loader",
+                    "django.template.loaders.filesystem.Loader",
+                    "django.template.loaders.app_directories.Loader",
+                ],
+            )],
             "context_processors": [
                 "django.template.context_processors.debug",
                 "django.template.context_processors.request",
@@ -68,11 +78,21 @@ TEMPLATES = [
                 "django.contrib.messages.context_processors.messages",
                 "vsm_app.context_processors.user_context",
             ],
+            "builtins": [
+                "django_cotton.templatetags.cotton",
+            ],
         },
     },
 ]
 
 WSGI_APPLICATION = 'vsm_frigo.wsgi.application'
+
+INTERNAL_IPS = [
+    "127.0.0.1",
+    "localhost",
+]
+
+NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
 
 
 # Database
@@ -88,6 +108,8 @@ DATABASES = {
         "PORT": "5432",
     }
 }
+
+AUTH_USER_MODEL = 'vsm_app.Usuarios'
 
 
 # Password validation

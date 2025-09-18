@@ -13,11 +13,12 @@
       --detalle-dorado: rgb(106, 89, 45);
     }
   </style>
+  <link rel="stylesheet" href="../static/css/default-colors.css">
 </head>
 <body>
-    <nav class="bg-[rgb(24,24,24)] border-b border-[rgb(106,89,45)] text-white w-full">
+    <nav class="bg-darkmode border-b border-[rgb(106,89,45)] text-white w-full">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16">
+        <div class="flex items-center h-16" style="justify-content: space-between;">
           <!-- Título / Logo -->
           <div class="flex items-center">
             <img src="{% static 'images/logo.svg' %}" alt="Logo" class="h-10 w-10 mr-4">
@@ -34,6 +35,8 @@
               <a href="{% url 'keycloak_login' %}" class="text-sm hover:text-blue-400 transition">Iniciar sesión</a>
             {% endif %}
           </div>
+
+
 
           <!-- Botón hamburguesa (solo visible en mobile) -->
           <div class="md:hidden">

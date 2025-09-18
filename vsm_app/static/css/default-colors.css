@@ -1,0 +1,49 @@
+@media (max-width: 1366px) {
+  body {
+    zoom: 0.8;
+  }
+}
+
+/* Colores personalizados */
+
+:root {     
+  --primary: rgb(106, 89, 45);
+  --secondary: rgb(24, 24, 24);
+  --bg-secondary: rgb(12, 12, 12);
+  --bg-lightmode: rgb(239, 232, 232);
+}
+
+.bg-darkmode {
+  background-color: var(--secondary);
+}
+
+.bg-card-darkmode {
+  background-color: var(--bg-secondary);
+}
+
+.bg-lightmode {
+  background-color: var(--bg-lightmode);
+}
+
+.text-gold {
+  color: rgb(106, 89, 45);
+}
+
+.border-gold {
+  border: solid;
+  border-width: 1px;
+  border-color: var(--primary);
+}
+
+.bg-gold {
+  background-color: var(--primary);
+  color: black;
+}
+
+.input-darkmode {
+  background-color: var(--bg-darkmode);
+  color: white;
+  border: 1px solid var(--primary);
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+}

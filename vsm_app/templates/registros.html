@@ -8,8 +8,11 @@
     :root {
       --fondo-oscuro: rgb(24, 24, 24);
       --detalle-dorado: rgb(106, 89, 45);
+      --bg-secondary: rgb(12, 12, 12);
     }
   </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
 </head>
 <body class="bg-[var(--fondo-oscuro)] text-white">
   {% include 'navbar.html' %}
@@ -17,36 +20,48 @@
   <h1 class="text-3xl font-bold mb-6 text-center mt-18" style="color: var(--detalle-dorado); margin-top: 18px;">
     Historial de Vales de Salida de Materiales (VSM)
   </h1>
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="filtros m-4">
+      <form method="get" class="flex space-x-4">
+      <input type="text" name="solicitante" placeholder="Solicitante"
+            value="{{ filtros.solicitante }}" 
+            class="p-2 rounded bg-gray-800 border border-gray-700 text-white">
+
+      <input type="text" name="retirante" placeholder="Retirante"
+            value="{{ filtros.retirante }}"
+            class="p-2 rounded bg-gray-800 border border-gray-700 text-white">
+
+      <input type="text" name="cc" placeholder="CC"
+            value="{{ filtros.cc }}"
+            class="p-2 rounded bg-gray-800 border border-gray-700 text-white">
+
+      <select name="estado" class="p-2 rounded bg-gray-800 border border-gray-700 text-white">
+        <option value="pendiente" {% if request.GET.estado == "pendiente" or not request.GET.estado %}selected{% endif %}>Pendiente</option>
+        <option value="entregado" {% if request.GET.estado == "entregado" %}selected{% endif %}>Entregado</option>
+        <option value="#" {% if request.GET.estado == "#" %}selected{% endif %}>Todos</option>
+      </select>
+
+        <button type="submit" class="bg-[var(--detalle-dorado)] text-white px-4 py-2 rounded">Filtrar</button>
+      </form>
+    </div>
+  </div>
 
   <div class="overflow-x-auto rounded-lg border border-[var(--detalle-dorado)] shadow-lg max-w-6xl mx-auto bg-neutral-900">
-
-    <table class="min-w-full divide-y divide-gray-700">
-      <thead class="bg-[var(--detalle-dorado)]/20">
+    <table class="min-w-full divide-y divide-gray-700 bg-[var(--bg-secondary)]">
+      <thead>
         <tr>
-          <th class="px-4 py-3 text-left text-sm font-semibold">Número VSM</th>
+          <th class="px-4 py-3 text-left text-sm font-semibold">ID VSM</th>
           <th class="px-4 py-3 text-left text-sm font-semibold">Solicitante</th>
-          <th class="px-4 py-3 text-left text-sm font-semibold">Producto</th>
-          <th class="px-4 py-3 text-left text-sm font-semibold">Cantidad Solicitada</th>
-          <th class="px-4 py-3 text-left text-sm font-semibold">Cantidad Entregada</th>
           <th class="px-4 py-3 text-left text-sm font-semibold">Fecha Solicitud</th>
           <th class="px-4 py-3 text-left text-sm font-semibold">Estado</th>
+          <th class="px-4 py-3 text-center text-sm font-semibold">Acciones</th>
         </tr>
       </thead>
       <tbody class="divide-y divide-gray-700" style="overflow: hidden;">
-        <!-- Fila principal -->
         {% for registro in registros %}
         <tr class="cursor-pointer hover:bg-[rgb(106,89,45)]/10 transition" onclick="toggleRow('detail-{{ forloop.counter }}')" style="overflow: hidden;">
             <td class="px-4 py-3">{{ registro.id }}</td>
             <td class="px-4 py-3">{{ registro.solicitante }}</td>
-            <td class="px-4 py-3">{{ registro.producto.descripcion }}</td>
-            <td class="px-4 py-3">{{ registro.cantidad_solicitada }}</td>
-            <td class="px-4 py-3">
-              {% if registro.cantidad_entregada %}
-                {{ registro.cantidad_entregada }}
-              {% else %}
-                <span class="text-gray-500">0</span>
-              {% endif %}
-            </td>
             <td class="px-4 py-3">{{ registro.fecha_solicitud }}</td>
             <td class="px-4 py-3">
               {% if registro.estado == 'entregado' %}
@@ -67,10 +82,17 @@
               
               {% endif %}
             </td>
+            <td class="px-4 py-3 text-center">
+              {% if registro.estado == 'pendiente' %}
+              <a href="{% url 'ver_pendiente' registro.id %}" class="btn btn-secondary px-2 py-1"><i class="bi bi-card-list"></i></a>
+              <a href="{% url 'editar_pendiente' registro.id %}" class="btn btn-primary px-2 py-1"><i class="bi bi-pencil"></i></a>
+              <a href="#" class="btn btn-danger px-2 py-1"><i class="bi bi-x-lg"></i></a>
+              {% else %}
+              <a href="{% url 'ver_pendiente' registro.id %}" class="btn btn-secondary px-2 py-1"><i class="bi bi-card-list"></i></a>
+              {% endif %}
+            </td>
         </tr>
-        
-      
-        <tr>  
+        <tr>
 
         <tr id="detail-{{ forloop.counter }}" class="hidden">
           <td colspan="8" class="p-0">
@@ -95,6 +117,23 @@
   </div>
 
   {% include 'paginator.html' %}
+
+  {% if messages %}
+  <div id="toast-container" class="fixed top-4 right-4 z-50">
+    {% for message in messages %}
+      <div class="mb-2 px-4 py-2 rounded-lg shadow-lg text-white
+                  {% if message.tags == 'success' %} bg-green-600 {% elif message.tags == 'error' %} bg-red-600 {% else %} bg-gray-600 {% endif %}">
+        {{ message }}
+      </div>
+    {% endfor %}
+  </div>
+  <script>
+    setTimeout(() => {
+      const toast = document.getElementById("toast-container");
+      if (toast) toast.style.display = "none";
+    }, 3000);
+  </script>
+  {% endif %}   
   
   <script>
     function toggleRow(id) {

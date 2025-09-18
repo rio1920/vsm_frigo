@@ -1,7 +1,15 @@
+<style>
+  :root {
+    --fondo-oscuro: rgb(24, 24, 24);
+    --detalle-dorado: rgb(106, 89, 45);
+    --bg-secondary: rgb(12, 12, 12);
+  }
+</style>
+
 <div class="flex justify-center mt-6">
   <nav class="inline-flex shadow-sm">
     {% if page_obj.has_previous %}
-      <a href="?page={{ page_obj.previous_page_number }}" class="px-3 py-1 bg-neutral-800 border border-gray-600 text-white hover:bg-neutral-700">Anterior</a>
+      <a href="?page={{ page_obj.previous_page_number }}" class="px-3 py-1 bg-[var(--bg-secondary)] border border-gray-600 text-white hover:bg-neutral-700">Anterior</a>
     {% else %}
       <span class="px-3 py-1 bg-neutral-900 border border-gray-600 text-gray-500 cursor-not-allowed">Anterior</span>
     {% endif %}
@@ -11,7 +19,7 @@
     </span>
 
     {% if page_obj.has_next %}
-      <a href="?page={{ page_obj.next_page_number }}" class="px-3 py-1 bg-neutral-800 border border-gray-600 text-white hover:bg-neutral-700">Siguiente</a>
+      <a href="?page={{ page_obj.next_page_number }}" class="px-3 py-1 bg-[var(--bg-secondary)] border border-gray-600 text-white hover:bg-neutral-700">Siguiente</a>
     {% else %}
       <span class="px-3 py-1 bg-neutral-900 border border-gray-600 text-gray-500 cursor-not-allowed">Siguiente</span>
     {% endif %}
