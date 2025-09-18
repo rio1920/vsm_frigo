@@ -54,7 +54,7 @@ class TagsProductosAdmin(admin.ModelAdmin):
     list_display = ('nombre',)
     search_fields = ('nombre',)
 
-class PerfilDeRiesgoAdmin(admin.ModelAdmin):
+class perfil_riesgoAdmin(admin.ModelAdmin):
     list_display = ('nombre', 'descripcion')
     search_fields = ('nombre', 'descripcion')
 
@@ -64,7 +64,7 @@ class NroTarjetaInline(admin.ModelAdmin):
     extra = 1
 
 admin.site.register(tags_productos, TagsProductosAdmin)
-admin.site.register(PerfilDeRiesgo, PerfilDeRiesgoAdmin)
+admin.site.register(perfil_riesgo, perfil_riesgoAdmin)
 admin.site.register(Roles, RolesAdmin)
 admin.site.register(permisos, PermisosAdmin)
 admin.site.register(VSM, VSMAdmin)
