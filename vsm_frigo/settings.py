@@ -2,12 +2,14 @@
 from pathlib import Path
 import os
 import sys
-from decouple import config
+from dotenv import load_dotenv
+
 
 # vsm_frigo/settings.py
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+load_dotenv(os.path.join(BASE_DIR, '.env'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
@@ -16,7 +18,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-&&gvd#+73!rkj4#x(ffqb@4%lk946jv42ky)&e-y0)5cys$!%+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', cast=bool)
+DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
 ALLOWED_HOSTS = ['*']
 
@@ -163,18 +165,18 @@ USE_I18N = True
 USE_TZ = True
 
 
-OIDC_RP_CLIENT_ID = config("OIDC_RP_CLIENT_ID")
-OIDC_RP_CLIENT_SECRET = config("OIDC_RP_CLIENT_SECRET")
-OIDC_RP_SIGN_ALGO = config("OIDC_RP_SIGN_ALGO")
+OIDC_RP_CLIENT_ID = os.getenv("OIDC_RP_CLIENT_ID")
+OIDC_RP_CLIENT_SECRET = os.getenv("OIDC_RP_CLIENT_SECRET")
+OIDC_RP_SIGN_ALGO = os.getenv("OIDC_RP_SIGN_ALGO")
 
-OIDC_OP_JWKS_ENDPOINT = config("OIDC_OP_JWKS_ENDPOINT")
-OIDC_OP_AUTHORIZATION_ENDPOINT = config("OIDC_OP_AUTHORIZATION_ENDPOINT")
-OIDC_OP_TOKEN_ENDPOINT = config("OIDC_OP_TOKEN_ENDPOINT")
-OIDC_OP_USER_ENDPOINT = config("OIDC_OP_USER_ENDPOINT")
+OIDC_OP_JWKS_ENDPOINT = os.getenv("OIDC_OP_JWKS_ENDPOINT")
+OIDC_OP_AUTHORIZATION_ENDPOINT = os.getenv("OIDC_OP_AUTHORIZATION_ENDPOINT")
+OIDC_OP_TOKEN_ENDPOINT = os.getenv("OIDC_OP_TOKEN_ENDPOINT")
+OIDC_OP_USER_ENDPOINT = os.getenv("OIDC_OP_USER_ENDPOINT")
 
-LOGIN_REDIRECT_URL = config("LOGIN_REDIRECT_URL")
-LOGOUT_REDIRECT_URL = config("LOGOUT_REDIRECT_URL")
-LOGIN_URL = config("LOGIN_URL")
+LOGIN_REDIRECT_URL = os.getenv("LOGIN_REDIRECT_URL")
+LOGOUT_REDIRECT_URL = os.getenv("LOGOUT_REDIRECT_URL")
+LOGIN_URL = os.getenv("LOGIN_URL")
 
 OIDC_REDIRECT_ALLOWED_HOSTS = "vsm.rioplatense.local", "127.0.0.1:8000"
 
