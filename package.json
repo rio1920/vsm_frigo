@@ -19,10 +19,10 @@
   },
   "homepage": "https://github.com/rio1920/vsm_frigo#readme",
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.13",
-    "tailwindcss": "^4.1.13"
+    "@tailwindcss/cli": "^4.1.13"
   },
   "devDependencies": {
-    "daisyui": "^5.1.10"
+    "daisyui": "^5.1.10",
+    "tailwindcss": "^3.4.17"
   }
 }
