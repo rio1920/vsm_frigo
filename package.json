@@ -20,7 +20,8 @@
   "homepage": "https://github.com/rio1920/vsm_frigo#readme",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.13",
+    "bootstrap-icons": "^1.13.1",
     "daisyui": "^5.1.10",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^4.1.10"
   }
 }

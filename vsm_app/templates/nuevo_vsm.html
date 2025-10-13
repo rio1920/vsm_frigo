@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Nuevo VSM</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Nuevo VSM - VSM{% endblock %}
+{% block content %}
+
+{% include 'navbar.html' %}
 <style>
   :root {
     --fondo-oscuro: rgb(24, 24, 24);
@@ -44,10 +38,21 @@
     padding: 0.5rem;
     height: 3rem;
   }
+
+  .select2 span{
+    background-color: white;
+    color: black !important;
+  }
+
+  span {
+    color: black;
+  }
   
+  ul li{
+    color: black;
+  }
 </style>
-<link rel="stylesheet" href="../static/css/default-colors.css">
-<body class="bg-darkmode">
+<body>
 
     {% if error %}
       <div class="bg-red-100 text-red-700 p-2 mb-4 rounded">{{ error }}</div>
@@ -56,7 +61,7 @@
     <form method="POST">
       {% csrf_token %}
 
-    <div class="max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto mt-12 p-6 rounded-xl shadow-lg bg-card-darkmode text-gold">
+    <div class="bg-base-300 sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto mt-12 p-6 rounded-xl shadow-lg bg-card-darkmode text-gold">
 
       <form method="POST" class="space-y-6">
         {% csrf_token %}
@@ -91,9 +96,9 @@
         <div class="mt-2">
           <label class="block font-semibold mb-1">Centro de costos</label>
           <select id="centro_costos" name="centro_costos" class="w-full select2">
-            <option value="">Seleccione un centro de costos...</option>
+            <option value="" >Seleccione un centro de costos...</option>
             {% for centro in centro_usuario %}
-              <option value="{{ centro.id }}">{{ centro.codigo }} - {{ centro.descripcion }}</option>
+              <option value="{{ centro.id }}" class="text-black">{{ centro.codigo }} - {{ centro.descripcion }}</option>
             {% endfor %}
           </select>
           <input type="hidden" id="hidden_centro_costos" name="centro_costos">
@@ -122,18 +127,23 @@
               <option value="">Escriba para buscar...</option>
             </select>
             <input type="number" id="cantidad-producto" min="1"
-              class="w-28 rounded-lg border border-gray-600 p-2 text-black" placeholder="Cantidad">
+              class="w-28 rounded-lg border border-gray-600 p-2 bg-white text-black" placeholder="Cantidad">
             <button type="button" onclick="agregarProductoDesdeSelect()" 
-              class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+              class="px-4 py-2 rounded-lg btn border">
               Agregar
             </button>
           </div>
         </div>
 
+        <!-- Contenedor para tags -->
+        <div id="tags_container" class="mt-3">
+          <div id="tags_list" class="flex flex-wrap gap-2"></div>
+        </div>
+
         <!-- Tabla productos -->
         <div class="mt-2">
           <table id="tabla-productos" class="w-full text-sm border border-gray-600 rounded-lg overflow-hidden">
-            <thead class="bg-neutral-800 text-gold">
+            <thead>
               <tr>
                 <th class="p-2 text-left">Producto</th>
                 <th class="p-2 text-center">Cantidad</th>
@@ -146,10 +156,10 @@
 
         <!-- Botones -->
         <div class="flex justify-between items-center pt-6">
-          <a href="{% url 'home' %}" class="px-4 py-2 border border-[rgb(106,89,45)] text-gold rounded-lg hover:bg-neutral-800">
+          <a href="{% url 'home' %}" class="px-4 py-2 btn text-gold rounded-lg hover:bg-gray-700">
             ← Volver
           </a>
-          <button type="submit" class="bg-green-600 px-6 py-2 text-white rounded-lg hover:bg-green-700">
+          <button type="submit" class="bg-green-600 px-6 py-2 rounded-lg hover:bg-green-700">
             Realizar VSM
           </button>
         </div>
@@ -159,6 +169,39 @@
   <!-- Contenedor para toasts -->
   <div id="toast-container" class="fixed top-4 right-4 space-y-2 z-50"></div>
 
+
+{% block scripts %}
+<script>
+  document.getElementById("retirante").addEventListener("change", function () {
+    const retiranteId = this.value;
+    const tipoEntrega = document.getElementById("tipo_entrega").value; // asumo que tenés este select
+
+    if (retiranteId && tipoEntrega === "EPP") {
+      fetch(`/empleados/${retiranteId}/tags/`)
+        .then(res => res.json())
+        .then(data => {
+          const container = document.getElementById("tagsContainer");
+          container.innerHTML = ""; // limpiar
+
+          if (data.tags.length > 0) {
+            data.tags.forEach(tag => {
+              const span = document.createElement("span");
+              span.textContent = tag;
+              span.className = "px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-sm";
+              container.appendChild(span);
+            });
+
+            document.getElementById("tagsRecomendados").classList.remove("hidden");
+          } else {
+            document.getElementById("tagsRecomendados").classList.add("hidden");
+          }
+        })
+        .catch(err => console.error("Error cargando tags:", err));
+    } else {
+      document.getElementById("tagsRecomendados").classList.add("hidden");
+    }
+  });
+</script>
 
 <script>
   $(document).ready(function () {
@@ -237,34 +280,37 @@
   });
 
   function bloquearSelects() {
-      const centroSelect = document.getElementById('centro_costos');
-      const retiranteSelect = document.getElementById('retirante');
+    const centroSelect = document.getElementById("centro_costos");
+    const retiranteSelect = document.getElementById("retirante");
 
-      // pasar valores a los hidden
-      document.getElementById('hidden_centro_costos').value = centroSelect.value;
-      document.getElementById('hidden_retirante').value = retiranteSelect.value;
+    // pasar valores a los hidden
+    document.getElementById("hidden_centro_costos").value = centroSelect.value;
+    document.getElementById("hidden_retirante").value = retiranteSelect.value;
 
-      // quitar name para que no se mande duplicado
-      centroSelect.removeAttribute("name");
-      retiranteSelect.removeAttribute("name");
+    // quitar name para que no se manden duplicados
+    centroSelect.removeAttribute("name");
+    retiranteSelect.removeAttribute("name");
 
-      // bloquear selects
-      centroSelect.disabled = true;
-      retiranteSelect.disabled = true;
+    // bloquear selects
+    centroSelect.disabled = true;
+    retiranteSelect.disabled = true;
   }
 
   function desbloquearSelects() {
     const centro = document.getElementById("centro_costos");
     const retirante = document.getElementById("retirante");
 
-    centro.removeAttribute("disabled");
-    retirante.removeAttribute("disabled");
+    // volver a poner los name
+    centro.setAttribute("name", "centro_costos");
+    retirante.setAttribute("name", "retirante");
 
-    // Remove hidden inputs if present
-    const hiddenCentro = document.getElementById("hidden-centro-costos");
-    if (hiddenCentro) hiddenCentro.remove();
-    const hiddenRetirante = document.getElementById("hidden-retirante");
-    if (hiddenRetirante) hiddenRetirante.remove();
+    // desbloquear
+    centro.disabled = false;
+    retirante.disabled = false;
+
+    // limpiar los hidden
+    document.getElementById("hidden_centro_costos").value = "";
+    document.getElementById("hidden_retirante").value = "";
   }
 
   function agregarProductoDesdeSelect() {
@@ -360,36 +406,75 @@ function showErrorToast(message, type = "error") {
   }, 3000);
 }
 </script>
-
+ 
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const centroCostosSelect = document.getElementById("centro_costos");
-  const empleadosSelect = document.getElementById("empleados");
-  const tablaProductos = document.getElementById("tabla_productos").querySelector("tbody");
+$(document).ready(function () {
+    console.log("✅ DOM y jQuery listos");
 
-  function bloquearSelects() {
-    centroCostosSelect.disabled = true;
-    empleadosSelect.disabled = true;
-  }
+    let $retiranteSelect = $("#retirante");
+    let $tagsList = $("#tags_list");
+    let $tipoEntrega = $("#tipo_entrega");  // 👈 select de tipo de entrega
 
-  function desbloquearSelects() {
-    centroCostosSelect.disabled = false;
-    empleadosSelect.disabled = false;
-  }
-
-  // 👇 Cada vez que cambie la tabla revisamos si hay productos
-  const observer = new MutationObserver(() => {
-    if (tablaProductos.children.length > 0) {
-      bloquearSelects();
-    } else {
-      desbloquearSelects();
+    if ($retiranteSelect.length === 0) {
+        console.error("❌ No se encontró #id_retirante en el DOM");
+        return;
     }
-  });
+    if ($tagsList.length === 0) {
+        console.error("❌ No se encontró #tags_list en el DOM");
+        return;
+    }
 
-  observer.observe(tablaProductos, { childList: true, subtree: false });
+    $retiranteSelect.on("select2:select", function (e) {
+        let empleadoId = $(this).val();
+        let tipoEntrega = $tipoEntrega.val();
+
+        console.log("👤 Retirante seleccionado:", empleadoId);
+        console.log("📦 Tipo de entrega actual:", tipoEntrega);
+
+        // 👇 Solo si es EPP se buscan y muestran tags
+        if (tipoEntrega !== "EPP") {
+            console.log("⚠️ No es EPP, se ignoran tags");
+            $tagsList.empty();  // limpiar lista
+            return;
+        }
+
+        if (!empleadoId) {
+            $tagsList.html("<li class='text-gray-400'>Sin seleccion</li>");
+            return;
+        }
+
+        let url = `/get_tags/${empleadoId}/`;
+        console.log("🌐 Fetch a:", url);
+
+        fetch(url)
+          .then(response => response.json())
+          .then(data => {
+              console.log("📦 Datos JSON recibidos:", data);
+              $tagsList.empty();
+
+              if (data.length === 0) {
+                  $tagsList.html("<span class='text-gray-400 text-sm'>No tiene tags asociados</span>");
+              } else {
+                  data.forEach(tag => {
+                      $tagsList.append(`
+                          <span class="px-3 py-1 rounded-full bg-blue-300 text-blue-800 text-sm font-medium shadow-sm">
+                            ${tag.descripcion}
+                          </span>
+                      `);
+                  });
+              }
+          })
+          .catch(err => console.error("❌ Error en fetch:", err));
+    });
 });
+
 </script>
 
 
+
+{% endblock %}
+
+
 </body>
-</html>
+
+{% endblock %}

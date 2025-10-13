@@ -3,7 +3,7 @@ from .models import *
 
 class VSMProductoInline(admin.TabularInline):
     model = VSMProducto
-    extra = 1  # Número de filas vacías por defecto para agregar
+    extra = 1 
     autocomplete_fields = ['producto']
 
 class VSMAdmin(admin.ModelAdmin):
@@ -43,21 +43,24 @@ class RolesAdmin(admin.ModelAdmin):
     search_fields = ('nombre',)
 
 class PermisosAdmin(admin.ModelAdmin):
-    list_display = ('nombre',)
-    search_fields = ('nombre',)
+    list_display = ('nombre', 'descripcion')
+    search_fields = ('nombre', 'descripcion')
 
 class PermisoRetiroAdmin(admin.ModelAdmin):
     list_display = ('centro_costo',)
     search_fields = ('centro_costo__codigo',)
 
 class TagsProductosAdmin(admin.ModelAdmin):
+    list_display = ('descripcion',)
+    search_fields = ('descripcion',)
+
+class perfil_riesgoAdmin(admin.ModelAdmin):
     list_display = ('nombre',)
     search_fields = ('nombre',)
 
-class perfil_riesgoAdmin(admin.ModelAdmin):
-    list_display = ('nombre', 'descripcion')
-    search_fields = ('nombre', 'descripcion')
-
+class relacion_cc_perfil_riesgoAdmin(admin.ModelAdmin):
+    list_display = ('centro_costo', 'perfil_riesgo')
+    search_fields = ('centro_costo__codigo', 'perfil_riesgo__nombre')
 
 class NroTarjetaInline(admin.ModelAdmin):
     model = nro_tarjeta
@@ -74,3 +77,4 @@ admin.site.register(Usuarios, UsuariosAdmin)
 admin.site.register(maestro_de_materiales, MaestroDeMaterialesAdmin)
 admin.site.register(PermisoRetiro, PermisoRetiroAdmin)
 admin.site.register(nro_tarjeta, NroTarjetaInline)
+admin.site.register(relacion_cc_perfil_riesgo, relacion_cc_perfil_riesgoAdmin)

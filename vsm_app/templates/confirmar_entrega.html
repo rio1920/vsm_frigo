@@ -1,64 +1,24 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Confirmar Entrega</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="../static/css/default-colors.css">
-  <style>
-    :root {
-      --fondo-oscuro: rgb(24, 24, 24);
-      --detalle-dorado: rgb(106, 89, 45);
-      --bg-secondary: rgb(12, 12, 12);
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeOut {
-      from { opacity: 1; transform: translateY(0); }
-      to { opacity: 0; transform: translateY(-10px); }
-    }
-    .toast-container {
-      position: fixed;
-      top: 1rem;
-      right: 1rem;
-      z-index: 9999;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-    .toast-container::after{
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      content: '';
-      background: rgba(0, 0, 0, 0.5);
-      border-radius: 0.5rem;
-      animation: fadeIn 0.3s ease-out forwards;
-    }
-  </style>
-  <script src="https://unpkg.com/onscan.js/onscan.min.js"></script>
-</head>
+{% block title %}Confirmar Entrega VSM{% endblock %}
+{% block content %}
+{% include 'navbar.html' %}
 
-<body class="min-h-screen bg-[var(--fondo-oscuro)] flex flex-col items-center px-4 py-6">
+<body class="justify-center">
 
-  <div class="w-full my-auto  max-w-3xl sm:max-w-4xl md:max-w-5xl min-h-3xl sm:min-h-4xl md:min-h-5xl bg-[var(--bg-secondary)] p-6 sm:p-10 md:p-16 rounded-2xl shadow-xl border border-[var(--detalle-dorado)] text-white">
-    <h1 class="text-3xl font-semibold text-center text-[var(--detalle-dorado)] mb-6">Confirmar Entrega de VSM</h1>
+  <div class="bg-base-300 w-full mt-10 mx-auto  max-w-3xl sm:max-w-4xl md:max-w-5xl min-h-3xl sm:min-h-4xl md:min-h-5xl p-3 sm:p-5 md:p-8 rounded-2xl shadow-xl">
+    <h1 class="text-3xl font-semibold text-center mt-0">Confirmar Entrega de VSM</h1>
 
     <form action="{% url 'confirmar_entrega' vsm.id %}" method="post" class="space-y-4" id="formEntrega">
       {% csrf_token %}
       
       <div class="grid grid-cols-2 gap-4">
-        <p><span class="text-[var(--detalle-dorado)] font-medium">Solicitante:</span> {{ vsm.solicitante }}</p>
-        <p><span class="text-[var(--detalle-dorado)] font-medium">Retirante:</span> {{ vsm.retirante }}</p>
+        <p class="bg-base-200 p-4 rounded-2xl"><span class="text-white font-medium">Solicitante:</span> {{ vsm.solicitante }}</p>
+        <p class="bg-base-200 p-4 rounded-2xl"><span class="text-white font-medium">Retirante:</span> {{ vsm.retirante }}</p>
       </div>
 
-      <table class="w-full text-sm border border-gray-600 rounded-lg overflow-hidden">
-        <thead class="bg-neutral-800 text-gold" style="color: var(--detalle-dorado);">
+      <table class="w-full text-sm border border-gray-600 rounded-lg overflow-hidden bg-base-200">
+        <thead>
           <tr>
             <th class="text-left px-4 py-2">Producto</th>
             <th class="text-left px-4 py-2">Cantidad Solicitada</th>
@@ -77,7 +37,7 @@
                      value="{{ vsm_producto.cantidad_entregada }}"
                      min="0" 
                      max="{{ vsm_producto.cantidad_solicitada }}" 
-                     class="w-24 bg-zinc-800 border border-zinc-700 rounded-xl px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-[var(--detalle-dorado)]"
+                     class="w-24 border border-zinc-700 rounded-xl px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-[var(--detalle-dorado)]"
                      id="cantEntregada">
                      
             </td>
@@ -89,15 +49,15 @@
         </tbody>
       </table>
 
-      <div>
+      <div class="p-4 rounded-2xl">
         <label for="observaciones_entrega" class="block text-sm font-medium text-[var(--detalle-dorado)] mb-1">Observaciones</label>
-        <textarea name="observaciones_entrega" id="observaciones_entrega" rows="4" class="w-full bg-zinc-800 border border-zinc-700 rounded-xl px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-[var(--detalle-dorado)]"></textarea>
+        <textarea name="observaciones_entrega" id="observaciones_entrega" rows="3" class="w-full border border-zinc-700 rounded-xl px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-[var(--detalle-dorado)]"></textarea>
       </div>
 
       <div class="flex items-center gap-4">
         {% if vsm.estado == "pendiente" %}
         <button type="button" id="btnAbrirModal"
-                class="bg-[var(--detalle-dorado)] hover:bg-yellow-700 transition px-6 py-2 rounded-xl font-medium text-sm">
+                class="btn px-6 py-2 rounded-xl font-medium text-sm">
           Confirmar Entrega
         </button>
 
@@ -114,9 +74,9 @@
       </div>
     </form>
   </div>
-<div id="modalRFID" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-  <div class="bg-[var(--fondo-oscuro)] p-6 rounded-2xl shadow-lg w-96 text-center border border-[var(--detalle-dorado)]">
-    <h2 class="text-lg font-semibold text-white mb-4">Confirmar Retiro</h2>
+<div id="modalRFID" class="hidden fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50">
+  <div class="bg-base-100 p-6 rounded-2xl shadow-lg w-96 text-center border border-base-300">
+    <h2 class="text-lg font-semibold mb-4">Confirmar Retiro</h2>
     <p class="text-gray-300 mb-6">Por favor, apoye la tarjeta del retirante en el lector para continuar.</p>
     <div class="flex justify-center space-x-4">
       <button id="btnCancelarRFID"
@@ -236,4 +196,4 @@ onScan.attachTo(document, {
 </script>
 
 </body>
-</html>
+{% endblock %}

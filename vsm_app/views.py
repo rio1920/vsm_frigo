@@ -14,6 +14,7 @@ from django.contrib import messages
 from .decorator import permission_required
 from django.utils.safestring import mark_safe
 import json
+from xhtml2pdf import pisa
 
 
 
@@ -181,6 +182,7 @@ def eliminar_vsm(request, id):
 def confirmar_entrega(request, vsm_id):
     vsm = models.VSM.objects.prefetch_related('vsmproducto_set__producto').get(id=vsm_id)
     tarjetas = list(vsm.retirante.nro_tarjeta.values_list("numero", flat=True))
+    firma_empleado = vsm.retirante.id if vsm.retirante else None
 
     if request.method == 'POST':
         observaciones_entrega = request.POST.get('observaciones_entrega')
@@ -192,6 +194,7 @@ def confirmar_entrega(request, vsm_id):
                 cantidad = float(cantidad_str) if cantidad_str else 0
             except ValueError:
                 cantidad = 0
+            vp.firma_empleado = firma_empleado
             vp.cantidad_entregada = cantidad
             vp.save()
 
@@ -384,10 +387,16 @@ def editar_pendiente(request, vsm_id):
         tipo_entrega = request.POST.get("tipo_entrega")
         tipo_facturacion = request.POST.get("tipo_facturacion")
         retirante_id = request.POST.get("retirante")
+        productos = request.POST.getlist("productos[]")
+        cantidades = request.POST.getlist("cantidades[]")
 
         vsm.observaciones = observaciones
+        vsm.retirante = empleados.get(id=retirante_id) if retirante_id else None
         vsm.tipo_entrega = tipo_entrega
         vsm.tipo_facturacion = tipo_facturacion
+        vsm.vsmproducto_set.all().delete()
+
+
         vsm.fecha_modificacion = now()
         vsm.save()
 
@@ -417,3 +426,49 @@ def ver_pendiente(request, vsm_id):
     vsm = get_object_or_404(models.VSM, id=vsm_id)
     productos = vsm.vsmproducto_set.select_related('producto').all()
     return render(request, "ver_pendiente.html", {"vsm": vsm, "productos": productos})
+
+
+def get_tags_por_empleado(request, empleado_id):
+    empleado = get_object_or_404(empleados, id=empleado_id)
+
+    if not empleado.perfil_riesgo:
+        return JsonResponse([], safe=False)
+
+    tags = empleado.perfil_riesgo.tags_productos.all()
+
+    data = [{"id": t.id, "descripcion": t.descripcion} for t in tags]
+    return JsonResponse(data, safe=False)
+
+def generar_pdf(request, vsm_id):
+    vsm = get_object_or_404(VSM, id=vsm_id)
+    productos = vsm.vsmproducto_set.select_related('producto').all()
+
+    template_path = 'vsm_pdf.html'
+    context = {'vsm': vsm, 'productos': productos}
+    response = HttpResponse(content_type='application/pdf')
+    response['Content-Disposition'] = f'inline; filename="VSM_{vsm.id}.pdf"'
+
+    html = render_to_string(template_path, context)
+
+    pisa_status = pisa.CreatePDF(html, dest=response)
+
+    if pisa_status.err:
+        return HttpResponse('Error al generar el PDF', status=500)
+    
+    return response
+
+def generar_template_insumo(request, vsm_id):
+
+    vsm = get_object_or_404(VSM, id=vsm_id)
+    productos = vsm.vsmproducto_set.select_related('producto').all()
+
+    context = {'vsm': vsm, 'productos': productos}
+    return render(request, 'vsm_pdf.html', context)
+
+def generar_template_epp(request, vsm_id):
+
+    vsm = get_object_or_404(VSM, id=vsm_id)
+    productos = vsm.vsmproducto_set.select_related('producto').all()
+
+    context = {'vsm': vsm, 'productos': productos}
+    return render(request, 'epp_pdf.html', context)

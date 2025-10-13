@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es" class="min-h-screen">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+
+  <link rel="stylesheet" href="{% static 'css/output.css' %}" type="text/css">
+  <meta charset="UTF-8">
+  <title>{% block title %}Panel Principal - VSM{% endblock %}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <style>
+    @media (max-width: 1366px) {
+      body {
+        zoom: 0.8;
+      }
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    .font-montserrat {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    html, body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+  </style>
+</head>
+
+{% block content %}
+
+{% endblock %}

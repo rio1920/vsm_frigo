@@ -1,27 +1,20 @@
-<style>
-  :root {
-    --fondo-oscuro: rgb(24, 24, 24);
-    --detalle-dorado: rgb(106, 89, 45);
-    --bg-secondary: rgb(12, 12, 12);
-  }
-</style>
-
-<div class="flex justify-center mt-6">
+{% load static %}
+<div class="flex justify-center mt-6 align-center">
   <nav class="inline-flex shadow-sm">
     {% if page_obj.has_previous %}
-      <a href="?page={{ page_obj.previous_page_number }}" class="px-3 py-1 bg-[var(--bg-secondary)] border border-gray-600 text-white hover:bg-neutral-700">Anterior</a>
+      <a href="?page={{ page_obj.previous_page_number }}" class="p-6 btn">Anterior</a>
     {% else %}
-      <span class="px-3 py-1 bg-neutral-900 border border-gray-600 text-gray-500 cursor-not-allowed">Anterior</span>
+      <span class="p-6 cursor-not-allowed btn disabled">Anterior</span>
     {% endif %}
 
-    <span class="px-4 py-1 bg-[rgb(106,89,45)] text-white font-semibold border border-gray-600">
+    <span class="p-6 font-semibold badge badege-soft bg-base-300 mx-3">
       Página {{ page_obj.number }} de {{ page_obj.paginator.num_pages }}
     </span>
 
     {% if page_obj.has_next %}
-      <a href="?page={{ page_obj.next_page_number }}" class="px-3 py-1 bg-[var(--bg-secondary)] border border-gray-600 text-white hover:bg-neutral-700">Siguiente</a>
+      <a href="?page={{ page_obj.next_page_number }}" class="p-6 btn">Siguiente</a>
     {% else %}
-      <span class="px-3 py-1 bg-neutral-900 border border-gray-600 text-gray-500 cursor-not-allowed">Siguiente</span>
+      <span class="p-6 cursor-not-allowed btn disabled">Siguiente</span>
     {% endif %}
   </nav>
 </div>

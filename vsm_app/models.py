@@ -38,7 +38,7 @@ class maestro_de_materiales(models.Model):
 
 class permisos(models.Model):
     nombre = models.CharField(max_length=50, unique=True)
-    descripcion = models.CharField(max_length=10, blank=True)
+    descripcion = models.CharField(max_length=30, blank=True, null=True)
 
     def __str__(self):
         return self.nombre
@@ -101,16 +101,11 @@ class VSMProducto(models.Model):
     producto = models.ForeignKey('maestro_de_materiales', on_delete=models.CASCADE)
     cantidad_solicitada = models.DecimalField(max_digits=10, decimal_places=2)
     cantidad_entregada = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True, default=0)
+    firma_retirante = models.ForeignKey(empleados, related_name='firma_retirante', on_delete=models.SET_NULL, null=True, blank=True)
+
 
     def __str__(self):
         return f"{self.producto.descripcion} - {self.cantidad_solicitada} unidades"
-
-class epp(models.Model):
-    codigo = models.CharField(max_length=100)
-    descripcion = models.CharField(max_length=200)
-
-    def __str__(self):
-        return f"{self.codigo} - {self.descripcion}"
 
 class PermisoRetiro(models.Model):
     centro_costo = models.ForeignKey(centro_costos, on_delete=models.CASCADE)
@@ -120,16 +115,14 @@ class PermisoRetiro(models.Model):
         return f"{self.centro_costo} - {self.centro_costo.descripcion}"
 
 class tags_productos(models.Model):
-    nombre = models.CharField(max_length=100)
-    productos = models.ManyToManyField(maestro_de_materiales, related_name='tags')
+    descripcion = models.CharField(max_length=20)
 
     def __str__(self):
-        return self.nombre
+        return self.descripcion
 
 class perfil_riesgo(models.Model):
     nombre = models.CharField(max_length=100)
-    descripcion = models.TextField()
-    tags_productos = models.ManyToManyField(tags_productos, related_name='perfiles')
+    tags_productos = models.ManyToManyField(tags_productos, related_name='perfiles', blank=True, default=None)
 
     def __str__(self):
         return self.nombre

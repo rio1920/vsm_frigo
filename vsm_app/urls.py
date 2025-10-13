@@ -20,4 +20,8 @@ urlpatterns = [
     path("pendiente/<int:vsm_id>/editar/", views.editar_pendiente, name="editar_pendiente"),
     path("pendiente/<int:vsm_id>/rechazar/", views.rechazar_pendiente, name="rechazar_pendiente"),
     path("pendiente/<int:vsm_id>/ver/", views.ver_pendiente, name="ver_pendiente"),
+    path("generar_pdf/<int:vsm_id>/", views.generar_pdf, name="generar_pdf"),
+    path("generar_template_insumo/<int:vsm_id>/", views.generar_template_insumo, name="generar_template_insumo"),
+    path("generar_template_epp/<int:vsm_id>/", views.generar_template_epp, name="generar_template_epp"),
+    path("get_tags/<int:empleado_id>/", views.get_tags_por_empleado, name="get_tags"),
 ]
