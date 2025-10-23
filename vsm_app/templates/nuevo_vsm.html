@@ -51,6 +51,14 @@
   ul li{
     color: black;
   }
+
+  .alert-error {
+    background-color: #f87171; /* rojo */
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
 </style>
 <body>
 
@@ -168,6 +176,14 @@
 
   <!-- Contenedor para toasts -->
   <div id="toast-container" class="fixed top-4 right-4 space-y-2 z-50"></div>
+
+{% if messages %}
+  {% for message in messages %}
+    <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">
+      {{ message }}
+    </div>
+  {% endfor %}
+{% endif %}
 
 
 {% block scripts %}

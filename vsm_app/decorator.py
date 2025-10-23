@@ -16,13 +16,10 @@ def permission_required(required_permissions):
             if not user.is_authenticated:
                 return HttpResponseForbidden("Usuario no autenticado.")
 
-            if not user.rol:
-                return HttpResponseForbidden("El usuario no tiene un rol asignado.")
-
             # Traer permisos activos como strings
             Usuario  = request.user
 
-            permisos_del_rol = Usuario.rol.permisos.values_list(
+            permisos_del_rol = Usuario.permisos.values_list(
                 'nombre', flat=True
             )
             permisos_asignados = set(permisos_del_rol)

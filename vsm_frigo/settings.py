@@ -113,6 +113,7 @@ DATABASES = {
     }
 }
 
+
 AUTH_USER_MODEL = 'vsm_app.Usuarios'
 
 

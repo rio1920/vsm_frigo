@@ -15,22 +15,20 @@ class centro_costos(models.Model):
 class empleados(models.Model):
     legajo = models.IntegerField(unique=True)
     nombre = models.CharField(max_length=100)
-    cc = models.ForeignKey(centro_costos, on_delete=models.CASCADE)
+    cc = models.ForeignKey(centro_costos, on_delete=models.CASCADE, null=True, blank=True)
     nro_tarjeta = models.ManyToManyField('nro_tarjeta', blank=True)
     perfil_riesgo = models.ForeignKey('perfil_riesgo', on_delete=models.SET_NULL, null=True, blank=True)
 
     def __str__(self):
-        return f"{self.nombre} - {self.cc.descripcion}"
-
-    def get_cc(self):
-        return f"{self.cc.codigo} - {self.cc.descripcion}"
+        return f"{self.nombre} - {self.cc.descripcion if self.cc else 'Sin CC'}"
 
 
 class maestro_de_materiales(models.Model):
     codigo = models.CharField(max_length=100)
     descripcion = models.CharField(max_length=200)
     clase_sap = models.CharField(max_length=10)
-    cantidad_stock = models.DecimalField(max_digits=10, decimal_places=0)
+    centro = models.CharField(max_length=4)
+    almacen = models.CharField(max_length=4)
 
     def __str__(self):
         return f"{self.codigo} - {self.descripcion}"
@@ -43,25 +41,18 @@ class permisos(models.Model):
     def __str__(self):
         return self.nombre
 
-class Roles(models.Model):
-    nombre = models.CharField(max_length=50, unique=True)
-    permisos = models.ManyToManyField(permisos, related_name='roles')
-
-    def __str__(self):
-        return self.nombre
-
 class Usuarios(AbstractUser):
     empleado = models.OneToOneField(
         empleados, on_delete=models.CASCADE, null=True, blank=True
     )
-    rol = models.ForeignKey(Roles, on_delete=models.CASCADE, null=True, blank=True)
+    permisos = models.ManyToManyField(permisos, related_name='usuarios', blank=True)
     cc_permitidos = models.ManyToManyField(centro_costos, related_name='usuarios_permitidos', blank=True)
 
     def __str__(self):
         return self.username
 
     def get_user_permissions(self):
-        return self.rol.permisos.all()
+        return self.permisos.all()
 
 class VSM(models.Model):
     ESTADO_CHOICES = [
@@ -133,6 +124,7 @@ class nro_tarjeta(models.Model):
     def __str__(self):
         return f"{self.numero}"
 
+
 class relacion_cc_perfil_riesgo(models.Model):
     centro_costo = models.ForeignKey(centro_costos, on_delete=models.CASCADE)
     perfil_riesgo = models.ForeignKey(perfil_riesgo, on_delete=models.CASCADE)
@@ -143,3 +135,5 @@ class relacion_cc_perfil_riesgo(models.Model):
 
     class Meta:
         unique_together = ('centro_costo', 'perfil_riesgo', 'default') 
+
+

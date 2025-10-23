@@ -14,7 +14,6 @@ __pycache__/
 *.egg-info/
 .eggs/
 *.bak
-
 media/
 node_modules/
 .venv/

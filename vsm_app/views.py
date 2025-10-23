@@ -15,6 +15,7 @@ from .decorator import permission_required
 from django.utils.safestring import mark_safe
 import json
 from xhtml2pdf import pisa
+from .utils.sap_rfc import call_sap_rfc
 
 
 
@@ -68,6 +69,7 @@ def registros(request):
 
 from django.shortcuts import get_object_or_404, redirect
 from django.utils.timezone import now
+from vsm_app.utils.sap_rfc import get_stock_sap
 
 @permission_required(["facturado_can_create", "no_facturado_can_create"])
 def nuevo_vsm(request):
@@ -92,9 +94,43 @@ def nuevo_vsm(request):
                 'error': 'Debe seleccionar un solicitante.'
             })
 
+        # Validar stock de todos los productos antes de crear el VSM
+        productos_solicitados = []
+        for key, value in request.POST.items():
+            if key.startswith('producto_'):
+                try:
+                    producto_id = int(key.split('_')[1])
+                    cantidad_solicitada = int(value)
+                    if cantidad_solicitada > 0:
+                        producto = get_object_or_404(models.maestro_de_materiales, id=producto_id)
+                        stock_actual = get_stock_sap(producto.codigo)
+
+                        if stock_actual <= 0:
+                            messages.error(request, f"No hay stock disponible en SAP para el producto {producto.codigo}.")
+                            return render(request, "nuevo_vsm.html", {
+                                'productos': productos,
+                                'empleados': empleados,
+                                'usuario_logeado': usuario_logeado,
+                                'centro_costos': centro_costos,
+                                'centro_usuario': centro_usuario
+                            })
+                        elif stock_actual < cantidad_solicitada:
+                            messages.error(request, f"Stock insuficiente para el producto {producto.codigo}. Disponible: {stock_actual}")
+                            return render(request, "nuevo_vsm.html", {
+                                'productos': productos,
+                                'empleados': empleados,
+                                'usuario_logeado': usuario_logeado,
+                                'centro_costos': centro_costos,
+                                'centro_usuario': centro_usuario
+                            })
+
+                        productos_solicitados.append((producto, cantidad_solicitada))
+                except (ValueError, IndexError):
+                    continue
+
         retirante_obj = None
         if retirante:
-            retirante_obj = get_object_or_404(models.empleados, pk=retirante)
+            retirante_obj = get_object_or_404(models.empleados, pk=retirante) 
 
         vsm = models.VSM.objects.create(
             centro_costos_id=centro_costos_id,
@@ -106,35 +142,25 @@ def nuevo_vsm(request):
             tipo_facturacion=tipo_facturacion
         )
 
-        for key, value in request.POST.items():
-            if key.startswith('producto_'):
-                try:
-                    producto_id = int(key.split('_')[1])
-                    cantidad_solicitada = int(value)
-                    if cantidad_solicitada > 0:
-                        producto = get_object_or_404(models.maestro_de_materiales, id=producto_id)
-                        models.VSMProducto.objects.create(
-                            vsm=vsm,
-                            producto=producto,
-                            cantidad_solicitada=cantidad_solicitada
-                        )
-                except (ValueError, IndexError):
-                    continue
+        for producto, cantidad_solicitada in productos_solicitados:
+            models.VSMProducto.objects.create(
+                vsm=vsm,
+                producto=producto,
+                cantidad_solicitada=cantidad_solicitada
+            )
 
         messages.success(request, "✅ VSM creado con éxito")
         return redirect('home')
 
     return render(request, "nuevo_vsm.html", {
         'productos': productos,
-        'empleados': empleados,
+        'empleados': empleados, 
         'usuario_logeado': usuario_logeado,
         'centro_costos': centro_costos,
         'centro_usuario': centro_usuario
     })
 
 
-
-    
 
 def detalle_vsm(request, id):
     vsm = models.VSM.objects.get(id=id)
@@ -262,7 +288,7 @@ def listar_vsm_pendientes(request):
     context = {
         'pendientes': page_obj,
         'page_obj': page_obj,
-        'filtros': {
+        'filtros': {    
             'solicitante': solicitante,
             'retirante': retirante,
             'cc': cc,
@@ -329,10 +355,12 @@ def buscar_productos(request):
     ]
     return JsonResponse({'results': results})
 
+from vsm_app.utils.sap_rfc import get_stock_sap_multiple 
+
 def buscar_productos_por_centro(request):
     query = request.GET.get('q', '')
     centro_id = request.GET.get('centro_costo')
-    tipo_entrega = request.GET.get('tipo_entrega')  # 👈 nuevo parámetro
+    tipo_entrega = request.GET.get('tipo_entrega')
 
     if not centro_id:
         return JsonResponse({'results': []})
@@ -349,9 +377,33 @@ def buscar_productos_por_centro(request):
         productos = productos[:20]
 
     except PermisoRetiro.DoesNotExist:
-        productos = []
+        return JsonResponse({'results': []})
 
-    results = [{'id': p.id, 'text': p.descripcion} for p in productos]
+    if not productos:
+        print("⚠️ No hay productos locales para ese centro o búsqueda")
+        return JsonResponse({'results': []})
+
+    codigos = [p.codigo for p in productos if p.codigo]
+    print("📦 Códigos consultados a SAP:", codigos)
+
+    stock_dict = get_stock_sap_multiple(codigos, debug=True)
+    print("📊 Stock devuelto por SAP:", stock_dict)
+
+    results = []
+    for p in productos:
+        stock = stock_dict.get(p.codigo, None)
+        print(f"➡️ {p.codigo} -> stock {stock}")
+
+        if stock and stock > 0:
+            results.append({
+                'id': p.id,
+                'text': f"{p.descripcion} ({p.codigo}) — STOCK: {stock}"
+            })
+
+    if not results:
+        print("❌ Ningún producto con stock > 0")
+        results = [{'id': '0', 'text': '⚠️ No hay productos con stock disponible'}]
+
     return JsonResponse({'results': results})
 
 
@@ -361,10 +413,8 @@ def get_materiales_por_centro(request):
     if not centro_id:
         return JsonResponse({"error": "Centro no especificado"}, status=400)
 
-    # Buscar permisos de ese centro
     permisos = PermisoRetiro.objects.filter(centro_costo_id=centro_id)
 
-    # Obtener todos los materiales vinculados
     materiales = maestro_de_materiales.objects.filter(permisoretiro__in=permisos).distinct()
 
     data = [
@@ -375,7 +425,7 @@ def get_materiales_por_centro(request):
     return JsonResponse(data, safe=False)
 
 
-def editar_pendiente(request, vsm_id):
+def editar_pendiente(request, vsm_id):  
     vsm = get_object_or_404(models.VSM, id=vsm_id, estado="pendiente")
     centro_costos = models.centro_costos.objects.all()
     empleados = models.empleados.objects.all()
@@ -388,7 +438,7 @@ def editar_pendiente(request, vsm_id):
         tipo_facturacion = request.POST.get("tipo_facturacion")
         retirante_id = request.POST.get("retirante")
         productos = request.POST.getlist("productos[]")
-        cantidades = request.POST.getlist("cantidades[]")
+        cantidades = request.POST.getlist("cantidades[]")   
 
         vsm.observaciones = observaciones
         vsm.retirante = empleados.get(id=retirante_id) if retirante_id else None
@@ -397,7 +447,7 @@ def editar_pendiente(request, vsm_id):
         vsm.vsmproducto_set.all().delete()
 
 
-        vsm.fecha_modificacion = now()
+        vsm.fecha_modificacion = now()  
         vsm.save()
 
         messages.success(request, "✅ VSM editado correctamente")
@@ -472,3 +522,17 @@ def generar_template_epp(request, vsm_id):
 
     context = {'vsm': vsm, 'productos': productos}
     return render(request, 'epp_pdf.html', context)
+
+def test_sap_connection(request):
+    data = call_sap_rfc("ZRFC_STOCK_SMARTSAFETY")
+    return JsonResponse({"data": data}, safe=False)
+
+def consultar_stock(request):
+    codigos = request.GET.get("codigos")
+    if not codigos:
+        return JsonResponse({"error": "Debe enviar al menos un código de material."}, status=400)
+
+    lista_codigos = [c.strip() for c in codigos.split(",") if c.strip()]
+    stock_data = get_stock_sap_multiple(lista_codigos)
+
+    return JsonResponse({"stocks": stock_data})

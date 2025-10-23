@@ -20,12 +20,12 @@ class CentroCostosAdmin(admin.ModelAdmin):
     search_fields = ('codigo', 'descripcion')
 
 class EmpleadosAdmin(admin.ModelAdmin):
-    list_display = ('legajo', 'nombre', 'get_cc')
+    list_display = ('legajo', 'nombre', 'cc', 'perfil_riesgo')
     search_fields = ('nombre',)
     list_filter = ()
 
 class MaestroDeMaterialesAdmin(admin.ModelAdmin):
-    list_display = ('codigo', 'descripcion', 'clase_sap', 'cantidad_stock')
+    list_display = ('codigo', 'descripcion', 'clase_sap')
     search_fields = ('codigo', 'descripcion')
     list_filter = ()
 
@@ -37,10 +37,6 @@ class UsuariosAdmin(admin.ModelAdmin):
     list_display = ('username', 'email', 'first_name', 'last_name', 'is_staff', 'is_active')
     search_fields = ('username', 'email', 'first_name', 'last_name')
     list_filter = ('is_staff', 'is_active')
-
-class RolesAdmin(admin.ModelAdmin):
-    list_display = ('nombre',)
-    search_fields = ('nombre',)
 
 class PermisosAdmin(admin.ModelAdmin):
     list_display = ('nombre', 'descripcion')
@@ -68,7 +64,6 @@ class NroTarjetaInline(admin.ModelAdmin):
 
 admin.site.register(tags_productos, TagsProductosAdmin)
 admin.site.register(perfil_riesgo, perfil_riesgoAdmin)
-admin.site.register(Roles, RolesAdmin)
 admin.site.register(permisos, PermisosAdmin)
 admin.site.register(VSM, VSMAdmin)
 admin.site.register(centro_costos, CentroCostosAdmin)

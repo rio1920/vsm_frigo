@@ -24,4 +24,6 @@ urlpatterns = [
     path("generar_template_insumo/<int:vsm_id>/", views.generar_template_insumo, name="generar_template_insumo"),
     path("generar_template_epp/<int:vsm_id>/", views.generar_template_epp, name="generar_template_epp"),
     path("get_tags/<int:empleado_id>/", views.get_tags_por_empleado, name="get_tags"),
+    path('test_sap_connection/', views.test_sap_connection, name='test_sap_connection'),
+    path("ajax/consultar_stock/", views.consultar_stock, name="consultar_stock"),
 ]
