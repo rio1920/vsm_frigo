@@ -1,7 +1,5 @@
-
 from pathlib import Path
 import os
-import sys
 from dotenv import load_dotenv
 
 
@@ -171,6 +169,7 @@ USE_TZ = True
 OIDC_RP_CLIENT_ID = os.getenv("OIDC_RP_CLIENT_ID")
 OIDC_RP_CLIENT_SECRET = os.getenv("OIDC_RP_CLIENT_SECRET")
 OIDC_RP_SIGN_ALGO = os.getenv("OIDC_RP_SIGN_ALGO")
+print("OIDC_RP_SIGN_ALGO:", OIDC_RP_SIGN_ALGO)
 
 OIDC_OP_JWKS_ENDPOINT = os.getenv("OIDC_OP_JWKS_ENDPOINT")
 OIDC_OP_AUTHORIZATION_ENDPOINT = os.getenv("OIDC_OP_AUTHORIZATION_ENDPOINT")

@@ -1,0 +1,17 @@
+{
+    "I_CAB": {
+    "LEGAJO": "2",
+    "FECHA": "20251024",
+    "ID_DOC": "099",
+    "COD_MOV": "201"
+  },
+  "IT_ITEMS": [
+    {
+      "COD_MAT": "150100015",
+      "CENTRO": "1001",
+      "ALMACEN": "G001",
+      "CANTIDAD": 1.000,
+      "KOSTL": "0000000491"
+    }
+  ]
+}

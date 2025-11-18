@@ -23,7 +23,13 @@
                value="{{ vsm.solicitante }}" 
                class="w-full px-2 py-1 rounded bg-neutral" required readonly>
       </div>
-
+      <!-- Tipo de Entrega -->
+      <div>
+        <label for="tipo_entrega" class="block mb-2 font-semibold">Tipo de entrega</label>
+        <input type="text" readonly id="tipo_entrega" name="tipo_entrega" 
+               value="{{ vsm.get_tipo_entrega_display }}" 
+               class="w-full p-2 rounded bg-neutral">
+      </div>
       <!-- Tipo de Facturación -->
       <div>
         <label for="tipo_facturacion" class="block mb-2 font-semibold">Tipo de facturación</label>
@@ -62,7 +68,7 @@
         <textarea id="detalles" name="detalles" rows="4"
                   class="w-full p-1 rounded bg-base-200">{{ vsm.observaciones }}</textarea>
       </div>
-
+      
       <!-- Productos -->
       <div>
         <label class="block mb-2 font-semibold">Productos</label>
@@ -70,11 +76,15 @@
           {% for producto in vsm.vsmproducto_set.all %}
             <div class="flex items-center">
               <span class="flex-1">{{ producto.producto.descripcion }}</span>
-              <input type="number" name="cantidad_{{ producto.id }}" min="0" value="{{ producto.cantidad_solicitada }}" class="w-24 p-2 rounded bg-base-200 border">
+              <input type="number" 
+                    name="cantidad_{{ producto.id }}" 
+                    min="0" 
+                    value="{{ producto.cantidad_solicitada }}" 
+                    class="w-24 p-2 rounded bg-base-200 border">
             </div>
           {% endfor %}
         </div>
-      </div>  
+      </div>
 
       <!-- Botones -->
       <div class="flex justify-between mt-6">

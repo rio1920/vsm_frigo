@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Constancia de Entrega</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <style>
@@ -43,7 +44,16 @@
   </style>
 </head>
 
-    <div class="container" style="padding: 0%; margin-top: 7rem;">
+<div style="display: flex; justify-content: space-around; align-items: center; margin-top: 1rem; width: 15%;">
+    <div>
+        <a href="{% url 'registros' %}" class="m-10"><button class="btn btn-primary m-6">< Volver</button></a>
+    </div>
+    <div>
+        <a href="" class="m-10"><button class="btn btn-success m-6" onclick="printSection('pdf-content')"><i class="bi bi-printer"></i> Imprimir</button></a>
+    </div>
+</div>
+
+    <div class="container" style="padding: 0%; margin: 2rem auto 2rem auto;" id="pdf-content">
         <table>
             <tr>
                 <td>
@@ -101,7 +111,8 @@
                 <td>{{ producto.cantidad_entregada }}</td>
                 <td>{{ vsm.fecha_entrega|date:"d-m-Y" }}</td>
                 {% if vsm.estado == 'entregado' %}
-                <td style="font-weight: bolder;">{{ vsm.retirante.nombre }}</td>
+                <td style="font-weight: bolder;"><img src="{{ producto.firma_retirante.url }}" alt="Firma"
+                 width="80" height="80"></td>
                 {% else %}
                 <td style="font-weight: bolder;"></td>
                 {% endif %}
@@ -120,7 +131,6 @@
             Corresponderá apercibimiento en caso de encontrarse al operario trabajando sin sus elementos de protección personal.
         </p>
 
-
         <table>
             <tr>
             <td class="firma" style="width: 80%; text-align: right;">
@@ -129,13 +139,77 @@
             <td style="width: 20%; text-align: center;">
                 <b>FUI NOTIFICADO</b><hr>
                 {% if vsm.estado == 'entregado' %}
-                <span>{{ vsm.retirante.nombre }}</span>
+                    {% with vsm.vsmproducto_set.all|first as primer_producto %}
+                        {% if primer_producto and primer_producto.firma_retirante %}
+                            <span>
+                                <img src="{{ primer_producto.firma_retirante.url }}" 
+                                    alt="Firma" 
+                                    width="80" 
+                                    height="80">
+                            </span>
+                        {% endif %}
+                    {% endwith %}
                 {% else %}
-                <span></span>
-                {% endif %}
+                    {% endif %}
                 <!-- Firma notificación -->
             </td>
             </tr>
         </table>
     </div>
+<script>
+function printSection(sectionId) {
+  const section = document.getElementById(sectionId).innerHTML;
+  const printWindow = window.open('', '', 'width=800,height=600');
+  printWindow.document.write(`
+    <html>
+      <head>
+        <title>Imprimir</title>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+          }
+          table {
+            border-collapse: collapse;
+            width: 100%;
+          }
+          th, td {
+            border: 1px solid #000;
+            padding: 6px;
+            text-align: center;
+            vertical-align: middle;
+            border-collapse: collapse;
+          }
+          th {
+            background-color: #f2f2f2;
+          }
+          .no-border td {
+            border: none;
+            text-align: left;
+          }
+          .header {
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+          }
+          .firma {
+            height: 60px;
+          }
+
+
+        </style>
+      </head>
+      <body>
+        ${section}
+      </body>
+    </html>
+  `);
+  printWindow.document.close();
+  printWindow.focus();
+  printWindow.print();
+  printWindow.close();
+}
+</script>
+
 </html>

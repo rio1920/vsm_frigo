@@ -27,13 +27,8 @@ services:
       - backnet
     depends_on:
       - db
-    environment:
-      - POSTGRES_DB=vsm_db
-      - POSTGRES_USER=vsm
-      - POSTGRES_PASSWORD=vsm
-      - POSTGRES_HOST=db
-      - POSTGRES_PORT=5432
-
+    env_file:
+      - .env
   proxy:
     build: ./proxy
     ports:

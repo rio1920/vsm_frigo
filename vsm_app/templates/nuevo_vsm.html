@@ -9,6 +9,7 @@
     --fondo-oscuro: rgb(24, 24, 24);
     --detalle-dorado: rgb(106, 89, 45);
   }
+
   .toast-container {
     position: fixed;
     top: 1rem;
@@ -19,7 +20,7 @@
     gap: 0.5rem;
   }
 
-  .toast-container::after{
+  .toast-container::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -39,7 +40,7 @@
     height: 3rem;
   }
 
-  .select2 span{
+  .select2 span {
     background-color: white;
     color: black !important;
   }
@@ -47,29 +48,32 @@
   span {
     color: black;
   }
-  
-  ul li{
+
+  /* ul li{
     color: black;
-  }
+  } */
 
   .alert-error {
-    background-color: #f87171; /* rojo */
+    background-color: #f87171;
+    /* rojo */
     color: white;
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 5px;
   }
 </style>
+
 <body>
 
-    {% if error %}
-      <div class="bg-red-100 text-red-700 p-2 mb-4 rounded">{{ error }}</div>
-    {% endif %}
+  {% if error %}
+  <div class="bg-red-100 text-red-700 p-2 mb-4 rounded">{{ error }}</div>
+  {% endif %}
 
-    <form method="POST">
-      {% csrf_token %}
+  <form method="POST">
+    {% csrf_token %}
 
-    <div class="bg-base-300 sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto mt-12 p-6 rounded-xl shadow-lg bg-card-darkmode text-gold">
+    <div
+      class="bg-base-300 sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto mt-12 p-6 rounded-xl shadow-lg bg-card-darkmode text-gold">
 
       <form method="POST" class="space-y-6">
         {% csrf_token %}
@@ -78,17 +82,21 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label class="block font-semibold mb-1">Tipo de entrega</label>
-            <select id="tipo_entrega" name="tipo_entrega" class="w-full rounded-lg border border-gray-600 p-2 bg-white text-black">
+            <select id="tipo_entrega" name="tipo_entrega_select"
+              class="w-full rounded-lg border border-gray-600 p-2 bg-white text-black">
               <option value="INSUMOS" selected>Insumos</option>
               <option value="EPP">EPP</option>
             </select>
+            <input type="hidden" id="hidden_tipo_entrega" name="tipo_entrega">
           </div>
           <div>
             <label class="block font-semibold mb-1">Tipo de facturación</label>
-            <select id="tipo_facturacion" name="tipo_facturacion" class="w-full rounded-lg border border-gray-600 p-2 bg-white text-black">
+            <select id="tipo_facturacion" name="tipo_facturacion_select"
+              class="w-full rounded-lg border border-gray-600 p-2 bg-white text-black">
               <option value="NO_FACTURADO" selected>No facturado</option>
               <option value="FACTURADO">Facturado</option>
             </select>
+            <input type="hidden" id="hidden_tipo_facturacion" name="tipo_facturacion">
           </div>
         </div>
 
@@ -104,9 +112,9 @@
         <div class="mt-2">
           <label class="block font-semibold mb-1">Centro de costos</label>
           <select id="centro_costos" name="centro_costos" class="w-full select2">
-            <option value="" >Seleccione un centro de costos...</option>
+            <option value="">Seleccione un centro de costos...</option>
             {% for centro in centro_usuario %}
-              <option value="{{ centro.id }}" class="text-black">{{ centro.codigo }} - {{ centro.descripcion }}</option>
+            <option value="{{ centro.id }}" class="text-black">{{ centro.codigo }} - {{ centro.descripcion }}</option>
             {% endfor %}
           </select>
           <input type="hidden" id="hidden_centro_costos" name="centro_costos">
@@ -124,7 +132,8 @@
         <!-- Observaciones -->
         <div class="mt-2">
           <label class="block font-semibold mb-1">Observaciones</label>
-          <textarea name="detalles" rows="3" class="w-full rounded-lg border border-gray-600 p-2 bg-white text-black"></textarea>
+          <textarea name="detalles" rows="3"
+            class="w-full rounded-lg border border-gray-600 p-2 bg-white text-black"></textarea>
         </div>
 
         <!-- Buscar producto -->
@@ -136,8 +145,7 @@
             </select>
             <input type="number" id="cantidad-producto" min="1"
               class="w-28 rounded-lg border border-gray-600 p-2 bg-white text-black" placeholder="Cantidad">
-            <button type="button" onclick="agregarProductoDesdeSelect()" 
-              class="px-4 py-2 rounded-lg btn border">
+            <button type="button" onclick="agregarProductoDesdeSelect()" class="px-4 py-2 rounded-lg btn border">
               Agregar
             </button>
           </div>
@@ -174,184 +182,216 @@
       </form>
     </div>
 
-  <!-- Contenedor para toasts -->
-  <div id="toast-container" class="fixed top-4 right-4 space-y-2 z-50"></div>
+    <!-- Contenedor para toasts -->
+    <div id="toast-container" class="fixed top-4 right-4 space-y-2 z-50"></div>
 
-{% if messages %}
-  {% for message in messages %}
+    {% if messages %}
+    {% for message in messages %}
     <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">
       {{ message }}
     </div>
-  {% endfor %}
-{% endif %}
+    {% endfor %}
+    {% endif %}
 
 
-{% block scripts %}
-<script>
-  document.getElementById("retirante").addEventListener("change", function () {
-    const retiranteId = this.value;
-    const tipoEntrega = document.getElementById("tipo_entrega").value; // asumo que tenés este select
+    {% block scripts %}
+    <script>
+      document.getElementById("retirante").addEventListener("change", function () {
+        const retiranteId = this.value;
+        const tipoEntrega = document.getElementById("tipo_entrega").value;
 
-    if (retiranteId && tipoEntrega === "EPP") {
-      fetch(`/empleados/${retiranteId}/tags/`)
-        .then(res => res.json())
-        .then(data => {
-          const container = document.getElementById("tagsContainer");
-          container.innerHTML = ""; // limpiar
+        if (retiranteId && tipoEntrega === "EPP") {
+          fetch(`/empleados/${retiranteId}/tags/`)
+            .then(res => res.json())
+            .then(data => {
+              const container = document.getElementById("tagsContainer");
+              container.innerHTML = ""; // limpiar
 
-          if (data.tags.length > 0) {
-            data.tags.forEach(tag => {
-              const span = document.createElement("span");
-              span.textContent = tag;
-              span.className = "px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-sm";
-              container.appendChild(span);
+              if (data.tags.length > 0) {
+                data.tags.forEach(tag => {
+                  const span = document.createElement("span");
+                  span.textContent = tag;
+                  span.className = "px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-sm";
+                  container.appendChild(span);
+                });
+
+                document.getElementById("tagsRecomendados").classList.remove("hidden");
+              } else {
+                document.getElementById("tagsRecomendados").classList.add("hidden");
+              }
+            })
+            .catch(err => console.error("Error cargando tags:", err));
+        } else {
+          document.getElementById("tagsRecomendados").classList.add("hidden");
+        }
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $('.select2').select2();
+
+        const $productos = $('#select-producto');
+        const $retirante = $('#retirante');
+        const $centro = $('#centro_costos');
+
+        // Al iniciar: deshabilitar productos si no hay centro seleccionado
+        if (!$centro.val()) {
+          $productos.prop('disabled', true);
+        }
+
+        // === 1. Al cambiar el centro de costo ===
+        $centro.on('change', function () {
+          const centroId = $(this).val();
+
+          // --- limpiar retirante ---
+          $retirante.empty().append('<option value="">Cargando...</option>');
+
+          if (centroId) {
+            // Cargar empleados asociados al centro
+            $.ajax({
+              url: '{% url "obtener_empleados_por_centro" %}',
+              data: { centro_id: centroId },
+              success: function (data) {
+                $retirante.empty().append('<option value="">Seleccione un retirante...</option>');
+                data.empleados.forEach(emp => {
+                  const label = `${emp.legajo}, ${emp.nombre}`;
+                  $retirante.append(new Option(label, emp.id));
+                });
+              },
+              error: function () {
+                $retirante.empty().append('<option value="">Error al cargar empleados</option>');
+              }
             });
 
-            document.getElementById("tagsRecomendados").classList.remove("hidden");
+            // habilitar productos
+            $productos.prop('disabled', false);
+
           } else {
-            document.getElementById("tagsRecomendados").classList.add("hidden");
-          }
-        })
-        .catch(err => console.error("Error cargando tags:", err));
-    } else {
-      document.getElementById("tagsRecomendados").classList.add("hidden");
-    }
-  });
-</script>
-
-<script>
-  $(document).ready(function () {
-    $('.select2').select2();
-
-    const $productos = $('#select-producto');
-    const $retirante = $('#retirante');
-    const $centro = $('#centro_costos');
-
-    // Al iniciar: deshabilitar productos si no hay centro seleccionado
-    if (!$centro.val()) {
-      $productos.prop('disabled', true);
-    }
-
-    // === 1. Al cambiar el centro de costo ===
-    $centro.on('change', function () {
-      const centroId = $(this).val();
-
-      // --- limpiar retirante ---
-      $retirante.empty().append('<option value="">Cargando...</option>');
-
-      if (centroId) {
-        // Cargar empleados asociados al centro
-        $.ajax({
-          url: '{% url "obtener_empleados_por_centro" %}',
-          data: { centro_id: centroId },
-          success: function (data) {
-            $retirante.empty().append('<option value="">Seleccione un retirante...</option>');
-            data.empleados.forEach(emp => {
-              const label = `${emp.legajo}, ${emp.nombre}`;
-              $retirante.append(new Option(label, emp.id));
-            });
-          },
-          error: function () {
-            $retirante.empty().append('<option value="">Error al cargar empleados</option>');
+            $retirante.empty().append('<option value="">Seleccione un centro primero</option>');
+            $productos.val(null).trigger('change');
+            $productos.prop('disabled', true);
           }
         });
 
-        // habilitar productos
-        $productos.prop('disabled', false);
+        // === 2. Productos dinámicos según centro de costo y tipo de entrega ===
+        $productos.select2({
+          placeholder: 'Buscar producto...',
+          ajax: {
+            url: '{% url "buscar_productos_por_centro" %}',
+            dataType: 'json',
+            delay: 250,
+            data: function (params) {
+              return {
+                q: params.term,
+                centro_costo: $centro.val(),   // 👈 centro seleccionado
+                tipo_entrega: $('#tipo_entrega').val() // 👈 nuevo select para EPP o insumos
+              };
+            },
+            processResults: function (data) {
+              return { results: data.results };
+            },
+            cache: true
+          },
+          minimumInputLength: 0
+        });
 
-      } else {
-        $retirante.empty().append('<option value="">Seleccione un centro primero</option>');
-        $productos.val(null).trigger('change');
-        $productos.prop('disabled', true);
+        // 🔄 refrescar productos cuando cambie el tipo_entrega
+        $('#tipo_entrega').on('change', function () {
+          $productos.val(null).trigger('change'); // limpia selección
+        });
+
+      });
+
+      function bloquearSelects() {
+        const centroSelect = document.getElementById("centro_costos");
+        const retiranteSelect = document.getElementById("retirante");
+
+        // pasar valores a los hidden
+        document.getElementById("hidden_centro_costos").value = centroSelect.value;
+        document.getElementById("hidden_retirante").value = retiranteSelect.value;
+
+        // quitar name para que no se manden duplicados
+        centroSelect.removeAttribute("name");
+        retiranteSelect.removeAttribute("name");
+
+        // bloquear selects
+        centroSelect.disabled = true;
+        retiranteSelect.disabled = true;
       }
-    });
 
-  // === 2. Productos dinámicos según centro de costo y tipo de entrega ===
-  $productos.select2({
-    placeholder: 'Buscar producto...',
-    ajax: {
-      url: '{% url "buscar_productos_por_centro" %}',
-      dataType: 'json',
-      delay: 250,
-      data: function (params) {
-        return {
-          q: params.term,
-          centro_costo: $centro.val(),   // 👈 centro seleccionado
-          tipo_entrega: $('#tipo_entrega').val() // 👈 nuevo select para EPP o insumos
-        };
-      },
-      processResults: function (data) {
-        return { results: data.results };
-      },
-      cache: true
-    },
-    minimumInputLength: 0
-  });
+      function desbloquearSelects() {
+        const centro = document.getElementById("centro_costos");
+        const retirante = document.getElementById("retirante");
 
-  // 🔄 refrescar productos cuando cambie el tipo_entrega
-  $('#tipo_entrega').on('change', function () {
-    $productos.val(null).trigger('change'); // limpia selección
-  });
+        // volver a poner los name
+        centro.setAttribute("name", "centro_costos");
+        retirante.setAttribute("name", "retirante");
 
-  });
+        // desbloquear
+        centro.disabled = false;
+        retirante.disabled = false;
 
-  function bloquearSelects() {
-    const centroSelect = document.getElementById("centro_costos");
-    const retiranteSelect = document.getElementById("retirante");
+        // limpiar los hidden
+        document.getElementById("hidden_centro_costos").value = "";
+        document.getElementById("hidden_retirante").value = "";
+      }
 
-    // pasar valores a los hidden
-    document.getElementById("hidden_centro_costos").value = centroSelect.value;
-    document.getElementById("hidden_retirante").value = retiranteSelect.value;
+      function bloquearTipoSeleccion() {
+        const tipoEntregaSelect = document.getElementById("tipo_entrega");
+        const tipoFacturacionSelect = document.getElementById("tipo_facturacion");
 
-    // quitar name para que no se manden duplicados
-    centroSelect.removeAttribute("name");
-    retiranteSelect.removeAttribute("name");
+        // Pasar valores a los hidden
+        document.getElementById("hidden_tipo_entrega").value = tipoEntregaSelect.value;
+        document.getElementById("hidden_tipo_facturacion").value = tipoFacturacionSelect.value;
 
-    // bloquear selects
-    centroSelect.disabled = true;
-    retiranteSelect.disabled = true;
-  }
+        // Quitar name y deshabilitar los selects
+        tipoEntregaSelect.removeAttribute("name");
+        tipoEntregaSelect.disabled = true;
+        tipoFacturacionSelect.removeAttribute("name");
+        tipoFacturacionSelect.disabled = true;
+      }
 
-  function desbloquearSelects() {
-    const centro = document.getElementById("centro_costos");
-    const retirante = document.getElementById("retirante");
+      function desbloquearTipoSeleccion() {
+        const tipoEntregaSelect = document.getElementById("tipo_entrega");
+        const tipoFacturacionSelect = document.getElementById("tipo_facturacion");
 
-    // volver a poner los name
-    centro.setAttribute("name", "centro_costos");
-    retirante.setAttribute("name", "retirante");
+        // Volver a poner los name originales (si se modificó el HTML como se sugirió)
+        tipoEntregaSelect.setAttribute("name", "tipo_entrega_select");
+        tipoFacturacionSelect.setAttribute("name", "tipo_facturacion_select");
 
-    // desbloquear
-    centro.disabled = false;
-    retirante.disabled = false;
+        // Desbloquear
+        tipoEntregaSelect.disabled = false;
+        tipoFacturacionSelect.disabled = false;
 
-    // limpiar los hidden
-    document.getElementById("hidden_centro_costos").value = "";
-    document.getElementById("hidden_retirante").value = "";
-  }
+        // Limpiar los hidden
+        document.getElementById("hidden_tipo_entrega").value = "";
+        document.getElementById("hidden_tipo_facturacion").value = "";
+      }
 
-  function agregarProductoDesdeSelect() {
-    const centroId = $('#centro_costos').val();
-    const select = $('#select-producto');
-    const productoId = select.val();
-    const productoDesc = select.find("option:selected").text();
-    const cantidad = $('#cantidad-producto').val();
+      function agregarProductoDesdeSelect() {
+        const centroId = $('#centro_costos').val();
+        const select = $('#select-producto');
+        const productoId = select.val();
+        const productoDesc = select.find("option:selected").text();
+        const cantidad = $('#cantidad-producto').val();
 
-    if (!centroId) {
-      alert('Debés seleccionar un centro de costo antes de elegir materiales.');
-      return;
-    }
+        if (!centroId) {
+          alert('Debés seleccionar un centro de costo antes de elegir materiales.');
+          return;
+        }
 
-    if (!productoId || !cantidad || cantidad <= 0) {
-      alert('Debés seleccionar un producto y una cantidad válida.');
-      return;
-    }
+        if (!productoId || !cantidad || cantidad <= 0) {
+          alert('Debés seleccionar un producto y una cantidad válida.');
+          return;
+        }
 
-    if (document.getElementById(`fila_${productoId}`)) {
-      alert('Este producto ya fue agregado.');
-      return;
-    }
+        if (document.getElementById(`fila_${productoId}`)) {
+          alert('Este producto ya fue agregado.');
+          return;
+        }
 
-    const fila = `
+        const fila = `
       <tr id="fila_${productoId}">
         <td class="p-2">${productoDesc}</td>
         <td class="p-2 text-center">${cantidad}</td>
@@ -362,134 +402,135 @@
       </tr>
     `;
 
-    document.querySelector('#tabla-productos tbody').insertAdjacentHTML('beforeend', fila);
-    showSuccessToast("Producto agregado correctamente ✅", "success");
+        document.querySelector('#tabla-productos tbody').insertAdjacentHTML('beforeend', fila);
+        showSuccessToast("Producto agregado correctamente ✅", "success");
 
-    bloquearSelects();
+        bloquearSelects();
+        bloquearTipoSeleccion();
 
-    $('#select-producto').val(null).trigger('change');
-    $('#cantidad-producto').val('');
-  }
+        $('#select-producto').val(null).trigger('change');
+        $('#cantidad-producto').val('');
+      }
 
-  function eliminarProducto(id) {
-    showSuccessToast("Producto eliminado correctamente ✅", "success");
-    document.getElementById(`fila_${id}`).remove();
+      function eliminarProducto(id) {
+        showSuccessToast("Producto eliminado correctamente ✅", "success");
+        document.getElementById(`fila_${id}`).remove();
 
-    if (document.querySelectorAll('#tabla-productos tbody tr').length === 0) {
-      desbloquearSelects();
-    }
-  }
-</script>
+        if (document.querySelectorAll('#tabla-productos tbody tr').length === 0) {
+          desbloquearSelects();
+          desbloquearTipoSeleccion();
+        }
+      }
+    </script>
 
-<script>
-function showSuccessToast(message, type = "success") {
-  const container = document.getElementById("toast-container");
+    <script>
+      function showSuccessToast(message, type = "success") {
+        const container = document.getElementById("toast-container");
 
-  // Crear div del toast
-  const toast = document.createElement("div");
-  toast.className = `px-8 py-4 rounded-lg shadow-lg text-white 
+        // Crear div del toast
+        const toast = document.createElement("div");
+        toast.className = `px-8 py-4 rounded-lg shadow-lg text-white 
     ${type === "success" ? "bg-green-600" : "bg-red-600"} 
     animate-fadeIn`;
 
-  toast.innerText = message;
+        toast.innerText = message;
 
-  container.appendChild(toast);
+        container.appendChild(toast);
 
-  // Desaparecer después de 3s
-  setTimeout(() => {
-    toast.classList.add("animate-fadeOut");
-    setTimeout(() => toast.remove(), 500);
-  }, 3000);
-}
+        // Desaparecer después de 3s
+        setTimeout(() => {
+          toast.classList.add("animate-fadeOut");
+          setTimeout(() => toast.remove(), 500);
+        }, 3000);
+      }
 
-function showErrorToast(message, type = "error") {
-  const container = document.getElementById("toast-container");
+      function showErrorToast(message, type = "error") {
+        const container = document.getElementById("toast-container");
 
-  // Crear div del toast  
-  const toast = document.createElement("div");
-  toast.className = `px-8 py-4 rounded-lg shadow-lg text-white 
-    ${type === "success" ? "bg-red-600" : "bg-red-600"} 
+        // Crear div del toast  
+        const toast = document.createElement("div");
+        toast.className = `px-8 py-4 rounded-lg shadow-lg text-white 
+    ${type === "success" ? "bg-red-600" : "bg-red-600"}
     animate-fadeIn`;
 
-  toast.innerText = message;
+        toast.innerText = message;
 
-  container.appendChild(toast);
+        container.appendChild(toast);
 
-  // Desaparecer después de 3s
-  setTimeout(() => {
-    toast.classList.add("animate-fadeOut");
-    setTimeout(() => toast.remove(), 500);
-  }, 3000);
-}
-</script>
- 
-<script>
-$(document).ready(function () {
-    console.log("✅ DOM y jQuery listos");
+        // Desaparecer después de 3s
+        setTimeout(() => {
+          toast.classList.add("animate-fadeOut");
+          setTimeout(() => toast.remove(), 500);
+        }, 3000);
+      }
+    </script>
 
-    let $retiranteSelect = $("#retirante");
-    let $tagsList = $("#tags_list");
-    let $tipoEntrega = $("#tipo_entrega");  // 👈 select de tipo de entrega
+    <script>
+      $(document).ready(function () {
+        console.log("✅ DOM y jQuery listos");
 
-    if ($retiranteSelect.length === 0) {
-        console.error("❌ No se encontró #id_retirante en el DOM");
-        return;
-    }
-    if ($tagsList.length === 0) {
-        console.error("❌ No se encontró #tags_list en el DOM");
-        return;
-    }
+        let $retiranteSelect = $("#retirante");
+        let $tagsList = $("#tags_list");
+        let $tipoEntrega = $("#tipo_entrega");  // 👈 select de tipo de entrega
 
-    $retiranteSelect.on("select2:select", function (e) {
-        let empleadoId = $(this).val();
-        let tipoEntrega = $tipoEntrega.val();
+        if ($retiranteSelect.length === 0) {
+          console.error("❌ No se encontró #id_retirante en el DOM");
+          return;
+        }
+        if ($tagsList.length === 0) {
+          console.error("❌ No se encontró #tags_list en el DOM");
+          return;
+        }
 
-        console.log("👤 Retirante seleccionado:", empleadoId);
-        console.log("📦 Tipo de entrega actual:", tipoEntrega);
+        $retiranteSelect.on("select2:select", function (e) {
+          let empleadoId = $(this).val();
+          let tipoEntrega = $tipoEntrega.val();
 
-        // 👇 Solo si es EPP se buscan y muestran tags
-        if (tipoEntrega !== "EPP") {
+          console.log("👤 Retirante seleccionado:", empleadoId);
+          console.log("📦 Tipo de entrega actual:", tipoEntrega);
+
+          // 👇 Solo si es EPP se buscan y muestran tags
+          if (tipoEntrega !== "EPP") {
             console.log("⚠️ No es EPP, se ignoran tags");
             $tagsList.empty();  // limpiar lista
             return;
-        }
+          }
 
-        if (!empleadoId) {
+          if (!empleadoId) {
             $tagsList.html("<li class='text-gray-400'>Sin seleccion</li>");
             return;
-        }
+          }
 
-        let url = `/get_tags/${empleadoId}/`;
-        console.log("🌐 Fetch a:", url);
+          let url = `/get_tags/${empleadoId}/`;
+          console.log("🌐 Fetch a:", url);
 
-        fetch(url)
-          .then(response => response.json())
-          .then(data => {
+          fetch(url)
+            .then(response => response.json())
+            .then(data => {
               console.log("📦 Datos JSON recibidos:", data);
               $tagsList.empty();
 
               if (data.length === 0) {
-                  $tagsList.html("<span class='text-gray-400 text-sm'>No tiene tags asociados</span>");
+                $tagsList.html("<span class='text-gray-400 text-sm'>No tiene tags asociados</span>");
               } else {
-                  data.forEach(tag => {
-                      $tagsList.append(`
+                data.forEach(tag => {
+                  $tagsList.append(`
                           <span class="px-3 py-1 rounded-full bg-blue-300 text-blue-800 text-sm font-medium shadow-sm">
                             ${tag.descripcion}
                           </span>
                       `);
-                  });
+                });
               }
-          })
-          .catch(err => console.error("❌ Error en fetch:", err));
-    });
-});
+            })
+            .catch(err => console.error("❌ Error en fetch:", err));
+        });
+      });
 
-</script>
+    </script>
 
 
 
-{% endblock %}
-
+    {% endblock %}
 
 </body>
 

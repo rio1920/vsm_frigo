@@ -34,9 +34,10 @@
   <div class="overflow-x-auto table shadow-lg max-w-6xl mx-auto" style="width: 70%;">
     <table class="min-w-full divide-y divide-gray-700 bg-base-300 rounded-2xl">
       <thead class="bg-[var(--detalle-dorado)]/20">
-        <tr>  
+        <tr>
           <th class="px-4 py-3 text-left text-sm font-semibold">Solicitante</th>
           <th class="px-4 py-3 text-left text-sm font-semibold">Retirante</th>
+          <th class="px-4 py-3 text-left text-sm font-semibold">Entrega</th>
           <th class="px-4 py-3 text-left text-sm font-semibold">CC</th>
           <th class="px-4 py-3 text-left text-sm font-semibold">Fecha solicitado</th>
           <th class="px-4 py-3 text-center text-sm font-semibold">Estado</th>
@@ -48,6 +49,7 @@
         <tr class="border-b border-gray-700 hover:bg-gray-700 transition">
           <td class="px-4 py-3">{{ vsm.solicitante }}</td>
           <td class="px-4 py-3">{{ vsm.retirante.legajo }} - {{ vsm.retirante.nombre }}</td>
+          <td class="px-4 py-3">{{ vsm.tipo_entrega }}</td>
           <td class="px-4 py-3">{{ vsm.retirante.cc.codigo }}</td>
           <td class="px-4 py-3">{{ vsm.fecha_solicitud|date:"d/m/Y H:i" }}</td>
           {% if vsm.estado == 'pendiente' %}
