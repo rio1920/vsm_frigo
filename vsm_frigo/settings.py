@@ -20,6 +20,8 @@ DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
 ALLOWED_HOSTS = ['*']
 
+APPEND_SLASH = True
+
 
 # Application definition
 
@@ -41,6 +43,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'vsm_frigo.middleware.PathInspectorMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -166,19 +169,18 @@ USE_I18N = True
 USE_TZ = True
 
 
-OIDC_RP_CLIENT_ID = os.getenv("OIDC_RP_CLIENT_ID")
-OIDC_RP_CLIENT_SECRET = os.getenv("OIDC_RP_CLIENT_SECRET")
-OIDC_RP_SIGN_ALGO = os.getenv("OIDC_RP_SIGN_ALGO")
-print("OIDC_RP_SIGN_ALGO:", OIDC_RP_SIGN_ALGO)
+OIDC_RP_CLIENT_ID = os.getenv("OIDC_RP_CLIENT_ID_")
+OIDC_RP_CLIENT_SECRET = os.getenv("OIDC_RP_CLIENT_SECRET_")
+OIDC_RP_SIGN_ALGO = os.getenv("OIDC_RP_SIGN_ALGO_")
 
-OIDC_OP_JWKS_ENDPOINT = os.getenv("OIDC_OP_JWKS_ENDPOINT")
-OIDC_OP_AUTHORIZATION_ENDPOINT = os.getenv("OIDC_OP_AUTHORIZATION_ENDPOINT")
-OIDC_OP_TOKEN_ENDPOINT = os.getenv("OIDC_OP_TOKEN_ENDPOINT")
-OIDC_OP_USER_ENDPOINT = os.getenv("OIDC_OP_USER_ENDPOINT")
+OIDC_OP_JWKS_ENDPOINT = os.getenv("OIDC_OP_JWKS_ENDPOINT_")
+OIDC_OP_AUTHORIZATION_ENDPOINT = os.getenv("OIDC_OP_AUTHORIZATION_ENDPOINT_")
+OIDC_OP_TOKEN_ENDPOINT = os.getenv("OIDC_OP_TOKEN_ENDPOINT_")
+OIDC_OP_USER_ENDPOINT = os.getenv("OIDC_OP_USER_ENDPOINT_")
 
-LOGIN_REDIRECT_URL = os.getenv("LOGIN_REDIRECT_URL")
-LOGOUT_REDIRECT_URL = os.getenv("LOGOUT_REDIRECT_URL")
-LOGIN_URL = os.getenv("LOGIN_URL")
+LOGIN_REDIRECT_URL = os.getenv("LOGIN_REDIRECT_URL_")
+LOGOUT_REDIRECT_URL = os.getenv("LOGOUT_REDIRECT_URL_")
+LOGIN_URL = os.getenv("LOGIN_URL_")
 
 OIDC_REDIRECT_ALLOWED_HOSTS = "vsm.rioplatense.local", "127.0.0.1:8000"
 

@@ -5,7 +5,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path("", views.home, name="index"),  # Default route
+    path("", views.home, name="index"),
     path("home/", views.home, name="home"),
     path("registros/", views.registros, name="registros"),
     path("nuevo_vsm/", views.nuevo_vsm, name="nuevo_vsm"),
