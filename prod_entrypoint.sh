@@ -5,6 +5,7 @@ set -e
 uv run manage.py makemigrations
 uv run manage.py migrate
 uv run manage.py collectstatic --noinput
+
  
 # Ejecutá el CMD final
 GUNICORN_WORKERS="${GUNICORN_WORKERS:-4}"
