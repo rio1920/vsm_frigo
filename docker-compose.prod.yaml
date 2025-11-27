@@ -2,13 +2,13 @@ name: vsm_frigo_prod
 
 services:
 
- app:
+  app:
     build:
       dockerfile: Dockerfile.prod
       context: .
       args:
-        UID: "1000"
-        GID: "1000"
+        UID: ${UID}
+        GID: ${GID}
     volumes:
       - data_prod:/app
     networks:
@@ -31,14 +31,11 @@ services:
       - backnet
     depends_on:
       - app
-    networks:
-      - backnet
     volumes:
       - ./proxy/nginx.prod.conf:/etc/nginx/conf.d/default.conf
       - data_prod:/app/static
   
-  networks:
-    backnet:
-
+networks:
+  backnet:
 volumes:
   data_prod:
