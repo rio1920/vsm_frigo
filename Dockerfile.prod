@@ -21,4 +21,5 @@ COPY --chown=myuser:myuser . .
 
 RUN chmod +x ./prod_entrypoint.sh
 
-ENTRYPOINT [ "./prod_entrypoint.sh" ]
+#ENTRYPOINT [ "./prod_entrypoint.sh" ]
+CMD ["uv", "run", "manage.py", "runserver", "0.0.0.0:8000"]
