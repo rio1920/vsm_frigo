@@ -1,0 +1,44 @@
+name: vsm_frigo_prod
+
+services:
+
+ app:
+    build:
+      dockerfile: Dockerfile.prod
+      context: .
+      args:
+        UID: "1000"
+        GID: "1000"
+    volumes:
+      - data_prod:/app
+    networks:
+      - backnet
+    env_file:
+      - .env
+    entrypoint: ["/app/prod_entrypoint.sh"]
+    
+  
+  nginx_prod:
+    container_name: nginx_prod
+    image: nginx:latest
+    env_file:
+      - .env
+    environment:
+      - PORT=${PORT}
+    ports:
+      - "127.0.0.1:${PORT}:80"
+    networks:
+      - backnet
+    depends_on:
+      - app
+    networks:
+      - backnet
+    volumes:
+      - ./proxy/nginx.prod.conf:/etc/nginx/conf.d/default.conf
+      - data_prod:/app/static
+  
+  networks:
+    backnet:
+
+volumes:
+  data_prod:

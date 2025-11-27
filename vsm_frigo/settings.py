@@ -18,7 +18,7 @@ SECRET_KEY = 'django-insecure-&&gvd#+73!rkj4#x(ffqb@4%lk946jv42ky)&e-y0)5cys$!%+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*',"localhost", "127.0.0.1", "vsm.rioplatense.local"]
 
 
 # Application definition
@@ -196,6 +196,9 @@ OIDC_VERIFY_SSL = False
 
 
 STATIC_URL = 'static/'
+
+STATIC_ROOT = "static/"
+
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "vsm_app/static")]
 
 
@@ -203,3 +206,5 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "vsm_app/static")]
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+PORT = os.getenv("PORT", 84)
