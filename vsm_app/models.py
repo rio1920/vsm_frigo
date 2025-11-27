@@ -95,6 +95,7 @@ class VSM(models.Model):
     observaciones = models.TextField(null=True, blank=True)
     observaciones_entrega = models.TextField(null=True, blank=True)
     numero_sap = models.CharField(max_length=50, blank=True, null=True)
+    anio_documento = models.CharField(max_length=4, null=True, blank=True)
     active = models.BooleanField(default=True)
     estado_sap = models.CharField(
         max_length=20,

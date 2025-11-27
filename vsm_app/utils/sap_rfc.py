@@ -6,6 +6,7 @@ import requests
 import xml.etree.ElementTree as ET
 from test_saponoso import Saponoso
 from vsm_app.models import VSMProducto
+from django.utils import timezone
 
 # Evitar warnings SSL
 requests.packages.urllib3.disable_warnings()
@@ -142,86 +143,18 @@ def get_stock_sap(codigo: str, centro: str = "1000", almacen: str = "1100", debu
     stocks = get_stock_sap_multiple([codigo], centro, almacen, debug=debug)
     return stocks.get(codigo, 0)
 
-def enviar_entrega_sap(vsm, debug=False):
-    """
-    Envía los datos de una entrega (VSM) a SAP mediante el RFC ZRFC_INOUT_SMARTSAFETY
-    y devuelve el número de documento de material si la operación fue exitosa.
-    """
-    import json
-    from vsm_app import models
-    from vsm_app.utils.sap_rfc import call_sap_rfc
-
-    try:
-        # 🧾 Cabecera
-        cabecera = {
-            "legajo": str(vsm.retirante.legajo if vsm.retirante else ""),
-            "fecha": vsm.fecha_entrega.strftime("%d.%m.%Y"),
-            "id_doc": str(vsm.id).zfill(18),
-            "cod_mov": "201",
-        }
-
-        # 📦 Items
-        items = []
-        for vp in models.VSMProducto.objects.filter(vsm=vsm):
-            cantidad = float(vp.cantidad_entregada or 0)
-            if cantidad <= 0:
-                continue 
-
-            items.append({
-                "cod_mat": str(vp.producto.codigo).zfill(18),
-                "centro": "1001",   
-                "almacen": "G001",
-                "cantidad": cantidad,
-                "kostl": vsm.centro_costos.codigo if vsm.centro_costos else "",
-            })
-
-        if not items:
-            return {"success": False, "error": "⚠️ No hay ítems con cantidad para enviar a SAP."}
-
-        params = {"I_CAB": cabecera, "IT_ITEMS": items}
-
-        resultado = call_sap_rfc("ZRFC_INOUT_SMARTSAFETY", params)
-        if not resultado:
-            return {"success": False, "error": "💥 No se recibió respuesta del servidor SAP (resultado = None)."}
-
-        e_return = resultado.get("E_RETURN", {})
-
-        mensaje = (
-            e_return.get("MESSAGE")
-            or e_return.get("message")
-            or "Sin mensaje devuelto por SAP"
-        )
-
-        mat_doc = e_return.get("MAT_DOC") or e_return.get("mat_doc")
-        doc_year = e_return.get("DOC_YEAR") or e_return.get("doc_year")
-
-        if mat_doc and doc_year:
-            return {
-                "success": True,
-                "mat_doc": mat_doc,
-                "doc_year": doc_year,
-            }
-
-        if "LEGAJO" in mensaje.upper() or "ERROR" in mensaje.upper():
-            return {"success": False, "error": f"💥 SAP devolvió un error: {mensaje}"}
-
-        return {"success": False, "error": f"⚠️ SAP devolvió: {mensaje}"}
-
-    except Exception as e:
-        return {"success": False, "error": f"💥 Excepción Python: {str(e)}"}
-
 def enviar_entrega_a_sap(vsm):
     """
     Envía una entrega VSM al SAP vía SOAP RFC ZRFC_INOUT_SMARTSAFETY.
     Imprime en consola el JSON exacto que se envía y la respuesta.
     """
     sap = Saponoso(
-        endpoint="qas",  # Cambiar a "pro" en producción
+        endpoint="qas", 
         username=os.environ.get("SAP_USERNAME", "COMM_USER1"),
         password=os.environ.get("SAP_PASSWORD", "Sistemas2013"),
         verify_ssl=False,
-        debug=True,          # 🔍 activa salida detallada
-        pretty_xml=False     # podés poner True si querés ver el XML completo
+        debug=True,        
+        pretty_xml=False   
     )
 
     cabecera = {
@@ -271,3 +204,56 @@ def enviar_entrega_a_sap(vsm):
     except Exception as e:
         print(f"💥 Error al enviar a SAP: {e}")
         return {"success": False, "error": f"Error al enviar a SAP: {e}"}
+
+def eliminar_entrega_de_sap(vsm):
+
+    if not vsm.numero_sap:
+        return {"success": False, "error": "El VSM no tiene documento SAP asociado"}
+
+    sap = Saponoso(
+        endpoint="qas",
+        username=os.environ.get("SAP_USERNAME", "COMM_USER1"),
+        password=os.environ.get("SAP_PASSWORD", "Sistemas2013"),
+        verify_ssl=False
+    )
+    cabecera = {
+        "LEGAJO": str(vsm.retirante.legajo),
+        "FECHA": timezone.now().strftime("%Y%m%d"),
+        "MAT_DOC": vsm.numero_sap,
+        "DOC_YEAR": vsm.anio_documento,         
+        "COD_MOV": "202"
+    }
+
+    items = []
+    for vp in vsm.vsmproducto_set.all():
+        items.append({
+            "COD_MAT": str(vp.producto.codigo),
+            "CENTRO": "1001",
+            "ALMACEN": "G001",
+            "CANTIDAD": f"{vp.cantidad_entregada:.3f}",
+            "KOSTL": str(vsm.centro_costos.codigo).zfill(10)
+        })
+
+    params = {
+        "I_CAB": cabecera,
+        "IT_ITEMS": items
+    }
+
+    print("\n➡️ PARAMETROS ENVÍADOS A SAP:")
+    print(json.dumps(params, indent=4))
+
+    try:
+        res = sap.call_rfc("ZRFC_INOUT_SMARTSAFETY", params)
+        print("⬅️ RESPUESTA SAP:", res)
+
+        e_return = res.get("E_RETURN", {})
+        mat_doc = e_return.get("MAT_DOC", {}).get("value")
+        mensaje = e_return.get("MESSAGE", {}).get("value")
+
+        if mat_doc:
+            return {"success": True}
+
+        return {"success": False, "error": mensaje}
+
+    except Exception as e:
+        return {"success": False, "error": str(e)}

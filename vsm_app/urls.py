@@ -10,7 +10,7 @@ urlpatterns = [
     path("registros", views.registros, name="registros"),
     path("nuevo_vsm", views.nuevo_vsm, name="nuevo_vsm"),
     path("editar_vsm/<int:id>", views.editar_vsm, name="editar_vsm"),
-    path("eliminar_vsm/<int:id>", views.eliminar_vsm, name="eliminar_vsm"),
+    path("vsm/<int:vsm_id>/eliminar/", views.eliminar_vsm, name="eliminar_vsm"),
     path("pendientes", views.listar_vsm_pendientes, name="listar_vsm_pendientes"),
     path("entregar/<int:vsm_id>", views.confirmar_entrega, name="confirmar_entrega"),
     path(

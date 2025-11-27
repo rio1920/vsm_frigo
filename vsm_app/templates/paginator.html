@@ -2,9 +2,9 @@
 <div class="flex justify-center mt-6 align-center">
   <nav class="inline-flex shadow-sm">
     {% if page_obj.has_previous %}
-      <a href="?page={{ page_obj.previous_page_number }}" class="p-6 btn">Anterior</a>
+      <a href="?page={{ page_obj.previous_page_number }}" class="p-6 btn bg-base-300">Anterior</a>
     {% else %}
-      <span class="p-6 cursor-not-allowed btn disabled">Anterior</span>
+      <span class="p-6 cursor-not-allowed btn disabled bg-base-200">Anterior</span>
     {% endif %}
 
     <span class="p-6 font-semibold badge badege-soft bg-base-300 mx-3">
@@ -12,7 +12,7 @@
     </span>
 
     {% if page_obj.has_next %}
-      <a href="?page={{ page_obj.next_page_number }}" class="p-6 btn">Siguiente</a>
+      <a href="?page={{ page_obj.next_page_number }}" class="p-6 btn bg-base-300">Siguiente</a>
     {% else %}
       <span class="p-6 cursor-not-allowed btn disabled">Siguiente</span>
     {% endif %}

@@ -174,7 +174,6 @@ class Saponoso:
                     }
                 results[var_name] = sub_results
             else:
-                # Scalar value
                 if var_elem.text is None or not var_elem.text.strip():
                     parsed_val = None
                     val_type = 'NoneType'

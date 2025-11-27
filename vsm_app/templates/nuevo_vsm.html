@@ -145,7 +145,7 @@
             </select>
             <input type="number" id="cantidad-producto" min="1"
               class="w-28 rounded-lg border border-gray-600 p-2 bg-white text-black" placeholder="Cantidad">
-            <button type="button" onclick="agregarProductoDesdeSelect()" class="px-4 py-2 rounded-lg btn border">
+            <button type="button" onclick="agregarProductoDesdeSelect()" class="px-4 py-2 rounded-lg btn border bg-secondary">
               Agregar
             </button>
           </div>
@@ -172,10 +172,10 @@
 
         <!-- Botones -->
         <div class="flex justify-between items-center pt-6">
-          <a href="{% url 'home' %}" class="px-4 py-2 btn text-gold rounded-lg hover:bg-gray-700">
+          <a href="{% url 'home' %}" class="px-4 py-2 btn text-gold rounded-lg bg-secondary">
             ← Volver
           </a>
-          <button type="submit" class="bg-green-600 px-6 py-2 rounded-lg hover:bg-green-700">
+          <button type="submit" class="bg-primary px-6 py-2 rounded-lg">
             Realizar VSM
           </button>
         </div>

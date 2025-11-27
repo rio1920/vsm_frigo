@@ -11,24 +11,23 @@
     <form method="get" class="flex space-x-4">
     <input type="text" name="solicitante" placeholder="Solicitante"
           value="{{ filtros.solicitante }}" 
-          class="p-2 rounded bg-base-200 border border-gray-700">
+          class="p-2 rounded bg-base-300 border border-gray-700">
 
     <input type="text" name="retirante" placeholder="Retirante"
           value="{{ filtros.retirante }}"
-          class="p-2 rounded bg-base-200 border border-gray-700">
-
+          class="p-2 rounded bg-base-300 border border-gray-700">
     <input type="text" name="cc" placeholder="CC"
           value="{{ filtros.cc }}"
-          class="p-2 rounded bg-base-200 border border-gray-700">
+          class="p-2 rounded bg-base-300 border border-gray-700">
 
 
-    <select name="estado" class="p-2 rounded bg-base-200 border border-gray-700">
+    <select name="estado" class="p-2 rounded bg-base-300 border border-gray-700">
       <option value="pendiente" {% if request.GET.estado == "pendiente" or not request.GET.estado %}selected{% endif %}>Pendiente</option>
       <option value="entregado" {% if request.GET.estado == "entregado" %}selected{% endif %}>Entregado</option>
       <option value="#" {% if request.GET.estado == "#" %}selected{% endif %}>Todos</option>
     </select>
 
-      <button type="submit" class="btn px-4 py-2 rounded">Filtrar</button>
+      <button type="submit" class="btn px-4 py-2 rounded btn-primary">Filtrar</button>
     </form>
   </div>
   <div class="overflow-x-auto table shadow-lg max-w-6xl mx-auto" style="width: 70%;">
@@ -46,16 +45,16 @@
       </thead>
       <tbody class="divide-y divide-gray-700" style="overflow: hidden;">
         {% for vsm in pendientes %}
-        <tr class="border-b border-gray-700 hover:bg-gray-700 transition">
+        <tr class="border-b border-gray-700 hover:bg-base-200 transition">
           <td class="px-4 py-3">{{ vsm.solicitante }}</td>
           <td class="px-4 py-3">{{ vsm.retirante.legajo }} - {{ vsm.retirante.nombre }}</td>
           <td class="px-4 py-3">{{ vsm.tipo_entrega }}</td>
           <td class="px-4 py-3">{{ vsm.retirante.cc.codigo }}</td>
           <td class="px-4 py-3">{{ vsm.fecha_solicitud|date:"d/m/Y H:i" }}</td>
           {% if vsm.estado == 'pendiente' %}
-          <td class="px-4 py-3 text-center"><span class="badge badge-warning badge-outline" style="color: yellow !important; border: 1px solid yellow; text-transform: uppercase;">{{ vsm.estado }}</span></td>
+          <td class="px-4 py-3 text-center"><span class="badge badge-warning badge-outline bg-base-200" style="color: yellow !important; border: 1px solid yellow; text-transform: uppercase;">{{ vsm.estado }}</span></td>
           {% else %}
-          <td class="px-4 py-3 text-center"><span class="badge badge-success badge-outline" style="color: green !important; border: 1px solid green; text-transform: uppercase;">{{ vsm.estado }}</span></td>
+          <td class="px-4 py-3 text-center"><span class="badge badge-success badge-outline bg-base-200" style="color: green !important; border: 1px solid green; text-transform: uppercase;">{{ vsm.estado }}</span></td>
           {% endif %}
           <td class="px-4 py-3 text-center">
           {% if vsm.estado == 'pendiente' %}

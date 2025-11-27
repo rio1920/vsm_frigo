@@ -15,7 +15,7 @@ from .decorator import permission_required
 from django.utils.safestring import mark_safe
 import json
 from xhtml2pdf import pisa
-from .utils.sap_rfc import call_sap_rfc, enviar_entrega_a_sap, enviar_entrega_sap
+from .utils.sap_rfc import call_sap_rfc, enviar_entrega_a_sap, eliminar_entrega_de_sap
 import base64
 from django.core.files.base import ContentFile
 from django.views.decorators.csrf import csrf_exempt
@@ -79,8 +79,8 @@ from vsm_app.utils.sap_rfc import get_stock_sap
 def nuevo_vsm(request):
     empleados = models.empleados.objects.all()
     centro_costos = models.centro_costos.objects.all()
-    usuario_logeado = request.user
-    centro_usuario = usuario_logeado.cc_permitidos.all()
+    usuario_logeado = request.user.first_name + " " + request.user.last_name
+    centro_usuario = request.user.cc_permitidos.all()
     productos = models.maestro_de_materiales.objects.all()
 
     if request.method == "POST":
@@ -158,7 +158,7 @@ def nuevo_vsm(request):
 
         vsm = models.VSM.objects.create(
             centro_costos_id=centro_costos_id,
-            solicitante=usuario_logeado,
+            solicitante=request.user,
             retirante=retirante_obj,
             fecha_solicitud=now(),
             observaciones=observaciones,
@@ -212,18 +212,26 @@ def editar_vsm(request, id):
 
 
 @permission_required(["facturado_can_edit", "no_facturado_can_edit"])
-def eliminar_vsm(request, id):
-    vsm = models.VSM.objects.get(id=id)
+def eliminar_vsm(request, vsm_id):
+    vsm = get_object_or_404(models.VSM, id=vsm_id)
 
-    if request.method == "POST":
-        vsm.delete()
-        return render(
-            request, "registros.html", {"message": "VSM eliminado exitosamente."}
-        )
+    # Si ya fue enviado a SAP, hago reversa
+    if vsm.numero_sap:
+        res = eliminar_entrega_de_sap(vsm)
 
-    context = {"vsm": vsm}
+        if not res.get("success"):
+            return JsonResponse({
+                "success": False,
+                "error": f"No se pudo revertir en SAP: {res.get('error')}"
+            })
 
-    return render(request, "registros.html", context)
+    # Si todo salió bien, lo elimino de la app
+    vsm.delete()
+
+    return JsonResponse({
+        "success": True,
+        "message": "VSM eliminado correctamente"
+    })
 
 
 @permission_required(["facturado_can_deliver", "no_facturado_can_deliver"])
@@ -266,6 +274,7 @@ def confirmar_entrega(request, vsm_id):
 
             if resultado_sap.get("success"):
                 vsm.numero_sap = resultado_sap.get("mat_doc")
+                vsm.anio_documento = resultado_sap.get("doc_year")
                 vsm.estado = "entregado"
                 vsm.save()
                 print(
