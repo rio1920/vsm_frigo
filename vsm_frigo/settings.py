@@ -7,72 +7,74 @@ from dotenv import load_dotenv
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-load_dotenv(os.path.join(BASE_DIR, '.env'))
+load_dotenv(os.path.join(BASE_DIR, ".env"))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-&&gvd#+73!rkj4#x(ffqb@4%lk946jv42ky)&e-y0)5cys$!%+'
+SECRET_KEY = "django-insecure-&&gvd#+73!rkj4#x(ffqb@4%lk946jv42ky)&e-y0)5cys$!%+"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG', 'True') == 'True'
+DEBUG = os.getenv("DEBUG", "True") == "True"
 
-ALLOWED_HOSTS = ['*',"localhost", "127.0.0.1", "vsm.rioplatense.local"]
+ALLOWED_HOSTS = ["*", "localhost", "127.0.0.1", "vsm.rioplatense.local"]
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'django_daisy',
-    'django.contrib.admin',
-    'django.contrib.humanize',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'vsm_app',  
-    'mozilla_django_oidc',
-    'corsheaders',
-    'django_browser_reload',
-    'tailwind',
-    'django_cotton.apps.SimpleAppConfig',
+    "django_daisy",
+    "django.contrib.admin",
+    "django.contrib.humanize",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
+    "vsm_app",
+    "mozilla_django_oidc",
+    "corsheaders",
+    "django_browser_reload",
+    "tailwind",
+    "django_cotton.apps.SimpleAppConfig",
 ]
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "django.middleware.security.SecurityMiddleware",
+    "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.common.CommonMiddleware",
+    "django.middleware.csrf.CsrfViewMiddleware",
+    "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "django.contrib.messages.middleware.MessageMiddleware",
+    "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "mozilla_django_oidc.middleware.SessionRefresh",
     "corsheaders.middleware.CorsMiddleware",
 ]
 
 AUTHENTICATION_BACKENDS = [
-    'vsm_app.backends.CustomOIDCBackend',
-    'django.contrib.auth.backends.ModelBackend',
+    "vsm_app.backends.CustomOIDCBackend",
+    "django.contrib.auth.backends.ModelBackend",
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
-ROOT_URLCONF = 'vsm_frigo.urls'
+ROOT_URLCONF = "vsm_frigo.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [os.path.join(BASE_DIR, "vsm_app/templates")],
         "OPTIONS": {
-            "loaders": [(
-                "django.template.loaders.cached.Loader",
-                [
-                    "django_cotton.cotton_loader.Loader",
-                    "django.template.loaders.filesystem.Loader",
-                    "django.template.loaders.app_directories.Loader",
-                ],
-            )],
+            "loaders": [
+                (
+                    "django.template.loaders.cached.Loader",
+                    [
+                        "django_cotton.cotton_loader.Loader",
+                        "django.template.loaders.filesystem.Loader",
+                        "django.template.loaders.app_directories.Loader",
+                    ],
+                )
+            ],
             "context_processors": [
                 "django.template.context_processors.debug",
                 "django.template.context_processors.request",
@@ -87,7 +89,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'vsm_frigo.wsgi.application'
+WSGI_APPLICATION = "vsm_frigo.wsgi.application"
 
 INTERNAL_IPS = [
     "127.0.0.1",
@@ -103,16 +105,16 @@ NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.getenv("POSTGRES_DB", "vsm_db"), #"vsm_frigo_local"
-        "USER": os.getenv("POSTGRES_USER", "vsm"), #"postgres"
-        "PASSWORD": os.getenv("POSTGRES_PASSWORD", "vsm"), #"Pilar+2023"
-        "HOST": os.getenv("POSTGRES_HOST", "db"), #"localhost"
+        "NAME": os.getenv("POSTGRES_DB", "vsm_db"),  # "vsm_frigo_local"
+        "USER": os.getenv("POSTGRES_USER", "vsm"),  # "postgres"
+        "PASSWORD": os.getenv("POSTGRES_PASSWORD", "vsm"),  # "Pilar+2023"
+        "HOST": os.getenv("POSTGRES_HOST", "db"),  # "localhost"
         "PORT": os.getenv("POSTGRES_PORT", "5432"),
     }
 }
 
 
-AUTH_USER_MODEL = 'vsm_app.Usuarios'
+AUTH_USER_MODEL = "vsm_app.Usuarios"
 
 
 # Password validation
@@ -120,16 +122,16 @@ AUTH_USER_MODEL = 'vsm_app.Usuarios'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
     },
 ]
 
@@ -157,9 +159,9 @@ CACHE_MIDDLEWARE_KEY_PREFIX = "django_keycloak_auth_"
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = "UTC"
 
 USE_I18N = True
 
@@ -189,13 +191,11 @@ OIDC_REDIRECT_REQUIRE_HTTPS = True
 OIDC_VERIFY_SSL = False
 
 
-
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 
-STATIC_URL = 'static/'
+STATIC_URL = "static/"
 
 STATIC_ROOT = "static/"
 
@@ -205,6 +205,53 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "vsm_app/static")]
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-PORT = os.getenv("PORT", 84)
+# LOGGING
+log_directory = os.path.join(BASE_DIR, "logs")
+os.makedirs(log_directory, exist_ok=True)
+log_file = os.path.join(BASE_DIR, "logs", "vsm_app.log")
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "verbose": {
+            "format": "{levelname} {asctime} {module} {message}",
+            "style": "{",
+        },
+        "simple": {
+            "format": "{levelname} {message}",
+            "style": "{",
+        },
+    },
+    "handlers": {
+        "console": {
+            "level": "INFO",
+            "class": "logging.StreamHandler",
+            "formatter": "verbose",
+        },
+        "file": {
+            "level": "INFO",
+            "class": "logging.FileHandler",
+            "filename": log_file,
+            "formatter": "verbose",
+        },
+    },
+    "root": {
+        "handlers": ["console", "file"],
+        "level": "DEBUG",
+    },
+    "loggers": {
+        "django": {
+            "handlers": ["console", "file"],
+            "level": "INFO",
+            "propagate": True,
+        },
+        "debug": {
+            "handlers": ["console"],
+            "level": "DEBUG",
+            "propagate": True,
+        },
+    },
+}

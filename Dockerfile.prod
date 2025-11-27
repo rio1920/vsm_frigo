@@ -1,0 +1,20 @@
+FROM python:3.12 as backend
+
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+
+
+ARG UID=1000
+ARG GID=1000
+RUN groupadd -g $GID myuser && useradd -m -u $UID -g $GID myuser
+
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+WORKDIR /app
+
+COPY .python-version .
+COPY uv.lock .
+COPY pyproject.toml .
+RUN uv sync
+
+COPY --chown=myuser:myuser . .
