@@ -16,6 +16,7 @@ services:
     env_file:
       - .env
     entrypoint: ["/app/prod_entrypoint.sh"]
+    user: "${UID}:${GID}"
     
   
   nginx_prod:

@@ -19,4 +19,4 @@ RUN uv sync
 
 COPY --chown=myuser:myuser . .
 
-RUN chmod +x /app/prod_entrypoint.sh
+RUN chmod +x ./prod_entrypoint.sh
