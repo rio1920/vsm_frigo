@@ -1,13 +1,13 @@
 from pathlib import Path
 import os
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
 
 # vsm_frigo/settings.py
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-load_dotenv(os.path.join(BASE_DIR, ".env"))
+#load_dotenv(os.path.join(BASE_DIR, ".env"))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
@@ -105,11 +105,11 @@ NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.getenv("POSTGRES_DB", "vsm_db"),  # "vsm_frigo_local"
-        "USER": os.getenv("POSTGRES_USER", "vsm"),  # "postgres"
-        "PASSWORD": os.getenv("POSTGRES_PASSWORD", "vsm"),  # "Pilar+2023"
-        "HOST": os.getenv("POSTGRES_HOST", "db"),  # "localhost"
-        "PORT": os.getenv("POSTGRES_PORT", "5432"),
+        "NAME": os.getenv("DB_NAME_DESTINO", "vsm_db"),  # "vsm_frigo_local"
+        "USER": os.getenv("DB_USER_DESTINO", "vsm"),  # "postgres"
+        "PASSWORD": os.getenv("DB_PASSWORD_DESTINO", "vsm"),  # "Pilar+2023"
+        "HOST": os.getenv("DB_HOST_DESTINO", "db"),  # "localhost"
+        "PORT": os.getenv("DB_PORT_DESTINO", "5432"),
     }
 }
 
@@ -137,23 +137,23 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 KEYCLOAK_EXEMPT_URIS = []
-KEYCLOAK_CONFIG = {
-    "KEYCLOAK_SERVER_URL": "http://localhost:8000/auth",
-    "KEYCLOAK_REALM": "pandora",
-    "KEYCLOAK_CLIENT_ID": "vsm_frigo",
-    "KEYCLOAK_CLIENT_SECRET_KEY": "gRsKix6tJ62rUDddRFyCe798Dc6jMcFD",
-    "KEYCLOAK_CACHE_TTL": 60,
-    "LOCAL_DECODE": False,
-}
+# KEYCLOAK_CONFIG = {
+#     "KEYCLOAK_SERVER_URL": "http://localhost:8000/auth",
+#     "KEYCLOAK_REALM": "pandora",
+#     "KEYCLOAK_CLIENT_ID": "vsm_frigo",
+#     "KEYCLOAK_CLIENT_SECRET_KEY": "gRsKix6tJ62rUDddRFyCe798Dc6jMcFD",
+#     "KEYCLOAK_CACHE_TTL": 60,
+#     "LOCAL_DECODE": False,
+# }
 
-CACHES = {
-    "default": {
-        "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
-        "LOCATION": "django_keycloak_auth",
-        "TIMEOUT": KEYCLOAK_CONFIG["KEYCLOAK_CACHE_TTL"],
-        "KEY_PREFIX": "django_keycloak_auth_",
-    }
-}
+# CACHES = {
+#     "default": {
+#         "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
+#         "LOCATION": "django_keycloak_auth",
+#         "TIMEOUT": KEYCLOAK_CONFIG["KEYCLOAK_CACHE_TTL"],
+#         "KEY_PREFIX": "django_keycloak_auth_",
+#     }
+# }
 CACHE_MIDDLEWARE_KEY_PREFIX = "django_keycloak_auth_"
 
 # Internationalization
@@ -181,11 +181,11 @@ LOGIN_REDIRECT_URL = os.getenv("LOGIN_REDIRECT_URL_")
 LOGOUT_REDIRECT_URL = os.getenv("LOGOUT_REDIRECT_URL_")
 LOGIN_URL = os.getenv("LOGIN_URL_")
 
-OIDC_REDIRECT_ALLOWED_HOSTS = "vsm.rioplatense.local", "127.0.0.1:8000"
+#OIDC_REDIRECT_ALLOWED_HOSTS = "vsm.rioplatense.local", "127.0.0.1:8000"
 
-USE_X_FORWARDED_HOST = True
+#USE_X_FORWARDED_HOST = True
 
-OIDC_REDIRECT_REQUIRE_HTTPS = True
+#OIDC_REDIRECT_REQUIRE_HTTPS = True
 
 
 OIDC_VERIFY_SSL = False
@@ -207,51 +207,51 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "vsm_app/static")]
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-# LOGGING
-# log_directory = os.path.join(BASE_DIR, "logs")
-# os.makedirs(log_directory, exist_ok=True)
-# log_file = os.path.join(BASE_DIR, "logs", "vsm_app.log")
+#LOGGING
+log_directory = os.path.join(BASE_DIR, "logs")
+os.makedirs(log_directory, exist_ok=True)
+log_file = os.path.join(BASE_DIR, "logs", "vsm_app.log")
 
-# LOGGING = {
-#     "version": 1,
-#     "disable_existing_loggers": False,
-#     "formatters": {
-#         "verbose": {
-#             "format": "{levelname} {asctime} {module} {message}",
-#             "style": "{",
-#         },
-#         "simple": {
-#             "format": "{levelname} {message}",
-#             "style": "{",
-#         },
-#     },
-#     "handlers": {
-#         "console": {
-#             "level": "INFO",
-#             "class": "logging.StreamHandler",
-#             "formatter": "verbose",
-#         },
-#         "file": {
-#             "level": "INFO",
-#             "class": "logging.FileHandler",
-#             "filename": log_file,
-#             "formatter": "verbose",
-#         },
-#     },
-#     "root": {
-#         "handlers": ["console", "file"],
-#         "level": "DEBUG",
-#     },
-#     "loggers": {
-#         "django": {
-#             "handlers": ["console", "file"],
-#             "level": "INFO",
-#             "propagate": True,
-#         },
-#         "debug": {
-#             "handlers": ["console"],
-#             "level": "DEBUG",
-#             "propagate": True,
-#         },
-#     },
-# }
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "verbose": {
+            "format": "{levelname} {asctime} {module} {message}",
+            "style": "{",
+        },
+        "simple": {
+            "format": "{levelname} {message}",
+            "style": "{",
+        },
+    },
+    "handlers": {
+        "console": {
+            "level": "INFO",
+            "class": "logging.StreamHandler",
+            "formatter": "verbose",
+        },
+        "file": {
+            "level": "INFO",
+            "class": "logging.FileHandler",
+            "filename": log_file,
+            "formatter": "verbose",
+        },
+    },
+    "root": {
+        "handlers": ["console", "file"],
+        "level": "DEBUG",
+    },
+    "loggers": {
+        "django": {
+            "handlers": ["console", "file"],
+            "level": "INFO",
+            "propagate": True,
+        },
+        "debug": {
+            "handlers": ["console"],
+            "level": "DEBUG",
+            "propagate": True,
+        },
+    },
+}

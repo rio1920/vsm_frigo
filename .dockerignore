@@ -17,3 +17,6 @@ __pycache__/
 media/
 node_modules/
 .venv/
+sap/
+media/
+.env

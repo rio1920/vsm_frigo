@@ -19,9 +19,13 @@ RUN uv sync
 
 COPY --chown=myuser:myuser . .
 
+RUN uv run manage.py collectstatic --noinput
+
+RUN find . -type d -not -path "./.venv*" -exec chown -R myuser:myuser {} +
+
 RUN chmod +x ./prod_entrypoint.sh
 
 USER myuser
 
-#ENTRYPOINT [ "./prod_entrypoint.sh" ]
-CMD ["uv", "run", "manage.py", "runserver", "0.0.0.0:8000"]
+ENTRYPOINT [ "./prod_entrypoint.sh" ]
+#CMD ["uv", "run", "manage.py", "runserver", "0.0.0.0:8000"]
