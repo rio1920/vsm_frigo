@@ -168,7 +168,10 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
-<script src="https://unpkg.com/onscan.js/onscan.min.js"></script>
+
+<script src="{% static 'js/wacomstu540.js' %}"></script>
+<script src="{% static 'js/signature-handler.js' %}"></script>
+<script src="{% static 'js/on-scan.js' %}"></script>
 
 {% if vsm.tipo_entrega == 'INSUMOS' %}
 <script>
@@ -253,10 +256,6 @@ onScan.attachTo(document, {
 });
 </script>
 {% endif %}
-
-
-<script src="{% static 'js/wacomstu540.js' %}"></script>
-<script src="{% static 'js/signature-handler.js' %}"></script>
 
 
 
