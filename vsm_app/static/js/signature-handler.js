@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const ctx = signatureCanvas.getContext('2d');
 
     // Inicializa la librería del driver
-    const wacomDriver = new wacomstu540();
+    const wacomDriver = wacomstu540();
     let lastX = null;
     let lastY = null;
     let isSigning = false;
