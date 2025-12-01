@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const ctx = signatureCanvas.getContext('2d');
 
     // Inicializa la librería del driver
-    const wacomDriver = wacomstu540();
     let lastX = null;
     let lastY = null;
     let isSigning = false;
@@ -132,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. Abrir Modal y Conectar Wacom
     abrirFirmaBtn.addEventListener('click', async () => {
         modalFirma.classList.remove('hidden');
-
+        const wacomDriver = wacomstu540();
         try {
             // Intentar conectar con la Wacom (se abrirá el selector HID)
             const connected = await wacomDriver.connect();
