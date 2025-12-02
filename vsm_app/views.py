@@ -32,11 +32,8 @@ def registros(request):
         .prefetch_related("vsmproducto_set__producto")
         .order_by("-fecha_solicitud")
     )
-    paginator = Paginator(vales, 7)
 
-    page_number = request.GET.get("page")
-    page_obj = paginator.get_page(page_number)
-
+    # ---- FILTROS ----
     solicitante = request.GET.get("solicitante", "").strip()
     retirante = request.GET.get("retirante", "").strip()
     legajo = request.GET.get("legajo", "").strip()
@@ -54,6 +51,11 @@ def registros(request):
 
     if estado and estado != "#":
         vales = vales.filter(estado=estado)
+
+    # ---- PAGINAR DESPUÉS DE FILTRAR ----
+    paginator = Paginator(vales, 7)
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
 
     context = {
         "vales": vales,
@@ -102,7 +104,6 @@ def nuevo_vsm(request):
                 },
             )
 
-        # Validar stock de todos los productos antes de crear el VSM
         productos_solicitados = []
         for key, value in request.POST.items():
             if key.startswith("producto_"):
@@ -113,41 +114,6 @@ def nuevo_vsm(request):
                         producto = get_object_or_404(
                             models.maestro_de_materiales, id=producto_id
                         )
-                        stock_actual = get_stock_sap(producto.codigo)
-
-                        if stock_actual <= 0:
-                            messages.error(
-                                request,
-                                f"No hay stock disponible en SAP para el producto {producto.codigo}.",
-                            )
-                            return render(
-                                request,
-                                "nuevo_vsm.html",
-                                {
-                                    "productos": productos,
-                                    "empleados": empleados,
-                                    "usuario_logeado": usuario_logeado,
-                                    "centro_costos": centro_costos,
-                                    "centro_usuario": centro_usuario,
-                                },
-                            )
-                        elif stock_actual < cantidad_solicitada:
-                            messages.error(
-                                request,
-                                f"Stock insuficiente para el producto {producto.codigo}. Disponible: {stock_actual}",
-                            )
-                            return render(
-                                request,
-                                "nuevo_vsm.html",
-                                {
-                                    "productos": productos,
-                                    "empleados": empleados,
-                                    "usuario_logeado": usuario_logeado,
-                                    "centro_costos": centro_costos,
-                                    "centro_usuario": centro_usuario,
-                                },
-                            )
-
                         productos_solicitados.append((producto, cantidad_solicitada))
                 except (ValueError, IndexError):
                     continue
@@ -168,7 +134,9 @@ def nuevo_vsm(request):
 
         for producto, cantidad_solicitada in productos_solicitados:
             models.VSMProducto.objects.create(
-                vsm=vsm, producto=producto, cantidad_solicitada=cantidad_solicitada
+                vsm=vsm,
+                producto=producto,
+                cantidad_solicitada=cantidad_solicitada
             )
 
         messages.success(request, "✅ VSM creado con éxito")
@@ -185,7 +153,6 @@ def nuevo_vsm(request):
             "centro_usuario": centro_usuario,
         },
     )
-
 
 def detalle_vsm(request, id):
     vsm = models.VSM.objects.get(id=id)

@@ -6,3 +6,459 @@ INFO 2025-12-01 11:56:16,817 autoreload Watching for file changes with StatReloa
 INFO 2025-12-01 11:56:16,817 autoreload Watching for file changes with StatReloader
 INFO 2025-12-01 13:15:26,082 autoreload Watching for file changes with StatReloader
 INFO 2025-12-01 13:15:26,082 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 13:56:23,735 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 13:56:23,735 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 14:52:56,054 autoreload /app/vsm_app/utils/sap_rfc.py changed, reloading.
+INFO 2025-12-01 14:52:56,054 autoreload /app/vsm_app/utils/sap_rfc.py changed, reloading.
+INFO 2025-12-01 14:52:57,964 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 14:52:57,964 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 17:20:25,789 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 17:20:25,789 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 17:22:40,873 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 17:22:40,873 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 17:23:02,035 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-01 17:23:02,035 basehttp "GET / HTTP/1.0" 302 0
+WARNING 2025-12-01 17:23:02,745 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-01 17:23:02,745 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_create', 'no_facturado_can_deliver', 'facturado_can_edit', 'no_facturado_can_create', 'no_facturado_can_edit', 'registros_can_view', 'facturado_can_deliver'}
+WARNING 2025-12-01 17:23:02,752 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-01 17:23:02,766 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-01 17:23:02,772 basehttp "GET /oidc/callback/?state=P2cue9nipTI9AB0HQbJhPhziseIJyWR0&session_state=525d8c23-b84e-4a7d-93da-c19a2da250b6&code=eadb4daa-6f64-405d-bd2e-48707af3051d.525d8c23-b84e-4a7d-93da-c19a2da250b6.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-01 17:23:02,772 basehttp "GET /oidc/callback/?state=P2cue9nipTI9AB0HQbJhPhziseIJyWR0&session_state=525d8c23-b84e-4a7d-93da-c19a2da250b6&code=eadb4daa-6f64-405d-bd2e-48707af3051d.525d8c23-b84e-4a7d-93da-c19a2da250b6.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-01 17:23:02,814 basehttp "GET / HTTP/1.0" 200 6964
+INFO 2025-12-01 17:23:02,814 basehttp "GET / HTTP/1.0" 200 6964
+INFO 2025-12-01 17:23:02,919 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-01 17:23:02,919 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-01 17:23:02,920 basehttp "GET /static/css/output.css HTTP/1.0" 200 88676
+INFO 2025-12-01 17:23:02,920 basehttp "GET /static/css/output.css HTTP/1.0" 200 88676
+WARNING 2025-12-01 17:23:05,004 log Not Found: /favicon.ico
+WARNING 2025-12-01 17:23:05,004 log Not Found: /favicon.ico
+WARNING 2025-12-01 17:23:05,005 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-01 17:23:05,005 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+INFO 2025-12-01 17:23:09,315 basehttp "GET /nuevo_vsm HTTP/1.0" 200 26745
+INFO 2025-12-01 17:23:09,315 basehttp "GET /nuevo_vsm HTTP/1.0" 200 26745
+INFO 2025-12-01 17:29:59,210 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:29:59,210 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:30:01,231 basehttp "GET /registros HTTP/1.0" 200 14504
+INFO 2025-12-01 17:30:01,231 basehttp "GET /registros HTTP/1.0" 200 14504
+INFO 2025-12-01 17:30:32,914 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:30:32,914 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:30:33,760 basehttp "GET /pendientes HTTP/1.0" 200 9412
+INFO 2025-12-01 17:30:33,760 basehttp "GET /pendientes HTTP/1.0" 200 9412
+INFO 2025-12-01 17:30:35,567 basehttp "GET /entregar/214 HTTP/1.0" 200 10841
+INFO 2025-12-01 17:30:35,567 basehttp "GET /entregar/214 HTTP/1.0" 200 10841
+INFO 2025-12-01 17:30:35,600 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2025-12-01 17:30:35,600 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2025-12-01 17:30:35,601 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6574
+INFO 2025-12-01 17:30:35,601 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6574
+INFO 2025-12-01 17:30:54,073 basehttp "GET /rechazar_entrega/214 HTTP/1.0" 200 7088
+INFO 2025-12-01 17:30:54,073 basehttp "GET /rechazar_entrega/214 HTTP/1.0" 200 7088
+INFO 2025-12-01 17:31:02,210 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:31:02,210 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:31:03,460 basehttp "GET /nuevo_vsm HTTP/1.0" 200 26745
+INFO 2025-12-01 17:31:03,460 basehttp "GET /nuevo_vsm HTTP/1.0" 200 26745
+INFO 2025-12-01 17:31:05,654 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:31:05,654 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:31:06,301 basehttp "GET /registros HTTP/1.0" 200 14504
+INFO 2025-12-01 17:31:06,301 basehttp "GET /registros HTTP/1.0" 200 14504
+INFO 2025-12-01 17:33:27,919 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=entregado HTTP/1.0" 200 14512
+INFO 2025-12-01 17:33:27,919 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=entregado HTTP/1.0" 200 14512
+INFO 2025-12-01 17:33:30,578 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:33:30,578 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:36:03,280 basehttp "GET /registros HTTP/1.0" 200 14504
+INFO 2025-12-01 17:36:03,280 basehttp "GET /registros HTTP/1.0" 200 14504
+INFO 2025-12-01 17:38:33,211 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-01 17:38:33,211 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-01 17:38:35,118 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 17:38:35,118 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 17:38:43,129 basehttp "GET /home HTTP/1.0" 302 0
+INFO 2025-12-01 17:38:43,129 basehttp "GET /home HTTP/1.0" 302 0
+WARNING 2025-12-01 17:38:43,354 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-01 17:38:43,354 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_create', 'registros_can_view', 'facturado_can_edit', 'no_facturado_can_deliver', 'no_facturado_can_create', 'no_facturado_can_edit', 'facturado_can_deliver'}
+WARNING 2025-12-01 17:38:43,355 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-01 17:38:43,358 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-01 17:38:43,363 basehttp "GET /oidc/callback/?state=u3EhXF9LekpzwQCU0VLUJ6DkgJP2RrBL&session_state=525d8c23-b84e-4a7d-93da-c19a2da250b6&code=0fe134b8-2740-4407-905c-cd947ae1f986.525d8c23-b84e-4a7d-93da-c19a2da250b6.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-01 17:38:43,363 basehttp "GET /oidc/callback/?state=u3EhXF9LekpzwQCU0VLUJ6DkgJP2RrBL&session_state=525d8c23-b84e-4a7d-93da-c19a2da250b6&code=0fe134b8-2740-4407-905c-cd947ae1f986.525d8c23-b84e-4a7d-93da-c19a2da250b6.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-01 17:38:43,407 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:38:43,407 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:38:44,415 basehttp "GET /nuevo_vsm HTTP/1.0" 200 26745
+INFO 2025-12-01 17:38:44,415 basehttp "GET /nuevo_vsm HTTP/1.0" 200 26745
+INFO 2025-12-01 17:38:50,152 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 1670
+INFO 2025-12-01 17:38:50,152 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 1670
+INFO 2025-12-01 17:38:56,998 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS HTTP/1.0" 200 612
+INFO 2025-12-01 17:38:56,998 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS HTTP/1.0" 200 612
+INFO 2025-12-01 17:39:01,205 basehttp "POST /nuevo_vsm HTTP/1.0" 302 0
+INFO 2025-12-01 17:39:01,205 basehttp "POST /nuevo_vsm HTTP/1.0" 302 0
+INFO 2025-12-01 17:39:01,229 basehttp "GET /home HTTP/1.0" 200 7394
+INFO 2025-12-01 17:39:01,229 basehttp "GET /home HTTP/1.0" 200 7394
+INFO 2025-12-01 17:39:04,563 basehttp "GET /pendientes HTTP/1.0" 200 10550
+INFO 2025-12-01 17:39:04,563 basehttp "GET /pendientes HTTP/1.0" 200 10550
+INFO 2025-12-01 17:40:45,084 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-01 17:40:45,084 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-01 17:40:46,888 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 17:40:46,888 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 17:41:05,672 basehttp "GET /pendientes HTTP/1.0" 200 10508
+INFO 2025-12-01 17:41:05,672 basehttp "GET /pendientes HTTP/1.0" 200 10508
+INFO 2025-12-01 17:41:06,365 basehttp "GET /pendientes HTTP/1.0" 200 10508
+INFO 2025-12-01 17:41:06,365 basehttp "GET /pendientes HTTP/1.0" 200 10508
+INFO 2025-12-01 17:41:06,568 basehttp "GET /pendientes HTTP/1.0" 200 10508
+INFO 2025-12-01 17:41:06,568 basehttp "GET /pendientes HTTP/1.0" 200 10508
+INFO 2025-12-01 17:41:06,777 basehttp "GET /pendientes HTTP/1.0" 200 10508
+INFO 2025-12-01 17:41:06,777 basehttp "GET /pendientes HTTP/1.0" 200 10508
+WARNING 2025-12-01 17:41:08,279 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-01 17:41:08,279 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-01 17:41:08,280 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-01 17:41:08,280 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-01 17:41:09,204 basehttp "GET /pendientes HTTP/1.0" 200 10508
+INFO 2025-12-01 17:41:09,204 basehttp "GET /pendientes HTTP/1.0" 200 10508
+INFO 2025-12-01 17:41:09,252 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-01 17:41:09,252 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-01 17:41:09,255 basehttp "GET /static/css/output.css HTTP/1.0" 200 88676
+INFO 2025-12-01 17:41:09,255 basehttp "GET /static/css/output.css HTTP/1.0" 200 88676
+WARNING 2025-12-01 17:41:09,260 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-01 17:41:09,260 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-01 17:41:09,261 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-01 17:41:09,261 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-01 17:41:09,522 log Not Found: /favicon.ico
+WARNING 2025-12-01 17:41:09,522 log Not Found: /favicon.ico
+WARNING 2025-12-01 17:41:09,523 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-01 17:41:09,523 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+INFO 2025-12-01 17:42:01,750 basehttp "GET /pendientes HTTP/1.0" 200 10514
+INFO 2025-12-01 17:42:01,750 basehttp "GET /pendientes HTTP/1.0" 200 10514
+INFO 2025-12-01 17:42:24,496 basehttp "GET /pendientes HTTP/1.0" 200 10505
+INFO 2025-12-01 17:42:24,496 basehttp "GET /pendientes HTTP/1.0" 200 10505
+INFO 2025-12-01 17:42:25,177 basehttp "GET /pendientes HTTP/1.0" 200 10505
+INFO 2025-12-01 17:42:25,177 basehttp "GET /pendientes HTTP/1.0" 200 10505
+INFO 2025-12-01 17:42:25,340 basehttp "GET /pendientes HTTP/1.0" 200 10505
+INFO 2025-12-01 17:42:25,340 basehttp "GET /pendientes HTTP/1.0" 200 10505
+WARNING 2025-12-01 17:42:26,820 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-01 17:42:26,820 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-01 17:42:26,820 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-01 17:42:26,820 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-01 17:42:27,812 basehttp "GET /pendientes HTTP/1.0" 200 10505
+INFO 2025-12-01 17:42:27,812 basehttp "GET /pendientes HTTP/1.0" 200 10505
+INFO 2025-12-01 17:42:27,852 basehttp "GET /static/css/output.css HTTP/1.0" 200 88676
+INFO 2025-12-01 17:42:27,852 basehttp "GET /static/css/output.css HTTP/1.0" 200 88676
+WARNING 2025-12-01 17:42:27,867 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-01 17:42:27,867 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-01 17:42:27,869 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-01 17:42:27,869 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-01 17:42:27,876 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-01 17:42:27,876 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+WARNING 2025-12-01 17:42:28,083 log Not Found: /favicon.ico
+WARNING 2025-12-01 17:42:28,083 log Not Found: /favicon.ico
+WARNING 2025-12-01 17:42:28,086 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-01 17:42:28,086 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+INFO 2025-12-01 17:42:56,145 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 17:42:56,145 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 17:44:17,155 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:44:17,155 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:44:18,884 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 17:44:18,884 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 17:44:20,861 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:44:20,861 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:44:21,571 basehttp "GET /registros HTTP/1.0" 200 17165
+INFO 2025-12-01 17:44:21,571 basehttp "GET /registros HTTP/1.0" 200 17165
+INFO 2025-12-01 17:46:54,677 basehttp "GET /registros HTTP/1.0" 200 17249
+INFO 2025-12-01 17:46:54,677 basehttp "GET /registros HTTP/1.0" 200 17249
+INFO 2025-12-01 17:48:03,884 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:48:03,884 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:48:05,080 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 17:48:05,080 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 17:48:05,785 basehttp "GET /entregar/216 HTTP/1.0" 200 13239
+INFO 2025-12-01 17:48:05,785 basehttp "GET /entregar/216 HTTP/1.0" 200 13239
+INFO 2025-12-01 17:48:05,811 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6574
+INFO 2025-12-01 17:48:05,811 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6574
+INFO 2025-12-01 17:48:05,811 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2025-12-01 17:48:05,811 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2025-12-01 17:49:48,442 basehttp "GET /entregar/216 HTTP/1.0" 200 13236
+INFO 2025-12-01 17:49:48,442 basehttp "GET /entregar/216 HTTP/1.0" 200 13236
+INFO 2025-12-01 17:49:49,115 basehttp "GET /entregar/216 HTTP/1.0" 200 13236
+INFO 2025-12-01 17:49:49,115 basehttp "GET /entregar/216 HTTP/1.0" 200 13236
+INFO 2025-12-01 17:50:10,482 basehttp "GET /entregar/216 HTTP/1.0" 200 13237
+INFO 2025-12-01 17:50:10,482 basehttp "GET /entregar/216 HTTP/1.0" 200 13237
+INFO 2025-12-01 17:50:23,730 basehttp "GET /entregar/216 HTTP/1.0" 200 13236
+INFO 2025-12-01 17:50:23,730 basehttp "GET /entregar/216 HTTP/1.0" 200 13236
+INFO 2025-12-01 17:50:46,713 basehttp "GET /entregar/216 HTTP/1.0" 200 13242
+INFO 2025-12-01 17:50:46,713 basehttp "GET /entregar/216 HTTP/1.0" 200 13242
+INFO 2025-12-01 17:50:48,384 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 17:50:48,384 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 17:50:49,969 basehttp "GET /entregar/214 HTTP/1.0" 200 10844
+INFO 2025-12-01 17:50:49,969 basehttp "GET /entregar/214 HTTP/1.0" 200 10844
+INFO 2025-12-01 17:51:06,602 basehttp "GET /entregar/214 HTTP/1.0" 200 10844
+INFO 2025-12-01 17:51:06,602 basehttp "GET /entregar/214 HTTP/1.0" 200 10844
+INFO 2025-12-01 17:51:07,131 basehttp "GET /entregar/214 HTTP/1.0" 200 10844
+INFO 2025-12-01 17:51:07,131 basehttp "GET /entregar/214 HTTP/1.0" 200 10844
+INFO 2025-12-01 17:51:07,482 basehttp "GET /entregar/214 HTTP/1.0" 200 10844
+INFO 2025-12-01 17:51:07,482 basehttp "GET /entregar/214 HTTP/1.0" 200 10844
+INFO 2025-12-01 17:51:19,779 basehttp "GET /entregar/214 HTTP/1.0" 200 10836
+INFO 2025-12-01 17:51:19,779 basehttp "GET /entregar/214 HTTP/1.0" 200 10836
+INFO 2025-12-01 17:51:21,379 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 17:51:21,379 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 17:51:30,986 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 17:51:30,986 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 17:51:31,682 basehttp "GET /entregar/216 HTTP/1.0" 200 13242
+INFO 2025-12-01 17:51:31,682 basehttp "GET /entregar/216 HTTP/1.0" 200 13242
+INFO 2025-12-01 17:51:38,491 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:51:38,491 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:51:39,356 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 17:51:39,356 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 17:51:40,211 basehttp "GET /entregar/214 HTTP/1.0" 200 10844
+INFO 2025-12-01 17:51:40,211 basehttp "GET /entregar/214 HTTP/1.0" 200 10844
+INFO 2025-12-01 17:51:41,696 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:51:41,696 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:51:42,420 basehttp "GET /registros HTTP/1.0" 200 17249
+INFO 2025-12-01 17:51:42,420 basehttp "GET /registros HTTP/1.0" 200 17249
+INFO 2025-12-01 17:51:46,501 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:51:46,501 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:51:50,705 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 17:51:50,705 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 17:51:51,402 basehttp "GET /entregar/216 HTTP/1.0" 200 13242
+INFO 2025-12-01 17:51:51,402 basehttp "GET /entregar/216 HTTP/1.0" 200 13242
+INFO 2025-12-01 17:52:00,417 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:52:00,417 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:52:02,263 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 17:52:02,263 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 17:52:03,652 basehttp "GET /entregar/214 HTTP/1.0" 200 10844
+INFO 2025-12-01 17:52:03,652 basehttp "GET /entregar/214 HTTP/1.0" 200 10844
+INFO 2025-12-01 17:52:36,365 basehttp "GET /entregar/214 HTTP/1.0" 200 10856
+INFO 2025-12-01 17:52:36,365 basehttp "GET /entregar/214 HTTP/1.0" 200 10856
+INFO 2025-12-01 17:52:45,634 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:52:45,634 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:52:49,680 basehttp "GET /registros HTTP/1.0" 200 17249
+INFO 2025-12-01 17:52:49,680 basehttp "GET /registros HTTP/1.0" 200 17249
+INFO 2025-12-01 17:53:29,472 basehttp "GET /registros HTTP/1.0" 200 17246
+INFO 2025-12-01 17:53:29,472 basehttp "GET /registros HTTP/1.0" 200 17246
+INFO 2025-12-01 17:54:39,610 basehttp "GET /registros HTTP/1.0" 302 0
+INFO 2025-12-01 17:54:39,610 basehttp "GET /registros HTTP/1.0" 302 0
+WARNING 2025-12-01 17:54:39,911 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-01 17:54:39,911 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_create', 'no_facturado_can_create', 'no_facturado_can_deliver', 'facturado_can_edit', 'no_facturado_can_edit', 'facturado_can_deliver', 'registros_can_view'}
+WARNING 2025-12-01 17:54:39,913 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-01 17:54:39,916 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-01 17:54:39,921 basehttp "GET /oidc/callback/?state=TwQrDJOQQIawrB2iRCA9QyPQKXvbmPOO&session_state=525d8c23-b84e-4a7d-93da-c19a2da250b6&code=6856c40e-b199-4585-a7c1-1627ace670f6.525d8c23-b84e-4a7d-93da-c19a2da250b6.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-01 17:54:39,921 basehttp "GET /oidc/callback/?state=TwQrDJOQQIawrB2iRCA9QyPQKXvbmPOO&session_state=525d8c23-b84e-4a7d-93da-c19a2da250b6&code=6856c40e-b199-4585-a7c1-1627ace670f6.525d8c23-b84e-4a7d-93da-c19a2da250b6.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-01 17:54:39,960 basehttp "GET /registros HTTP/1.0" 200 17246
+INFO 2025-12-01 17:54:39,960 basehttp "GET /registros HTTP/1.0" 200 17246
+INFO 2025-12-01 17:55:24,005 basehttp "GET /registros HTTP/1.0" 200 17274
+INFO 2025-12-01 17:55:24,005 basehttp "GET /registros HTTP/1.0" 200 17274
+WARNING 2025-12-01 17:55:28,615 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-01 17:55:28,615 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-01 17:55:28,616 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-01 17:55:28,616 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-01 17:55:29,818 basehttp "GET /registros HTTP/1.0" 200 17274
+INFO 2025-12-01 17:55:29,818 basehttp "GET /registros HTTP/1.0" 200 17274
+INFO 2025-12-01 17:55:29,855 basehttp "GET /static/css/output.css HTTP/1.0" 200 88676
+INFO 2025-12-01 17:55:29,855 basehttp "GET /static/css/output.css HTTP/1.0" 200 88676
+INFO 2025-12-01 17:55:29,867 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-01 17:55:29,867 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+WARNING 2025-12-01 17:55:29,875 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-01 17:55:29,875 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-01 17:55:29,879 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-01 17:55:29,879 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-01 17:55:30,268 log Not Found: /favicon.ico
+WARNING 2025-12-01 17:55:30,268 log Not Found: /favicon.ico
+WARNING 2025-12-01 17:55:30,269 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-01 17:55:30,269 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+INFO 2025-12-01 17:57:44,148 basehttp "GET /registros HTTP/1.0" 200 17146
+INFO 2025-12-01 17:57:44,148 basehttp "GET /registros HTTP/1.0" 200 17146
+INFO 2025-12-01 17:57:57,990 basehttp "GET /registros HTTP/1.0" 200 17146
+INFO 2025-12-01 17:57:57,990 basehttp "GET /registros HTTP/1.0" 200 17146
+INFO 2025-12-01 17:58:21,764 basehttp "GET /registros HTTP/1.0" 200 17179
+INFO 2025-12-01 17:58:21,764 basehttp "GET /registros HTTP/1.0" 200 17179
+INFO 2025-12-01 17:58:24,493 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:58:24,493 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:58:25,912 basehttp "GET /registros HTTP/1.0" 200 17179
+INFO 2025-12-01 17:58:25,912 basehttp "GET /registros HTTP/1.0" 200 17179
+INFO 2025-12-01 17:58:27,172 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:58:27,172 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:58:27,973 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 17:58:27,973 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 17:58:29,586 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:58:29,586 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:59:18,487 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:59:18,487 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:59:20,029 basehttp "GET /nuevo_vsm HTTP/1.0" 200 26745
+INFO 2025-12-01 17:59:20,029 basehttp "GET /nuevo_vsm HTTP/1.0" 200 26745
+INFO 2025-12-01 17:59:21,680 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 17:59:21,680 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 18:15:03,378 basehttp "GET /pendientes HTTP/1.0" 302 0
+INFO 2025-12-01 18:15:03,378 basehttp "GET /pendientes HTTP/1.0" 302 0
+WARNING 2025-12-01 18:15:03,643 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-01 18:15:03,643 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_create', 'no_facturado_can_create', 'no_facturado_can_deliver', 'facturado_can_edit', 'no_facturado_can_edit', 'facturado_can_deliver', 'registros_can_view'}
+WARNING 2025-12-01 18:15:03,645 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-01 18:15:03,648 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-01 18:15:03,654 basehttp "GET /oidc/callback/?state=rxFhe0823vk2QrzfiEsifJf197gEk7qX&session_state=525d8c23-b84e-4a7d-93da-c19a2da250b6&code=33d0ca64-da06-429a-8285-e3987c45a978.525d8c23-b84e-4a7d-93da-c19a2da250b6.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-01 18:15:03,654 basehttp "GET /oidc/callback/?state=rxFhe0823vk2QrzfiEsifJf197gEk7qX&session_state=525d8c23-b84e-4a7d-93da-c19a2da250b6&code=33d0ca64-da06-429a-8285-e3987c45a978.525d8c23-b84e-4a7d-93da-c19a2da250b6.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-01 18:15:03,688 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 18:15:03,688 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 18:15:05,143 basehttp "GET /entregar/216 HTTP/1.0" 200 13242
+INFO 2025-12-01 18:15:05,143 basehttp "GET /entregar/216 HTTP/1.0" 200 13242
+INFO 2025-12-01 18:15:05,168 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2025-12-01 18:15:05,168 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2025-12-01 18:15:05,169 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6574
+INFO 2025-12-01 18:15:05,169 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6574
+INFO 2025-12-01 18:16:42,791 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 18:16:42,791 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 18:16:44,143 basehttp "GET /nuevo_vsm HTTP/1.0" 200 26745
+INFO 2025-12-01 18:16:44,143 basehttp "GET /nuevo_vsm HTTP/1.0" 200 26745
+INFO 2025-12-01 18:16:44,934 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 18:16:44,934 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 18:16:45,835 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 18:16:45,835 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 18:30:56,535 basehttp "GET /pendientes HTTP/1.0" 302 0
+INFO 2025-12-01 18:30:56,535 basehttp "GET /pendientes HTTP/1.0" 302 0
+WARNING 2025-12-01 18:30:56,739 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-01 18:30:56,739 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_create', 'no_facturado_can_create', 'no_facturado_can_deliver', 'facturado_can_edit', 'no_facturado_can_edit', 'facturado_can_deliver', 'registros_can_view'}
+WARNING 2025-12-01 18:30:56,741 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-01 18:30:56,744 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-01 18:30:56,750 basehttp "GET /oidc/callback/?state=uOBxutWp4c464quTOKOeT23qC1tIlse8&session_state=525d8c23-b84e-4a7d-93da-c19a2da250b6&code=4ed8283a-dd60-486c-9510-9fa6b4d3b070.525d8c23-b84e-4a7d-93da-c19a2da250b6.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-01 18:30:56,750 basehttp "GET /oidc/callback/?state=uOBxutWp4c464quTOKOeT23qC1tIlse8&session_state=525d8c23-b84e-4a7d-93da-c19a2da250b6&code=4ed8283a-dd60-486c-9510-9fa6b4d3b070.525d8c23-b84e-4a7d-93da-c19a2da250b6.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-01 18:30:56,783 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 18:30:56,783 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 18:41:11,948 basehttp "GET /entregar/216 HTTP/1.0" 200 13242
+INFO 2025-12-01 18:41:11,948 basehttp "GET /entregar/216 HTTP/1.0" 200 13242
+INFO 2025-12-01 18:42:01,999 basehttp "GET /entregar/216 HTTP/1.0" 200 13248
+INFO 2025-12-01 18:42:01,999 basehttp "GET /entregar/216 HTTP/1.0" 200 13248
+INFO 2025-12-01 19:01:30,301 basehttp "GET /entregar/216 HTTP/1.0" 302 0
+INFO 2025-12-01 19:01:30,301 basehttp "GET /entregar/216 HTTP/1.0" 302 0
+WARNING 2025-12-01 19:01:30,506 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-01 19:01:30,507 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_create', 'no_facturado_can_create', 'no_facturado_can_deliver', 'facturado_can_edit', 'no_facturado_can_edit', 'facturado_can_deliver', 'registros_can_view'}
+WARNING 2025-12-01 19:01:30,510 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-01 19:01:30,513 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-01 19:01:30,518 basehttp "GET /oidc/callback/?state=xWFlIXW1pEFt5lPfUUeBPmkL07MWWStR&session_state=525d8c23-b84e-4a7d-93da-c19a2da250b6&code=2df7f5ec-56ff-49d2-aae9-d18738035de2.525d8c23-b84e-4a7d-93da-c19a2da250b6.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-01 19:01:30,518 basehttp "GET /oidc/callback/?state=xWFlIXW1pEFt5lPfUUeBPmkL07MWWStR&session_state=525d8c23-b84e-4a7d-93da-c19a2da250b6&code=2df7f5ec-56ff-49d2-aae9-d18738035de2.525d8c23-b84e-4a7d-93da-c19a2da250b6.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-01 19:01:30,548 basehttp "GET /entregar/216 HTTP/1.0" 200 13248
+INFO 2025-12-01 19:01:30,548 basehttp "GET /entregar/216 HTTP/1.0" 200 13248
+INFO 2025-12-01 19:01:30,581 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 304 0
+INFO 2025-12-01 19:01:30,581 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 304 0
+INFO 2025-12-01 19:01:34,067 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 19:01:34,067 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 19:01:37,217 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=entregado HTTP/1.0" 200 8238
+INFO 2025-12-01 19:01:37,217 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=entregado HTTP/1.0" 200 8238
+INFO 2025-12-01 19:01:38,868 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=%23 HTTP/1.0" 200 10428
+INFO 2025-12-01 19:01:38,868 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=%23 HTTP/1.0" 200 10428
+INFO 2025-12-01 19:08:54,152 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=entregado HTTP/1.0" 200 8238
+INFO 2025-12-01 19:08:54,152 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=entregado HTTP/1.0" 200 8238
+INFO 2025-12-01 19:08:55,169 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 19:08:55,169 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 19:08:56,366 basehttp "GET /registros HTTP/1.0" 200 17179
+INFO 2025-12-01 19:08:56,366 basehttp "GET /registros HTTP/1.0" 200 17179
+INFO 2025-12-01 19:10:55,014 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-01 19:10:55,014 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-01 19:10:57,272 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 19:10:57,272 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 19:11:33,845 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 19:11:33,845 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 19:15:46,118 basehttp "GET /generar_template_epp/215 HTTP/1.0" 200 7377
+INFO 2025-12-01 19:15:46,118 basehttp "GET /generar_template_epp/215 HTTP/1.0" 200 7377
+INFO 2025-12-01 19:15:46,521 basehttp "GET /firmas/firma_215_169_urldj4n.png HTTP/1.0" 200 9498
+INFO 2025-12-01 19:15:46,521 basehttp "GET /firmas/firma_215_169_urldj4n.png HTTP/1.0" 200 9498
+INFO 2025-12-01 19:17:49,750 basehttp "GET /home HTTP/1.0" 302 0
+INFO 2025-12-01 19:17:49,750 basehttp "GET /home HTTP/1.0" 302 0
+INFO 2025-12-01 19:17:49,858 basehttp "GET /oidc/callback/?error=login_required&state=aFk3dHFdSp0cYZ1DDVSiVRuzwo8qpVDE HTTP/1.0" 302 0
+INFO 2025-12-01 19:17:49,858 basehttp "GET /oidc/callback/?error=login_required&state=aFk3dHFdSp0cYZ1DDVSiVRuzwo8qpVDE HTTP/1.0" 302 0
+INFO 2025-12-01 19:17:49,871 basehttp "GET / HTTP/1.0" 200 5650
+INFO 2025-12-01 19:17:49,871 basehttp "GET / HTTP/1.0" 200 5650
+INFO 2025-12-01 19:17:51,525 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-01 19:17:51,525 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-01 19:17:51,550 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+INFO 2025-12-01 19:17:51,550 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+WARNING 2025-12-01 19:17:54,797 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-01 19:17:54,797 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_edit', 'registros_can_view', 'facturado_can_create', 'facturado_can_deliver', 'facturado_can_edit', 'no_facturado_can_deliver', 'no_facturado_can_create'}
+WARNING 2025-12-01 19:17:54,805 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-01 19:17:54,816 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-01 19:17:54,833 basehttp "GET /oidc/callback/?state=ue4qVMRsPRUeevKoj980CdLe8E0M6YmS&session_state=afdb10a7-476f-42a2-beca-d8b9ad40a99b&code=27848166-5020-46bd-b394-7a265d06f385.afdb10a7-476f-42a2-beca-d8b9ad40a99b.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-01 19:17:54,833 basehttp "GET /oidc/callback/?state=ue4qVMRsPRUeevKoj980CdLe8E0M6YmS&session_state=afdb10a7-476f-42a2-beca-d8b9ad40a99b&code=27848166-5020-46bd-b394-7a265d06f385.afdb10a7-476f-42a2-beca-d8b9ad40a99b.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-01 19:17:54,862 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 19:17:54,862 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 19:18:03,372 basehttp "GET /registros HTTP/1.0" 200 17179
+INFO 2025-12-01 19:18:03,372 basehttp "GET /registros HTTP/1.0" 200 17179
+INFO 2025-12-01 19:18:05,017 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=entregado HTTP/1.0" 200 17187
+INFO 2025-12-01 19:18:05,017 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=entregado HTTP/1.0" 200 17187
+INFO 2025-12-01 19:18:06,528 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=%23 HTTP/1.0" 200 17187
+INFO 2025-12-01 19:18:06,528 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=%23 HTTP/1.0" 200 17187
+INFO 2025-12-01 19:18:07,891 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 200 17187
+INFO 2025-12-01 19:18:07,891 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 200 17187
+INFO 2025-12-01 19:18:09,144 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 200 17187
+INFO 2025-12-01 19:18:09,144 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 200 17187
+INFO 2025-12-01 19:18:09,631 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 200 17187
+INFO 2025-12-01 19:18:09,631 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 200 17187
+INFO 2025-12-01 19:18:11,362 basehttp "GET /registros?solicitante=&retirante=&cc=cc&estado=pendiente HTTP/1.0" 200 17189
+INFO 2025-12-01 19:18:11,362 basehttp "GET /registros?solicitante=&retirante=&cc=cc&estado=pendiente HTTP/1.0" 200 17189
+INFO 2025-12-01 19:18:11,998 basehttp "GET /registros?solicitante=&retirante=&cc=cc&estado=pendiente HTTP/1.0" 200 17189
+INFO 2025-12-01 19:18:11,998 basehttp "GET /registros?solicitante=&retirante=&cc=cc&estado=pendiente HTTP/1.0" 200 17189
+INFO 2025-12-01 19:18:12,464 basehttp "GET /registros?solicitante=&retirante=&cc=cc&estado=pendiente HTTP/1.0" 200 17189
+INFO 2025-12-01 19:18:12,464 basehttp "GET /registros?solicitante=&retirante=&cc=cc&estado=pendiente HTTP/1.0" 200 17189
+INFO 2025-12-01 19:18:12,780 basehttp "GET /registros?solicitante=&retirante=&cc=cc&estado=pendiente HTTP/1.0" 200 17189
+INFO 2025-12-01 19:18:12,780 basehttp "GET /registros?solicitante=&retirante=&cc=cc&estado=pendiente HTTP/1.0" 200 17189
+INFO 2025-12-01 19:28:58,584 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 19:28:58,584 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 19:29:11,723 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 19:29:11,723 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-01 19:29:13,496 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=entregado HTTP/1.0" 200 8238
+INFO 2025-12-01 19:29:13,496 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=entregado HTTP/1.0" 200 8238
+INFO 2025-12-01 19:29:20,271 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-01 19:29:20,271 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-01 19:29:22,184 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 19:29:22,184 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 19:30:33,370 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-01 19:30:33,370 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-01 19:30:35,344 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 19:30:35,344 autoreload Watching for file changes with StatReloader
+INFO 2025-12-01 19:30:40,688 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 19:30:40,688 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-01 19:30:41,939 basehttp "GET /registros HTTP/1.0" 200 17179
+INFO 2025-12-01 19:30:41,939 basehttp "GET /registros HTTP/1.0" 200 17179
+INFO 2025-12-01 19:30:43,548 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=entregado HTTP/1.0" 200 11871
+INFO 2025-12-01 19:30:43,548 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=entregado HTTP/1.0" 200 11871
+INFO 2025-12-01 19:30:45,187 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=%23 HTTP/1.0" 200 17187
+INFO 2025-12-01 19:30:45,187 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=%23 HTTP/1.0" 200 17187
+INFO 2025-12-01 19:30:46,580 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 200 14837
+INFO 2025-12-01 19:30:46,580 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 200 14837
+INFO 2025-12-01 19:30:49,271 basehttp "GET /registros?solicitante=&retirante=&cc=307&estado=pendiente HTTP/1.0" 200 14840
+INFO 2025-12-01 19:30:49,271 basehttp "GET /registros?solicitante=&retirante=&cc=307&estado=pendiente HTTP/1.0" 200 14840
+INFO 2025-12-01 19:30:52,265 basehttp "GET /registros?solicitante=&retirante=&cc=677&estado=pendiente HTTP/1.0" 200 9762
+INFO 2025-12-01 19:30:52,265 basehttp "GET /registros?solicitante=&retirante=&cc=677&estado=pendiente HTTP/1.0" 200 9762
+INFO 2025-12-01 19:30:55,944 basehttp "GET /registros?solicitante=&retirante=&cc=3&estado=pendiente HTTP/1.0" 200 14838
+INFO 2025-12-01 19:30:55,944 basehttp "GET /registros?solicitante=&retirante=&cc=3&estado=pendiente HTTP/1.0" 200 14838
+INFO 2025-12-01 19:31:03,542 basehttp "GET /registros?solicitante=Luciano+Cingolani&retirante=&cc=&estado=pendiente HTTP/1.0" 200 9776
+INFO 2025-12-01 19:31:03,542 basehttp "GET /registros?solicitante=Luciano+Cingolani&retirante=&cc=&estado=pendiente HTTP/1.0" 200 9776
+INFO 2025-12-01 19:31:06,057 basehttp "GET /registros?solicitante=Luciano&retirante=&cc=&estado=pendiente HTTP/1.0" 200 9766
+INFO 2025-12-01 19:31:06,057 basehttp "GET /registros?solicitante=Luciano&retirante=&cc=&estado=pendiente HTTP/1.0" 200 9766
+INFO 2025-12-01 19:31:08,523 basehttp "GET /registros?solicitante=Luciano&retirante=&cc=&estado=entregado HTTP/1.0" 200 9766
+INFO 2025-12-01 19:31:08,523 basehttp "GET /registros?solicitante=Luciano&retirante=&cc=&estado=entregado HTTP/1.0" 200 9766
+INFO 2025-12-01 19:31:10,039 basehttp "GET /registros?solicitante=Luciano&retirante=&cc=&estado=%23 HTTP/1.0" 200 9766
+INFO 2025-12-01 19:31:10,039 basehttp "GET /registros?solicitante=Luciano&retirante=&cc=&estado=%23 HTTP/1.0" 200 9766
+INFO 2025-12-01 19:31:11,786 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=%23 HTTP/1.0" 200 17187
+INFO 2025-12-01 19:31:11,786 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=%23 HTTP/1.0" 200 17187
+INFO 2025-12-01 19:31:19,236 basehttp "GET /registros?solicitante=lcingo&retirante=&cc=&estado=%23 HTTP/1.0" 200 17193
+INFO 2025-12-01 19:31:19,236 basehttp "GET /registros?solicitante=lcingo&retirante=&cc=&estado=%23 HTTP/1.0" 200 17193
+INFO 2025-12-01 19:31:20,449 basehttp "GET /registros?solicitante=lcingo&retirante=&cc=&estado=%23 HTTP/1.0" 200 17193
+INFO 2025-12-01 19:31:20,449 basehttp "GET /registros?solicitante=lcingo&retirante=&cc=&estado=%23 HTTP/1.0" 200 17193
+INFO 2025-12-02 11:28:49,577 autoreload Watching for file changes with StatReloader
+INFO 2025-12-02 11:28:49,577 autoreload Watching for file changes with StatReloader
+INFO 2025-12-02 11:29:42,605 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-02 11:29:42,605 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-02 11:29:42,999 basehttp "GET /oidc/callback/?error=login_required&state=RGWLIxXmTCfBXyEuAtlm7CGA5ZYuN26p HTTP/1.0" 302 0
+INFO 2025-12-02 11:29:42,999 basehttp "GET /oidc/callback/?error=login_required&state=RGWLIxXmTCfBXyEuAtlm7CGA5ZYuN26p HTTP/1.0" 302 0
+INFO 2025-12-02 11:29:43,019 basehttp "GET / HTTP/1.0" 200 5650
+INFO 2025-12-02 11:29:43,019 basehttp "GET / HTTP/1.0" 200 5650
+INFO 2025-12-02 11:29:43,040 basehttp "GET /static/css/output.css HTTP/1.0" 304 0
+INFO 2025-12-02 11:29:43,040 basehttp "GET /static/css/output.css HTTP/1.0" 304 0
+WARNING 2025-12-02 11:29:43,275 log Not Found: /favicon.ico
+WARNING 2025-12-02 11:29:43,275 log Not Found: /favicon.ico
+WARNING 2025-12-02 11:29:43,275 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-02 11:29:43,275 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+INFO 2025-12-02 11:31:13,715 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-02 11:31:13,715 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-02 11:31:13,743 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+INFO 2025-12-02 11:31:13,743 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+WARNING 2025-12-02 11:31:17,238 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-02 11:31:17,239 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_edit', 'no_facturado_can_edit', 'no_facturado_can_create', 'no_facturado_can_deliver', 'registros_can_view', 'facturado_can_create', 'facturado_can_deliver'}
+WARNING 2025-12-02 11:31:17,242 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-02 11:31:17,254 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-02 11:31:17,270 basehttp "GET /oidc/callback/?state=nKdq93cUqaLjwlLYIi8EEUGNWwrMHtoK&session_state=6dea94fa-396d-44ce-b6ed-bc41b5febf44&code=db18c078-4634-4e5d-bd00-7f546912713c.6dea94fa-396d-44ce-b6ed-bc41b5febf44.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-02 11:31:17,270 basehttp "GET /oidc/callback/?state=nKdq93cUqaLjwlLYIi8EEUGNWwrMHtoK&session_state=6dea94fa-396d-44ce-b6ed-bc41b5febf44&code=db18c078-4634-4e5d-bd00-7f546912713c.6dea94fa-396d-44ce-b6ed-bc41b5febf44.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-02 11:31:17,296 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-02 11:31:17,296 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-02 11:31:23,109 basehttp "GET /nuevo_vsm HTTP/1.0" 200 26745
+INFO 2025-12-02 11:31:23,109 basehttp "GET /nuevo_vsm HTTP/1.0" 200 26745

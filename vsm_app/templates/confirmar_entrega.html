@@ -32,8 +32,8 @@
       {% csrf_token %}
       
       <div class="grid grid-cols-2 gap-4">
-        <p class="bg-base-300 p-4 rounded-2xl"><span class="text-white font-medium">Solicitante:</span> {{ vsm.solicitante }}</p>
-        <p class="bg-base-300 p-4 rounded-2xl"><span class="text-white font-medium">Retirante:</span> {{ vsm.retirante }}</p>
+        <p class="bg-base-300 p-4 rounded-2xl"><span class="text-base-100 font-medium">Solicitante:</span> {{ vsm.solicitante }}</p>
+        <p class="bg-base-300 p-4 rounded-2xl"><span class="text-base-100 font-medium">Retirante:</span> {{ vsm.retirante }}</p>
       </div>
 
       <table class="w-full text-sm border border-gray-600 rounded-lg overflow-hidden bg-base-100">
@@ -77,7 +77,7 @@
         {% if vsm.estado == "pendiente" %}
         {% if vsm.tipo_entrega == 'EPP' %}
         <button type="button" id="abrirFirmaBtn"
-                class="btn px-6 py-2 rounded-xl font-medium text-sm">
+                class="btn btn-primary px-6 py-2 rounded-xl font-medium text-sm">
           Confirmar Entrega
         </button>
         {% endif %}
@@ -90,13 +90,13 @@
         {% endif %}
 
         <a href="{% url 'rechazar_entrega' vsm.id %}">
-          <button type="button" id="btnRechazar" class="btn btn-secondary px-6 py-2 rounded-xl font-medium text-sm">
+          <button type="button" id="btnRechazar" class="btn btn-danger px-6 py-2 rounded-xl font-medium text-sm">
             Rechazar entrega
           </button>
         </a>
         {% endif %}
 
-        <a href="{% url 'listar_vsm_pendientes' %}" class="text-sm text-[var(--detalle-dorado)] hover:underline">
+        <a href="{% url 'listar_vsm_pendientes' %}" class="btn btn-secondary px-6 py-2 rounded-xl font-medium text-sm">
           Volver a Vales Pendientes
         </a>
       </div>

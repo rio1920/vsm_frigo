@@ -52,9 +52,9 @@
           <td class="px-4 py-3">{{ vsm.retirante.cc.codigo }}</td>
           <td class="px-4 py-3">{{ vsm.fecha_solicitud|date:"d/m/Y H:i" }}</td>
           {% if vsm.estado == 'pendiente' %}
-          <td class="px-4 py-3 text-center"><span class="badge badge-warning badge-outline bg-base-200" style="color: yellow !important; border: 1px solid yellow; text-transform: uppercase;">{{ vsm.estado }}</span></td>
+          <td class="px-4 py-3 text-center"><span class="badge badge-warning text-black" style="border: 1px solid yellow; text-transform: uppercase;">{{ vsm.estado }}</span></td>
           {% else %}
-          <td class="px-4 py-3 text-center"><span class="badge badge-success badge-outline bg-base-200" style="color: green !important; border: 1px solid green; text-transform: uppercase;">{{ vsm.estado }}</span></td>
+          <td class="px-4 py-3 text-center"><span class="badge badge-success text-black" style="border: 1px solid green; text-transform: uppercase;">{{ vsm.estado }}</span></td>
           {% endif %}
           <td class="px-4 py-3 text-center">
           {% if vsm.estado == 'pendiente' %}
