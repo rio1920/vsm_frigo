@@ -96,6 +96,17 @@ INTERNAL_IPS = [
     "localhost",
 ]
 
+
+USE_X_FORWARDED_HOST = True
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+ 
+CSRF_TRUSTED_ORIGINS = [
+    "https://vsm.rioplatense.com",
+        "http://vsm.rioplatense.com",
+        "http://vsm.rioplatense.local"
+]
+
+
 NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
 
 

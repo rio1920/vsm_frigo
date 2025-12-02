@@ -462,3 +462,295 @@ INFO 2025-12-02 11:31:17,296 basehttp "GET /home HTTP/1.0" 200 6964
 INFO 2025-12-02 11:31:17,296 basehttp "GET /home HTTP/1.0" 200 6964
 INFO 2025-12-02 11:31:23,109 basehttp "GET /nuevo_vsm HTTP/1.0" 200 26745
 INFO 2025-12-02 11:31:23,109 basehttp "GET /nuevo_vsm HTTP/1.0" 200 26745
+INFO 2025-12-02 11:34:46,308 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-02 11:34:46,308 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-02 11:34:47,764 basehttp "GET /registros HTTP/1.0" 200 17179
+INFO 2025-12-02 11:34:47,764 basehttp "GET /registros HTTP/1.0" 200 17179
+INFO 2025-12-02 11:34:49,822 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-02 11:34:49,822 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-02 11:34:50,637 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-02 11:34:50,637 basehttp "GET /pendientes HTTP/1.0" 200 10428
+INFO 2025-12-02 11:35:28,172 basehttp "GET /pendientes HTTP/1.0" 200 10422
+INFO 2025-12-02 11:35:28,172 basehttp "GET /pendientes HTTP/1.0" 200 10422
+INFO 2025-12-02 12:19:21,302 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 302 0
+INFO 2025-12-02 12:19:21,302 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 302 0
+WARNING 2025-12-02 12:19:21,535 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-02 12:19:21,535 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_edit', 'no_facturado_can_edit', 'no_facturado_can_create', 'no_facturado_can_deliver', 'registros_can_view', 'facturado_can_create', 'facturado_can_deliver'}
+WARNING 2025-12-02 12:19:21,537 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-02 12:19:21,539 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-02 12:19:21,543 basehttp "GET /oidc/callback/?state=e56GZ5zOb3TCfjLtleiZ5QWDGzuj3ZiZ&session_state=6dea94fa-396d-44ce-b6ed-bc41b5febf44&code=e4309a3c-182d-4d16-9681-ffd036bbfa6f.6dea94fa-396d-44ce-b6ed-bc41b5febf44.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-02 12:19:21,543 basehttp "GET /oidc/callback/?state=e56GZ5zOb3TCfjLtleiZ5QWDGzuj3ZiZ&session_state=6dea94fa-396d-44ce-b6ed-bc41b5febf44&code=e4309a3c-182d-4d16-9681-ffd036bbfa6f.6dea94fa-396d-44ce-b6ed-bc41b5febf44.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-02 12:19:21,575 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 200 9796
+INFO 2025-12-02 12:19:21,575 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 200 9796
+INFO 2025-12-02 12:24:26,721 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 200 9796
+INFO 2025-12-02 12:24:26,721 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 200 9796
+INFO 2025-12-02 12:24:29,941 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=entregado HTTP/1.0" 200 8230
+INFO 2025-12-02 12:24:29,941 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=entregado HTTP/1.0" 200 8230
+INFO 2025-12-02 12:24:31,250 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 200 9796
+INFO 2025-12-02 12:24:31,250 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 200 9796
+INFO 2025-12-02 12:24:32,502 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=%23 HTTP/1.0" 200 10420
+INFO 2025-12-02 12:24:32,502 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=%23 HTTP/1.0" 200 10420
+INFO 2025-12-02 12:24:33,363 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-02 12:24:33,363 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-02 12:24:34,591 basehttp "GET /registros HTTP/1.0" 200 17179
+INFO 2025-12-02 12:24:34,591 basehttp "GET /registros HTTP/1.0" 200 17179
+INFO 2025-12-02 12:24:36,467 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=entregado HTTP/1.0" 200 11871
+INFO 2025-12-02 12:24:36,467 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=entregado HTTP/1.0" 200 11871
+INFO 2025-12-02 12:25:09,029 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=entregado HTTP/1.0" 200 11871
+INFO 2025-12-02 12:25:09,029 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=entregado HTTP/1.0" 200 11871
+INFO 2025-12-02 12:25:17,239 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 200 14837
+INFO 2025-12-02 12:25:17,239 basehttp "GET /registros?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 200 14837
+INFO 2025-12-02 12:25:18,280 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-02 12:25:18,280 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-02 12:59:05,911 basehttp "GET /pendientes HTTP/1.0" 302 0
+INFO 2025-12-02 12:59:05,911 basehttp "GET /pendientes HTTP/1.0" 302 0
+WARNING 2025-12-02 12:59:06,117 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-02 12:59:06,117 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_edit', 'no_facturado_can_edit', 'no_facturado_can_create', 'no_facturado_can_deliver', 'registros_can_view', 'facturado_can_create', 'facturado_can_deliver'}
+WARNING 2025-12-02 12:59:06,119 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-02 12:59:06,122 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-02 12:59:06,126 basehttp "GET /oidc/callback/?state=yehv6efcJAXIlyBOqsg8vdlcBgk4LEQU&session_state=6dea94fa-396d-44ce-b6ed-bc41b5febf44&code=668a8f33-8abc-49f4-a2fa-417194ca5037.6dea94fa-396d-44ce-b6ed-bc41b5febf44.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-02 12:59:06,126 basehttp "GET /oidc/callback/?state=yehv6efcJAXIlyBOqsg8vdlcBgk4LEQU&session_state=6dea94fa-396d-44ce-b6ed-bc41b5febf44&code=668a8f33-8abc-49f4-a2fa-417194ca5037.6dea94fa-396d-44ce-b6ed-bc41b5febf44.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-02 12:59:06,161 basehttp "GET /pendientes HTTP/1.0" 200 10420
+INFO 2025-12-02 12:59:06,161 basehttp "GET /pendientes HTTP/1.0" 200 10420
+INFO 2025-12-02 12:59:06,214 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-02 12:59:06,214 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-02 12:59:06,216 basehttp "GET /static/css/output.css HTTP/1.0" 200 88676
+INFO 2025-12-02 12:59:06,216 basehttp "GET /static/css/output.css HTTP/1.0" 200 88676
+WARNING 2025-12-02 12:59:06,555 log Not Found: /favicon.ico
+WARNING 2025-12-02 12:59:06,555 log Not Found: /favicon.ico
+WARNING 2025-12-02 12:59:06,555 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-02 12:59:06,555 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+INFO 2025-12-02 12:59:19,955 basehttp "GET /entregar/214 HTTP/1.0" 200 10841
+INFO 2025-12-02 12:59:19,955 basehttp "GET /entregar/214 HTTP/1.0" 200 10841
+INFO 2025-12-02 12:59:19,976 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6574
+INFO 2025-12-02 12:59:19,976 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6574
+INFO 2025-12-02 12:59:19,977 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2025-12-02 12:59:19,977 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2025-12-02 12:59:19,986 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2025-12-02 12:59:19,986 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2025-12-02 12:59:23,523 basehttp "GET /pendientes HTTP/1.0" 200 10420
+INFO 2025-12-02 12:59:23,523 basehttp "GET /pendientes HTTP/1.0" 200 10420
+INFO 2025-12-02 13:02:21,194 basehttp "GET /entregar/216 HTTP/1.0" 200 13227
+INFO 2025-12-02 13:02:21,194 basehttp "GET /entregar/216 HTTP/1.0" 200 13227
+WARNING 2025-12-02 13:05:42,725 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:05:42,725 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:05:42,726 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 13:05:42,726 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 13:36:12,898 basehttp "GET /entregar/216 HTTP/1.0" 302 0
+INFO 2025-12-02 13:36:12,898 basehttp "GET /entregar/216 HTTP/1.0" 302 0
+WARNING 2025-12-02 13:36:13,129 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-02 13:36:13,129 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_edit', 'no_facturado_can_edit', 'no_facturado_can_create', 'no_facturado_can_deliver', 'registros_can_view', 'facturado_can_create', 'facturado_can_deliver'}
+WARNING 2025-12-02 13:36:13,130 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-02 13:36:13,133 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-02 13:36:13,137 basehttp "GET /oidc/callback/?state=0XCgknC8BGwypFC8OtBUbpw3SbjM1K0d&session_state=6dea94fa-396d-44ce-b6ed-bc41b5febf44&code=574dfdb2-3ce6-4447-b41d-7e07bf298e3f.6dea94fa-396d-44ce-b6ed-bc41b5febf44.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-02 13:36:13,137 basehttp "GET /oidc/callback/?state=0XCgknC8BGwypFC8OtBUbpw3SbjM1K0d&session_state=6dea94fa-396d-44ce-b6ed-bc41b5febf44&code=574dfdb2-3ce6-4447-b41d-7e07bf298e3f.6dea94fa-396d-44ce-b6ed-bc41b5febf44.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-02 13:36:13,175 basehttp "GET /entregar/216 HTTP/1.0" 200 13227
+INFO 2025-12-02 13:36:13,175 basehttp "GET /entregar/216 HTTP/1.0" 200 13227
+INFO 2025-12-02 13:36:13,220 basehttp "GET /static/js/on-scan.js HTTP/1.0" 304 0
+INFO 2025-12-02 13:36:13,220 basehttp "GET /static/js/on-scan.js HTTP/1.0" 304 0
+WARNING 2025-12-02 13:36:13,237 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:13,237 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:13,239 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 13:36:13,239 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 13:36:16,480 basehttp "GET /pendientes HTTP/1.0" 200 10420
+INFO 2025-12-02 13:36:16,480 basehttp "GET /pendientes HTTP/1.0" 200 10420
+WARNING 2025-12-02 13:36:16,521 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:16,521 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:16,522 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 13:36:16,522 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 13:36:28,707 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-02 13:36:28,707 basehttp "GET /home HTTP/1.0" 200 6964
+WARNING 2025-12-02 13:36:28,742 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:28,742 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:28,743 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 13:36:28,743 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 13:36:30,110 basehttp "GET /pendientes HTTP/1.0" 200 10420
+INFO 2025-12-02 13:36:30,110 basehttp "GET /pendientes HTTP/1.0" 200 10420
+WARNING 2025-12-02 13:36:30,156 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:30,156 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:30,157 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 13:36:30,157 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 13:36:31,050 basehttp "GET /entregar/216 HTTP/1.0" 200 13227
+INFO 2025-12-02 13:36:31,050 basehttp "GET /entregar/216 HTTP/1.0" 200 13227
+WARNING 2025-12-02 13:36:31,088 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:31,088 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:31,089 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 13:36:31,089 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 13:36:40,642 basehttp "GET /entregar/216 HTTP/1.0" 200 13227
+INFO 2025-12-02 13:36:40,642 basehttp "GET /entregar/216 HTTP/1.0" 200 13227
+WARNING 2025-12-02 13:36:40,697 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:40,697 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:40,698 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 13:36:40,698 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 13:36:41,503 basehttp "GET /entregar/216 HTTP/1.0" 200 13227
+INFO 2025-12-02 13:36:41,503 basehttp "GET /entregar/216 HTTP/1.0" 200 13227
+WARNING 2025-12-02 13:36:41,547 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:41,547 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:41,548 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 13:36:41,548 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 13:36:41,820 basehttp "GET /entregar/216 HTTP/1.0" 200 13227
+INFO 2025-12-02 13:36:41,820 basehttp "GET /entregar/216 HTTP/1.0" 200 13227
+WARNING 2025-12-02 13:36:41,868 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:41,868 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:41,868 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 13:36:41,868 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 13:36:52,624 basehttp "GET /entregar/216 HTTP/1.0" 200 13229
+INFO 2025-12-02 13:36:52,624 basehttp "GET /entregar/216 HTTP/1.0" 200 13229
+WARNING 2025-12-02 13:36:52,672 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:52,672 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:52,673 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 13:36:52,673 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 13:36:53,251 basehttp "GET /entregar/216 HTTP/1.0" 200 13229
+INFO 2025-12-02 13:36:53,251 basehttp "GET /entregar/216 HTTP/1.0" 200 13229
+WARNING 2025-12-02 13:36:53,295 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:53,295 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:53,296 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 13:36:53,296 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 13:36:53,609 basehttp "GET /entregar/216 HTTP/1.0" 200 13229
+INFO 2025-12-02 13:36:53,609 basehttp "GET /entregar/216 HTTP/1.0" 200 13229
+WARNING 2025-12-02 13:36:53,658 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:53,658 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:53,659 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 13:36:53,659 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 13:36:55,841 basehttp "GET /entregar/216 HTTP/1.0" 200 13229
+INFO 2025-12-02 13:36:55,841 basehttp "GET /entregar/216 HTTP/1.0" 200 13229
+INFO 2025-12-02 13:36:55,875 basehttp "GET /static/css/output.css HTTP/1.0" 200 88676
+INFO 2025-12-02 13:36:55,875 basehttp "GET /static/css/output.css HTTP/1.0" 200 88676
+INFO 2025-12-02 13:36:55,881 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2025-12-02 13:36:55,881 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2025-12-02 13:36:55,886 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-02 13:36:55,886 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+WARNING 2025-12-02 13:36:55,892 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:55,892 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:36:55,893 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 13:36:55,893 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 13:36:55,896 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6574
+INFO 2025-12-02 13:36:55,896 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6574
+INFO 2025-12-02 13:36:55,905 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2025-12-02 13:36:55,905 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+WARNING 2025-12-02 13:36:56,096 log Not Found: /favicon.ico
+WARNING 2025-12-02 13:36:56,096 log Not Found: /favicon.ico
+WARNING 2025-12-02 13:36:56,097 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-02 13:36:56,097 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+INFO 2025-12-02 13:38:29,764 basehttp "GET /entregar/216 HTTP/1.0" 200 13225
+INFO 2025-12-02 13:38:29,764 basehttp "GET /entregar/216 HTTP/1.0" 200 13225
+WARNING 2025-12-02 13:38:29,802 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:38:29,802 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:38:29,803 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 13:38:29,803 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 13:38:49,642 basehttp "GET /entregar/216 HTTP/1.0" 200 13233
+INFO 2025-12-02 13:38:49,642 basehttp "GET /entregar/216 HTTP/1.0" 200 13233
+WARNING 2025-12-02 13:38:49,684 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:38:49,684 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:38:49,684 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 13:38:49,684 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 13:38:50,301 basehttp "GET /entregar/216 HTTP/1.0" 200 13233
+INFO 2025-12-02 13:38:50,301 basehttp "GET /entregar/216 HTTP/1.0" 200 13233
+WARNING 2025-12-02 13:38:50,341 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:38:50,341 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:38:50,341 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 13:38:50,341 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 13:38:50,504 basehttp "GET /entregar/216 HTTP/1.0" 200 13233
+INFO 2025-12-02 13:38:50,504 basehttp "GET /entregar/216 HTTP/1.0" 200 13233
+WARNING 2025-12-02 13:38:50,549 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:38:50,549 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:38:50,549 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 13:38:50,549 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 13:38:52,692 basehttp "GET /entregar/216 HTTP/1.0" 200 13233
+INFO 2025-12-02 13:38:52,692 basehttp "GET /entregar/216 HTTP/1.0" 200 13233
+INFO 2025-12-02 13:38:52,716 basehttp "GET /static/css/output.css HTTP/1.0" 200 88676
+INFO 2025-12-02 13:38:52,716 basehttp "GET /static/css/output.css HTTP/1.0" 200 88676
+INFO 2025-12-02 13:38:52,726 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-02 13:38:52,726 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+WARNING 2025-12-02 13:38:52,736 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:38:52,736 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:38:52,745 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 13:38:52,745 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 13:38:52,747 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6574
+INFO 2025-12-02 13:38:52,747 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2025-12-02 13:38:52,747 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6574
+INFO 2025-12-02 13:38:52,747 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2025-12-02 13:38:52,756 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2025-12-02 13:38:52,756 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+WARNING 2025-12-02 13:38:52,925 log Not Found: /favicon.ico
+WARNING 2025-12-02 13:38:52,925 log Not Found: /favicon.ico
+WARNING 2025-12-02 13:38:52,926 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-02 13:38:52,926 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+INFO 2025-12-02 13:52:06,855 basehttp "GET /home HTTP/1.0" 302 0
+INFO 2025-12-02 13:52:06,855 basehttp "GET /home HTTP/1.0" 302 0
+WARNING 2025-12-02 13:52:07,174 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-02 13:52:07,174 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_edit', 'no_facturado_can_edit', 'no_facturado_can_create', 'no_facturado_can_deliver', 'registros_can_view', 'facturado_can_create', 'facturado_can_deliver'}
+WARNING 2025-12-02 13:52:07,175 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-02 13:52:07,178 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-02 13:52:07,182 basehttp "GET /oidc/callback/?state=oT6HvbLsITfFDYJ3nZyWxPLHtwMa9yI6&session_state=6dea94fa-396d-44ce-b6ed-bc41b5febf44&code=44095991-75a1-4bd9-8ec4-1e85596e5730.6dea94fa-396d-44ce-b6ed-bc41b5febf44.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-02 13:52:07,182 basehttp "GET /oidc/callback/?state=oT6HvbLsITfFDYJ3nZyWxPLHtwMa9yI6&session_state=6dea94fa-396d-44ce-b6ed-bc41b5febf44&code=44095991-75a1-4bd9-8ec4-1e85596e5730.6dea94fa-396d-44ce-b6ed-bc41b5febf44.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-02 13:52:07,207 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-02 13:52:07,207 basehttp "GET /home HTTP/1.0" 200 6964
+WARNING 2025-12-02 13:52:07,260 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:52:07,260 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 13:52:07,261 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 13:52:07,261 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 14:07:22,890 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-02 14:07:22,890 basehttp "GET / HTTP/1.0" 302 0
+WARNING 2025-12-02 14:07:23,212 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-02 14:07:23,212 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_edit', 'no_facturado_can_edit', 'no_facturado_can_create', 'no_facturado_can_deliver', 'registros_can_view', 'facturado_can_create', 'facturado_can_deliver'}
+WARNING 2025-12-02 14:07:23,213 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-02 14:07:23,215 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-02 14:07:23,218 basehttp "GET /oidc/callback/?state=FKalrqruVnCrXY0ShH75YOaESVqSMwBd&session_state=6dea94fa-396d-44ce-b6ed-bc41b5febf44&code=39a63ef3-b397-4a70-a4c9-3dc33ba98eec.6dea94fa-396d-44ce-b6ed-bc41b5febf44.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-02 14:07:23,218 basehttp "GET /oidc/callback/?state=FKalrqruVnCrXY0ShH75YOaESVqSMwBd&session_state=6dea94fa-396d-44ce-b6ed-bc41b5febf44&code=39a63ef3-b397-4a70-a4c9-3dc33ba98eec.6dea94fa-396d-44ce-b6ed-bc41b5febf44.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-02 14:07:23,240 basehttp "GET / HTTP/1.0" 200 6964
+INFO 2025-12-02 14:07:23,240 basehttp "GET / HTTP/1.0" 200 6964
+INFO 2025-12-02 14:07:23,267 basehttp "GET /static/css/output.css HTTP/1.0" 200 88676
+INFO 2025-12-02 14:07:23,267 basehttp "GET /static/css/output.css HTTP/1.0" 200 88676
+INFO 2025-12-02 14:07:23,274 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-02 14:07:23,274 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+WARNING 2025-12-02 14:07:23,282 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 14:07:23,282 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 14:07:23,283 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 14:07:23,283 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 14:07:23,580 log Not Found: /favicon.ico
+WARNING 2025-12-02 14:07:23,580 log Not Found: /favicon.ico
+WARNING 2025-12-02 14:07:23,581 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-02 14:07:23,581 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+INFO 2025-12-02 14:07:27,783 basehttp "GET /nuevo_vsm HTTP/1.0" 200 26745
+INFO 2025-12-02 14:07:27,783 basehttp "GET /nuevo_vsm HTTP/1.0" 200 26745
+WARNING 2025-12-02 14:07:27,817 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 14:07:27,817 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 14:07:27,817 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 14:07:27,817 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 14:07:29,095 basehttp "GET /home HTTP/1.0" 200 6964
+INFO 2025-12-02 14:07:29,095 basehttp "GET /home HTTP/1.0" 200 6964
+WARNING 2025-12-02 14:07:29,139 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 14:07:29,139 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 14:07:29,139 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 14:07:29,139 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 14:07:29,713 basehttp "GET /registros HTTP/1.0" 200 17179
+INFO 2025-12-02 14:07:29,713 basehttp "GET /registros HTTP/1.0" 200 17179
+WARNING 2025-12-02 14:07:29,755 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 14:07:29,755 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 14:07:29,756 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 14:07:29,756 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 14:07:30,667 basehttp "GET /pendiente/216/ver HTTP/1.0" 200 9531
+INFO 2025-12-02 14:07:30,667 basehttp "GET /pendiente/216/ver HTTP/1.0" 200 9531
+WARNING 2025-12-02 14:07:30,710 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 14:07:30,710 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 14:07:30,710 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 14:07:30,710 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 14:07:32,067 basehttp "GET /registros HTTP/1.0" 200 17179
+INFO 2025-12-02 14:07:32,067 basehttp "GET /registros HTTP/1.0" 200 17179
+WARNING 2025-12-02 14:07:32,142 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 14:07:32,142 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-02 14:07:32,142 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-02 14:07:32,142 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-02 14:45:37,778 autoreload /app/vsm_frigo/settings.py changed, reloading.
+INFO 2025-12-02 14:45:37,778 autoreload /app/vsm_frigo/settings.py changed, reloading.
+INFO 2025-12-02 14:45:39,589 autoreload Watching for file changes with StatReloader
+INFO 2025-12-02 14:45:39,589 autoreload Watching for file changes with StatReloader
+INFO 2025-12-02 14:46:19,208 autoreload /app/vsm_frigo/settings.py changed, reloading.
+INFO 2025-12-02 14:46:19,208 autoreload /app/vsm_frigo/settings.py changed, reloading.
+INFO 2025-12-02 14:46:20,380 autoreload Watching for file changes with StatReloader
+INFO 2025-12-02 14:46:20,380 autoreload Watching for file changes with StatReloader
+INFO 2025-12-02 14:46:27,081 autoreload /app/vsm_frigo/settings.py changed, reloading.
+INFO 2025-12-02 14:46:27,081 autoreload /app/vsm_frigo/settings.py changed, reloading.
+INFO 2025-12-02 14:46:28,246 autoreload Watching for file changes with StatReloader
+INFO 2025-12-02 14:46:28,246 autoreload Watching for file changes with StatReloader
