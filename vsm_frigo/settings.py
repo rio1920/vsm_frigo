@@ -1,13 +1,13 @@
 from pathlib import Path
 import os
-#from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
 
 # vsm_frigo/settings.py
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-#load_dotenv(os.path.join(BASE_DIR, ".env"))
+# load_dotenv(os.path.join(BASE_DIR, ".env"))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
@@ -181,15 +181,16 @@ LOGIN_REDIRECT_URL = os.getenv("LOGIN_REDIRECT_URL_")
 LOGOUT_REDIRECT_URL = os.getenv("LOGOUT_REDIRECT_URL_")
 LOGIN_URL = os.getenv("LOGIN_URL_")
 
-#OIDC_REDIRECT_ALLOWED_HOSTS = "vsm.rioplatense.local", "127.0.0.1:8000"
+# OIDC_REDIRECT_ALLOWED_HOSTS = "vsm.rioplatense.local", "127.0.0.1:8000"
 
-#USE_X_FORWARDED_HOST = True
+# USE_X_FORWARDED_HOST = True
 
-#OIDC_REDIRECT_REQUIRE_HTTPS = True
+# OIDC_REDIRECT_REQUIRE_HTTPS = True
 
 
 OIDC_VERIFY_SSL = False
 
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
@@ -207,7 +208,8 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "vsm_app/static")]
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-#LOGGING
+
+# LOGGING
 log_directory = os.path.join(BASE_DIR, "logs")
 os.makedirs(log_directory, exist_ok=True)
 log_file = os.path.join(BASE_DIR, "logs", "vsm_app.log")
