@@ -19,7 +19,7 @@ RUN uv sync
 
 COPY --chown=myuser:myuser . .
 
-RUN uv run manage.py collectstatic --noinput
+RUN uv run manage.py collectstatic --noinput --clear
 
 RUN find . -type d -not -path "./.venv*" -exec chown -R myuser:myuser {} +
 
