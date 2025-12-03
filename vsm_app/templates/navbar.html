@@ -59,7 +59,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
             </div>
-            <ul tabindex="0" class="dropdown-content menu bg-base-200 rounded-box w-72 shadow-sm z-[1] mt-4">
+            <ul tabindex="0" class="dropdown-content menu bg-base-200 rounded-box w-72 shadow-sm z-[1] mt-4" style="left: auto !important; right: 0 !important;">
                 {% if username %}
                 <li><span class="text-primary text-sm font-semibold">👤 {{ username }}</span></li>
                 <li><a href="{% url 'keycloak_logout' %}" class="text-error">Cerrar sesión</a></li>

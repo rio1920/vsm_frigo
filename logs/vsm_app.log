@@ -2448,3 +2448,17 @@ WARNING 2025-12-03 12:36:03,684 log Not Found: /.well-known/appspecific/com.chro
 WARNING 2025-12-03 12:36:03,684 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
 WARNING 2025-12-03 12:36:03,685 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
 WARNING 2025-12-03 12:36:03,685 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 12:54:03,696 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-03 12:54:03,696 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-03 12:54:03,816 basehttp "GET /oidc/callback/?error=login_required&state=o8efUQgVNiOZI7SpJ6igrEVCOj7SkhtP HTTP/1.0" 302 0
+INFO 2025-12-03 12:54:03,816 basehttp "GET /oidc/callback/?error=login_required&state=o8efUQgVNiOZI7SpJ6igrEVCOj7SkhtP HTTP/1.0" 302 0
+INFO 2025-12-03 12:54:03,823 basehttp "GET / HTTP/1.0" 200 6446
+INFO 2025-12-03 12:54:03,823 basehttp "GET / HTTP/1.0" 200 6446
+INFO 2025-12-03 12:54:03,835 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-03 12:54:03,835 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-03 12:54:03,838 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2025-12-03 12:54:03,838 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+WARNING 2025-12-03 12:54:04,193 log Not Found: /favicon.ico
+WARNING 2025-12-03 12:54:04,193 log Not Found: /favicon.ico
+WARNING 2025-12-03 12:54:04,194 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-03 12:54:04,194 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
