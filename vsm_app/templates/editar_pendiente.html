@@ -34,7 +34,7 @@
       <div>
         <label for="tipo_facturacion" class="block mb-2 font-semibold">Tipo de facturación</label>
         <select id="tipo_facturacion" name="tipo_facturacion" 
-                class="w-full p-2 rounded bg-base-200">
+                class="w-full p-2 rounded bg-base-100">
           <option value="FACTURADO" {% if vsm.tipo_facturacion == "FACTURADO" %}selected{% endif %}>Facturado</option>
           <option value="NO_FACTURADO" {% if vsm.tipo_facturacion == "NO_FACTURADO" %}selected{% endif %}>No facturado</option>
         </select>
@@ -52,7 +52,7 @@
       <div>
         <label for="retirante" class="block mb-2 font-semibold">Retirante</label>
         <select id="retirante" name="retirante" 
-                class="select2 w-full p-2 rounded bg-base-200">
+                class="select2 w-full p-2 rounded bg-base-100">
           <option value="">Seleccione un retirante</option>
           {% for empleado in empleados %}
             <option value="{{ empleado.id }}" {% if vsm.retirante.id == empleado.id %}selected{% endif %}>
@@ -66,7 +66,7 @@
       <div>
         <label for="detalles" class="block mb-2 font-semibold">Observaciones</label>
         <textarea id="detalles" name="detalles" rows="4"
-                  class="w-full p-1 rounded bg-base-200">{{ vsm.observaciones }}</textarea>
+                  class="w-full p-1 rounded bg-base-100">{{ vsm.observaciones }}</textarea>
       </div>
       
       <!-- Productos -->
@@ -80,7 +80,7 @@
                     name="cantidad_{{ producto.id }}" 
                     min="0" 
                     value="{{ producto.cantidad_solicitada }}" 
-                    class="w-24 p-2 rounded bg-base-200 border">
+                    class="w-24 p-2 rounded bg-base-100 border">
             </div>
           {% endfor %}
         </div>

@@ -6,74 +6,82 @@
 
 <body class="flex flex-col items-center justify-center" style="background-color: var(--fondo-oscuro); margin-top: 0;">
 
-  <h1 class="text-2xl font-bold mb-4 text-[var(--detalle-dorado)] mt-4">Vales Pendientes / Parciales</h1>
-  <div class="filtros m-4">
-    <form method="get" class="flex space-x-4">
-    <input type="text" name="solicitante" placeholder="Solicitante"
-          value="{{ filtros.solicitante }}" 
-          class="p-2 rounded bg-base-300 border border-gray-700">
-    <input type="text" name="retirante" placeholder="Retirante"
-          value="{{ filtros.retirante }}"
-          class="p-2 rounded bg-base-300 border border-gray-700">
-    <input type="text" name="cc" placeholder="CC"
-          value="{{ filtros.cc }}"
-          class="p-2 rounded bg-base-300 border border-gray-700">
+    <h1 class="text-2xl font-bold mb-4 text-[var(--detalle-dorado)] mt-4">Vales Pendientes / Parciales</h1>
+    
+    <div class="filtros m-4 w-11/12 max-w-6xl">
+        <form method="get" class="flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-0">
+            
+            <input type="text" name="solicitante" placeholder="Solicitante"
+                value="{{ filtros.solicitante }}" 
+                class="p-2 rounded bg-base-200 border border-gray-700 w-full md:w-auto">
+            
+            <input type="text" name="retirante" placeholder="Retirante"
+                value="{{ filtros.retirante }}"
+                class="p-2 rounded bg-base-200 border border-gray-700 w-full md:w-auto">
+            
+            <input type="text" name="cc" placeholder="CC"
+                value="{{ filtros.cc }}"
+                class="p-2 rounded bg-base-200 border border-gray-700 w-full md:w-auto">
 
-
-    <select name="estado" class="p-2 rounded bg-base-300 border border-gray-700">
-      <option value="pendiente" {% if request.GET.estado == "pendiente" or not request.GET.estado %}selected{% endif %}>Pendiente</option>
-      <option value="entregado" {% if request.GET.estado == "entregado" %}selected{% endif %}>Entregado</option>
-      <option value="#" {% if request.GET.estado == "#" %}selected{% endif %}>Todos</option>
-    </select>
-      <button type="submit" class="btn px-4 py-2 rounded btn-primary">Filtrar</button>
-    </form>
-  </div>
-  <div class="overflow-x-auto table shadow-lg max-w-6xl mx-auto" style="width: 70%;">
-    <table class="min-w-full divide-y divide-gray-700 bg-base-300 rounded-2xl">
-      <thead class="bg-[var(--detalle-dorado)]/20">
-        <tr>
-          <th class="px-4 py-3 text-left text-sm font-semibold">Solicitante</th>
-          <th class="px-4 py-3 text-left text-sm font-semibold">Retirante</th>
-          <th class="px-4 py-3 text-left text-sm font-semibold">Entrega</th>
-          <th class="px-4 py-3 text-left text-sm font-semibold">CC</th>
-          <th class="px-4 py-3 text-left text-sm font-semibold">Fecha solicitado</th>
-          <th class="px-4 py-3 text-center text-sm font-semibold">Estado</th>
-          <th class="px-4 py-3 text-center text-sm font-semibold">Acciones</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-gray-700" style="overflow: hidden;">
-        {% for vsm in pendientes %}
-        <tr class="border-b border-gray-700 hover:bg-base-200 transition">
-          <td class="px-4 py-3">{{ vsm.solicitante }}</td>
-          <td class="px-4 py-3">{{ vsm.retirante.legajo }} - {{ vsm.retirante.nombre }}</td>
-          <td class="px-4 py-3">{{ vsm.tipo_entrega }}</td>
-          <td class="px-4 py-3">{{ vsm.retirante.cc.codigo }}</td>
-          <td class="px-4 py-3">{{ vsm.fecha_solicitud|date:"d/m/Y H:i" }}</td>
-          {% if vsm.estado == 'pendiente' %}
-          <td class="px-4 py-3 text-center"><span class="badge badge-warning text-black" style="border: 1px solid yellow; text-transform: uppercase;">{{ vsm.estado }}</span></td>
-          {% else %}
-          <td class="px-4 py-3 text-center"><span class="badge badge-success text-black" style="border: 1px solid green; text-transform: uppercase;">{{ vsm.estado }}</span></td>
-          {% endif %}
-          <td class="px-4 py-3 text-center">
-          {% if vsm.estado == 'pendiente' %}
-            <a href="{% url 'confirmar_entrega' vsm.id %}" class="btn" style="border: 1px solid white;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
-              </svg>
-            </a>
-          {% endif %}
-          </td>
-        </tr>
-        {% empty %}
-        <tr>
-          <td colspan="6" class="p-4 text-center text-gray-400">No hay vales pendientes.</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </div>
-  {% include 'paginator.html' %}
+            <select name="estado" class="p-2 rounded bg-base-200 border border-gray-700 w-full md:w-auto">
+                <option value="pendiente" {% if request.GET.estado == "pendiente" or not request.GET.estado %}selected{% endif %}>Pendiente</option>
+                <option value="entregado" {% if request.GET.estado == "entregado" %}selected{% endif %}>Entregado</option>
+                <option value="#" {% if request.GET.estado == "#" %}selected{% endif %}>Todos</option>
+            </select>
+            
+            <button type="submit" class="btn px-4 py-2 rounded btn-primary w-full md:w-auto">Filtrar</button>
+        </form>
+    </div>
+    
+    <div class="overflow-x-auto shadow-lg w-11/12 max-w-6xl mx-auto mb-4">
+        <table class="min-w-full divide-y divide-gray-700 bg-base-200 rounded-2xl">
+            <thead class="bg-[var(--detalle-dorado)]/20">
+                <tr>
+                    <th class="px-4 py-3 text-left text-sm font-semibold whitespace-nowrap">Solicitante</th>
+                    <th class="px-4 py-3 text-left text-sm font-semibold whitespace-nowrap">Retirante</th>
+                    <th class="px-4 py-3 text-left text-sm font-semibold whitespace-nowrap">Entrega</th>
+                    <th class="px-4 py-3 text-left text-sm font-semibold whitespace-nowrap">CC</th>
+                    <th class="px-4 py-3 text-left text-sm font-semibold whitespace-nowrap">Fecha solicitado</th>
+                    <th class="px-4 py-3 text-center text-sm font-semibold whitespace-nowrap">Estado</th>
+                    <th class="px-4 py-3 text-center text-sm font-semibold whitespace-nowrap">Acciones</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-700">
+                {% for vsm in pendientes %}
+                <tr class="border-b border-gray-700 hover:bg-base-200 transition">
+                    <td class="px-4 py-3 whitespace-nowrap">{{ vsm.solicitante }}</td>
+                    <td class="px-4 py-3 whitespace-nowrap">{{ vsm.retirante.legajo }} - {{ vsm.retirante.nombre }}</td>
+                    <td class="px-4 py-3 whitespace-nowrap">{{ vsm.tipo_entrega }}</td>
+                    <td class="px-4 py-3 whitespace-nowrap">{{ vsm.retirante.cc.codigo }}</td>
+                    <td class="px-4 py-3 whitespace-nowrap">{{ vsm.fecha_solicitud|date:"d/m/Y H:i" }}</td>
+                    {% if vsm.estado == 'pendiente' %}
+                    <td class="px-4 py-3 text-center whitespace-nowrap">
+                        <span class="badge badge-warning text-black" style="border: 1px solid yellow; text-transform: uppercase;">{{ vsm.estado }}</span>
+                    </td>
+                    {% else %}
+                    <td class="px-4 py-3 text-center whitespace-nowrap">
+                        <span class="badge badge-success text-black" style="border: 1px solid green; text-transform: uppercase;">{{ vsm.estado }}</span>
+                    </td>
+                    {% endif %}
+                    <td class="px-4 py-3 text-center whitespace-nowrap">
+                        {% if vsm.estado == 'pendiente' %}
+                        <a href="{% url 'confirmar_entrega' vsm.id %}" class="btn btn-base-300 btn-sm" style="border: 1px solid white;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                            </svg>
+                        </a>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="7" class="p-4 text-center text-gray-400">No hay vales pendientes.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% include 'paginator.html' %}
 </body>
 
 {% endblock %}
-

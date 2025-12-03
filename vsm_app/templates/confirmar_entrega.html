@@ -21,7 +21,7 @@
 
 <body class="justify-center">
 
-  <div class="bg-base-300 w-full mt-10 mx-auto  max-w-3xl sm:max-w-4xl md:max-w-5xl min-h-3xl sm:min-h-4xl md:min-h-5xl p-3 sm:p-5 md:p-8 rounded-2xl shadow-xl">
+  <div class="bg-base-200 w-full mt-10 mx-auto  max-w-3xl sm:max-w-4xl md:max-w-5xl min-h-3xl sm:min-h-4xl md:min-h-5xl p-3 sm:p-5 md:p-8 rounded-2xl shadow-xl">
     {% if tipo_entrega == "INSUMOS" %}
     <h1 class="text-3xl font-semibold text-center mt-0">Confirmar Entrega de VSM</h1>
     {% elif tipo_entrega == "EPP" %}
@@ -32,8 +32,8 @@
       {% csrf_token %}
       
       <div class="grid grid-cols-2 gap-4">
-        <p class="bg-base-300 p-4 rounded-2xl"><span class="text-base-200 font-extrabold">Solicitante:</span> {{ vsm.solicitante }}</p>
-        <p class="bg-base-300 p-4 rounded-2xl"><span class="text-base-200 font-extrabold">Retirante:</span> {{ vsm.retirante }}</p>
+        <p class="bg-base-200 p-4 rounded-2xl"><span class="font-extrabold">Solicitante:</span> {{ vsm.solicitante }}</p>
+        <p class="bg-base-200 p-4 rounded-2xl"><span class="font-extrabold">Retirante:</span> {{ vsm.retirante }}</p>
       </div>
 
       <table class="w-full text-sm border border-gray-600 rounded-lg overflow-hidden bg-base-100">
@@ -70,7 +70,7 @@
 
       <div class="p-4 rounded-2xl">
         <label for="observaciones_entrega" class="block text-sm font-medium text-[var(--detalle-dorado)] mb-1">Observaciones</label>
-        <textarea name="observaciones_entrega" id="observaciones_entrega" rows="3" class="w-full border border-zinc-700 rounded-xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--detalle-dorado)]"></textarea>
+        <textarea name="observaciones_entrega" id="observaciones_entrega" rows="3" class="bg-base-100 w-full border border-zinc-700 rounded-xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--detalle-dorado)]"></textarea>
       </div>
 
       <div class="flex items-center gap-4">
@@ -90,7 +90,7 @@
         {% endif %}
 
         <a href="{% url 'rechazar_entrega' vsm.id %}">
-          <button type="button" id="btnRechazar" class="btn btn-danger px-6 py-2 rounded-xl font-medium text-sm">
+          <button type="button" id="btnRechazar" class="btn btn-error px-6 py-2 rounded-xl font-medium text-sm">
             Rechazar entrega
           </button>
         </a>
