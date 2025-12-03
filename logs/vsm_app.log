@@ -2374,3 +2374,77 @@ WARNING 2025-12-03 11:45:24,772 log Not Found: /.well-known/appspecific/com.chro
 WARNING 2025-12-03 11:45:24,772 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
 WARNING 2025-12-03 11:45:24,773 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
 WARNING 2025-12-03 11:45:24,773 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 11:58:51,345 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-03 11:58:51,345 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-03 11:58:52,495 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-03 11:58:52,495 basehttp "GET / HTTP/1.0" 302 0
+WARNING 2025-12-03 11:58:52,694 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-03 11:58:52,694 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_edit', 'facturado_can_deliver', 'no_facturado_can_create', 'facturado_can_create', 'no_facturado_can_deliver', 'registros_can_view', 'facturado_can_edit'}
+WARNING 2025-12-03 11:58:52,695 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-03 11:58:52,697 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-03 11:58:52,700 basehttp "GET /oidc/callback/?state=cbshPw9qfr0qIs0WFfHP6clsNSy6diI0&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=ef9fd544-1729-4faf-a817-8a3dbfda91e4.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 11:58:52,700 basehttp "GET /oidc/callback/?state=cbshPw9qfr0qIs0WFfHP6clsNSy6diI0&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=ef9fd544-1729-4faf-a817-8a3dbfda91e4.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 11:58:52,724 basehttp "GET / HTTP/1.0" 200 7570
+INFO 2025-12-03 11:58:52,724 basehttp "GET / HTTP/1.0" 200 7570
+INFO 2025-12-03 11:59:42,947 basehttp "GET / HTTP/1.0" 200 7570
+INFO 2025-12-03 11:59:42,947 basehttp "GET / HTTP/1.0" 200 7570
+INFO 2025-12-03 11:59:52,294 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2025-12-03 11:59:52,294 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+WARNING 2025-12-03 11:59:52,329 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 11:59:52,329 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 11:59:52,329 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 11:59:52,329 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 11:59:53,188 basehttp "GET / HTTP/1.0" 200 7570
+INFO 2025-12-03 11:59:53,188 basehttp "GET / HTTP/1.0" 200 7570
+INFO 2025-12-03 11:59:53,214 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2025-12-03 11:59:53,214 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2025-12-03 11:59:53,226 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-03 11:59:53,226 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+WARNING 2025-12-03 11:59:53,237 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 11:59:53,237 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 11:59:53,237 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 11:59:53,237 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 11:59:53,402 log Not Found: /favicon.ico
+WARNING 2025-12-03 11:59:53,402 log Not Found: /favicon.ico
+WARNING 2025-12-03 11:59:53,403 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-03 11:59:53,403 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+INFO 2025-12-03 12:16:28,731 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-03 12:16:28,731 basehttp "GET / HTTP/1.0" 302 0
+WARNING 2025-12-03 12:16:28,902 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-03 12:16:28,902 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_edit', 'facturado_can_deliver', 'no_facturado_can_create', 'facturado_can_create', 'no_facturado_can_deliver', 'registros_can_view', 'facturado_can_edit'}
+WARNING 2025-12-03 12:16:28,903 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-03 12:16:28,905 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-03 12:16:28,908 basehttp "GET /oidc/callback/?state=84FqL0SXxPR9BHREORII4A5ptpXYLjcj&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=049f3bb8-4a9d-470c-b6b0-c9a65347bfa8.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 12:16:28,908 basehttp "GET /oidc/callback/?state=84FqL0SXxPR9BHREORII4A5ptpXYLjcj&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=049f3bb8-4a9d-470c-b6b0-c9a65347bfa8.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 12:16:28,934 basehttp "GET / HTTP/1.0" 200 7583
+INFO 2025-12-03 12:16:28,934 basehttp "GET / HTTP/1.0" 200 7583
+WARNING 2025-12-03 12:16:28,985 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 12:16:28,985 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 12:16:28,986 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 12:16:28,986 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 12:30:06,860 basehttp "GET / HTTP/1.0" 200 7585
+INFO 2025-12-03 12:30:06,860 basehttp "GET / HTTP/1.0" 200 7585
+WARNING 2025-12-03 12:30:06,913 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 12:30:06,913 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 12:30:06,914 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 12:30:06,914 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 12:30:08,881 basehttp "GET /home HTTP/1.0" 200 7585
+INFO 2025-12-03 12:30:08,881 basehttp "GET /home HTTP/1.0" 200 7585
+WARNING 2025-12-03 12:30:08,917 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 12:30:08,917 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 12:30:08,917 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 12:30:08,917 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 12:36:03,415 basehttp "GET /home HTTP/1.0" 302 0
+INFO 2025-12-03 12:36:03,415 basehttp "GET /home HTTP/1.0" 302 0
+WARNING 2025-12-03 12:36:03,592 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-03 12:36:03,592 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_edit', 'facturado_can_deliver', 'no_facturado_can_create', 'facturado_can_create', 'no_facturado_can_deliver', 'registros_can_view', 'facturado_can_edit'}
+WARNING 2025-12-03 12:36:03,594 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-03 12:36:03,596 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-03 12:36:03,601 basehttp "GET /oidc/callback/?state=43gIQIDOy1POUPFa05PuS4Pcl9XQ6osU&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=3696ba2e-335c-4060-9c15-08a1bfb335e0.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 12:36:03,601 basehttp "GET /oidc/callback/?state=43gIQIDOy1POUPFa05PuS4Pcl9XQ6osU&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=3696ba2e-335c-4060-9c15-08a1bfb335e0.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 12:36:03,628 basehttp "GET /home HTTP/1.0" 200 7892
+INFO 2025-12-03 12:36:03,628 basehttp "GET /home HTTP/1.0" 200 7892
+WARNING 2025-12-03 12:36:03,684 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 12:36:03,684 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 12:36:03,685 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 12:36:03,685 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
