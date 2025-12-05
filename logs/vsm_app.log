@@ -2462,3 +2462,363 @@ WARNING 2025-12-03 12:54:04,193 log Not Found: /favicon.ico
 WARNING 2025-12-03 12:54:04,193 log Not Found: /favicon.ico
 WARNING 2025-12-03 12:54:04,194 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
 WARNING 2025-12-03 12:54:04,194 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+INFO 2025-12-03 13:12:22,144 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-03 13:12:22,144 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-03 13:12:23,274 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-03 13:12:23,274 basehttp "GET / HTTP/1.0" 302 0
+WARNING 2025-12-03 13:12:23,819 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-03 13:12:23,819 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_edit', 'facturado_can_deliver', 'no_facturado_can_create', 'facturado_can_create', 'no_facturado_can_deliver', 'registros_can_view', 'facturado_can_edit'}
+WARNING 2025-12-03 13:12:23,821 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-03 13:12:23,823 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-03 13:12:23,827 basehttp "GET /oidc/callback/?state=MMdo29npQH4p2aXCV9NNPXUUKFYIuoNn&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=3722b789-0f65-4c20-bd66-c68c1bd27a6c.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 13:12:23,827 basehttp "GET /oidc/callback/?state=MMdo29npQH4p2aXCV9NNPXUUKFYIuoNn&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=3722b789-0f65-4c20-bd66-c68c1bd27a6c.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 13:12:23,848 basehttp "GET / HTTP/1.0" 200 7944
+INFO 2025-12-03 13:12:23,848 basehttp "GET / HTTP/1.0" 200 7944
+INFO 2025-12-03 13:12:23,884 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2025-12-03 13:12:23,884 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2025-12-03 13:12:23,889 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-03 13:12:23,889 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+WARNING 2025-12-03 13:12:24,200 log Not Found: /favicon.ico
+WARNING 2025-12-03 13:12:24,200 log Not Found: /favicon.ico
+WARNING 2025-12-03 13:12:24,201 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-03 13:12:24,201 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+INFO 2025-12-03 13:12:25,558 basehttp "GET /auth/logout/ HTTP/1.0" 302 0
+INFO 2025-12-03 13:12:25,558 basehttp "GET /auth/logout/ HTTP/1.0" 302 0
+INFO 2025-12-03 13:12:25,563 basehttp "GET / HTTP/1.0" 200 7094
+INFO 2025-12-03 13:12:25,563 basehttp "GET / HTTP/1.0" 200 7094
+INFO 2025-12-03 13:48:51,770 basehttp "GET / HTTP/1.0" 200 6536
+INFO 2025-12-03 13:48:51,770 basehttp "GET / HTTP/1.0" 200 6536
+INFO 2025-12-03 14:01:53,559 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-03 14:01:53,559 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-03 14:01:55,951 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 14:01:55,951 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 14:01:58,757 basehttp "GET / HTTP/1.0" 200 6536
+INFO 2025-12-03 14:01:58,757 basehttp "GET / HTTP/1.0" 200 6536
+INFO 2025-12-03 14:02:06,522 basehttp "GET /registros HTTP/1.0" 302 0
+INFO 2025-12-03 14:02:06,522 basehttp "GET /registros HTTP/1.0" 302 0
+INFO 2025-12-03 14:02:06,527 basehttp "GET /?next=/registros HTTP/1.0" 200 6536
+INFO 2025-12-03 14:02:06,527 basehttp "GET /?next=/registros HTTP/1.0" 200 6536
+INFO 2025-12-03 14:02:08,683 basehttp "GET /home HTTP/1.0" 200 6536
+INFO 2025-12-03 14:02:08,683 basehttp "GET /home HTTP/1.0" 200 6536
+INFO 2025-12-03 14:02:35,267 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-03 14:02:35,267 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-03 14:02:37,150 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 14:02:37,150 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 14:02:49,123 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-03 14:02:49,123 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-03 14:02:50,647 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 14:02:50,647 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 14:02:56,589 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-03 14:02:56,589 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-03 14:02:57,950 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 14:02:57,950 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 14:03:05,560 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-03 14:03:05,560 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-03 14:03:06,867 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 14:03:06,867 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 14:03:16,934 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-03 14:03:16,934 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-03 14:03:18,205 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 14:03:18,205 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 14:20:00,085 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-03 14:20:00,085 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-03 14:20:00,153 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+INFO 2025-12-03 14:20:00,153 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+WARNING 2025-12-03 14:20:01,370 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-03 14:20:01,370 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_deliver', 'no_facturado_can_edit', 'facturado_can_create', 'facturado_can_edit', 'no_facturado_can_create', 'registros_can_view', 'facturado_can_deliver'}
+WARNING 2025-12-03 14:20:01,373 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-03 14:20:01,377 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-03 14:20:01,395 basehttp "GET /oidc/callback/?state=dN6NqFLQt7H420JIEjSfeW7Q4UHfYZif&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=c68035ce-0042-4ed0-ac75-4629a54de9a4.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 14:20:01,395 basehttp "GET /oidc/callback/?state=dN6NqFLQt7H420JIEjSfeW7Q4UHfYZif&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=c68035ce-0042-4ed0-ac75-4629a54de9a4.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 14:20:01,434 basehttp "GET /home HTTP/1.0" 200 7944
+INFO 2025-12-03 14:20:01,434 basehttp "GET /home HTTP/1.0" 200 7944
+INFO 2025-12-03 14:20:07,480 basehttp "GET /registros HTTP/1.0" 200 18449
+INFO 2025-12-03 14:20:07,480 basehttp "GET /registros HTTP/1.0" 200 18449
+WARNING 2025-12-03 14:20:09,596 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 14:20:09,596 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 14:20:09,597 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 14:20:09,597 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 14:38:33,452 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+INFO 2025-12-03 14:38:33,452 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+WARNING 2025-12-03 14:38:34,314 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-03 14:38:34,314 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_deliver', 'no_facturado_can_edit', 'facturado_can_create', 'facturado_can_edit', 'no_facturado_can_create', 'registros_can_view', 'facturado_can_deliver'}
+WARNING 2025-12-03 14:38:34,316 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-03 14:38:34,320 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-03 14:38:34,325 basehttp "GET /oidc/callback/?state=55cGmZwnVnuddlZIE5EV8m09S2mMjS6h&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=4451e40b-8ed5-436f-a2ae-8598d9ebb1ad.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 14:38:34,325 basehttp "GET /oidc/callback/?state=55cGmZwnVnuddlZIE5EV8m09S2mMjS6h&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=4451e40b-8ed5-436f-a2ae-8598d9ebb1ad.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 14:38:34,351 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27725
+INFO 2025-12-03 14:38:34,351 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27725
+WARNING 2025-12-03 14:38:34,418 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 14:38:34,418 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 14:38:34,419 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 14:38:34,419 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 15:30:49,591 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+INFO 2025-12-03 15:30:49,591 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+WARNING 2025-12-03 15:30:50,504 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-03 15:30:50,504 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_deliver', 'no_facturado_can_edit', 'facturado_can_create', 'facturado_can_edit', 'no_facturado_can_create', 'registros_can_view', 'facturado_can_deliver'}
+WARNING 2025-12-03 15:30:50,507 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-03 15:30:50,509 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-03 15:30:50,514 basehttp "GET /oidc/callback/?state=KBU11uuDuzSV6jHRjBDbtsPfBNuT50En&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=18e3d628-a6e7-4212-b578-fe1fd9329cfd.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 15:30:50,514 basehttp "GET /oidc/callback/?state=KBU11uuDuzSV6jHRjBDbtsPfBNuT50En&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=18e3d628-a6e7-4212-b578-fe1fd9329cfd.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 15:30:50,548 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27593
+INFO 2025-12-03 15:30:50,548 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27593
+WARNING 2025-12-03 15:30:50,657 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 15:30:50,657 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+INFO 2025-12-03 15:30:50,661 basehttp "GET /static/css/output.css HTTP/1.0" 304 0
+INFO 2025-12-03 15:30:50,661 basehttp "GET /static/css/output.css HTTP/1.0" 304 0
+WARNING 2025-12-03 15:30:50,663 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 15:30:50,663 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 15:30:50,666 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2025-12-03 15:30:50,666 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2025-12-03 15:30:50,670 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2025-12-03 15:30:50,670 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2025-12-03 15:30:50,677 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2025-12-03 15:30:50,677 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2025-12-03 15:30:50,685 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+INFO 2025-12-03 15:30:50,685 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+INFO 2025-12-03 15:30:59,637 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27593
+INFO 2025-12-03 15:30:59,637 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27593
+WARNING 2025-12-03 15:30:59,702 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 15:30:59,702 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 15:30:59,703 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 15:30:59,703 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 17:29:30,587 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 302 0
+INFO 2025-12-03 17:29:30,587 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 302 0
+INFO 2025-12-03 17:29:30,722 basehttp "GET /oidc/callback/?state=ai7qYjGOeuU6SD45nkayiuIvDPt7s4ai&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=741aeb7c-516b-4f6d-9e98-ee8ecdfb358c.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 17:29:30,722 basehttp "GET /oidc/callback/?state=ai7qYjGOeuU6SD45nkayiuIvDPt7s4ai&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=741aeb7c-516b-4f6d-9e98-ee8ecdfb358c.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 17:29:30,743 basehttp "GET / HTTP/1.0" 200 6404
+INFO 2025-12-03 17:29:30,743 basehttp "GET / HTTP/1.0" 200 6404
+INFO 2025-12-03 17:29:36,440 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+INFO 2025-12-03 17:29:36,440 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+WARNING 2025-12-03 17:29:37,352 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-03 17:29:37,352 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_deliver', 'no_facturado_can_edit', 'facturado_can_create', 'facturado_can_edit', 'no_facturado_can_create', 'registros_can_view', 'facturado_can_deliver'}
+WARNING 2025-12-03 17:29:37,353 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-03 17:29:37,355 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-03 17:29:37,359 basehttp "GET /oidc/callback/?state=DrBLNOOempc06q7UNUHDAwl9pXVt3M2x&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=711a374a-99e2-44fd-9c41-146380fcebd1.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 17:29:37,359 basehttp "GET /oidc/callback/?state=DrBLNOOempc06q7UNUHDAwl9pXVt3M2x&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=711a374a-99e2-44fd-9c41-146380fcebd1.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 17:29:37,383 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27593
+INFO 2025-12-03 17:29:37,383 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27593
+INFO 2025-12-03 17:29:37,429 basehttp "GET /static/js/tailwind.js HTTP/1.0" 304 0
+INFO 2025-12-03 17:29:37,429 basehttp "GET /static/js/tailwind.js HTTP/1.0" 304 0
+INFO 2025-12-03 17:29:37,438 basehttp "GET /static/js/jquery.js HTTP/1.0" 304 0
+INFO 2025-12-03 17:29:37,438 basehttp "GET /static/js/jquery.js HTTP/1.0" 304 0
+INFO 2025-12-03 17:29:37,444 basehttp "GET /static/js/select2.js HTTP/1.0" 304 0
+INFO 2025-12-03 17:29:37,444 basehttp "GET /static/js/select2.js HTTP/1.0" 304 0
+WARNING 2025-12-03 17:29:37,455 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 17:29:37,455 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 17:29:37,456 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 17:29:37,456 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 17:29:51,454 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27593
+INFO 2025-12-03 17:29:51,454 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27593
+WARNING 2025-12-03 17:29:51,534 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 17:29:51,534 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 17:29:51,535 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 17:29:51,535 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 18:28:34,967 basehttp "GET /home HTTP/1.0" 302 0
+INFO 2025-12-03 18:28:34,967 basehttp "GET /home HTTP/1.0" 302 0
+WARNING 2025-12-03 18:28:35,442 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-03 18:28:35,442 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_deliver', 'no_facturado_can_edit', 'facturado_can_create', 'facturado_can_edit', 'no_facturado_can_create', 'registros_can_view', 'facturado_can_deliver'}
+WARNING 2025-12-03 18:28:35,443 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-03 18:28:35,446 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-03 18:28:35,450 basehttp "GET /oidc/callback/?state=YwQxfrEqwTRkJRwDdYWcQVq6hHPwsoTh&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=0a824593-66da-4483-9c66-06c26f58ea9c.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 18:28:35,450 basehttp "GET /oidc/callback/?state=YwQxfrEqwTRkJRwDdYWcQVq6hHPwsoTh&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=0a824593-66da-4483-9c66-06c26f58ea9c.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 18:28:35,474 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-03 18:28:35,474 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-03 18:28:35,515 basehttp "GET /static/css/output.css HTTP/1.0" 304 0
+INFO 2025-12-03 18:28:35,515 basehttp "GET /static/css/output.css HTTP/1.0" 304 0
+INFO 2025-12-03 18:28:35,535 basehttp "GET /static/js/tailwind.js HTTP/1.0" 304 0
+WARNING 2025-12-03 18:28:35,541 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+INFO 2025-12-03 18:28:35,541 basehttp "GET /static/js/jquery.js HTTP/1.0" 304 0
+INFO 2025-12-03 18:28:35,535 basehttp "GET /static/js/tailwind.js HTTP/1.0" 304 0
+INFO 2025-12-03 18:28:35,543 basehttp "GET /static/js/select2.js HTTP/1.0" 304 0
+WARNING 2025-12-03 18:28:35,541 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+INFO 2025-12-03 18:28:35,541 basehttp "GET /static/js/jquery.js HTTP/1.0" 304 0
+INFO 2025-12-03 18:28:35,543 basehttp "GET /static/js/select2.js HTTP/1.0" 304 0
+INFO 2025-12-03 18:28:35,545 basehttp "GET /static/js/on-scan.js HTTP/1.0" 304 0
+INFO 2025-12-03 18:28:35,545 basehttp "GET /static/js/on-scan.js HTTP/1.0" 304 0
+WARNING 2025-12-03 18:28:35,547 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 18:28:35,547 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 18:34:44,781 basehttp "GET /registros HTTP/1.0" 200 18317
+INFO 2025-12-03 18:34:44,781 basehttp "GET /registros HTTP/1.0" 200 18317
+WARNING 2025-12-03 18:34:44,851 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 18:34:44,851 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 18:34:44,852 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 18:34:44,852 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 18:34:50,701 basehttp "GET /auth/logout/ HTTP/1.0" 302 0
+INFO 2025-12-03 18:34:50,701 basehttp "GET /auth/logout/ HTTP/1.0" 302 0
+INFO 2025-12-03 18:34:50,707 basehttp "GET / HTTP/1.0" 200 6404
+INFO 2025-12-03 18:34:50,707 basehttp "GET / HTTP/1.0" 200 6404
+WARNING 2025-12-03 18:34:50,749 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 18:34:50,749 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 18:34:50,750 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 18:34:50,750 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 18:34:54,662 basehttp "GET /home HTTP/1.0" 200 6404
+INFO 2025-12-03 18:34:54,662 basehttp "GET /home HTTP/1.0" 200 6404
+WARNING 2025-12-03 18:34:54,702 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 18:34:54,702 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 18:34:54,702 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 18:34:54,702 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 18:34:56,158 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-03 18:34:56,158 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-03 18:34:56,214 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+INFO 2025-12-03 18:34:56,214 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+WARNING 2025-12-03 18:34:56,476 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-03 18:34:56,477 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_deliver', 'no_facturado_can_edit', 'facturado_can_create', 'facturado_can_edit', 'no_facturado_can_create', 'registros_can_view', 'facturado_can_deliver'}
+WARNING 2025-12-03 18:34:56,479 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-03 18:34:56,482 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-03 18:34:56,525 basehttp "GET /oidc/callback/?state=stZw68HZoXnljesECO9YYbdac4DylyiX&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=0bab9d42-c118-4979-a136-f09665a30eb9.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 18:34:56,525 basehttp "GET /oidc/callback/?state=stZw68HZoXnljesECO9YYbdac4DylyiX&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=0bab9d42-c118-4979-a136-f09665a30eb9.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 18:34:56,588 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-03 18:34:56,588 basehttp "GET /home HTTP/1.0" 200 7812
+WARNING 2025-12-03 18:34:54,351 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 18:34:54,351 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 18:34:54,352 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 18:34:54,352 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 18:37:40,214 basehttp "GET /registros HTTP/1.0" 200 18317
+INFO 2025-12-03 18:37:40,214 basehttp "GET /registros HTTP/1.0" 200 18317
+WARNING 2025-12-03 18:37:40,287 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 18:37:40,287 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 18:37:40,288 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 18:37:40,288 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 18:37:46,884 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-03 18:37:46,884 basehttp "GET /home HTTP/1.0" 200 7812
+WARNING 2025-12-03 18:37:46,936 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 18:37:46,936 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 18:37:46,936 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 18:37:46,936 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 18:37:47,997 basehttp "GET /registros HTTP/1.0" 200 18317
+INFO 2025-12-03 18:37:47,997 basehttp "GET /registros HTTP/1.0" 200 18317
+WARNING 2025-12-03 18:37:48,060 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 18:37:48,060 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 18:37:48,061 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 18:37:48,061 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 18:37:49,246 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-03 18:37:49,246 basehttp "GET /home HTTP/1.0" 200 7812
+WARNING 2025-12-03 18:37:49,331 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 18:37:49,331 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 18:37:49,331 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 18:37:49,331 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 18:37:50,446 basehttp "GET /pendientes HTTP/1.0" 200 12958
+INFO 2025-12-03 18:37:50,446 basehttp "GET /pendientes HTTP/1.0" 200 12958
+WARNING 2025-12-03 18:37:50,515 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 18:37:50,515 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 18:37:50,516 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 18:37:50,516 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 18:46:31,946 basehttp "GET /entregar/216 HTTP/1.0" 200 14064
+INFO 2025-12-03 18:46:31,946 basehttp "GET /entregar/216 HTTP/1.0" 200 14064
+INFO 2025-12-03 18:46:32,004 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2025-12-03 18:46:32,004 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2025-12-03 18:46:32,009 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6574
+INFO 2025-12-03 18:46:32,009 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6574
+WARNING 2025-12-03 18:46:32,025 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 18:46:32,025 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 18:46:32,026 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 18:46:32,026 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 19:14:40,230 basehttp "GET /entregar/216 HTTP/1.0" 302 0
+INFO 2025-12-03 19:14:40,230 basehttp "GET /entregar/216 HTTP/1.0" 302 0
+WARNING 2025-12-03 19:14:40,470 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-03 19:14:40,471 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_deliver', 'no_facturado_can_edit', 'facturado_can_create', 'facturado_can_edit', 'no_facturado_can_create', 'registros_can_view', 'facturado_can_deliver'}
+WARNING 2025-12-03 19:14:40,472 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-03 19:14:40,475 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-03 19:14:40,480 basehttp "GET /oidc/callback/?state=GqBT285e57Rn4uDFbt0LbqUgY46bWQg5&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=5b2f8669-f577-4326-8173-5c7601bd0743.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 19:14:40,480 basehttp "GET /oidc/callback/?state=GqBT285e57Rn4uDFbt0LbqUgY46bWQg5&session_state=7434ff46-5161-4494-9310-a32f83c3c881&code=5b2f8669-f577-4326-8173-5c7601bd0743.7434ff46-5161-4494-9310-a32f83c3c881.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-03 19:14:40,518 basehttp "GET /entregar/216 HTTP/1.0" 200 14064
+INFO 2025-12-03 19:14:40,518 basehttp "GET /entregar/216 HTTP/1.0" 200 14064
+INFO 2025-12-03 19:14:40,565 basehttp "GET /static/js/tailwind.js HTTP/1.0" 304 0
+INFO 2025-12-03 19:14:40,565 basehttp "GET /static/js/tailwind.js HTTP/1.0" 304 0
+WARNING 2025-12-03 19:14:40,588 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 19:14:40,588 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 19:14:40,593 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 19:14:40,593 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 19:14:40,593 basehttp "GET /static/js/jquery.js HTTP/1.0" 304 0
+INFO 2025-12-03 19:14:40,593 basehttp "GET /static/js/jquery.js HTTP/1.0" 304 0
+INFO 2025-12-03 19:14:40,597 basehttp "GET /static/js/select2.js HTTP/1.0" 304 0
+INFO 2025-12-03 19:14:40,597 basehttp "GET /static/js/select2.js HTTP/1.0" 304 0
+INFO 2025-12-03 19:14:41,504 basehttp "GET /entregar/216 HTTP/1.0" 200 14064
+INFO 2025-12-03 19:14:41,504 basehttp "GET /entregar/216 HTTP/1.0" 200 14064
+INFO 2025-12-03 19:14:41,579 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2025-12-03 19:14:41,579 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+WARNING 2025-12-03 19:14:41,611 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 19:14:41,611 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 19:14:41,620 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 19:14:41,620 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 19:14:41,621 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2025-12-03 19:14:41,621 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2025-12-03 19:14:41,624 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2025-12-03 19:14:41,624 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2025-12-03 19:14:41,625 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-03 19:14:41,625 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-03 19:14:41,626 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2025-12-03 19:14:41,626 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2025-12-03 19:14:41,645 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2025-12-03 19:14:41,645 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2025-12-03 19:14:41,646 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+INFO 2025-12-03 19:14:41,646 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+INFO 2025-12-03 19:14:41,650 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6574
+INFO 2025-12-03 19:14:41,650 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6574
+WARNING 2025-12-03 19:14:41,983 log Not Found: /favicon.ico
+WARNING 2025-12-03 19:14:41,983 log Not Found: /favicon.ico
+WARNING 2025-12-03 19:14:41,984 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-03 19:14:41,984 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+INFO 2025-12-03 19:19:48,535 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-03 19:19:48,535 basehttp "GET /home HTTP/1.0" 200 7812
+WARNING 2025-12-03 19:19:48,605 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 19:19:48,605 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-03 19:19:48,606 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-03 19:19:48,606 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-03 19:47:42,546 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-03 19:47:42,546 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-05 12:03:17,670 autoreload Watching for file changes with StatReloader
+INFO 2025-12-05 12:03:17,670 autoreload Watching for file changes with StatReloader
+INFO 2025-12-05 14:00:38,400 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-05 14:00:38,400 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-05 14:00:38,568 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-05 14:00:38,568 basehttp "GET / HTTP/1.0" 302 0
+WARNING 2025-12-05 14:00:39,330 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-05 14:00:39,330 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_deliver', 'registros_can_view', 'facturado_can_create', 'no_facturado_can_edit', 'facturado_can_edit', 'no_facturado_can_create', 'no_facturado_can_deliver'}
+WARNING 2025-12-05 14:00:39,345 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-05 14:00:39,505 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-05 14:00:39,523 basehttp "GET /oidc/callback/?state=z8Wfs8c5GDVu5MxcXNU00TK9Q5kFkAeQ&session_state=f0a26822-483c-40c5-8e1a-307a7ff7ff6b&code=0c0be6a5-05a5-4118-8b42-48865aff939f.f0a26822-483c-40c5-8e1a-307a7ff7ff6b.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-05 14:00:39,523 basehttp "GET /oidc/callback/?state=z8Wfs8c5GDVu5MxcXNU00TK9Q5kFkAeQ&session_state=f0a26822-483c-40c5-8e1a-307a7ff7ff6b&code=0c0be6a5-05a5-4118-8b42-48865aff939f.f0a26822-483c-40c5-8e1a-307a7ff7ff6b.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-05 14:00:39,584 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-05 14:00:39,584 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-05 14:00:39,614 basehttp "GET /static/css/output.css HTTP/1.0" 304 0
+INFO 2025-12-05 14:00:39,614 basehttp "GET /static/css/output.css HTTP/1.0" 304 0
+INFO 2025-12-05 14:00:39,627 basehttp "GET /static/js/jquery.js HTTP/1.0" 304 0
+INFO 2025-12-05 14:00:39,627 basehttp "GET /static/js/jquery.js HTTP/1.0" 304 0
+INFO 2025-12-05 14:00:39,630 basehttp "GET /static/js/tailwind.js HTTP/1.0" 304 0
+INFO 2025-12-05 14:00:39,630 basehttp "GET /static/js/tailwind.js HTTP/1.0" 304 0
+INFO 2025-12-05 14:00:39,641 basehttp "GET /static/js/select2.js HTTP/1.0" 304 0
+INFO 2025-12-05 14:00:39,641 basehttp "GET /static/js/select2.js HTTP/1.0" 304 0
+INFO 2025-12-05 14:00:39,641 basehttp "GET /static/js/on-scan.js HTTP/1.0" 304 0
+INFO 2025-12-05 14:00:39,641 basehttp "GET /static/js/on-scan.js HTTP/1.0" 304 0
+WARNING 2025-12-05 14:00:40,093 log Not Found: /favicon.ico
+WARNING 2025-12-05 14:00:40,093 log Not Found: /favicon.ico
+WARNING 2025-12-05 14:00:40,094 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-05 14:00:40,094 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+INFO 2025-12-05 14:00:42,960 basehttp "GET /auth/logout/ HTTP/1.0" 302 0
+INFO 2025-12-05 14:00:42,960 basehttp "GET /auth/logout/ HTTP/1.0" 302 0
+INFO 2025-12-05 14:00:42,965 basehttp "GET / HTTP/1.0" 200 6404
+INFO 2025-12-05 14:00:42,965 basehttp "GET / HTTP/1.0" 200 6404
+INFO 2025-12-05 14:18:46,906 basehttp "GET / HTTP/1.0" 200 6411
+INFO 2025-12-05 14:18:46,906 basehttp "GET / HTTP/1.0" 200 6411
+INFO 2025-12-05 14:24:32,897 basehttp "GET / HTTP/1.0" 200 6411
+INFO 2025-12-05 14:24:32,897 basehttp "GET / HTTP/1.0" 200 6411
+INFO 2025-12-05 14:34:06,671 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-05 14:34:06,671 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-05 14:34:06,732 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+INFO 2025-12-05 14:34:06,732 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+WARNING 2025-12-05 14:34:07,465 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-05 14:34:07,465 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_deliver', 'registros_can_view', 'facturado_can_create', 'no_facturado_can_edit', 'facturado_can_edit', 'no_facturado_can_create', 'no_facturado_can_deliver'}
+WARNING 2025-12-05 14:34:07,468 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-05 14:34:07,473 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-05 14:34:07,488 basehttp "GET /oidc/callback/?state=NkmymPfCXXR1Rt2JeN70pXDkzUdRcv1r&session_state=f0a26822-483c-40c5-8e1a-307a7ff7ff6b&code=e44dfb0a-8cc7-4229-8eb8-4b5ee76abe56.f0a26822-483c-40c5-8e1a-307a7ff7ff6b.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-05 14:34:07,488 basehttp "GET /oidc/callback/?state=NkmymPfCXXR1Rt2JeN70pXDkzUdRcv1r&session_state=f0a26822-483c-40c5-8e1a-307a7ff7ff6b&code=e44dfb0a-8cc7-4229-8eb8-4b5ee76abe56.f0a26822-483c-40c5-8e1a-307a7ff7ff6b.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-05 14:34:07,514 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-05 14:34:07,514 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-05 14:34:09,795 basehttp "GET /auth/logout/ HTTP/1.0" 302 0
+INFO 2025-12-05 14:34:09,795 basehttp "GET /auth/logout/ HTTP/1.0" 302 0
+INFO 2025-12-05 14:34:09,803 basehttp "GET / HTTP/1.0" 200 6411
+INFO 2025-12-05 14:34:09,803 basehttp "GET / HTTP/1.0" 200 6411
+INFO 2025-12-05 14:49:05,855 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-05 14:49:05,855 basehttp "GET / HTTP/1.0" 200 6409

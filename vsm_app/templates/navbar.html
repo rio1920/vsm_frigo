@@ -64,7 +64,9 @@
                 <li><span class="text-primary text-sm font-semibold">👤 {{ username }}</span></li>
                 <li><a href="{% url 'keycloak_logout' %}" class="text-error">Cerrar sesión</a></li>
                 {% else %}
-                <li><a href="{% url 'keycloak_login' %}" class="text-primary">Iniciar sesión</a></li>
+                <li>
+                    <a href="{% url 'keycloak_login' %}" class="text-primary">🚪 Iniciar sesión</a>
+                </li>
                 {% endif %}
             </ul>
         </div>

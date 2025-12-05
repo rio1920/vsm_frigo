@@ -24,7 +24,7 @@ from django.views.decorators.csrf import csrf_exempt
 def home(request):
     return render(request, "home.html")
 
-
+@login_required
 @permission_required("registros_can_view")
 def registros(request):
     vales = (
@@ -76,7 +76,7 @@ from django.shortcuts import get_object_or_404, redirect
 from django.utils.timezone import now
 from vsm_app.utils.sap_rfc import get_stock_sap
 
-
+@login_required
 @permission_required(["facturado_can_create", "no_facturado_can_create"])
 def nuevo_vsm(request):
     empleados = models.empleados.objects.all()
@@ -161,6 +161,7 @@ def detalle_vsm(request, id):
     return render(request, "detalle_vsm.html", context)
 
 
+@login_required
 @permission_required(["facturado_can_edit", "no_facturado_can_edit"])
 def editar_vsm(request, id):
     vsm = models.VSM.objects.get(id=id)
@@ -178,6 +179,7 @@ def editar_vsm(request, id):
     return render(request, "editar_vsm.html", context)
 
 
+@login_required
 @permission_required(["facturado_can_edit", "no_facturado_can_edit"])
 def eliminar_vsm(request, vsm_id):
     vsm = get_object_or_404(models.VSM, id=vsm_id)
@@ -200,7 +202,7 @@ def eliminar_vsm(request, vsm_id):
         "message": "VSM eliminado correctamente"
     })
 
-
+@login_required
 @permission_required(["facturado_can_deliver", "no_facturado_can_deliver"])
 def confirmar_entrega(request, vsm_id):
     vsm = models.VSM.objects.prefetch_related("vsmproducto_set__producto").get(
@@ -283,7 +285,7 @@ def confirmar_entrega(request, vsm_id):
         },
     )
 
-
+@login_required
 @permission_required(["facturado_can_deliver", "no_facturado_can_deliver"])
 def rechazar_entrega(request, vsm_id):
     vsm = get_object_or_404(models.VSM, id=vsm_id)
@@ -298,7 +300,7 @@ def rechazar_entrega(request, vsm_id):
 
     return render(request, "rechazar_entrega.html", {"vsm": vsm})
 
-
+@login_required
 @permission_required(["facturado_can_deliver", "no_facturado_can_deliver"])
 def listar_vsm_pendientes(request):
     vales = (
@@ -467,6 +469,7 @@ def get_materiales_por_centro(request):
     return JsonResponse(data, safe=False)
 
 
+@login_required
 def editar_pendiente(request, vsm_id):
     vsm = get_object_or_404(models.VSM, id=vsm_id, estado="pendiente")
     centro_costos = models.centro_costos.objects.all()
