@@ -2822,3 +2822,453 @@ INFO 2025-12-05 14:34:09,803 basehttp "GET / HTTP/1.0" 200 6411
 INFO 2025-12-05 14:34:09,803 basehttp "GET / HTTP/1.0" 200 6411
 INFO 2025-12-05 14:49:05,855 basehttp "GET / HTTP/1.0" 200 6409
 INFO 2025-12-05 14:49:05,855 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-05 17:24:57,098 autoreload Watching for file changes with StatReloader
+INFO 2025-12-05 17:24:57,098 autoreload Watching for file changes with StatReloader
+INFO 2025-12-05 17:24:59,791 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-05 17:24:59,791 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-05 17:25:00,039 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-05 17:25:00,039 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-05 17:25:12,661 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-05 17:25:12,661 basehttp "GET / HTTP/1.0" 200 6409
+WARNING 2025-12-05 17:25:26,139 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-05 17:25:26,139 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-05 17:25:26,141 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-05 17:25:26,141 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-05 17:25:37,279 basehttp "GET /home HTTP/1.0" 200 6409
+INFO 2025-12-05 17:25:37,279 basehttp "GET /home HTTP/1.0" 200 6409
+WARNING 2025-12-05 17:25:37,321 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-05 17:25:37,321 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-05 17:25:37,321 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-05 17:25:37,321 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-05 18:20:17,413 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-05 18:20:17,413 basehttp "GET / HTTP/1.0" 200 6409
+WARNING 2025-12-05 18:20:20,929 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-05 18:20:20,929 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-05 18:20:20,931 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-05 18:20:20,931 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-05 18:21:43,997 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-05 18:21:43,997 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-05 18:21:44,149 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+INFO 2025-12-05 18:21:44,149 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+WARNING 2025-12-05 18:21:44,608 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-05 18:21:44,608 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_edit', 'facturado_can_create', 'no_facturado_can_create', 'registros_can_view', 'no_facturado_can_deliver', 'facturado_can_deliver', 'no_facturado_can_edit'}
+WARNING 2025-12-05 18:21:44,616 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-05 18:21:44,626 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-05 18:21:44,641 basehttp "GET /oidc/callback/?state=ae1hvhrggR5E6x5MfbUGLc6wriDQg5b3&session_state=f0a26822-483c-40c5-8e1a-307a7ff7ff6b&code=c3e00f05-d5c5-486b-a932-5e841124bec7.f0a26822-483c-40c5-8e1a-307a7ff7ff6b.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-05 18:21:44,641 basehttp "GET /oidc/callback/?state=ae1hvhrggR5E6x5MfbUGLc6wriDQg5b3&session_state=f0a26822-483c-40c5-8e1a-307a7ff7ff6b&code=c3e00f05-d5c5-486b-a932-5e841124bec7.f0a26822-483c-40c5-8e1a-307a7ff7ff6b.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-05 18:21:44,683 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-05 18:21:44,683 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-05 18:21:45,963 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27593
+INFO 2025-12-05 18:21:45,963 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27593
+INFO 2025-12-05 18:27:08,723 basehttp "GET /admin/ HTTP/1.0" 200 35875
+INFO 2025-12-05 18:27:08,723 basehttp "GET /admin/ HTTP/1.0" 200 35875
+INFO 2025-12-05 18:27:08,793 basehttp "GET /static/admin/css/calendar.css HTTP/1.0" 200 6359
+INFO 2025-12-05 18:27:08,793 basehttp "GET /static/admin/css/calendar.css HTTP/1.0" 200 6359
+INFO 2025-12-05 18:27:08,798 basehttp "GET /static/admin/css/customized_tailwind.css?v=2 HTTP/1.0" 200 34265
+INFO 2025-12-05 18:27:08,798 basehttp "GET /static/admin/css/customized_tailwind.css?v=2 HTTP/1.0" 200 34265
+INFO 2025-12-05 18:27:08,803 basehttp "GET /static/admin/css/base_tailwind.css HTTP/1.0" 200 151172
+INFO 2025-12-05 18:27:08,803 basehttp "GET /static/admin/css/base_tailwind.css HTTP/1.0" 200 151172
+INFO 2025-12-05 18:27:08,807 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/css/all.min.css HTTP/1.0" 200 96518
+INFO 2025-12-05 18:27:08,807 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/css/all.min.css HTTP/1.0" 200 96518
+INFO 2025-12-05 18:27:08,828 basehttp "GET /static/admin/img/daisyui-logomark.svg HTTP/1.0" 200 389
+INFO 2025-12-05 18:27:08,828 basehttp "GET /static/admin/img/daisyui-logomark.svg HTTP/1.0" 200 389
+INFO 2025-12-05 18:27:08,830 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.0" 200 89476
+INFO 2025-12-05 18:27:08,830 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.0" 200 89476
+INFO 2025-12-05 18:27:08,831 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.0" 200 1006
+INFO 2025-12-05 18:27:08,831 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.0" 200 1006
+INFO 2025-12-05 18:27:08,846 basehttp "GET /static/admin/js/theme-change.js HTTP/1.0" 200 3490
+INFO 2025-12-05 18:27:08,846 basehttp "GET /static/admin/js/theme-change.js HTTP/1.0" 200 3490
+INFO 2025-12-05 18:27:08,853 basehttp "GET /static/admin/js/admin/dashboard.js HTTP/1.0" 200 1009
+INFO 2025-12-05 18:27:08,853 basehttp "GET /static/admin/js/admin/dashboard.js HTTP/1.0" 200 1009
+INFO 2025-12-05 18:27:08,866 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.0" 200 4257
+INFO 2025-12-05 18:27:08,866 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.0" 200 4257
+INFO 2025-12-05 18:27:09,019 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-solid-900.woff2 HTTP/1.0" 200 157192
+INFO 2025-12-05 18:27:09,019 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-solid-900.woff2 HTTP/1.0" 200 157192
+INFO 2025-12-05 18:27:09,021 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Regular.ttf HTTP/1.0" 200 299684
+INFO 2025-12-05 18:27:09,021 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Regular.ttf HTTP/1.0" 200 299684
+INFO 2025-12-05 18:27:09,022 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Medium.ttf HTTP/1.0" 200 285136
+INFO 2025-12-05 18:27:09,022 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Medium.ttf HTTP/1.0" 200 285136
+INFO 2025-12-05 18:27:09,038 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-regular-400.woff2 HTTP/1.0" 200 25464
+INFO 2025-12-05 18:27:09,038 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-regular-400.woff2 HTTP/1.0" 200 25464
+INFO 2025-12-05 18:27:58,883 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2025-12-05 18:27:58,883 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2025-12-05 18:27:58,931 basehttp "GET /admin/ HTTP/1.0" 200 35875
+INFO 2025-12-05 18:27:58,931 basehttp "GET /admin/ HTTP/1.0" 200 35875
+WARNING 2025-12-05 18:27:59,812 log Not Found: /favicon.ico
+WARNING 2025-12-05 18:27:59,812 log Not Found: /favicon.ico
+WARNING 2025-12-05 18:27:59,812 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-05 18:27:59,812 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+INFO 2025-12-05 18:30:16,980 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-05 18:30:16,980 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-05 18:30:17,076 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-05 18:30:17,076 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-05 18:30:17,079 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2025-12-05 18:30:17,079 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2025-12-05 18:30:17,082 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2025-12-05 18:30:17,082 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2025-12-05 18:30:17,087 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2025-12-05 18:30:17,087 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2025-12-05 18:30:17,088 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2025-12-05 18:30:17,088 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2025-12-05 18:30:17,092 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+INFO 2025-12-05 18:30:17,092 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+INFO 2025-12-05 18:30:19,678 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27593
+INFO 2025-12-05 18:30:19,678 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27593
+INFO 2025-12-05 18:30:23,905 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 1670
+INFO 2025-12-05 18:30:23,905 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 1670
+INFO 2025-12-05 18:30:31,361 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS HTTP/1.0" 200 612
+INFO 2025-12-05 18:30:31,361 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS HTTP/1.0" 200 612
+INFO 2025-12-05 18:30:34,474 basehttp "POST /nuevo_vsm HTTP/1.0" 302 0
+INFO 2025-12-05 18:30:34,474 basehttp "POST /nuevo_vsm HTTP/1.0" 302 0
+INFO 2025-12-05 18:30:34,508 basehttp "GET /home HTTP/1.0" 200 8242
+INFO 2025-12-05 18:30:34,508 basehttp "GET /home HTTP/1.0" 200 8242
+INFO 2025-12-05 18:30:37,101 basehttp "GET /pendientes HTTP/1.0" 200 14467
+INFO 2025-12-05 18:30:37,101 basehttp "GET /pendientes HTTP/1.0" 200 14467
+INFO 2025-12-05 18:30:40,880 basehttp "GET /entregar/217 HTTP/1.0" 200 14084
+INFO 2025-12-05 18:30:40,880 basehttp "GET /entregar/217 HTTP/1.0" 200 14084
+INFO 2025-12-05 18:30:40,921 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2025-12-05 18:30:40,921 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2025-12-05 18:30:40,928 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6574
+INFO 2025-12-05 18:30:40,928 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6574
+INFO 2025-12-05 18:31:29,560 _client HTTP Request: POST https://frclouds4qas.rioplatense.local:10443/sap/bc/soap/rfc "HTTP/1.1 200 OK"
+INFO 2025-12-05 18:31:29,573 basehttp "POST /entregar/217 HTTP/1.0" 200 130
+INFO 2025-12-05 18:31:29,573 basehttp "POST /entregar/217 HTTP/1.0" 200 130
+INFO 2025-12-05 18:35:06,447 _client HTTP Request: POST https://frclouds4qas.rioplatense.local:10443/sap/bc/soap/rfc "HTTP/1.1 200 OK"
+INFO 2025-12-05 18:35:06,454 basehttp "POST /entregar/217 HTTP/1.0" 200 130
+INFO 2025-12-05 18:35:06,454 basehttp "POST /entregar/217 HTTP/1.0" 200 130
+INFO 2025-12-05 19:25:34,603 basehttp "GET /home HTTP/1.0" 302 0
+INFO 2025-12-05 19:25:34,603 basehttp "GET /home HTTP/1.0" 302 0
+WARNING 2025-12-05 19:25:35,089 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-05 19:25:35,090 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_edit', 'facturado_can_create', 'no_facturado_can_create', 'registros_can_view', 'no_facturado_can_deliver', 'facturado_can_deliver', 'no_facturado_can_edit'}
+WARNING 2025-12-05 19:25:35,092 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-05 19:25:35,096 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-05 19:25:35,099 basehttp "GET /oidc/callback/?state=dTu19Qgjfxs5V9Dmi6AyKr2skj6hw8Kj&session_state=f0a26822-483c-40c5-8e1a-307a7ff7ff6b&code=3b8f58f2-b002-4be4-bd78-c4c949fe5b73.f0a26822-483c-40c5-8e1a-307a7ff7ff6b.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-05 19:25:35,099 basehttp "GET /oidc/callback/?state=dTu19Qgjfxs5V9Dmi6AyKr2skj6hw8Kj&session_state=f0a26822-483c-40c5-8e1a-307a7ff7ff6b&code=3b8f58f2-b002-4be4-bd78-c4c949fe5b73.f0a26822-483c-40c5-8e1a-307a7ff7ff6b.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-05 19:25:35,120 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-05 19:25:35,120 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-05 19:25:35,975 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27593
+INFO 2025-12-05 19:25:35,975 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27593
+INFO 2025-12-05 19:34:42,855 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-05 19:34:42,855 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-05 19:34:44,653 autoreload Watching for file changes with StatReloader
+INFO 2025-12-05 19:34:44,653 autoreload Watching for file changes with StatReloader
+INFO 2025-12-05 19:35:07,076 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-05 19:35:07,076 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-05 19:35:08,332 autoreload Watching for file changes with StatReloader
+INFO 2025-12-05 19:35:08,332 autoreload Watching for file changes with StatReloader
+INFO 2025-12-05 19:37:20,338 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27593
+INFO 2025-12-05 19:37:20,338 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27593
+INFO 2025-12-09 11:22:42,639 autoreload Watching for file changes with StatReloader
+INFO 2025-12-09 11:22:42,639 autoreload Watching for file changes with StatReloader
+INFO 2025-12-09 11:27:01,416 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-09 11:27:01,416 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-09 11:27:02,516 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-09 11:27:02,516 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-09 11:27:03,844 basehttp "GET /oidc/callback/?error=login_required&state=nFyEMraAviukpOVs8rmDwB8jzIHWjWSm HTTP/1.0" 302 0
+INFO 2025-12-09 11:27:03,844 basehttp "GET /oidc/callback/?error=login_required&state=nFyEMraAviukpOVs8rmDwB8jzIHWjWSm HTTP/1.0" 302 0
+INFO 2025-12-09 11:27:03,862 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-09 11:27:03,862 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-09 11:27:03,904 basehttp "GET /static/css/output.css HTTP/1.0" 304 0
+INFO 2025-12-09 11:27:03,904 basehttp "GET /static/css/output.css HTTP/1.0" 304 0
+INFO 2025-12-09 11:27:03,913 basehttp "GET /static/js/tailwind.js HTTP/1.0" 304 0
+INFO 2025-12-09 11:27:03,913 basehttp "GET /static/js/tailwind.js HTTP/1.0" 304 0
+INFO 2025-12-09 11:27:03,913 basehttp "GET /static/js/jquery.js HTTP/1.0" 304 0
+INFO 2025-12-09 11:27:03,913 basehttp "GET /static/js/jquery.js HTTP/1.0" 304 0
+INFO 2025-12-09 11:27:03,931 basehttp "GET /static/js/select2.js HTTP/1.0" 304 0
+INFO 2025-12-09 11:27:03,931 basehttp "GET /static/js/on-scan.js HTTP/1.0" 304 0
+INFO 2025-12-09 11:27:03,931 basehttp "GET /static/js/select2.js HTTP/1.0" 304 0
+INFO 2025-12-09 11:27:03,931 basehttp "GET /static/js/on-scan.js HTTP/1.0" 304 0
+WARNING 2025-12-09 11:27:04,104 log Not Found: /favicon.ico
+WARNING 2025-12-09 11:27:04,104 log Not Found: /favicon.ico
+WARNING 2025-12-09 11:27:04,105 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-09 11:27:04,105 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+INFO 2025-12-09 11:27:46,514 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-09 11:27:46,514 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-09 11:27:46,570 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+INFO 2025-12-09 11:27:46,570 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+WARNING 2025-12-09 11:27:53,111 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-09 11:27:53,111 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_edit', 'facturado_can_create', 'no_facturado_can_deliver', 'registros_can_view', 'no_facturado_can_create', 'facturado_can_deliver', 'facturado_can_edit'}
+WARNING 2025-12-09 11:27:53,119 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-09 11:27:53,152 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-09 11:27:53,256 basehttp "GET /oidc/callback/?state=gz0pl7IcWIpcMKENPQeih1ueXpknkljZ&session_state=107403ab-6df4-46cc-8a34-e695e63cd869&code=6cde3736-4031-4e40-be63-383e8718c089.107403ab-6df4-46cc-8a34-e695e63cd869.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-09 11:27:53,256 basehttp "GET /oidc/callback/?state=gz0pl7IcWIpcMKENPQeih1ueXpknkljZ&session_state=107403ab-6df4-46cc-8a34-e695e63cd869&code=6cde3736-4031-4e40-be63-383e8718c089.107403ab-6df4-46cc-8a34-e695e63cd869.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-09 11:27:53,376 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-09 11:27:53,376 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-09 11:28:59,426 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27593
+INFO 2025-12-09 11:28:59,426 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27593
+INFO 2025-12-09 11:29:03,861 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 1670
+INFO 2025-12-09 11:29:03,861 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 1670
+INFO 2025-12-09 11:50:07,063 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 302 0
+INFO 2025-12-09 11:50:07,063 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 302 0
+INFO 2025-12-09 11:50:07,634 basehttp "GET /oidc/callback/?state=pqOdiJs2GSbeoR6iH1mNjUmEC22KLS2x&session_state=107403ab-6df4-46cc-8a34-e695e63cd869&code=07df81ae-872d-4ff5-8592-4915fc61c156.107403ab-6df4-46cc-8a34-e695e63cd869.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-09 11:50:07,634 basehttp "GET /oidc/callback/?state=pqOdiJs2GSbeoR6iH1mNjUmEC22KLS2x&session_state=107403ab-6df4-46cc-8a34-e695e63cd869&code=07df81ae-872d-4ff5-8592-4915fc61c156.107403ab-6df4-46cc-8a34-e695e63cd869.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-09 11:50:07,642 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-09 11:50:07,642 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-09 11:56:47,524 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-09 11:56:47,524 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-09 11:56:42,626 autoreload Watching for file changes with StatReloader
+INFO 2025-12-09 11:56:42,626 autoreload Watching for file changes with StatReloader
+INFO 2025-12-09 11:56:45,432 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+INFO 2025-12-09 11:56:45,432 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+WARNING 2025-12-09 11:56:52,391 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-09 11:56:52,392 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_create', 'no_facturado_can_create', 'registros_can_view', 'facturado_can_edit', 'no_facturado_can_deliver', 'no_facturado_can_edit', 'facturado_can_deliver'}
+WARNING 2025-12-09 11:56:52,393 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-09 11:56:52,396 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-09 11:56:52,401 basehttp "GET /oidc/callback/?state=bAGZdQ38dtJDzuoISzaDNcra25xtaAKq&session_state=107403ab-6df4-46cc-8a34-e695e63cd869&code=0855f8a0-01f4-490c-94e4-48f3c45ad3a1.107403ab-6df4-46cc-8a34-e695e63cd869.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-09 11:56:52,401 basehttp "GET /oidc/callback/?state=bAGZdQ38dtJDzuoISzaDNcra25xtaAKq&session_state=107403ab-6df4-46cc-8a34-e695e63cd869&code=0855f8a0-01f4-490c-94e4-48f3c45ad3a1.107403ab-6df4-46cc-8a34-e695e63cd869.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-09 11:56:52,452 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27593
+INFO 2025-12-09 11:56:52,452 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27593
+WARNING 2025-12-09 11:56:52,507 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-09 11:56:52,507 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-09 11:56:52,508 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-09 11:56:52,508 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-09 11:56:50,375 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 69616
+INFO 2025-12-09 11:56:50,375 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 69616
+INFO 2025-12-09 11:56:58,180 basehttp "GET /admin/ HTTP/1.0" 200 35890
+INFO 2025-12-09 11:56:58,180 basehttp "GET /admin/ HTTP/1.0" 200 35890
+INFO 2025-12-09 11:56:58,199 basehttp "GET /static/admin/css/customized_tailwind.css?v=2 HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,199 basehttp "GET /static/admin/css/customized_tailwind.css?v=2 HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,199 basehttp "GET /static/admin/css/base_tailwind.css HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,199 basehttp "GET /static/admin/css/base_tailwind.css HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,204 basehttp "GET /static/admin/css/calendar.css HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,204 basehttp "GET /static/admin/css/calendar.css HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,213 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/css/all.min.css HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,213 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/css/all.min.css HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,218 basehttp "GET /static/admin/img/daisyui-logomark.svg HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,218 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,218 basehttp "GET /static/admin/img/daisyui-logomark.svg HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,218 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,219 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,219 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,232 basehttp "GET /static/admin/js/theme-change.js HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,233 basehttp "GET /static/admin/js/admin/dashboard.js HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,232 basehttp "GET /static/admin/js/theme-change.js HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,233 basehttp "GET /static/admin/js/admin/dashboard.js HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,240 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,240 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,301 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Medium.ttf HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,303 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-solid-900.woff2 HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,301 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Medium.ttf HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,303 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-solid-900.woff2 HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,304 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Regular.ttf HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,304 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Regular.ttf HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,320 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-regular-400.woff2 HTTP/1.0" 304 0
+INFO 2025-12-09 11:56:58,320 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-regular-400.woff2 HTTP/1.0" 304 0
+INFO 2025-12-09 11:57:01,868 basehttp "GET /admin/vsm_app/vsm/ HTTP/1.0" 200 30924
+INFO 2025-12-09 11:57:01,868 basehttp "GET /admin/vsm_app/vsm/ HTTP/1.0" 200 30924
+INFO 2025-12-09 11:57:01,930 basehttp "GET /static/admin/js/core.js HTTP/1.0" 200 5419
+INFO 2025-12-09 11:57:01,930 basehttp "GET /static/admin/js/actions.js HTTP/1.0" 200 6783
+INFO 2025-12-09 11:57:01,930 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.0" 200 10019
+INFO 2025-12-09 11:57:01,930 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.0" 200 1531
+INFO 2025-12-09 11:57:01,930 basehttp "GET /static/admin/js/core.js HTTP/1.0" 200 5419
+INFO 2025-12-09 11:57:01,930 basehttp "GET /static/admin/js/actions.js HTTP/1.0" 200 6783
+INFO 2025-12-09 11:57:01,931 basehttp "GET /static/admin/js/urlify.js HTTP/1.0" 200 8632
+INFO 2025-12-09 11:57:01,930 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.0" 200 10019
+INFO 2025-12-09 11:57:01,930 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.0" 200 1531
+INFO 2025-12-09 11:57:01,931 basehttp "GET /static/admin/js/urlify.js HTTP/1.0" 200 8632
+INFO 2025-12-09 11:57:01,936 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.0" 200 287630
+INFO 2025-12-09 11:57:01,936 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.0" 200 287630
+INFO 2025-12-09 11:57:01,946 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.0" 200 232381
+INFO 2025-12-09 11:57:01,946 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.0" 200 232381
+INFO 2025-12-09 11:57:01,968 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-09 11:57:01,968 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-09 11:57:01,969 basehttp "GET /static/admin/js/query_filter.js?v=3 HTTP/1.0" 200 5384
+INFO 2025-12-09 11:57:01,969 basehttp "GET /static/admin/js/query_filter.js?v=3 HTTP/1.0" 200 5384
+INFO 2025-12-09 11:57:05,942 basehttp "GET /admin/vsm_app/usuarios/ HTTP/1.0" 200 34192
+INFO 2025-12-09 11:57:05,942 basehttp "GET /admin/vsm_app/usuarios/ HTTP/1.0" 200 34192
+INFO 2025-12-09 11:57:05,992 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-09 11:57:05,992 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-09 11:57:08,000 basehttp "GET /admin/vsm_app/usuarios/1/change/ HTTP/1.0" 200 251691
+INFO 2025-12-09 11:57:08,000 basehttp "GET /admin/vsm_app/usuarios/1/change/ HTTP/1.0" 200 251691
+INFO 2025-12-09 11:57:08,036 basehttp "GET /static/admin/js/calendar.js HTTP/1.0" 200 7788
+INFO 2025-12-09 11:57:08,036 basehttp "GET /static/admin/js/calendar.js HTTP/1.0" 200 7788
+INFO 2025-12-09 11:57:08,037 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.0" 200 19750
+INFO 2025-12-09 11:57:08,037 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.0" 200 19750
+INFO 2025-12-09 11:57:08,040 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.0" 200 492
+INFO 2025-12-09 11:57:08,040 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.0" 200 492
+INFO 2025-12-09 11:57:08,053 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-09 11:57:08,053 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-09 11:57:08,053 basehttp "GET /static/admin/js/change_form.js HTTP/1.0" 200 607
+INFO 2025-12-09 11:57:08,053 basehttp "GET /static/admin/js/change_form.js HTTP/1.0" 200 607
+INFO 2025-12-09 11:57:08,243 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.0" 200 1086
+INFO 2025-12-09 11:57:08,243 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.0" 200 1086
+INFO 2025-12-09 11:57:08,244 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.0" 200 677
+INFO 2025-12-09 11:57:08,244 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.0" 200 677
+INFO 2025-12-09 11:57:16,390 basehttp "POST /admin/vsm_app/usuarios/1/change/ HTTP/1.0" 302 0
+INFO 2025-12-09 11:57:16,390 basehttp "POST /admin/vsm_app/usuarios/1/change/ HTTP/1.0" 302 0
+INFO 2025-12-09 11:57:16,424 basehttp "GET /admin/vsm_app/usuarios/ HTTP/1.0" 200 34910
+INFO 2025-12-09 11:57:16,424 basehttp "GET /admin/vsm_app/usuarios/ HTTP/1.0" 200 34910
+INFO 2025-12-09 11:57:16,475 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-09 11:57:16,475 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-09 11:57:18,185 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27593
+INFO 2025-12-09 11:57:18,185 basehttp "GET /nuevo_vsm HTTP/1.0" 200 27593
+WARNING 2025-12-09 11:57:18,247 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-09 11:57:18,247 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-09 11:57:18,248 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-09 11:57:18,248 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-09 11:57:19,697 basehttp "GET /ajax/empleados?centro_id=3 HTTP/1.0" 200 69616
+INFO 2025-12-09 11:57:19,697 basehttp "GET /ajax/empleados?centro_id=3 HTTP/1.0" 200 69616
+INFO 2025-12-09 11:57:27,601 basehttp "GET /ajax/empleados?centro_id=5 HTTP/1.0" 200 69616
+INFO 2025-12-09 11:57:27,601 basehttp "GET /ajax/empleados?centro_id=5 HTTP/1.0" 200 69616
+INFO 2025-12-09 11:57:32,213 basehttp "GET /admin/vsm_app/usuarios/3/change/ HTTP/1.0" 200 252481
+INFO 2025-12-09 11:57:32,213 basehttp "GET /admin/vsm_app/usuarios/3/change/ HTTP/1.0" 200 252481
+INFO 2025-12-09 11:57:32,253 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-09 11:57:32,253 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-09 11:57:36,923 basehttp "POST /admin/vsm_app/usuarios/3/change/ HTTP/1.0" 302 0
+INFO 2025-12-09 11:57:36,923 basehttp "POST /admin/vsm_app/usuarios/3/change/ HTTP/1.0" 302 0
+INFO 2025-12-09 11:57:36,967 basehttp "GET /admin/vsm_app/usuarios/ HTTP/1.0" 200 34931
+INFO 2025-12-09 11:57:36,967 basehttp "GET /admin/vsm_app/usuarios/ HTTP/1.0" 200 34931
+INFO 2025-12-09 11:57:37,029 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-09 11:57:37,029 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-09 11:57:38,567 basehttp "GET /nuevo_vsm HTTP/1.0" 200 23962
+INFO 2025-12-09 11:57:38,567 basehttp "GET /nuevo_vsm HTTP/1.0" 200 23962
+WARNING 2025-12-09 11:57:38,636 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-09 11:57:38,636 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-09 11:57:38,638 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-09 11:57:38,638 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-09 11:57:40,364 basehttp "GET /ajax/empleados?centro_id=4 HTTP/1.0" 200 1028
+INFO 2025-12-09 11:57:40,364 basehttp "GET /ajax/empleados?centro_id=4 HTTP/1.0" 200 1028
+INFO 2025-12-09 11:57:54,231 basehttp "GET /admin/vsm_app/usuarios/3/change/ HTTP/1.0" 200 252139
+INFO 2025-12-09 11:57:54,231 basehttp "GET /admin/vsm_app/usuarios/3/change/ HTTP/1.0" 200 252139
+INFO 2025-12-09 11:57:54,273 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-09 11:57:54,273 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-09 11:58:01,908 basehttp "POST /admin/vsm_app/usuarios/3/change/ HTTP/1.0" 302 0
+INFO 2025-12-09 11:58:01,908 basehttp "POST /admin/vsm_app/usuarios/3/change/ HTTP/1.0" 302 0
+INFO 2025-12-09 11:58:01,950 basehttp "GET /admin/vsm_app/usuarios/ HTTP/1.0" 200 34931
+INFO 2025-12-09 11:58:01,950 basehttp "GET /admin/vsm_app/usuarios/ HTTP/1.0" 200 34931
+INFO 2025-12-09 11:58:02,010 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-09 11:58:02,010 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-09 11:58:03,553 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-09 11:58:03,553 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+WARNING 2025-12-09 11:58:03,605 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-09 11:58:03,605 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-09 11:58:03,606 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-09 11:58:03,606 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-09 11:58:05,303 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 2683
+INFO 2025-12-09 11:58:05,303 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 2683
+INFO 2025-12-09 11:59:55,674 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-09 11:59:55,674 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-09 11:59:57,295 autoreload Watching for file changes with StatReloader
+INFO 2025-12-09 11:59:57,295 autoreload Watching for file changes with StatReloader
+INFO 2025-12-09 11:59:59,941 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-09 11:59:59,941 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+WARNING 2025-12-09 12:00:00,006 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-09 12:00:00,006 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-09 12:00:00,007 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-09 12:00:00,007 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-09 12:00:01,367 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 2683
+INFO 2025-12-09 12:00:01,367 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 2683
+INFO 2025-12-09 12:00:25,298 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-09 12:00:25,298 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-09 12:00:26,123 autoreload Watching for file changes with StatReloader
+INFO 2025-12-09 12:00:26,123 autoreload Watching for file changes with StatReloader
+INFO 2025-12-09 12:10:44,617 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-09 12:10:44,617 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-09 12:10:44,664 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2025-12-09 12:10:44,664 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+WARNING 2025-12-09 12:10:44,688 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-09 12:10:44,688 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+INFO 2025-12-09 12:10:44,692 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+WARNING 2025-12-09 12:10:44,693 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-09 12:10:44,693 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-09 12:10:44,692 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-09 12:10:44,695 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2025-12-09 12:10:44,695 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2025-12-09 12:10:44,698 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2025-12-09 12:10:44,698 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2025-12-09 12:10:44,700 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2025-12-09 12:10:44,700 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2025-12-09 12:10:44,720 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+INFO 2025-12-09 12:10:44,720 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+WARNING 2025-12-09 12:10:44,992 log Not Found: /favicon.ico
+WARNING 2025-12-09 12:10:44,992 log Not Found: /favicon.ico
+WARNING 2025-12-09 12:10:44,992 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-09 12:10:44,992 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-09 12:13:23,760 log Forbidden: /ajax/empleados
+WARNING 2025-12-09 12:13:23,760 log Forbidden: /ajax/empleados
+WARNING 2025-12-09 12:13:23,760 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 403 296
+WARNING 2025-12-09 12:13:23,760 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 403 296
+INFO 2025-12-09 12:13:26,080 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+INFO 2025-12-09 12:13:26,080 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+WARNING 2025-12-09 12:13:33,320 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-09 12:13:33,321 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_deliver', 'no_facturado_can_create', 'facturado_can_edit', 'facturado_can_create', 'no_facturado_can_deliver', 'no_facturado_can_edit', 'registros_can_view'}
+WARNING 2025-12-09 12:13:33,322 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-09 12:13:33,324 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-09 12:13:33,370 basehttp "GET /oidc/callback/?state=XGrX9ezdMiKbyRufMfuvO2YWlvSpTxC6&session_state=107403ab-6df4-46cc-8a34-e695e63cd869&code=1b420850-7767-442d-9bfc-5e130103badf.107403ab-6df4-46cc-8a34-e695e63cd869.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-09 12:13:33,370 basehttp "GET /oidc/callback/?state=XGrX9ezdMiKbyRufMfuvO2YWlvSpTxC6&session_state=107403ab-6df4-46cc-8a34-e695e63cd869&code=1b420850-7767-442d-9bfc-5e130103badf.107403ab-6df4-46cc-8a34-e695e63cd869.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-09 12:13:33,395 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-09 12:13:33,395 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-09 12:13:27,970 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 2683
+INFO 2025-12-09 12:13:27,970 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 2683
+INFO 2025-12-09 12:23:45,568 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-09 12:23:45,568 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-09 12:23:47,889 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 2683
+INFO 2025-12-09 12:23:47,889 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 2683
+INFO 2025-12-09 12:24:00,104 basehttp "GET /admin/vsm_app/usuarios/1/change/ HTTP/1.0" 200 251349
+INFO 2025-12-09 12:24:00,104 basehttp "GET /admin/vsm_app/usuarios/1/change/ HTTP/1.0" 200 251349
+INFO 2025-12-09 12:24:00,140 basehttp "GET /static/admin/css/base_tailwind.css HTTP/1.0" 200 151172
+INFO 2025-12-09 12:24:00,140 basehttp "GET /static/admin/css/base_tailwind.css HTTP/1.0" 200 151172
+INFO 2025-12-09 12:24:00,142 basehttp "GET /static/admin/css/customized_tailwind.css?v=2 HTTP/1.0" 200 34265
+INFO 2025-12-09 12:24:00,142 basehttp "GET /static/admin/css/customized_tailwind.css?v=2 HTTP/1.0" 200 34265
+INFO 2025-12-09 12:24:00,153 basehttp "GET /static/admin/css/calendar.css HTTP/1.0" 200 6359
+INFO 2025-12-09 12:24:00,153 basehttp "GET /static/admin/css/calendar.css HTTP/1.0" 200 6359
+INFO 2025-12-09 12:24:00,154 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.0" 200 287630
+INFO 2025-12-09 12:24:00,154 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.0" 200 287630
+INFO 2025-12-09 12:24:00,168 basehttp "GET /static/admin/js/calendar.js HTTP/1.0" 200 7788
+INFO 2025-12-09 12:24:00,168 basehttp "GET /static/admin/js/calendar.js HTTP/1.0" 200 7788
+INFO 2025-12-09 12:23:53,082 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.0" 200 1006
+INFO 2025-12-09 12:23:53,083 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/css/all.min.css HTTP/1.0" 200 96518
+INFO 2025-12-09 12:23:53,082 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.0" 200 1006
+INFO 2025-12-09 12:23:53,083 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/css/all.min.css HTTP/1.0" 200 96518
+INFO 2025-12-09 12:23:53,101 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.0" 200 19750
+INFO 2025-12-09 12:23:53,101 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.0" 200 19750
+INFO 2025-12-09 12:23:53,102 basehttp "GET /static/admin/js/core.js HTTP/1.0" 200 5419
+INFO 2025-12-09 12:23:53,102 basehttp "GET /static/admin/js/core.js HTTP/1.0" 200 5419
+INFO 2025-12-09 12:23:53,107 basehttp "GET /static/admin/js/urlify.js HTTP/1.0" 200 8632
+INFO 2025-12-09 12:23:53,107 basehttp "GET /static/admin/js/urlify.js HTTP/1.0" 200 8632
+INFO 2025-12-09 12:23:53,109 basehttp "GET /static/admin/js/actions.js HTTP/1.0" 200 6783
+INFO 2025-12-09 12:23:53,109 basehttp "GET /static/admin/js/actions.js HTTP/1.0" 200 6783
+INFO 2025-12-09 12:23:53,132 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.0" 200 1531
+INFO 2025-12-09 12:23:53,133 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.0" 200 10019
+INFO 2025-12-09 12:23:53,132 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.0" 200 1531
+INFO 2025-12-09 12:23:53,133 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.0" 200 10019
+INFO 2025-12-09 12:23:53,139 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-09 12:23:53,140 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.0" 200 492
+INFO 2025-12-09 12:23:53,139 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-09 12:23:53,140 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.0" 200 492
+INFO 2025-12-09 12:23:53,145 basehttp "GET /static/admin/js/theme-change.js HTTP/1.0" 200 3490
+INFO 2025-12-09 12:23:53,145 basehttp "GET /static/admin/js/theme-change.js HTTP/1.0" 200 3490
+INFO 2025-12-09 12:23:53,158 basehttp "GET /static/admin/js/admin/dashboard.js HTTP/1.0" 200 1009
+INFO 2025-12-09 12:23:53,158 basehttp "GET /static/admin/js/admin/dashboard.js HTTP/1.0" 200 1009
+INFO 2025-12-09 12:23:53,160 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.0" 200 89476
+INFO 2025-12-09 12:23:53,160 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.0" 200 89476
+INFO 2025-12-09 12:23:53,163 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.0" 200 232381
+INFO 2025-12-09 12:23:53,163 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.0" 200 232381
+INFO 2025-12-09 12:23:53,176 basehttp "GET /static/admin/js/change_form.js HTTP/1.0" 200 607
+INFO 2025-12-09 12:23:53,176 basehttp "GET /static/admin/js/change_form.js HTTP/1.0" 200 607
+INFO 2025-12-09 12:23:53,185 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.0" 200 4257
+INFO 2025-12-09 12:23:53,185 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.0" 200 4257
+INFO 2025-12-09 12:23:53,274 basehttp "GET /static/admin/img/daisyui-logomark.svg HTTP/1.0" 200 389
+INFO 2025-12-09 12:23:53,274 basehttp "GET /static/admin/img/daisyui-logomark.svg HTTP/1.0" 200 389
+INFO 2025-12-09 12:23:53,281 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-regular-400.woff2 HTTP/1.0" 200 25464
+INFO 2025-12-09 12:23:53,281 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-regular-400.woff2 HTTP/1.0" 200 25464
+INFO 2025-12-09 12:23:53,284 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-solid-900.woff2 HTTP/1.0" 200 157192
+INFO 2025-12-09 12:23:53,284 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-solid-900.woff2 HTTP/1.0" 200 157192
+INFO 2025-12-09 12:23:53,287 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Regular.ttf HTTP/1.0" 200 299684
+INFO 2025-12-09 12:23:53,287 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Regular.ttf HTTP/1.0" 200 299684
+INFO 2025-12-09 12:23:53,301 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Medium.ttf HTTP/1.0" 200 285136
+INFO 2025-12-09 12:23:53,301 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Medium.ttf HTTP/1.0" 200 285136
+INFO 2025-12-09 12:23:53,439 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.0" 200 1086
+INFO 2025-12-09 12:23:53,439 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.0" 200 1086
+INFO 2025-12-09 12:23:53,440 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.0" 200 677
+INFO 2025-12-09 12:23:53,440 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.0" 200 677
+INFO 2025-12-09 12:42:09,594 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+INFO 2025-12-09 12:42:09,594 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+WARNING 2025-12-09 12:42:09,959 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-09 12:42:09,959 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_deliver', 'no_facturado_can_create', 'facturado_can_edit', 'facturado_can_create', 'no_facturado_can_deliver', 'no_facturado_can_edit', 'registros_can_view'}
+WARNING 2025-12-09 12:42:09,962 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-09 12:42:09,964 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-09 12:42:09,970 basehttp "GET /oidc/callback/?state=ECPOLvgfPJNvrKDWsqz4ceT3ihlGDIn2&session_state=107403ab-6df4-46cc-8a34-e695e63cd869&code=d3af2a49-4494-45db-96a2-403255e7fbe2.107403ab-6df4-46cc-8a34-e695e63cd869.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-09 12:42:09,970 basehttp "GET /oidc/callback/?state=ECPOLvgfPJNvrKDWsqz4ceT3ihlGDIn2&session_state=107403ab-6df4-46cc-8a34-e695e63cd869&code=d3af2a49-4494-45db-96a2-403255e7fbe2.107403ab-6df4-46cc-8a34-e695e63cd869.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-09 12:42:09,995 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-09 12:42:09,995 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138

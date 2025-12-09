@@ -368,10 +368,18 @@ def buscar_solicitantes(request):
 
 
 def obtener_empleados_por_centro(request):
-    centro_id = request.GET.get("centro_id")
-    empleados_qs = empleados.objects.filter(cc_id=centro_id).values(
+
+    cc_permitidos_ids = request.user.cc_permitidos.values_list('pk', flat=True)
+    
+    if not cc_permitidos_ids:
+        return JsonResponse({"empleados": []})
+
+    empleados_qs = empleados.objects.filter(
+        cc_id__in=cc_permitidos_ids  
+    ).values(
         "id", "nombre", "legajo"
-    )
+    ).order_by("legajo") 
+
     empleados_list = list(empleados_qs)
     return JsonResponse({"empleados": empleados_list})
 
