@@ -195,7 +195,8 @@ def eliminar_vsm(request, vsm_id):
             })
 
     # Si todo salió bien, lo elimino de la app
-    vsm.delete()
+    vsm.active = False
+    vsm.save()
 
     return JsonResponse({
         "success": True,
@@ -378,7 +379,7 @@ def obtener_empleados_por_centro(request):
         cc_id__in=cc_permitidos_ids  
     ).values(
         "id", "nombre", "legajo"
-    ).order_by("legajo") 
+    ).order_by("legajo")
 
     empleados_list = list(empleados_qs)
     return JsonResponse({"empleados": empleados_list})

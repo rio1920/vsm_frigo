@@ -3272,3 +3272,461 @@ INFO 2025-12-09 12:42:09,970 basehttp "GET /oidc/callback/?state=ECPOLvgfPJNvrKD
 INFO 2025-12-09 12:42:09,970 basehttp "GET /oidc/callback/?state=ECPOLvgfPJNvrKDWsqz4ceT3ihlGDIn2&session_state=107403ab-6df4-46cc-8a34-e695e63cd869&code=d3af2a49-4494-45db-96a2-403255e7fbe2.107403ab-6df4-46cc-8a34-e695e63cd869.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
 INFO 2025-12-09 12:42:09,995 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
 INFO 2025-12-09 12:42:09,995 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-09 13:55:26,747 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-09 13:55:26,747 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-09 16:49:38,991 basehttp "GET /favicon.ico HTTP/1.0" 302 0
+INFO 2025-12-09 16:49:38,991 basehttp "GET /favicon.ico HTTP/1.0" 302 0
+INFO 2025-12-09 16:49:39,447 basehttp "GET /oidc/callback/?state=P40pIltQnqZGNPblsLVdf4f0RPJaqmQH&session_state=107403ab-6df4-46cc-8a34-e695e63cd869&code=2034d8a5-d9dd-4a85-bfd3-ef98ecc48074.107403ab-6df4-46cc-8a34-e695e63cd869.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-09 16:49:39,447 basehttp "GET /oidc/callback/?state=P40pIltQnqZGNPblsLVdf4f0RPJaqmQH&session_state=107403ab-6df4-46cc-8a34-e695e63cd869&code=2034d8a5-d9dd-4a85-bfd3-ef98ecc48074.107403ab-6df4-46cc-8a34-e695e63cd869.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-09 16:49:39,492 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-09 16:49:39,492 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-09 16:49:39,609 basehttp "GET /admin/vsm_app/usuarios/1/change/ HTTP/1.0" 302 0
+INFO 2025-12-09 16:49:39,609 basehttp "GET /admin/vsm_app/usuarios/1/change/ HTTP/1.0" 302 0
+WARNING 2025-12-09 16:49:40,294 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-09 16:49:40,294 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_deliver', 'no_facturado_can_create', 'facturado_can_edit', 'facturado_can_create', 'no_facturado_can_deliver', 'no_facturado_can_edit', 'registros_can_view'}
+WARNING 2025-12-09 16:49:40,299 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-09 16:49:40,309 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-09 16:49:40,321 basehttp "GET /oidc/callback/?state=vm9wul79XUQEk3i0avkAv9luGMjc3lXS&session_state=107403ab-6df4-46cc-8a34-e695e63cd869&code=adc71758-7916-4130-b24a-4173653eb164.107403ab-6df4-46cc-8a34-e695e63cd869.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-09 16:49:40,321 basehttp "GET /oidc/callback/?state=vm9wul79XUQEk3i0avkAv9luGMjc3lXS&session_state=107403ab-6df4-46cc-8a34-e695e63cd869&code=adc71758-7916-4130-b24a-4173653eb164.107403ab-6df4-46cc-8a34-e695e63cd869.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+ERROR 2025-12-09 16:49:40,477 log OIDC callback state not found in session `oidc_states`!
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/mozilla_django_oidc/views.py", line 102, in get
+    raise SuspiciousOperation(msg)
+django.core.exceptions.SuspiciousOperation: OIDC callback state not found in session `oidc_states`!
+ERROR 2025-12-09 16:49:40,477 log OIDC callback state not found in session `oidc_states`!
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/mozilla_django_oidc/views.py", line 102, in get
+    raise SuspiciousOperation(msg)
+django.core.exceptions.SuspiciousOperation: OIDC callback state not found in session `oidc_states`!
+WARNING 2025-12-09 16:49:40,486 basehttp "GET /oidc/callback/?state=vm9wul79XUQEk3i0avkAv9luGMjc3lXS&session_state=107403ab-6df4-46cc-8a34-e695e63cd869&code=ee698424-cf92-4cd7-bc7f-156f55881302.107403ab-6df4-46cc-8a34-e695e63cd869.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 400 79925
+WARNING 2025-12-09 16:49:40,486 basehttp "GET /oidc/callback/?state=vm9wul79XUQEk3i0avkAv9luGMjc3lXS&session_state=107403ab-6df4-46cc-8a34-e695e63cd869&code=ee698424-cf92-4cd7-bc7f-156f55881302.107403ab-6df4-46cc-8a34-e695e63cd869.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 400 79925
+WARNING 2025-12-09 16:49:40,807 log Not Found: /favicon.ico
+WARNING 2025-12-09 16:49:40,807 log Not Found: /favicon.ico
+WARNING 2025-12-09 16:49:40,809 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-09 16:49:40,809 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+INFO 2025-12-09 16:59:23,788 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-09 16:59:23,788 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-09 17:00:38,570 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-09 17:00:38,570 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-09 17:10:19,409 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-09 17:10:19,409 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-09 17:10:22,152 autoreload Watching for file changes with StatReloader
+INFO 2025-12-09 17:10:22,152 autoreload Watching for file changes with StatReloader
+INFO 2025-12-09 17:35:55,893 basehttp "GET /home HTTP/1.0" 302 0
+INFO 2025-12-09 17:35:55,893 basehttp "GET /home HTTP/1.0" 302 0
+WARNING 2025-12-09 17:35:56,280 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-09 17:35:56,281 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_create', 'facturado_can_deliver', 'no_facturado_can_edit', 'no_facturado_can_deliver', 'facturado_can_edit', 'registros_can_view', 'no_facturado_can_create'}
+WARNING 2025-12-09 17:35:56,284 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-09 17:35:56,289 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-09 17:35:56,295 basehttp "GET /oidc/callback/?state=jggw3yQD5kifzQiZcUVP0f48kqL4F8pl&session_state=107403ab-6df4-46cc-8a34-e695e63cd869&code=2b871786-e0e8-4ee8-a699-4943ad35398e.107403ab-6df4-46cc-8a34-e695e63cd869.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-09 17:35:56,295 basehttp "GET /oidc/callback/?state=jggw3yQD5kifzQiZcUVP0f48kqL4F8pl&session_state=107403ab-6df4-46cc-8a34-e695e63cd869&code=2b871786-e0e8-4ee8-a699-4943ad35398e.107403ab-6df4-46cc-8a34-e695e63cd869.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-09 17:35:56,347 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-09 17:35:56,347 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-09 17:35:57,920 basehttp "GET /registros HTTP/1.0" 200 20977
+INFO 2025-12-09 17:35:57,920 basehttp "GET /registros HTTP/1.0" 200 20977
+INFO 2025-12-09 19:18:57,511 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-09 19:18:57,511 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-09 19:19:06,371 autoreload Watching for file changes with StatReloader
+INFO 2025-12-09 19:19:06,371 autoreload Watching for file changes with StatReloader
+INFO 2025-12-09 19:26:44,218 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-09 19:26:44,218 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-09 19:26:46,152 autoreload Watching for file changes with StatReloader
+INFO 2025-12-09 19:26:46,152 autoreload Watching for file changes with StatReloader
+INFO 2025-12-09 19:26:59,600 basehttp "GET /home HTTP/1.0" 302 0
+INFO 2025-12-09 19:26:59,600 basehttp "GET /home HTTP/1.0" 302 0
+WARNING 2025-12-09 19:27:00,225 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-09 19:27:00,225 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_create', 'facturado_can_create', 'registros_can_view', 'no_facturado_can_edit', 'facturado_can_deliver', 'no_facturado_can_deliver', 'facturado_can_edit'}
+WARNING 2025-12-09 19:27:00,227 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-09 19:27:00,230 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-09 19:27:00,234 basehttp "GET /oidc/callback/?state=G0t4Qlv9AMLRtsmrBkj3YWoqapl1rn6N&session_state=107403ab-6df4-46cc-8a34-e695e63cd869&code=fd6f1d93-770e-46c7-b162-9d2c1d40a2c2.107403ab-6df4-46cc-8a34-e695e63cd869.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-09 19:27:00,234 basehttp "GET /oidc/callback/?state=G0t4Qlv9AMLRtsmrBkj3YWoqapl1rn6N&session_state=107403ab-6df4-46cc-8a34-e695e63cd869&code=fd6f1d93-770e-46c7-b162-9d2c1d40a2c2.107403ab-6df4-46cc-8a34-e695e63cd869.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-09 19:27:00,272 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-09 19:27:00,272 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-09 19:27:02,658 basehttp "GET /registros HTTP/1.0" 200 20977
+INFO 2025-12-09 19:27:02,658 basehttp "GET /registros HTTP/1.0" 200 20977
+INFO 2025-12-09 19:27:04,751 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-09 19:27:04,751 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-09 19:27:05,149 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-09 19:27:05,149 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-09 19:27:06,557 basehttp "GET /ajax/empleados?centro_id=8 HTTP/1.0" 200 2683
+INFO 2025-12-09 19:27:06,557 basehttp "GET /ajax/empleados?centro_id=8 HTTP/1.0" 200 2683
+INFO 2025-12-09 19:37:48,015 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2025-12-09 19:37:48,015 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2025-12-09 19:37:48,111 basehttp "GET /admin/ HTTP/1.0" 200 35872
+INFO 2025-12-09 19:37:48,111 basehttp "GET /admin/ HTTP/1.0" 200 35872
+INFO 2025-12-09 19:37:48,253 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.0" 200 1006
+INFO 2025-12-09 19:37:48,253 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.0" 200 1006
+INFO 2025-12-09 19:37:48,254 basehttp "GET /static/admin/css/customized_tailwind.css?v=2 HTTP/1.0" 200 34265
+INFO 2025-12-09 19:37:48,254 basehttp "GET /static/admin/css/customized_tailwind.css?v=2 HTTP/1.0" 200 34265
+INFO 2025-12-09 19:37:48,256 basehttp "GET /static/admin/css/calendar.css HTTP/1.0" 200 6359
+INFO 2025-12-09 19:37:48,256 basehttp "GET /static/admin/css/calendar.css HTTP/1.0" 200 6359
+INFO 2025-12-09 19:37:48,259 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/css/all.min.css HTTP/1.0" 200 96518
+INFO 2025-12-09 19:37:48,259 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/css/all.min.css HTTP/1.0" 200 96518
+INFO 2025-12-09 19:37:48,260 basehttp "GET /static/admin/css/base_tailwind.css HTTP/1.0" 200 151172
+INFO 2025-12-09 19:37:48,260 basehttp "GET /static/admin/css/base_tailwind.css HTTP/1.0" 200 151172
+INFO 2025-12-09 19:37:48,262 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.0" 200 89476
+INFO 2025-12-09 19:37:48,262 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.0" 200 89476
+INFO 2025-12-09 19:37:48,297 basehttp "GET /static/admin/js/theme-change.js HTTP/1.0" 200 3490
+INFO 2025-12-09 19:37:48,298 basehttp "GET /static/admin/js/admin/dashboard.js HTTP/1.0" 200 1009
+INFO 2025-12-09 19:37:48,297 basehttp "GET /static/admin/js/theme-change.js HTTP/1.0" 200 3490
+INFO 2025-12-09 19:37:48,298 basehttp "GET /static/admin/js/admin/dashboard.js HTTP/1.0" 200 1009
+INFO 2025-12-09 19:37:48,299 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.0" 200 4257
+INFO 2025-12-09 19:37:48,299 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.0" 200 4257
+INFO 2025-12-09 19:37:48,342 basehttp "GET /static/admin/img/daisyui-logomark.svg HTTP/1.0" 200 389
+INFO 2025-12-09 19:37:48,342 basehttp "GET /static/admin/img/daisyui-logomark.svg HTTP/1.0" 200 389
+INFO 2025-12-09 19:37:48,358 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-regular-400.woff2 HTTP/1.0" 200 25464
+INFO 2025-12-09 19:37:48,358 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-regular-400.woff2 HTTP/1.0" 200 25464
+INFO 2025-12-09 19:37:48,359 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-solid-900.woff2 HTTP/1.0" 200 157192
+INFO 2025-12-09 19:37:48,359 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-solid-900.woff2 HTTP/1.0" 200 157192
+INFO 2025-12-09 19:37:48,366 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Medium.ttf HTTP/1.0" 200 285136
+INFO 2025-12-09 19:37:48,366 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Medium.ttf HTTP/1.0" 200 285136
+INFO 2025-12-09 19:37:48,370 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Regular.ttf HTTP/1.0" 200 299684
+INFO 2025-12-09 19:37:48,370 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Regular.ttf HTTP/1.0" 200 299684
+INFO 2025-12-09 19:37:52,253 basehttp "GET /admin/vsm_app/permisoretiro/ HTTP/1.0" 200 43350
+INFO 2025-12-09 19:37:52,253 basehttp "GET /admin/vsm_app/permisoretiro/ HTTP/1.0" 200 43350
+INFO 2025-12-09 19:37:52,296 basehttp "GET /static/admin/js/urlify.js HTTP/1.0" 200 8632
+INFO 2025-12-09 19:37:52,296 basehttp "GET /static/admin/js/urlify.js HTTP/1.0" 200 8632
+INFO 2025-12-09 19:37:52,297 basehttp "GET /static/admin/js/core.js HTTP/1.0" 200 5419
+INFO 2025-12-09 19:37:52,298 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.0" 200 10019
+INFO 2025-12-09 19:37:52,297 basehttp "GET /static/admin/js/core.js HTTP/1.0" 200 5419
+INFO 2025-12-09 19:37:52,298 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.0" 200 10019
+INFO 2025-12-09 19:37:52,300 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.0" 200 1531
+INFO 2025-12-09 19:37:52,300 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.0" 200 1531
+INFO 2025-12-09 19:37:52,303 basehttp "GET /static/admin/js/actions.js HTTP/1.0" 200 6783
+INFO 2025-12-09 19:37:52,303 basehttp "GET /static/admin/js/actions.js HTTP/1.0" 200 6783
+INFO 2025-12-09 19:37:52,309 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.0" 200 287630
+INFO 2025-12-09 19:37:52,309 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.0" 200 287630
+INFO 2025-12-09 19:37:52,317 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.0" 200 232381
+INFO 2025-12-09 19:37:52,317 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.0" 200 232381
+INFO 2025-12-09 19:37:52,336 basehttp "GET /static/admin/js/query_filter.js?v=3 HTTP/1.0" 200 5384
+INFO 2025-12-09 19:37:52,336 basehttp "GET /static/admin/js/query_filter.js?v=3 HTTP/1.0" 200 5384
+INFO 2025-12-09 19:37:52,354 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-09 19:37:52,354 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-10 11:25:35,199 autoreload Watching for file changes with StatReloader
+INFO 2025-12-10 11:25:35,199 autoreload Watching for file changes with StatReloader
+INFO 2025-12-10 12:04:22,795 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-10 12:04:22,795 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-10 12:04:23,331 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-10 12:04:23,331 basehttp "GET / HTTP/1.0" 302 0
+WARNING 2025-12-10 12:04:23,767 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-10 12:04:23,768 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_deliver', 'no_facturado_can_create', 'no_facturado_can_deliver', 'facturado_can_edit', 'facturado_can_create', 'registros_can_view', 'no_facturado_can_edit'}
+WARNING 2025-12-10 12:04:23,774 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-10 12:04:23,781 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-10 12:04:23,785 basehttp "GET /oidc/callback/?state=9eSGKhrblb0P8Zs97DhYl3SerXC0N709&session_state=12c30056-d3c9-432b-b8a0-60866278c39a&code=30ac18d7-dd22-409b-9be4-3cd8479e40e7.12c30056-d3c9-432b-b8a0-60866278c39a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-10 12:04:23,785 basehttp "GET /oidc/callback/?state=9eSGKhrblb0P8Zs97DhYl3SerXC0N709&session_state=12c30056-d3c9-432b-b8a0-60866278c39a&code=30ac18d7-dd22-409b-9be4-3cd8479e40e7.12c30056-d3c9-432b-b8a0-60866278c39a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-10 12:04:23,834 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-10 12:04:23,834 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-10 12:04:23,948 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-10 12:04:23,948 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-10 12:04:23,949 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2025-12-10 12:04:23,949 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2025-12-10 12:04:23,954 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2025-12-10 12:04:23,954 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2025-12-10 12:04:23,956 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2025-12-10 12:04:23,956 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2025-12-10 12:04:23,956 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2025-12-10 12:04:23,956 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2025-12-10 12:04:23,971 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+INFO 2025-12-10 12:04:23,971 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+WARNING 2025-12-10 12:04:24,163 log Not Found: /favicon.ico
+WARNING 2025-12-10 12:04:24,163 log Not Found: /favicon.ico
+WARNING 2025-12-10 12:04:24,163 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-10 12:04:24,163 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+INFO 2025-12-10 12:22:48,379 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+INFO 2025-12-10 12:22:48,379 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+WARNING 2025-12-10 12:22:48,628 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-10 12:22:48,628 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_deliver', 'no_facturado_can_create', 'no_facturado_can_deliver', 'facturado_can_edit', 'facturado_can_create', 'registros_can_view', 'no_facturado_can_edit'}
+WARNING 2025-12-10 12:22:48,629 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-10 12:22:48,631 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-10 12:22:48,636 basehttp "GET /oidc/callback/?state=VHs1bfdaLHTYjXqlBgwqEW0odlZxcLrh&session_state=12c30056-d3c9-432b-b8a0-60866278c39a&code=a334bfdd-c7b4-4b8c-acab-2b161230e9dc.12c30056-d3c9-432b-b8a0-60866278c39a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-10 12:22:48,636 basehttp "GET /oidc/callback/?state=VHs1bfdaLHTYjXqlBgwqEW0odlZxcLrh&session_state=12c30056-d3c9-432b-b8a0-60866278c39a&code=a334bfdd-c7b4-4b8c-acab-2b161230e9dc.12c30056-d3c9-432b-b8a0-60866278c39a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-10 12:22:48,685 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-10 12:22:48,685 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+WARNING 2025-12-10 12:22:55,414 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-10 12:22:55,414 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-10 12:22:55,415 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-10 12:22:55,415 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-10 12:23:09,607 basehttp "GET /ajax/empleados?centro_id=8 HTTP/1.0" 200 2683
+INFO 2025-12-10 12:23:09,607 basehttp "GET /ajax/empleados?centro_id=8 HTTP/1.0" 200 2683
+INFO 2025-12-10 12:23:14,466 basehttp "GET /buscar_productos_por_centro?centro_costo=8&tipo_entrega=INSUMOS HTTP/1.0" 200 88
+INFO 2025-12-10 12:23:14,466 basehttp "GET /buscar_productos_por_centro?centro_costo=8&tipo_entrega=INSUMOS HTTP/1.0" 200 88
+INFO 2025-12-10 12:23:15,628 basehttp "GET /buscar_productos_por_centro?centro_costo=8&tipo_entrega=INSUMOS HTTP/1.0" 200 88
+INFO 2025-12-10 12:23:15,628 basehttp "GET /buscar_productos_por_centro?centro_costo=8&tipo_entrega=INSUMOS HTTP/1.0" 200 88
+INFO 2025-12-10 12:23:18,224 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-10 12:23:18,224 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+WARNING 2025-12-10 12:23:18,284 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-10 12:23:18,284 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-10 12:23:18,284 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-10 12:23:18,284 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-10 12:23:19,762 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 2683
+INFO 2025-12-10 12:23:19,762 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 2683
+INFO 2025-12-10 12:23:24,470 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS HTTP/1.0" 200 88
+INFO 2025-12-10 12:23:24,470 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS HTTP/1.0" 200 88
+INFO 2025-12-10 12:23:26,715 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS HTTP/1.0" 200 88
+INFO 2025-12-10 12:23:26,715 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS HTTP/1.0" 200 88
+INFO 2025-12-10 12:28:15,962 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS HTTP/1.0" 200 88
+INFO 2025-12-10 12:28:15,962 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS HTTP/1.0" 200 88
+INFO 2025-12-10 12:28:16,312 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS HTTP/1.0" 200 88
+INFO 2025-12-10 12:28:16,312 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS HTTP/1.0" 200 88
+INFO 2025-12-10 12:38:23,281 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+INFO 2025-12-10 12:38:23,281 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+WARNING 2025-12-10 12:38:23,750 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-10 12:38:23,750 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_deliver', 'no_facturado_can_create', 'no_facturado_can_deliver', 'facturado_can_edit', 'facturado_can_create', 'registros_can_view', 'no_facturado_can_edit'}
+WARNING 2025-12-10 12:38:23,753 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-10 12:38:23,755 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-10 12:38:23,759 basehttp "GET /oidc/callback/?state=ALwQfMZp62B6PklyuvxaxhxDTenTbFOC&session_state=12c30056-d3c9-432b-b8a0-60866278c39a&code=4b6b6e06-ec9d-4a9c-bc16-9fd246eeb39f.12c30056-d3c9-432b-b8a0-60866278c39a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-10 12:38:23,759 basehttp "GET /oidc/callback/?state=ALwQfMZp62B6PklyuvxaxhxDTenTbFOC&session_state=12c30056-d3c9-432b-b8a0-60866278c39a&code=4b6b6e06-ec9d-4a9c-bc16-9fd246eeb39f.12c30056-d3c9-432b-b8a0-60866278c39a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-10 12:38:23,793 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-10 12:38:23,793 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+WARNING 2025-12-10 12:38:23,866 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-10 12:38:23,866 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-10 12:38:23,867 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-10 12:38:23,867 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-10 12:57:33,877 autoreload Watching for file changes with StatReloader
+INFO 2025-12-10 12:57:33,877 autoreload Watching for file changes with StatReloader
+WARNING 2025-12-10 13:08:55,887 log Forbidden: /ajax/empleados
+WARNING 2025-12-10 13:08:55,887 log Forbidden: /ajax/empleados
+WARNING 2025-12-10 13:08:55,890 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 403 296
+WARNING 2025-12-10 13:08:55,890 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 403 296
+INFO 2025-12-10 13:08:58,691 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+INFO 2025-12-10 13:08:58,691 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+WARNING 2025-12-10 13:08:59,426 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-10 13:08:59,426 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_create', 'facturado_can_create', 'no_facturado_can_edit', 'facturado_can_edit', 'registros_can_view', 'facturado_can_deliver', 'no_facturado_can_deliver'}
+WARNING 2025-12-10 13:08:59,429 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-10 13:08:59,436 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-10 13:08:59,442 basehttp "GET /oidc/callback/?state=K5nwSFa0x4a8h3ue1AmZLgwni0AzjJYf&session_state=12c30056-d3c9-432b-b8a0-60866278c39a&code=9afcb377-d27d-4b83-ad4b-c96ca8783cb7.12c30056-d3c9-432b-b8a0-60866278c39a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-10 13:08:59,442 basehttp "GET /oidc/callback/?state=K5nwSFa0x4a8h3ue1AmZLgwni0AzjJYf&session_state=12c30056-d3c9-432b-b8a0-60866278c39a&code=9afcb377-d27d-4b83-ad4b-c96ca8783cb7.12c30056-d3c9-432b-b8a0-60866278c39a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-10 13:08:59,516 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-10 13:08:59,516 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+WARNING 2025-12-10 13:08:59,578 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-10 13:08:59,578 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-10 13:08:59,579 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-10 13:08:59,579 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-10 13:09:02,906 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-10 13:09:02,906 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-10 13:09:02,975 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2025-12-10 13:09:02,975 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2025-12-10 13:09:02,975 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2025-12-10 13:09:02,975 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2025-12-10 13:09:02,985 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2025-12-10 13:09:02,985 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2025-12-10 13:09:02,986 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-10 13:09:02,986 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-10 13:09:02,987 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2025-12-10 13:09:02,987 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+WARNING 2025-12-10 13:09:03,007 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-10 13:09:03,007 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-10 13:09:03,008 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-10 13:09:03,010 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+WARNING 2025-12-10 13:09:03,008 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-10 13:09:03,010 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+WARNING 2025-12-10 13:09:03,372 log Not Found: /favicon.ico
+WARNING 2025-12-10 13:09:03,372 log Not Found: /favicon.ico
+WARNING 2025-12-10 13:09:03,374 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-10 13:09:03,374 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+INFO 2025-12-10 13:32:57,373 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+INFO 2025-12-10 13:32:57,373 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+WARNING 2025-12-10 13:32:57,712 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-10 13:32:57,712 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_create', 'facturado_can_create', 'no_facturado_can_edit', 'facturado_can_edit', 'registros_can_view', 'facturado_can_deliver', 'no_facturado_can_deliver'}
+WARNING 2025-12-10 13:32:57,713 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-10 13:32:57,716 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-10 13:32:57,721 basehttp "GET /oidc/callback/?state=LXruun19EQvVDuMeVZDMo2x2KcfeAejh&session_state=12c30056-d3c9-432b-b8a0-60866278c39a&code=b9d42b45-6f89-4407-8564-3511ae9b6242.12c30056-d3c9-432b-b8a0-60866278c39a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-10 13:32:57,721 basehttp "GET /oidc/callback/?state=LXruun19EQvVDuMeVZDMo2x2KcfeAejh&session_state=12c30056-d3c9-432b-b8a0-60866278c39a&code=b9d42b45-6f89-4407-8564-3511ae9b6242.12c30056-d3c9-432b-b8a0-60866278c39a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-10 13:32:57,746 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-10 13:32:57,746 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-10 13:32:57,791 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2025-12-10 13:32:57,791 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2025-12-10 13:32:57,804 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-10 13:32:57,804 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-10 13:32:57,809 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2025-12-10 13:32:57,809 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+WARNING 2025-12-10 13:32:57,815 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-10 13:32:57,815 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-10 13:32:57,817 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-10 13:32:57,817 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-10 13:32:57,819 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2025-12-10 13:32:57,819 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2025-12-10 13:32:57,822 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2025-12-10 13:32:57,822 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2025-12-10 13:32:57,825 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+INFO 2025-12-10 13:32:57,825 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+WARNING 2025-12-10 13:32:58,079 log Not Found: /favicon.ico
+WARNING 2025-12-10 13:32:58,079 log Not Found: /favicon.ico
+WARNING 2025-12-10 13:32:58,080 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-10 13:32:58,080 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+INFO 2025-12-10 13:33:02,780 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 2683
+INFO 2025-12-10 13:33:02,780 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 2683
+INFO 2025-12-10 13:38:54,907 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-10 13:38:54,907 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+WARNING 2025-12-10 13:38:54,983 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-10 13:38:54,983 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-10 13:38:54,984 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-10 13:38:54,984 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-10 13:43:51,763 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 2683
+INFO 2025-12-10 13:43:51,763 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 2683
+INFO 2025-12-10 13:43:56,750 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS HTTP/1.0" 200 88
+INFO 2025-12-10 13:43:56,750 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS HTTP/1.0" 200 88
+INFO 2025-12-10 13:43:58,239 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS HTTP/1.0" 200 88
+INFO 2025-12-10 13:43:58,239 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS HTTP/1.0" 200 88
+INFO 2025-12-10 14:33:52,131 basehttp "GET /admin/ HTTP/1.0" 302 0
+INFO 2025-12-10 14:33:52,131 basehttp "GET /admin/ HTTP/1.0" 302 0
+INFO 2025-12-10 14:40:35,391 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-10 14:40:35,391 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-10 14:40:37,884 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-10 14:40:37,884 basehttp "GET / HTTP/1.0" 302 0
+WARNING 2025-12-10 14:40:38,369 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-10 14:40:38,369 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_create', 'facturado_can_create', 'no_facturado_can_edit', 'facturado_can_edit', 'registros_can_view', 'facturado_can_deliver', 'no_facturado_can_deliver'}
+WARNING 2025-12-10 14:40:38,372 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-10 14:40:38,375 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-10 14:40:38,382 basehttp "GET /oidc/callback/?state=e1KD5QYSFwQ8hapZyyjGQWTH7EzzebIy&session_state=12c30056-d3c9-432b-b8a0-60866278c39a&code=b8384bbf-5d61-4741-9a72-c7f607a53a3a.12c30056-d3c9-432b-b8a0-60866278c39a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-10 14:40:38,382 basehttp "GET /oidc/callback/?state=e1KD5QYSFwQ8hapZyyjGQWTH7EzzebIy&session_state=12c30056-d3c9-432b-b8a0-60866278c39a&code=b8384bbf-5d61-4741-9a72-c7f607a53a3a.12c30056-d3c9-432b-b8a0-60866278c39a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-10 14:40:38,408 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-10 14:40:38,408 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-10 14:40:40,754 basehttp "GET /registros HTTP/1.0" 200 20977
+INFO 2025-12-10 14:40:40,754 basehttp "GET /registros HTTP/1.0" 200 20977
+INFO 2025-12-10 18:11:02,014 basehttp "POST /vsm/217/eliminar/ HTTP/1.0" 200 59
+INFO 2025-12-10 18:11:02,014 basehttp "POST /vsm/217/eliminar/ HTTP/1.0" 200 59
+INFO 2025-12-10 18:11:02,080 basehttp "GET /registros HTTP/1.0" 302 0
+INFO 2025-12-10 18:11:02,080 basehttp "GET /registros HTTP/1.0" 302 0
+WARNING 2025-12-10 18:11:02,634 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-10 18:11:02,635 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_create', 'facturado_can_create', 'no_facturado_can_edit', 'facturado_can_edit', 'registros_can_view', 'facturado_can_deliver', 'no_facturado_can_deliver'}
+WARNING 2025-12-10 18:11:02,637 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-10 18:11:02,640 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-10 18:11:02,645 basehttp "GET /oidc/callback/?state=YpacT4smgVepQV9tVgl3s53Q27Q2tumU&session_state=12c30056-d3c9-432b-b8a0-60866278c39a&code=37ab78a4-9f00-4558-bf87-8360e20c9e0a.12c30056-d3c9-432b-b8a0-60866278c39a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-10 18:11:02,645 basehttp "GET /oidc/callback/?state=YpacT4smgVepQV9tVgl3s53Q27Q2tumU&session_state=12c30056-d3c9-432b-b8a0-60866278c39a&code=37ab78a4-9f00-4558-bf87-8360e20c9e0a.12c30056-d3c9-432b-b8a0-60866278c39a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-10 18:11:02,682 basehttp "GET /registros HTTP/1.0" 200 18317
+INFO 2025-12-10 18:11:02,682 basehttp "GET /registros HTTP/1.0" 200 18317
+INFO 2025-12-10 18:13:35,205 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-10 18:13:35,205 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-10 18:13:38,833 autoreload Watching for file changes with StatReloader
+INFO 2025-12-10 18:13:38,833 autoreload Watching for file changes with StatReloader
+INFO 2025-12-10 18:13:41,926 basehttp "POST /vsm/216/eliminar/ HTTP/1.0" 200 59
+INFO 2025-12-10 18:13:41,926 basehttp "POST /vsm/216/eliminar/ HTTP/1.0" 200 59
+INFO 2025-12-10 18:13:42,005 basehttp "GET /registros HTTP/1.0" 200 15657
+INFO 2025-12-10 18:13:42,005 basehttp "GET /registros HTTP/1.0" 200 15657
+INFO 2025-12-10 18:13:47,462 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-10 18:13:47,462 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-10 18:13:52,772 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2025-12-10 18:13:52,772 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2025-12-10 18:13:52,889 basehttp "GET /admin/ HTTP/1.0" 200 35896
+INFO 2025-12-10 18:13:52,889 basehttp "GET /admin/ HTTP/1.0" 200 35896
+INFO 2025-12-10 18:13:52,940 basehttp "GET /static/admin/css/calendar.css HTTP/1.0" 200 6359
+INFO 2025-12-10 18:13:52,940 basehttp "GET /static/admin/css/calendar.css HTTP/1.0" 200 6359
+INFO 2025-12-10 18:13:52,941 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.0" 200 1006
+INFO 2025-12-10 18:13:52,941 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.0" 200 1006
+INFO 2025-12-10 18:13:52,943 basehttp "GET /static/admin/css/customized_tailwind.css?v=2 HTTP/1.0" 200 34265
+INFO 2025-12-10 18:13:52,943 basehttp "GET /static/admin/css/customized_tailwind.css?v=2 HTTP/1.0" 200 34265
+INFO 2025-12-10 18:13:52,944 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.0" 200 89476
+INFO 2025-12-10 18:13:52,944 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/css/all.min.css HTTP/1.0" 200 96518
+INFO 2025-12-10 18:13:52,944 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/css/all.min.css HTTP/1.0" 200 96518
+INFO 2025-12-10 18:13:52,944 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.0" 200 89476
+INFO 2025-12-10 18:13:52,948 basehttp "GET /static/admin/css/base_tailwind.css HTTP/1.0" 200 151172
+INFO 2025-12-10 18:13:52,948 basehttp "GET /static/admin/css/base_tailwind.css HTTP/1.0" 200 151172
+INFO 2025-12-10 18:13:52,951 basehttp "GET /static/admin/js/theme-change.js HTTP/1.0" 200 3490
+INFO 2025-12-10 18:13:52,951 basehttp "GET /static/admin/js/theme-change.js HTTP/1.0" 200 3490
+INFO 2025-12-10 18:13:52,955 basehttp "GET /static/admin/js/admin/dashboard.js HTTP/1.0" 200 1009
+INFO 2025-12-10 18:13:52,955 basehttp "GET /static/admin/js/admin/dashboard.js HTTP/1.0" 200 1009
+INFO 2025-12-10 18:13:52,956 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.0" 200 4257
+INFO 2025-12-10 18:13:52,956 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.0" 200 4257
+INFO 2025-12-10 18:13:53,003 basehttp "GET /static/admin/img/daisyui-logomark.svg HTTP/1.0" 200 389
+INFO 2025-12-10 18:13:53,003 basehttp "GET /static/admin/img/daisyui-logomark.svg HTTP/1.0" 200 389
+INFO 2025-12-10 18:13:53,004 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-regular-400.woff2 HTTP/1.0" 200 25464
+INFO 2025-12-10 18:13:53,004 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-regular-400.woff2 HTTP/1.0" 200 25464
+INFO 2025-12-10 18:13:53,009 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-solid-900.woff2 HTTP/1.0" 200 157192
+INFO 2025-12-10 18:13:53,009 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-solid-900.woff2 HTTP/1.0" 200 157192
+INFO 2025-12-10 18:13:53,015 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Regular.ttf HTTP/1.0" 200 299684
+INFO 2025-12-10 18:13:53,015 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Regular.ttf HTTP/1.0" 200 299684
+INFO 2025-12-10 18:13:53,019 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Medium.ttf HTTP/1.0" 200 285136
+INFO 2025-12-10 18:13:53,019 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Medium.ttf HTTP/1.0" 200 285136
+INFO 2025-12-10 18:13:56,174 basehttp "GET /admin/vsm_app/vsm/ HTTP/1.0" 200 30187
+INFO 2025-12-10 18:13:56,174 basehttp "GET /admin/vsm_app/vsm/ HTTP/1.0" 200 30187
+INFO 2025-12-10 18:13:56,205 basehttp "GET /static/admin/js/core.js HTTP/1.0" 200 5419
+INFO 2025-12-10 18:13:56,205 basehttp "GET /static/admin/js/core.js HTTP/1.0" 200 5419
+INFO 2025-12-10 18:13:56,206 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.0" 200 10019
+INFO 2025-12-10 18:13:56,206 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.0" 200 10019
+INFO 2025-12-10 18:13:56,207 basehttp "GET /static/admin/js/actions.js HTTP/1.0" 200 6783
+INFO 2025-12-10 18:13:56,207 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.0" 200 1531
+INFO 2025-12-10 18:13:56,207 basehttp "GET /static/admin/js/actions.js HTTP/1.0" 200 6783
+INFO 2025-12-10 18:13:56,207 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.0" 200 1531
+INFO 2025-12-10 18:13:56,209 basehttp "GET /static/admin/js/urlify.js HTTP/1.0" 200 8632
+INFO 2025-12-10 18:13:56,209 basehttp "GET /static/admin/js/urlify.js HTTP/1.0" 200 8632
+INFO 2025-12-10 18:13:56,211 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.0" 200 287630
+INFO 2025-12-10 18:13:56,211 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.0" 200 287630
+INFO 2025-12-10 18:13:56,225 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.0" 200 232381
+INFO 2025-12-10 18:13:56,225 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.0" 200 232381
+INFO 2025-12-10 18:13:56,237 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-10 18:13:56,237 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-10 18:13:56,238 basehttp "GET /static/admin/js/query_filter.js?v=3 HTTP/1.0" 200 5384
+INFO 2025-12-10 18:13:56,238 basehttp "GET /static/admin/js/query_filter.js?v=3 HTTP/1.0" 200 5384
+INFO 2025-12-10 18:14:41,028 basehttp "GET /registros HTTP/1.0" 200 15657
+INFO 2025-12-10 18:14:41,028 basehttp "GET /registros HTTP/1.0" 200 15657
+INFO 2025-12-10 18:14:44,889 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-10 18:14:44,889 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-10 18:14:47,267 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-10 18:14:47,267 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-10 18:14:52,247 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-10 18:14:52,247 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-10 18:14:54,275 basehttp "GET /registros HTTP/1.0" 200 15657
+INFO 2025-12-10 18:14:54,275 basehttp "GET /registros HTTP/1.0" 200 15657
+INFO 2025-12-10 18:14:55,142 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-10 18:14:55,142 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-10 18:14:56,731 basehttp "GET /registros HTTP/1.0" 200 15657
+INFO 2025-12-10 18:14:56,731 basehttp "GET /registros HTTP/1.0" 200 15657
+INFO 2025-12-10 18:14:58,263 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-10 18:14:58,263 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-10 18:15:01,707 basehttp "POST /vsm/214/eliminar/ HTTP/1.0" 200 59
+INFO 2025-12-10 18:15:01,707 basehttp "POST /vsm/214/eliminar/ HTTP/1.0" 200 59
+INFO 2025-12-10 18:15:01,744 basehttp "GET /registros HTTP/1.0" 200 13001
+INFO 2025-12-10 18:15:01,744 basehttp "GET /registros HTTP/1.0" 200 13001
+INFO 2025-12-10 18:15:04,834 basehttp "GET /admin/vsm_app/vsm/ HTTP/1.0" 200 30185
+INFO 2025-12-10 18:15:04,834 basehttp "GET /admin/vsm_app/vsm/ HTTP/1.0" 200 30185
+INFO 2025-12-10 18:15:04,876 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-10 18:15:04,876 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-10 18:15:19,336 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-10 18:15:19,336 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-10 18:15:20,375 basehttp "GET /pendientes HTTP/1.0" 200 9944
+INFO 2025-12-10 18:15:20,375 basehttp "GET /pendientes HTTP/1.0" 200 9944
+INFO 2025-12-10 18:15:29,421 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-10 18:15:29,421 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-10 18:15:34,471 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-10 18:15:34,471 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-10 18:15:36,051 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-10 18:15:36,051 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-10 18:16:04,022 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-10 18:16:04,022 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-10 18:16:05,391 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-10 18:16:05,391 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-10 18:16:06,221 basehttp "GET /registros HTTP/1.0" 200 13004
+INFO 2025-12-10 18:16:06,221 basehttp "GET /registros HTTP/1.0" 200 13004
+INFO 2025-12-10 18:16:14,972 basehttp "GET /registros HTTP/1.0" 200 13004
+INFO 2025-12-10 18:16:14,972 basehttp "GET /registros HTTP/1.0" 200 13004
+INFO 2025-12-10 18:16:28,501 basehttp "GET /registros HTTP/1.0" 200 13001
+INFO 2025-12-10 18:16:28,501 basehttp "GET /registros HTTP/1.0" 200 13001
+INFO 2025-12-10 18:16:42,808 basehttp "GET /registros HTTP/1.0" 200 12987
+INFO 2025-12-10 18:16:42,808 basehttp "GET /registros HTTP/1.0" 200 12987
+INFO 2025-12-10 18:16:54,634 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-10 18:16:54,634 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
