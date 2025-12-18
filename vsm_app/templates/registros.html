@@ -19,8 +19,19 @@
   </div>
 </div>
 
+{% if error %}
+<div class="alert alert-error max-w-6xl mx-auto my-4">
+  <div>
+    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+    <span>{{ error }}</span>
+  </div>
+</div>
+{% endif %}
+
 <body class="bg-[var(--fondo-oscuro)]">
-  <h1 class="text-3xl font-bold mb-6 text-center mt-18" style="color: var(--detalle-dorado); margin-top: 18px;">
+  <h1 id="titulo" class="text-3xl font-bold mb-6 text-center mt-18" style="color: var(--detalle-dorado); margin-top: 18px;">
     Historial de Vales de Salida de Materiales (VSM)
   </h1>
 
@@ -215,8 +226,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let selectedVSM = null;
 
     window.openDeleteModal = function(vsmId) {
-        console.log("ABRIENDO MODAL ID:", vsmId);
-        selectedVSM = vsmId;
         modal.classList.remove("hidden");
     };
 
@@ -244,7 +253,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 </script>
-
 
 </body>
 {% endblock %}

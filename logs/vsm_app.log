@@ -3730,3 +3730,1077 @@ INFO 2025-12-10 18:16:42,808 basehttp "GET /registros HTTP/1.0" 200 12987
 INFO 2025-12-10 18:16:42,808 basehttp "GET /registros HTTP/1.0" 200 12987
 INFO 2025-12-10 18:16:54,634 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
 INFO 2025-12-10 18:16:54,634 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-10 18:21:37,120 basehttp "GET /registros HTTP/1.0" 200 12987
+INFO 2025-12-10 18:21:37,120 basehttp "GET /registros HTTP/1.0" 200 12987
+INFO 2025-12-10 18:52:59,677 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-10 18:52:59,677 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-10 18:53:00,840 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-10 18:53:00,840 basehttp "GET / HTTP/1.0" 302 0
+WARNING 2025-12-10 18:53:01,539 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-10 18:53:01,540 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_deliver', 'no_facturado_can_create', 'facturado_can_deliver', 'facturado_can_edit', 'registros_can_view', 'facturado_can_create', 'no_facturado_can_edit'}
+WARNING 2025-12-10 18:53:01,542 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-10 18:53:01,545 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-10 18:53:01,549 basehttp "GET /oidc/callback/?state=A9lv4QogtSZ21E4ZceR5h1gnnTgoQxwp&session_state=12c30056-d3c9-432b-b8a0-60866278c39a&code=77cb7f16-90c1-4a7b-8bf3-5814d4291124.12c30056-d3c9-432b-b8a0-60866278c39a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-10 18:53:01,549 basehttp "GET /oidc/callback/?state=A9lv4QogtSZ21E4ZceR5h1gnnTgoQxwp&session_state=12c30056-d3c9-432b-b8a0-60866278c39a&code=77cb7f16-90c1-4a7b-8bf3-5814d4291124.12c30056-d3c9-432b-b8a0-60866278c39a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-10 18:53:01,580 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-10 18:53:01,580 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-10 18:53:03,190 basehttp "GET /pendientes HTTP/1.0" 200 9944
+INFO 2025-12-10 18:53:03,190 basehttp "GET /pendientes HTTP/1.0" 200 9944
+INFO 2025-12-10 18:53:04,971 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-10 18:53:04,971 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-10 18:53:05,963 basehttp "GET /registros HTTP/1.0" 200 14008
+INFO 2025-12-10 18:53:05,963 basehttp "GET /registros HTTP/1.0" 200 14008
+INFO 2025-12-10 19:38:24,219 basehttp "GET /registros HTTP/1.0" 302 0
+INFO 2025-12-10 19:38:24,219 basehttp "GET /registros HTTP/1.0" 302 0
+INFO 2025-12-10 19:38:24,457 basehttp "GET /oidc/callback/?error=login_required&state=KZXNutZ5bw9NuX6KzyCLFgLmDO6eoRqv HTTP/1.0" 302 0
+INFO 2025-12-10 19:38:24,457 basehttp "GET /oidc/callback/?error=login_required&state=KZXNutZ5bw9NuX6KzyCLFgLmDO6eoRqv HTTP/1.0" 302 0
+INFO 2025-12-10 19:38:24,465 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-10 19:38:24,465 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-10 19:38:26,709 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-10 19:38:26,709 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-10 19:38:26,740 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+INFO 2025-12-10 19:38:26,740 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+WARNING 2025-12-10 19:38:29,814 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-10 19:38:29,814 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_deliver', 'no_facturado_can_create', 'facturado_can_deliver', 'facturado_can_edit', 'registros_can_view', 'facturado_can_create', 'no_facturado_can_edit'}
+WARNING 2025-12-10 19:38:29,816 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-10 19:38:29,818 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-10 19:38:29,828 basehttp "GET /oidc/callback/?state=ojk9WTcuVGiRBJG34PAnXOawdFMd5dkw&session_state=666c8f19-2a18-48e2-b173-da7781c58b04&code=d77bf757-cf29-4213-a0c0-37e9c54500c7.666c8f19-2a18-48e2-b173-da7781c58b04.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-10 19:38:29,828 basehttp "GET /oidc/callback/?state=ojk9WTcuVGiRBJG34PAnXOawdFMd5dkw&session_state=666c8f19-2a18-48e2-b173-da7781c58b04&code=d77bf757-cf29-4213-a0c0-37e9c54500c7.666c8f19-2a18-48e2-b173-da7781c58b04.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-10 19:38:29,853 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-10 19:38:29,853 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-10 19:38:31,900 basehttp "GET /pendientes HTTP/1.0" 200 9944
+INFO 2025-12-10 19:38:31,900 basehttp "GET /pendientes HTTP/1.0" 200 9944
+INFO 2025-12-10 19:38:34,137 basehttp "GET /registros HTTP/1.0" 200 12998
+INFO 2025-12-10 19:38:34,137 basehttp "GET /registros HTTP/1.0" 200 12998
+INFO 2025-12-10 19:46:46,602 basehttp "GET /registros HTTP/1.0" 200 12998
+INFO 2025-12-10 19:46:46,602 basehttp "GET /registros HTTP/1.0" 200 12998
+INFO 2025-12-11 12:44:39,911 autoreload Watching for file changes with StatReloader
+INFO 2025-12-11 12:44:39,911 autoreload Watching for file changes with StatReloader
+INFO 2025-12-11 12:44:49,199 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-11 12:44:49,199 basehttp "GET / HTTP/1.0" 302 0
+WARNING 2025-12-11 12:44:49,699 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-11 12:44:49,700 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_create', 'registros_can_view', 'facturado_can_deliver', 'no_facturado_can_deliver', 'no_facturado_can_edit', 'facturado_can_create', 'facturado_can_edit'}
+WARNING 2025-12-11 12:44:49,706 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-11 12:44:49,713 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-11 12:44:49,720 basehttp "GET /oidc/callback/?state=CVt6PJuezxckTlhrwh1E8ua2oPAV0fTP&session_state=59289f92-643a-4ce6-9ec1-b811910ea657&code=a1e6ddc0-7bbc-4366-a153-e1d009021fcd.59289f92-643a-4ce6-9ec1-b811910ea657.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-11 12:44:49,720 basehttp "GET /oidc/callback/?state=CVt6PJuezxckTlhrwh1E8ua2oPAV0fTP&session_state=59289f92-643a-4ce6-9ec1-b811910ea657&code=a1e6ddc0-7bbc-4366-a153-e1d009021fcd.59289f92-643a-4ce6-9ec1-b811910ea657.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-11 12:44:49,761 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-11 12:44:49,761 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-11 12:44:49,806 basehttp "GET /static/css/output.css HTTP/1.0" 304 0
+INFO 2025-12-11 12:44:49,806 basehttp "GET /static/css/output.css HTTP/1.0" 304 0
+INFO 2025-12-11 12:44:49,809 basehttp "GET /static/js/tailwind.js HTTP/1.0" 304 0
+INFO 2025-12-11 12:44:49,809 basehttp "GET /static/js/tailwind.js HTTP/1.0" 304 0
+INFO 2025-12-11 12:44:49,814 basehttp "GET /static/js/on-scan.js HTTP/1.0" 304 0
+INFO 2025-12-11 12:44:49,815 basehttp "GET /static/js/select2.js HTTP/1.0" 304 0
+INFO 2025-12-11 12:44:49,814 basehttp "GET /static/js/on-scan.js HTTP/1.0" 304 0
+INFO 2025-12-11 12:44:49,815 basehttp "GET /static/js/select2.js HTTP/1.0" 304 0
+INFO 2025-12-11 12:44:49,816 basehttp "GET /static/js/jquery.js HTTP/1.0" 304 0
+INFO 2025-12-11 12:44:49,816 basehttp "GET /static/js/jquery.js HTTP/1.0" 304 0
+WARNING 2025-12-11 12:44:49,986 log Not Found: /favicon.ico
+WARNING 2025-12-11 12:44:49,986 log Not Found: /favicon.ico
+WARNING 2025-12-11 12:44:49,987 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-11 12:44:49,987 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+INFO 2025-12-11 12:45:01,428 basehttp "GET /registros HTTP/1.0" 200 13000
+INFO 2025-12-11 12:45:01,428 basehttp "GET /registros HTTP/1.0" 200 13000
+INFO 2025-12-11 12:45:04,130 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-11 12:45:04,130 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-11 12:45:18,728 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-11 12:45:18,728 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-11 13:26:44,513 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-11 13:26:44,513 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-11 13:26:47,585 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 302 0
+INFO 2025-12-11 13:26:47,585 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 302 0
+INFO 2025-12-11 13:26:47,868 basehttp "GET /oidc/callback/?state=qP3tqbO7t7hAIySqwW5b7DvSfwytJ9t0&session_state=59289f92-643a-4ce6-9ec1-b811910ea657&code=ad922de2-d949-4e78-b515-d845f7b0f7a6.59289f92-643a-4ce6-9ec1-b811910ea657.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-11 13:26:47,868 basehttp "GET /oidc/callback/?state=qP3tqbO7t7hAIySqwW5b7DvSfwytJ9t0&session_state=59289f92-643a-4ce6-9ec1-b811910ea657&code=ad922de2-d949-4e78-b515-d845f7b0f7a6.59289f92-643a-4ce6-9ec1-b811910ea657.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-11 13:26:47,873 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-11 13:26:47,873 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-11 13:29:37,470 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-11 13:29:37,470 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-11 13:29:41,166 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-11 13:29:41,166 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-11 13:32:05,325 basehttp "GET /registros HTTP/1.0" 302 0
+INFO 2025-12-11 13:32:05,325 basehttp "GET /registros HTTP/1.0" 302 0
+WARNING 2025-12-11 13:32:05,651 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-11 13:32:05,652 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_create', 'registros_can_view', 'facturado_can_deliver', 'no_facturado_can_deliver', 'no_facturado_can_edit', 'facturado_can_create', 'facturado_can_edit'}
+WARNING 2025-12-11 13:32:05,654 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-11 13:32:05,657 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-11 13:32:05,662 basehttp "GET /oidc/callback/?state=GDHDrGnRKslqeNy8vwkz2BQN0WncLDsT&session_state=59289f92-643a-4ce6-9ec1-b811910ea657&code=55b18b1d-42a7-4240-bea1-ed56b07ef828.59289f92-643a-4ce6-9ec1-b811910ea657.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-11 13:32:05,662 basehttp "GET /oidc/callback/?state=GDHDrGnRKslqeNy8vwkz2BQN0WncLDsT&session_state=59289f92-643a-4ce6-9ec1-b811910ea657&code=55b18b1d-42a7-4240-bea1-ed56b07ef828.59289f92-643a-4ce6-9ec1-b811910ea657.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-11 13:32:05,698 basehttp "GET /registros HTTP/1.0" 200 13000
+INFO 2025-12-11 13:32:05,698 basehttp "GET /registros HTTP/1.0" 200 13000
+WARNING 2025-12-11 13:32:05,775 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 13:32:05,775 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 13:32:05,775 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 13:32:05,775 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 14:04:32,427 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-11 14:04:32,427 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-11 14:04:40,304 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-11 14:04:40,304 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-11 14:17:24,500 basehttp "GET /registros HTTP/1.0" 302 0
+INFO 2025-12-11 14:17:24,500 basehttp "GET /registros HTTP/1.0" 302 0
+WARNING 2025-12-11 14:17:26,323 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-11 14:17:26,323 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_create', 'registros_can_view', 'facturado_can_deliver', 'no_facturado_can_deliver', 'no_facturado_can_edit', 'facturado_can_create', 'facturado_can_edit'}
+WARNING 2025-12-11 14:17:26,324 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-11 14:17:26,327 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-11 14:17:26,333 basehttp "GET /oidc/callback/?state=a1fDGDEzBtmMXP7pCtIqVHvtR3S3FA6j&session_state=59289f92-643a-4ce6-9ec1-b811910ea657&code=4b4ed5a2-065c-4949-9ee0-09182450757b.59289f92-643a-4ce6-9ec1-b811910ea657.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-11 14:17:26,333 basehttp "GET /oidc/callback/?state=a1fDGDEzBtmMXP7pCtIqVHvtR3S3FA6j&session_state=59289f92-643a-4ce6-9ec1-b811910ea657&code=4b4ed5a2-065c-4949-9ee0-09182450757b.59289f92-643a-4ce6-9ec1-b811910ea657.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-11 14:17:26,374 basehttp "GET /registros HTTP/1.0" 200 13000
+INFO 2025-12-11 14:17:26,374 basehttp "GET /registros HTTP/1.0" 200 13000
+INFO 2025-12-11 14:17:26,493 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2025-12-11 14:17:26,493 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2025-12-11 14:17:26,503 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-11 14:17:26,503 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-11 14:17:26,505 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2025-12-11 14:17:26,505 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2025-12-11 14:17:26,520 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2025-12-11 14:17:26,520 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2025-12-11 14:17:26,521 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2025-12-11 14:17:26,521 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2025-12-11 14:17:26,537 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+INFO 2025-12-11 14:17:26,537 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+WARNING 2025-12-11 14:17:26,546 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 14:17:26,546 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 14:17:26,548 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 14:17:26,548 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 14:17:26,822 log Not Found: /favicon.ico
+WARNING 2025-12-11 14:17:26,822 log Not Found: /favicon.ico
+WARNING 2025-12-11 14:17:26,823 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-11 14:17:26,823 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+INFO 2025-12-11 14:17:31,567 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-11 14:17:31,567 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-11 14:23:29,971 basehttp "GET /registros HTTP/1.0" 200 13000
+INFO 2025-12-11 14:23:29,971 basehttp "GET /registros HTTP/1.0" 200 13000
+WARNING 2025-12-11 14:23:30,030 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 14:23:30,030 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 14:23:30,030 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 14:23:30,030 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 14:23:32,513 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-11 14:23:32,513 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-11 14:23:42,840 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-11 14:23:42,840 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-11 14:51:49,487 basehttp "GET /home HTTP/1.0" 302 0
+INFO 2025-12-11 14:51:49,487 basehttp "GET /home HTTP/1.0" 302 0
+WARNING 2025-12-11 14:51:50,026 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-11 14:51:50,026 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_create', 'registros_can_view', 'facturado_can_deliver', 'no_facturado_can_deliver', 'no_facturado_can_edit', 'facturado_can_create', 'facturado_can_edit'}
+WARNING 2025-12-11 14:51:50,028 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-11 14:51:50,030 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-11 14:51:50,035 basehttp "GET /oidc/callback/?state=rbvTTxfwW3HQvhiAWORSsvsF1jaKNHJK&session_state=59289f92-643a-4ce6-9ec1-b811910ea657&code=57b2c1d0-8f44-4956-941f-3ae162f70e64.59289f92-643a-4ce6-9ec1-b811910ea657.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-11 14:51:50,035 basehttp "GET /oidc/callback/?state=rbvTTxfwW3HQvhiAWORSsvsF1jaKNHJK&session_state=59289f92-643a-4ce6-9ec1-b811910ea657&code=57b2c1d0-8f44-4956-941f-3ae162f70e64.59289f92-643a-4ce6-9ec1-b811910ea657.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-11 14:51:50,064 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-11 14:51:50,064 basehttp "GET /home HTTP/1.0" 200 7812
+WARNING 2025-12-11 14:51:50,141 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 14:51:50,141 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 14:51:50,142 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 14:51:50,142 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 14:51:54,276 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-11 14:51:54,276 basehttp "GET /home HTTP/1.0" 200 7812
+WARNING 2025-12-11 14:51:54,347 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 14:51:54,347 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 14:51:54,347 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 14:51:54,347 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 14:55:01,844 basehttp "GET /registros HTTP/1.0" 200 13000
+INFO 2025-12-11 14:55:01,844 basehttp "GET /registros HTTP/1.0" 200 13000
+WARNING 2025-12-11 14:55:01,946 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 14:55:01,946 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 14:55:01,947 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 14:55:01,947 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 14:56:12,816 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-11 14:56:12,816 basehttp "GET /home HTTP/1.0" 200 7812
+WARNING 2025-12-11 14:56:12,888 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 14:56:12,888 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 14:56:12,889 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 14:56:12,889 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 14:56:13,067 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-11 14:56:13,067 basehttp "GET /home HTTP/1.0" 200 7812
+WARNING 2025-12-11 14:56:13,133 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 14:56:13,133 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 14:56:13,133 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 14:56:13,133 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 15:08:24,790 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-11 15:08:24,790 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-11 15:08:26,906 autoreload Watching for file changes with StatReloader
+INFO 2025-12-11 15:08:26,906 autoreload Watching for file changes with StatReloader
+INFO 2025-12-11 15:10:15,952 basehttp "GET /home HTTP/1.0" 302 0
+INFO 2025-12-11 15:10:15,952 basehttp "GET /home HTTP/1.0" 302 0
+WARNING 2025-12-11 15:10:15,759 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-11 15:10:15,759 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_edit', 'facturado_can_create', 'no_facturado_can_edit', 'no_facturado_can_deliver', 'no_facturado_can_create', 'registros_can_view', 'facturado_can_deliver'}
+WARNING 2025-12-11 15:10:15,764 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-11 15:10:15,768 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-11 15:10:15,772 basehttp "GET /oidc/callback/?state=Ye3Rf0crwEtL9PCO2mVU00vKTFSK23II&session_state=59289f92-643a-4ce6-9ec1-b811910ea657&code=bad50c3c-8b5b-4435-8bdc-c382b598c95f.59289f92-643a-4ce6-9ec1-b811910ea657.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-11 15:10:15,772 basehttp "GET /oidc/callback/?state=Ye3Rf0crwEtL9PCO2mVU00vKTFSK23II&session_state=59289f92-643a-4ce6-9ec1-b811910ea657&code=bad50c3c-8b5b-4435-8bdc-c382b598c95f.59289f92-643a-4ce6-9ec1-b811910ea657.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-11 15:10:14,730 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-11 15:10:14,730 basehttp "GET /home HTTP/1.0" 200 7812
+WARNING 2025-12-11 15:10:14,809 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 15:10:14,809 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 15:10:14,812 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 15:10:14,812 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 15:16:20,318 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-11 15:16:20,318 basehttp "GET /home HTTP/1.0" 200 7812
+WARNING 2025-12-11 15:16:20,386 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 15:16:20,386 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 15:16:20,387 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 15:16:20,387 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 15:20:24,007 basehttp "GET /pendientes HTTP/1.0" 200 9944
+INFO 2025-12-11 15:20:24,007 basehttp "GET /pendientes HTTP/1.0" 200 9944
+WARNING 2025-12-11 15:20:24,073 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 15:20:24,073 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 15:20:24,074 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 15:20:24,074 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 17:10:35,382 basehttp "GET /home HTTP/1.0" 302 0
+INFO 2025-12-11 17:10:35,382 basehttp "GET /home HTTP/1.0" 302 0
+WARNING 2025-12-11 17:10:36,292 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-11 17:10:36,293 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_edit', 'facturado_can_create', 'no_facturado_can_edit', 'no_facturado_can_deliver', 'no_facturado_can_create', 'registros_can_view', 'facturado_can_deliver'}
+WARNING 2025-12-11 17:10:36,304 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-11 17:10:36,309 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-11 17:10:36,314 basehttp "GET /oidc/callback/?state=MoTg8gbCHS3kxDLc6P9lR2iKMiDP7IHT&session_state=59289f92-643a-4ce6-9ec1-b811910ea657&code=b1d7d05b-5f58-4a2e-bbb0-fd3f3470e14e.59289f92-643a-4ce6-9ec1-b811910ea657.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-11 17:10:36,314 basehttp "GET /oidc/callback/?state=MoTg8gbCHS3kxDLc6P9lR2iKMiDP7IHT&session_state=59289f92-643a-4ce6-9ec1-b811910ea657&code=b1d7d05b-5f58-4a2e-bbb0-fd3f3470e14e.59289f92-643a-4ce6-9ec1-b811910ea657.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-11 17:10:36,357 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-11 17:10:36,357 basehttp "GET /home HTTP/1.0" 200 7812
+WARNING 2025-12-11 17:10:36,440 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 17:10:36,440 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 17:10:36,441 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 17:10:36,441 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 17:10:38,292 basehttp "GET /registros HTTP/1.0" 200 13000
+INFO 2025-12-11 17:10:38,292 basehttp "GET /registros HTTP/1.0" 200 13000
+WARNING 2025-12-11 17:10:38,371 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 17:10:38,371 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 17:10:38,372 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 17:10:38,372 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 17:10:40,799 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-11 17:10:40,799 basehttp "GET /home HTTP/1.0" 200 7812
+WARNING 2025-12-11 17:10:40,878 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 17:10:40,878 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 17:10:40,880 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 17:10:40,880 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 17:10:41,122 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-11 17:10:41,122 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+WARNING 2025-12-11 17:10:41,210 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 17:10:41,210 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 17:10:41,211 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 17:10:41,211 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 17:10:43,726 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-11 17:10:43,726 basehttp "GET /home HTTP/1.0" 200 7812
+WARNING 2025-12-11 17:10:43,830 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 17:10:43,830 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 17:10:43,831 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 17:10:43,831 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 17:10:45,223 basehttp "GET /pendientes HTTP/1.0" 200 9944
+INFO 2025-12-11 17:10:45,223 basehttp "GET /pendientes HTTP/1.0" 200 9944
+WARNING 2025-12-11 17:10:45,314 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 17:10:45,314 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 17:10:45,314 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 17:10:45,314 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 17:44:19,000 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-11 17:44:19,000 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-11 17:44:21,267 autoreload Watching for file changes with StatReloader
+INFO 2025-12-11 17:44:21,267 autoreload Watching for file changes with StatReloader
+INFO 2025-12-11 18:13:21,377 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-11 18:13:21,377 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-11 18:13:23,412 autoreload Watching for file changes with StatReloader
+INFO 2025-12-11 18:13:23,412 autoreload Watching for file changes with StatReloader
+INFO 2025-12-11 18:13:26,141 basehttp "GET /pendientes HTTP/1.0" 302 0
+INFO 2025-12-11 18:13:26,141 basehttp "GET /pendientes HTTP/1.0" 302 0
+WARNING 2025-12-11 18:13:27,241 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-11 18:13:27,241 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_edit', 'facturado_can_deliver', 'facturado_can_create', 'no_facturado_can_create', 'registros_can_view', 'no_facturado_can_edit', 'no_facturado_can_deliver'}
+WARNING 2025-12-11 18:13:27,243 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-11 18:13:27,246 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-11 18:13:27,256 basehttp "GET /oidc/callback/?state=jgKoLk8yVkU0YM535feppWdXQBVtpD22&session_state=59289f92-643a-4ce6-9ec1-b811910ea657&code=6cef8e79-d152-4537-b3af-9bc5ac48220e.59289f92-643a-4ce6-9ec1-b811910ea657.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-11 18:13:27,256 basehttp "GET /oidc/callback/?state=jgKoLk8yVkU0YM535feppWdXQBVtpD22&session_state=59289f92-643a-4ce6-9ec1-b811910ea657&code=6cef8e79-d152-4537-b3af-9bc5ac48220e.59289f92-643a-4ce6-9ec1-b811910ea657.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-11 18:13:27,360 basehttp "GET /pendientes HTTP/1.0" 200 9944
+INFO 2025-12-11 18:13:27,360 basehttp "GET /pendientes HTTP/1.0" 200 9944
+WARNING 2025-12-11 18:13:27,427 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:13:27,427 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:13:27,428 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 18:13:27,428 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 18:13:31,437 basehttp "GET /pendientes?solicitante=&retirante=655&cc=&estado=pendiente HTTP/1.0" 200 9177
+INFO 2025-12-11 18:13:31,437 basehttp "GET /pendientes?solicitante=&retirante=655&cc=&estado=pendiente HTTP/1.0" 200 9177
+WARNING 2025-12-11 18:13:31,501 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:13:31,501 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:13:31,502 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 18:13:31,502 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 18:13:35,331 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 200 9174
+INFO 2025-12-11 18:13:35,331 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 200 9174
+WARNING 2025-12-11 18:13:35,403 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:13:35,403 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:13:35,404 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 18:13:35,404 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 18:13:37,012 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 200 9174
+INFO 2025-12-11 18:13:37,012 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 200 9174
+WARNING 2025-12-11 18:13:37,079 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:13:37,079 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:13:37,080 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 18:13:37,080 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 18:13:37,660 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 200 9174
+INFO 2025-12-11 18:13:37,660 basehttp "GET /pendientes?solicitante=&retirante=&cc=&estado=pendiente HTTP/1.0" 200 9174
+WARNING 2025-12-11 18:13:37,725 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:13:37,725 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:13:37,726 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 18:13:37,726 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 18:13:38,906 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-11 18:13:38,906 basehttp "GET /home HTTP/1.0" 200 7812
+WARNING 2025-12-11 18:13:38,968 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:13:38,968 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:13:38,969 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 18:13:38,969 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 18:13:40,705 basehttp "GET /pendientes HTTP/1.0" 200 9944
+INFO 2025-12-11 18:13:40,705 basehttp "GET /pendientes HTTP/1.0" 200 9944
+WARNING 2025-12-11 18:13:40,771 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:13:40,771 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:13:40,772 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 18:13:40,772 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 18:13:45,468 basehttp "GET /pendientes?solicitante=&retirante=cing&cc=&estado=pendiente HTTP/1.0" 200 9178
+INFO 2025-12-11 18:13:45,468 basehttp "GET /pendientes?solicitante=&retirante=cing&cc=&estado=pendiente HTTP/1.0" 200 9178
+WARNING 2025-12-11 18:13:45,530 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:13:45,530 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:13:45,531 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 18:13:45,531 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 18:13:49,813 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-11 18:13:49,813 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-11 18:13:51,222 autoreload Watching for file changes with StatReloader
+INFO 2025-12-11 18:13:51,222 autoreload Watching for file changes with StatReloader
+INFO 2025-12-11 18:13:54,768 basehttp "GET /pendientes?solicitante=&retirante=cing&cc=&estado=pendiente HTTP/1.0" 200 9178
+INFO 2025-12-11 18:13:54,768 basehttp "GET /pendientes?solicitante=&retirante=cing&cc=&estado=pendiente HTTP/1.0" 200 9178
+WARNING 2025-12-11 18:13:54,840 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:13:54,840 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:13:54,841 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 18:13:54,841 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 18:13:57,182 basehttp "GET /pendientes?solicitante=&retirante=cing&cc=&estado=pendiente HTTP/1.0" 200 9178
+INFO 2025-12-11 18:13:57,182 basehttp "GET /pendientes?solicitante=&retirante=cing&cc=&estado=pendiente HTTP/1.0" 200 9178
+WARNING 2025-12-11 18:13:57,244 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:13:57,244 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:13:57,245 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 18:13:57,245 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 18:13:59,382 basehttp "GET /pendientes?solicitante=&retirante=cing&cc=&estado=entregado HTTP/1.0" 200 9948
+INFO 2025-12-11 18:13:59,382 basehttp "GET /pendientes?solicitante=&retirante=cing&cc=&estado=entregado HTTP/1.0" 200 9948
+WARNING 2025-12-11 18:13:59,451 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:13:59,451 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:13:59,452 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 18:13:59,452 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 18:14:01,946 basehttp "GET /pendientes?solicitante=&retirante=cing&cc=&estado=%23 HTTP/1.0" 200 9948
+INFO 2025-12-11 18:14:01,946 basehttp "GET /pendientes?solicitante=&retirante=cing&cc=&estado=%23 HTTP/1.0" 200 9948
+WARNING 2025-12-11 18:14:02,021 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:14:02,021 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:14:02,022 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 18:14:02,022 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 18:14:02,247 basehttp "GET /pendientes?solicitante=&retirante=cing&cc=&estado=%23 HTTP/1.0" 200 9948
+INFO 2025-12-11 18:14:02,247 basehttp "GET /pendientes?solicitante=&retirante=cing&cc=&estado=%23 HTTP/1.0" 200 9948
+WARNING 2025-12-11 18:14:02,316 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:14:02,316 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:14:02,316 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 18:14:02,316 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 18:14:05,250 basehttp "GET /pendientes?solicitante=&retirante=655&cc=&estado=%23 HTTP/1.0" 200 9177
+INFO 2025-12-11 18:14:05,250 basehttp "GET /pendientes?solicitante=&retirante=655&cc=&estado=%23 HTTP/1.0" 200 9177
+WARNING 2025-12-11 18:14:05,330 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:14:05,330 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:14:05,331 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 18:14:05,331 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 18:14:10,787 basehttp "GET /pendientes?solicitante=&retirante=cingo&cc=&estado=%23 HTTP/1.0" 200 9949
+INFO 2025-12-11 18:14:10,787 basehttp "GET /pendientes?solicitante=&retirante=cingo&cc=&estado=%23 HTTP/1.0" 200 9949
+WARNING 2025-12-11 18:14:10,862 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:14:10,862 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-12-11 18:14:10,865 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+WARNING 2025-12-11 18:14:10,865 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10057
+INFO 2025-12-11 18:50:45,404 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-11 18:50:45,404 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-11 18:50:47,712 autoreload Watching for file changes with StatReloader
+INFO 2025-12-11 18:50:47,712 autoreload Watching for file changes with StatReloader
+INFO 2025-12-11 18:51:09,645 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-11 18:51:09,645 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-11 18:51:15,841 basehttp "GET /detalle_vsm/12 HTTP/1.0" 302 0
+INFO 2025-12-11 18:51:15,841 basehttp "GET /detalle_vsm/12 HTTP/1.0" 302 0
+WARNING 2025-12-11 18:51:16,221 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-11 18:51:16,222 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_deliver', 'no_facturado_can_edit', 'no_facturado_can_create', 'facturado_can_edit', 'registros_can_view', 'facturado_can_create', 'facturado_can_deliver'}
+WARNING 2025-12-11 18:51:16,225 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-11 18:51:16,229 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-11 18:51:16,234 basehttp "GET /oidc/callback/?state=p7zS5ExQb7prRP3jbIndlihy7RfnE5kp&session_state=59289f92-643a-4ce6-9ec1-b811910ea657&code=285aafe0-f4f7-4f99-b590-3ac0751b539b.59289f92-643a-4ce6-9ec1-b811910ea657.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-11 18:51:16,234 basehttp "GET /oidc/callback/?state=p7zS5ExQb7prRP3jbIndlihy7RfnE5kp&session_state=59289f92-643a-4ce6-9ec1-b811910ea657&code=285aafe0-f4f7-4f99-b590-3ac0751b539b.59289f92-643a-4ce6-9ec1-b811910ea657.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+ERROR 2025-12-11 18:51:16,273 log Internal Server Error: /detalle_vsm/12
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: detalle_vsm() got an unexpected keyword argument 'vsm_id'
+ERROR 2025-12-11 18:51:16,273 log Internal Server Error: /detalle_vsm/12
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: detalle_vsm() got an unexpected keyword argument 'vsm_id'
+ERROR 2025-12-11 18:51:16,274 basehttp "GET /detalle_vsm/12 HTTP/1.0" 500 62956
+ERROR 2025-12-11 18:51:16,274 basehttp "GET /detalle_vsm/12 HTTP/1.0" 500 62956
+INFO 2025-12-11 19:07:40,282 basehttp "GET /detalle_vsm/ HTTP/1.0" 302 0
+INFO 2025-12-11 19:07:40,282 basehttp "GET /detalle_vsm/ HTTP/1.0" 302 0
+WARNING 2025-12-11 19:07:40,691 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-11 19:07:40,691 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_deliver', 'no_facturado_can_edit', 'no_facturado_can_create', 'facturado_can_edit', 'registros_can_view', 'facturado_can_create', 'facturado_can_deliver'}
+WARNING 2025-12-11 19:07:40,693 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-11 19:07:40,695 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-11 19:07:40,701 basehttp "GET /oidc/callback/?state=aYGuk2WhDUwuyoMb3BLcwe5JSAXBVACJ&session_state=59289f92-643a-4ce6-9ec1-b811910ea657&code=f82513cf-3b9b-42d1-8db8-1d4ea8c5e772.59289f92-643a-4ce6-9ec1-b811910ea657.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-11 19:07:40,701 basehttp "GET /oidc/callback/?state=aYGuk2WhDUwuyoMb3BLcwe5JSAXBVACJ&session_state=59289f92-643a-4ce6-9ec1-b811910ea657&code=f82513cf-3b9b-42d1-8db8-1d4ea8c5e772.59289f92-643a-4ce6-9ec1-b811910ea657.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+WARNING 2025-12-11 19:07:40,726 log Not Found: /detalle_vsm/
+WARNING 2025-12-11 19:07:40,726 log Not Found: /detalle_vsm/
+WARNING 2025-12-11 19:07:40,727 basehttp "GET /detalle_vsm/ HTTP/1.0" 404 9912
+WARNING 2025-12-11 19:07:40,727 basehttp "GET /detalle_vsm/ HTTP/1.0" 404 9912
+ERROR 2025-12-11 19:07:51,466 log Internal Server Error: /detalle_vsm/1
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: detalle_vsm() got an unexpected keyword argument 'vsm_id'
+ERROR 2025-12-11 19:07:51,466 log Internal Server Error: /detalle_vsm/1
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: detalle_vsm() got an unexpected keyword argument 'vsm_id'
+ERROR 2025-12-11 19:07:51,473 basehttp "GET /detalle_vsm/1 HTTP/1.0" 500 62946
+ERROR 2025-12-11 19:07:51,473 basehttp "GET /detalle_vsm/1 HTTP/1.0" 500 62946
+ERROR 2025-12-11 19:08:01,984 log Internal Server Error: /detalle_vsm/11
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: detalle_vsm() got an unexpected keyword argument 'vsm_id'
+ERROR 2025-12-11 19:08:01,984 log Internal Server Error: /detalle_vsm/11
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: detalle_vsm() got an unexpected keyword argument 'vsm_id'
+ERROR 2025-12-11 19:08:01,985 basehttp "GET /detalle_vsm/11 HTTP/1.0" 500 62956
+ERROR 2025-12-11 19:08:01,985 basehttp "GET /detalle_vsm/11 HTTP/1.0" 500 62956
+ERROR 2025-12-11 19:08:09,930 log Internal Server Error: /detalle_vsm/20
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: detalle_vsm() got an unexpected keyword argument 'vsm_id'
+ERROR 2025-12-11 19:08:09,930 log Internal Server Error: /detalle_vsm/20
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: detalle_vsm() got an unexpected keyword argument 'vsm_id'
+ERROR 2025-12-11 19:08:09,931 basehttp "GET /detalle_vsm/20 HTTP/1.0" 500 62956
+ERROR 2025-12-11 19:08:09,931 basehttp "GET /detalle_vsm/20 HTTP/1.0" 500 62956
+INFO 2025-12-11 19:18:17,479 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-11 19:18:17,479 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-11 19:18:19,285 basehttp "GET /registros HTTP/1.0" 200 13000
+INFO 2025-12-11 19:18:19,285 basehttp "GET /registros HTTP/1.0" 200 13000
+INFO 2025-12-11 19:18:20,978 basehttp "GET /generar_template_epp/215 HTTP/1.0" 200 7377
+INFO 2025-12-11 19:18:20,978 basehttp "GET /generar_template_epp/215 HTTP/1.0" 200 7377
+INFO 2025-12-11 19:18:21,064 basehttp "GET /firmas/firma_215_169_urldj4n.png HTTP/1.0" 200 9498
+INFO 2025-12-11 19:18:21,064 basehttp "GET /firmas/firma_215_169_urldj4n.png HTTP/1.0" 200 9498
+INFO 2025-12-11 19:18:22,596 basehttp "GET /registros HTTP/1.0" 200 13000
+INFO 2025-12-11 19:18:22,596 basehttp "GET /registros HTTP/1.0" 200 13000
+INFO 2025-12-11 19:18:28,678 basehttp "GET /generar_template_epp/215 HTTP/1.0" 200 7377
+INFO 2025-12-11 19:18:28,678 basehttp "GET /generar_template_epp/215 HTTP/1.0" 200 7377
+INFO 2025-12-11 19:18:36,369 basehttp "GET /registros HTTP/1.0" 200 13000
+INFO 2025-12-11 19:18:36,369 basehttp "GET /registros HTTP/1.0" 200 13000
+INFO 2025-12-11 19:25:01,111 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 302 0
+INFO 2025-12-11 19:25:01,111 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 302 0
+INFO 2025-12-11 19:25:01,526 basehttp "GET /oidc/callback/?state=U5DAaaNANECeAsT7AmmIRkItCIVLv7AI&session_state=59289f92-643a-4ce6-9ec1-b811910ea657&code=f59ad38c-2ae3-4491-8132-f748a3654825.59289f92-643a-4ce6-9ec1-b811910ea657.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-11 19:25:01,526 basehttp "GET /oidc/callback/?state=U5DAaaNANECeAsT7AmmIRkItCIVLv7AI&session_state=59289f92-643a-4ce6-9ec1-b811910ea657&code=f59ad38c-2ae3-4491-8132-f748a3654825.59289f92-643a-4ce6-9ec1-b811910ea657.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-11 19:25:01,530 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-11 19:25:01,530 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-11 19:25:04,309 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-11 19:25:04,309 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-11 19:37:44,455 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-11 19:37:44,455 basehttp "POST /vsm/215/eliminar/ HTTP/1.0" 200 95
+INFO 2025-12-18 11:22:18,501 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 11:22:18,501 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 11:22:21,091 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-18 11:22:21,091 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-18 11:22:21,402 basehttp "GET /oidc/callback/?error=login_required&state=RGzug50jcdVi2RYFT302YUSyJmdiyFnB HTTP/1.0" 302 0
+INFO 2025-12-18 11:22:21,402 basehttp "GET /oidc/callback/?error=login_required&state=RGzug50jcdVi2RYFT302YUSyJmdiyFnB HTTP/1.0" 302 0
+INFO 2025-12-18 11:22:21,417 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-18 11:22:21,417 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-18 11:22:21,502 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2025-12-18 11:22:21,502 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2025-12-18 11:22:21,505 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-18 11:22:21,505 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2025-12-18 11:22:21,507 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2025-12-18 11:22:21,507 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2025-12-18 11:22:21,512 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2025-12-18 11:22:21,512 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2025-12-18 11:22:21,513 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2025-12-18 11:22:21,513 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2025-12-18 11:22:21,517 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+INFO 2025-12-18 11:22:21,517 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+WARNING 2025-12-18 11:22:21,821 log Not Found: /favicon.ico
+WARNING 2025-12-18 11:22:21,821 log Not Found: /favicon.ico
+WARNING 2025-12-18 11:22:21,822 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+WARNING 2025-12-18 11:22:21,822 basehttp "GET /favicon.ico HTTP/1.0" 404 9909
+INFO 2025-12-18 11:23:23,097 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-18 11:23:23,097 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-18 11:23:23,119 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+INFO 2025-12-18 11:23:23,119 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+WARNING 2025-12-18 11:23:26,913 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-18 11:23:26,913 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_edit', 'no_facturado_can_deliver', 'facturado_can_deliver', 'facturado_can_create', 'no_facturado_can_create', 'facturado_can_edit', 'registros_can_view'}
+WARNING 2025-12-18 11:23:26,917 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-18 11:23:26,921 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-18 11:23:26,936 basehttp "GET /oidc/callback/?state=659gr3XX7U16SJCQq82aU6K3T2eN6i7l&session_state=033a850a-ab31-46bd-af50-52fe4f464a9d&code=7a52f55a-993f-4096-acc0-5f742f73e0cd.033a850a-ab31-46bd-af50-52fe4f464a9d.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-18 11:23:26,936 basehttp "GET /oidc/callback/?state=659gr3XX7U16SJCQq82aU6K3T2eN6i7l&session_state=033a850a-ab31-46bd-af50-52fe4f464a9d&code=7a52f55a-993f-4096-acc0-5f742f73e0cd.033a850a-ab31-46bd-af50-52fe4f464a9d.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-18 11:23:26,963 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-18 11:23:26,963 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-18 11:23:43,345 basehttp "GET /registros HTTP/1.0" 200 12921
+INFO 2025-12-18 11:23:43,345 basehttp "GET /registros HTTP/1.0" 200 12921
+INFO 2025-12-18 11:23:46,387 basehttp "GET /generar_template_epp/215 HTTP/1.0" 200 7377
+INFO 2025-12-18 11:23:46,387 basehttp "GET /generar_template_epp/215 HTTP/1.0" 200 7377
+INFO 2025-12-18 11:23:46,484 basehttp "GET /firmas/firma_215_169_urldj4n.png HTTP/1.0" 200 9498
+INFO 2025-12-18 11:23:46,484 basehttp "GET /firmas/firma_215_169_urldj4n.png HTTP/1.0" 200 9498
+INFO 2025-12-18 11:23:50,195 basehttp "GET /registros HTTP/1.0" 200 12921
+INFO 2025-12-18 11:23:50,195 basehttp "GET /registros HTTP/1.0" 200 12921
+INFO 2025-12-18 11:23:51,379 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-18 11:23:51,379 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-18 11:24:10,867 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-18 11:24:10,867 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-18 11:28:09,399 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-18 11:28:09,399 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-18 11:28:11,766 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-18 11:28:11,766 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-18 11:31:18,056 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-18 11:31:18,056 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-18 12:26:29,603 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-18 12:26:29,603 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-18 12:26:31,316 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 12:26:31,316 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 12:26:47,001 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-18 12:26:47,001 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-18 12:26:48,581 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 12:26:48,581 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 12:40:51,010 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+INFO 2025-12-18 12:40:51,010 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+WARNING 2025-12-18 12:40:51,552 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-18 12:40:51,552 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_deliver', 'no_facturado_can_create', 'registros_can_view', 'no_facturado_can_deliver', 'no_facturado_can_edit', 'facturado_can_edit', 'facturado_can_create'}
+WARNING 2025-12-18 12:40:51,554 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-18 12:40:51,557 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-18 12:40:51,562 basehttp "GET /oidc/callback/?state=6jQjMS4i0LIbANPUKA39lSETRQ7ubHT8&session_state=033a850a-ab31-46bd-af50-52fe4f464a9d&code=f51ac42d-6ff0-4eea-841a-9ff113a72280.033a850a-ab31-46bd-af50-52fe4f464a9d.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-18 12:40:51,562 basehttp "GET /oidc/callback/?state=6jQjMS4i0LIbANPUKA39lSETRQ7ubHT8&session_state=033a850a-ab31-46bd-af50-52fe4f464a9d&code=f51ac42d-6ff0-4eea-841a-9ff113a72280.033a850a-ab31-46bd-af50-52fe4f464a9d.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-18 12:40:51,600 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-18 12:40:51,600 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-18 12:40:54,213 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2025-12-18 12:40:54,213 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2025-12-18 12:40:54,361 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 12:40:54,361 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 12:40:54,412 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.0" 200 1006
+INFO 2025-12-18 12:40:54,412 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.0" 200 1006
+INFO 2025-12-18 12:40:54,418 basehttp "GET /static/admin/js/theme-change.js HTTP/1.0" 200 3490
+INFO 2025-12-18 12:40:54,418 basehttp "GET /static/admin/js/theme-change.js HTTP/1.0" 200 3490
+INFO 2025-12-18 12:40:54,420 basehttp "GET /static/admin/css/base_tailwind.css HTTP/1.0" 200 151172
+INFO 2025-12-18 12:40:54,420 basehttp "GET /static/admin/css/base_tailwind.css HTTP/1.0" 200 151172
+INFO 2025-12-18 12:40:54,421 basehttp "GET /static/admin/css/customized_tailwind.css?v=2 HTTP/1.0" 200 34265
+INFO 2025-12-18 12:40:54,421 basehttp "GET /static/admin/css/customized_tailwind.css?v=2 HTTP/1.0" 200 34265
+INFO 2025-12-18 12:40:54,424 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/css/all.min.css HTTP/1.0" 200 96518
+INFO 2025-12-18 12:40:54,424 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/css/all.min.css HTTP/1.0" 200 96518
+INFO 2025-12-18 12:40:54,424 basehttp "GET /static/admin/css/calendar.css HTTP/1.0" 200 6359
+INFO 2025-12-18 12:40:54,425 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.0" 200 89476
+INFO 2025-12-18 12:40:54,424 basehttp "GET /static/admin/css/calendar.css HTTP/1.0" 200 6359
+INFO 2025-12-18 12:40:54,425 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.0" 200 89476
+INFO 2025-12-18 12:40:54,434 basehttp "GET /static/admin/js/admin/dashboard.js HTTP/1.0" 200 1009
+INFO 2025-12-18 12:40:54,435 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.0" 200 4257
+INFO 2025-12-18 12:40:54,434 basehttp "GET /static/admin/js/admin/dashboard.js HTTP/1.0" 200 1009
+INFO 2025-12-18 12:40:54,435 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.0" 200 4257
+INFO 2025-12-18 12:40:54,480 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-regular-400.woff2 HTTP/1.0" 200 25464
+INFO 2025-12-18 12:40:54,480 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-regular-400.woff2 HTTP/1.0" 200 25464
+INFO 2025-12-18 12:40:54,497 basehttp "GET /static/admin/img/daisyui-logomark.svg HTTP/1.0" 200 389
+INFO 2025-12-18 12:40:54,497 basehttp "GET /static/admin/img/daisyui-logomark.svg HTTP/1.0" 200 389
+INFO 2025-12-18 12:40:54,502 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-solid-900.woff2 HTTP/1.0" 200 157192
+INFO 2025-12-18 12:40:54,502 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-solid-900.woff2 HTTP/1.0" 200 157192
+INFO 2025-12-18 12:40:54,515 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Medium.ttf HTTP/1.0" 200 285136
+INFO 2025-12-18 12:40:54,515 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Medium.ttf HTTP/1.0" 200 285136
+INFO 2025-12-18 12:40:54,516 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Regular.ttf HTTP/1.0" 200 299684
+INFO 2025-12-18 12:40:54,516 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Regular.ttf HTTP/1.0" 200 299684
+INFO 2025-12-18 12:42:52,824 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 12:42:52,824 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 12:42:56,395 basehttp "GET /admin/vsm_app/maestro_de_materiales/ HTTP/1.0" 200 80004
+INFO 2025-12-18 12:42:56,395 basehttp "GET /admin/vsm_app/maestro_de_materiales/ HTTP/1.0" 200 80004
+INFO 2025-12-18 12:42:56,439 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.0" 200 287630
+INFO 2025-12-18 12:42:56,439 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.0" 200 287630
+INFO 2025-12-18 12:42:56,446 basehttp "GET /static/admin/js/core.js HTTP/1.0" 200 5419
+INFO 2025-12-18 12:42:56,447 basehttp "GET /static/admin/js/actions.js HTTP/1.0" 200 6783
+INFO 2025-12-18 12:42:56,446 basehttp "GET /static/admin/js/core.js HTTP/1.0" 200 5419
+INFO 2025-12-18 12:42:56,447 basehttp "GET /static/admin/js/actions.js HTTP/1.0" 200 6783
+INFO 2025-12-18 12:42:56,449 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.0" 200 10019
+INFO 2025-12-18 12:42:56,449 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.0" 200 10019
+INFO 2025-12-18 12:42:56,455 basehttp "GET /static/admin/js/urlify.js HTTP/1.0" 200 8632
+INFO 2025-12-18 12:42:56,455 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.0" 200 1531
+INFO 2025-12-18 12:42:56,455 basehttp "GET /static/admin/js/urlify.js HTTP/1.0" 200 8632
+INFO 2025-12-18 12:42:56,455 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.0" 200 1531
+INFO 2025-12-18 12:42:56,467 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.0" 200 232381
+INFO 2025-12-18 12:42:56,467 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.0" 200 232381
+INFO 2025-12-18 12:42:56,474 basehttp "GET /static/admin/js/query_filter.js?v=3 HTTP/1.0" 200 5384
+INFO 2025-12-18 12:42:56,474 basehttp "GET /static/admin/js/query_filter.js?v=3 HTTP/1.0" 200 5384
+INFO 2025-12-18 12:42:56,477 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 12:42:56,477 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 12:42:58,000 basehttp "GET /admin/vsm_app/maestro_de_materiales/35615/change/ HTTP/1.0" 200 30759
+INFO 2025-12-18 12:42:58,000 basehttp "GET /admin/vsm_app/maestro_de_materiales/35615/change/ HTTP/1.0" 200 30759
+INFO 2025-12-18 12:42:58,038 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 12:42:58,038 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 12:42:58,039 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.0" 200 492
+INFO 2025-12-18 12:42:58,039 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.0" 200 492
+INFO 2025-12-18 12:42:58,040 basehttp "GET /static/admin/js/change_form.js HTTP/1.0" 200 607
+INFO 2025-12-18 12:42:58,040 basehttp "GET /static/admin/js/change_form.js HTTP/1.0" 200 607
+INFO 2025-12-18 12:43:32,513 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-18 12:43:32,513 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-18 12:43:34,214 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 12:43:34,214 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 12:43:47,355 autoreload /app/vsm_app/admin.py changed, reloading.
+INFO 2025-12-18 12:43:47,355 autoreload /app/vsm_app/admin.py changed, reloading.
+INFO 2025-12-18 12:43:49,505 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 12:43:49,505 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 12:44:40,268 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-18 12:44:40,268 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-18 12:44:41,821 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 12:44:41,821 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 13:08:20,103 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-18 13:08:20,103 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-18 13:08:21,397 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 13:08:21,397 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 13:08:25,195 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-18 13:08:25,195 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-18 13:08:24,607 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 13:08:24,607 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 13:09:27,075 autoreload /app/vsm_app/migrations/0020_remove_maestro_de_materiales_almacen.py changed, reloading.
+INFO 2025-12-18 13:09:27,075 autoreload /app/vsm_app/migrations/0020_remove_maestro_de_materiales_almacen.py changed, reloading.
+INFO 2025-12-18 13:09:28,264 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 13:09:28,264 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 13:09:32,009 autoreload /app/vsm_app/migrations/0020_remove_maestro_de_materiales_almacen.py changed, reloading.
+INFO 2025-12-18 13:09:32,009 autoreload /app/vsm_app/migrations/0020_remove_maestro_de_materiales_almacen.py changed, reloading.
+INFO 2025-12-18 13:09:33,400 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 13:09:33,400 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 13:10:00,846 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-18 13:10:00,846 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-18 13:10:02,412 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 13:10:02,412 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 13:54:03,187 basehttp "GET /admin/ HTTP/1.0" 302 0
+INFO 2025-12-18 13:54:03,187 basehttp "GET /admin/ HTTP/1.0" 302 0
+WARNING 2025-12-18 13:54:04,047 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-18 13:54:04,047 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_create', 'no_facturado_can_create', 'facturado_can_edit', 'registros_can_view', 'no_facturado_can_deliver', 'facturado_can_deliver', 'no_facturado_can_edit'}
+WARNING 2025-12-18 13:54:04,050 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-18 13:54:04,053 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-18 13:54:04,058 basehttp "GET /oidc/callback/?state=x0xeiX06TfRkRbxDTF9ggPfjYYT2umAk&session_state=033a850a-ab31-46bd-af50-52fe4f464a9d&code=6275f515-2108-4f93-adf5-458298370bcc.033a850a-ab31-46bd-af50-52fe4f464a9d.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-18 13:54:04,058 basehttp "GET /oidc/callback/?state=x0xeiX06TfRkRbxDTF9ggPfjYYT2umAk&session_state=033a850a-ab31-46bd-af50-52fe4f464a9d&code=6275f515-2108-4f93-adf5-458298370bcc.033a850a-ab31-46bd-af50-52fe4f464a9d.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-18 13:54:04,121 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 13:54:04,121 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 13:54:08,609 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-18 13:54:08,609 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-18 13:54:11,704 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-18 13:54:11,704 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24138
+INFO 2025-12-18 13:54:21,219 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 13:54:21,219 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 13:54:49,257 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 13:54:49,257 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 13:56:20,250 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 13:56:20,250 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 13:56:28,430 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-18 13:56:28,430 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-18 13:56:30,823 basehttp "GET /auth/logout/ HTTP/1.0" 302 0
+INFO 2025-12-18 13:56:30,823 basehttp "GET /auth/logout/ HTTP/1.0" 302 0
+INFO 2025-12-18 13:56:30,831 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-18 13:56:30,831 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-18 13:56:31,923 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-18 13:56:31,923 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-18 13:56:32,065 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+INFO 2025-12-18 13:56:32,065 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+WARNING 2025-12-18 13:56:32,319 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-18 13:56:32,320 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_create', 'no_facturado_can_create', 'facturado_can_edit', 'registros_can_view', 'no_facturado_can_deliver', 'facturado_can_deliver', 'no_facturado_can_edit'}
+WARNING 2025-12-18 13:56:32,322 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-18 13:56:32,324 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-18 13:56:32,413 basehttp "GET /oidc/callback/?state=zUUmVO5ceVHgIGZgJJdKk5bMpYLhO5Po&session_state=033a850a-ab31-46bd-af50-52fe4f464a9d&code=3539238d-73be-4e08-a67b-9bcc0e554b92.033a850a-ab31-46bd-af50-52fe4f464a9d.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-18 13:56:32,413 basehttp "GET /oidc/callback/?state=zUUmVO5ceVHgIGZgJJdKk5bMpYLhO5Po&session_state=033a850a-ab31-46bd-af50-52fe4f464a9d&code=3539238d-73be-4e08-a67b-9bcc0e554b92.033a850a-ab31-46bd-af50-52fe4f464a9d.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-18 13:56:32,509 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-18 13:56:32,509 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-18 13:56:36,711 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2025-12-18 13:56:36,711 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2025-12-18 13:56:36,759 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 13:56:36,759 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 13:57:04,567 basehttp "GET /admin/vsm_app/nro_tarjeta/ HTTP/1.0" 200 26684
+INFO 2025-12-18 13:57:04,567 basehttp "GET /admin/vsm_app/nro_tarjeta/ HTTP/1.0" 200 26684
+INFO 2025-12-18 13:57:04,629 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 13:57:04,629 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 13:57:34,889 autoreload /app/vsm_app/admin.py changed, reloading.
+INFO 2025-12-18 13:57:34,889 autoreload /app/vsm_app/admin.py changed, reloading.
+INFO 2025-12-18 13:57:37,257 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 13:57:37,257 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 14:00:09,823 basehttp "GET /admin/vsm_app/nro_tarjeta/ HTTP/1.0" 200 26684
+INFO 2025-12-18 14:00:09,823 basehttp "GET /admin/vsm_app/nro_tarjeta/ HTTP/1.0" 200 26684
+INFO 2025-12-18 14:00:09,892 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 14:00:09,892 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+ERROR 2025-12-18 14:00:20,354 log Internal Server Error: /admin/vsm_app/maestro_de_materiales/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column vsm_app_maestro_de_materiales.almacen_id does not exist
+LINE 1: ...e_sap", "vsm_app_maestro_de_materiales"."centro", "vsm_app_m...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/contrib/admin/options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/contrib/admin/options.py", line 2163, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+                                                           ^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 366, in __len__
+    self._fetch_all()
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column vsm_app_maestro_de_materiales.almacen_id does not exist
+LINE 1: ...e_sap", "vsm_app_maestro_de_materiales"."centro", "vsm_app_m...
+                                                             ^
+
+ERROR 2025-12-18 14:00:20,354 log Internal Server Error: /admin/vsm_app/maestro_de_materiales/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column vsm_app_maestro_de_materiales.almacen_id does not exist
+LINE 1: ...e_sap", "vsm_app_maestro_de_materiales"."centro", "vsm_app_m...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/contrib/admin/options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/contrib/admin/options.py", line 2163, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+                                                           ^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 366, in __len__
+    self._fetch_all()
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column vsm_app_maestro_de_materiales.almacen_id does not exist
+LINE 1: ...e_sap", "vsm_app_maestro_de_materiales"."centro", "vsm_app_m...
+                                                             ^
+
+ERROR 2025-12-18 14:00:20,390 basehttp "GET /admin/vsm_app/maestro_de_materiales/ HTTP/1.0" 500 167902
+ERROR 2025-12-18 14:00:20,390 basehttp "GET /admin/vsm_app/maestro_de_materiales/ HTTP/1.0" 500 167902
+INFO 2025-12-18 14:02:29,118 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-18 14:02:29,118 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-18 14:02:32,536 basehttp "GET /auth/logout/ HTTP/1.0" 302 0
+INFO 2025-12-18 14:02:32,536 basehttp "GET /auth/logout/ HTTP/1.0" 302 0
+INFO 2025-12-18 14:02:32,543 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-18 14:02:32,543 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-18 14:02:34,043 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-18 14:02:34,043 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-18 14:02:34,067 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+INFO 2025-12-18 14:02:34,067 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+WARNING 2025-12-18 14:02:34,321 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-18 14:02:34,322 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_edit', 'facturado_can_deliver', 'no_facturado_can_create', 'facturado_can_edit', 'no_facturado_can_deliver', 'registros_can_view', 'facturado_can_create'}
+WARNING 2025-12-18 14:02:34,324 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-18 14:02:34,327 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-18 14:02:34,344 basehttp "GET /oidc/callback/?state=eV8S5SGJ0IsImLhKp4SvJRWMBNurOLJZ&session_state=033a850a-ab31-46bd-af50-52fe4f464a9d&code=60d6b8fb-1625-428c-9ed5-092696c936c7.033a850a-ab31-46bd-af50-52fe4f464a9d.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-18 14:02:34,344 basehttp "GET /oidc/callback/?state=eV8S5SGJ0IsImLhKp4SvJRWMBNurOLJZ&session_state=033a850a-ab31-46bd-af50-52fe4f464a9d&code=60d6b8fb-1625-428c-9ed5-092696c936c7.033a850a-ab31-46bd-af50-52fe4f464a9d.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-18 14:02:34,370 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-18 14:02:34,370 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-18 14:02:37,991 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2025-12-18 14:02:37,991 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2025-12-18 14:02:38,054 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 14:02:38,054 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 14:02:50,270 basehttp "GET /admin/vsm_app/maestro_de_materiales/ HTTP/1.0" 200 80004
+INFO 2025-12-18 14:02:50,270 basehttp "GET /admin/vsm_app/maestro_de_materiales/ HTTP/1.0" 200 80004
+INFO 2025-12-18 14:02:50,346 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 14:02:50,346 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 14:02:54,993 basehttp "GET /admin/vsm_app/maestro_de_materiales/35618/change/ HTTP/1.0" 200 31175
+INFO 2025-12-18 14:02:54,993 basehttp "GET /admin/vsm_app/maestro_de_materiales/35618/change/ HTTP/1.0" 200 31175
+INFO 2025-12-18 14:02:55,029 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 14:02:55,029 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 14:03:18,285 autoreload /app/vsm_app/admin.py changed, reloading.
+INFO 2025-12-18 14:03:18,285 autoreload /app/vsm_app/admin.py changed, reloading.
+INFO 2025-12-18 14:03:19,132 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 14:03:19,132 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 14:03:22,083 basehttp "GET /admin/vsm_app/maestro_de_materiales/35618/change/ HTTP/1.0" 200 31175
+INFO 2025-12-18 14:03:22,083 basehttp "GET /admin/vsm_app/maestro_de_materiales/35618/change/ HTTP/1.0" 200 31175
+INFO 2025-12-18 14:03:22,123 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 14:03:22,123 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 14:10:18,520 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-18 14:10:18,520 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-18 14:10:20,295 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 14:10:20,295 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 14:18:35,974 basehttp "GET /r HTTP/1.0" 302 0
+INFO 2025-12-18 14:18:35,974 basehttp "GET /r HTTP/1.0" 302 0
+INFO 2025-12-18 14:18:36,163 basehttp "GET /generar_template_epp/215 HTTP/1.0" 302 0
+INFO 2025-12-18 14:18:36,163 basehttp "GET /generar_template_epp/215 HTTP/1.0" 302 0
+WARNING 2025-12-18 14:18:36,307 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-18 14:18:36,307 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_deliver', 'facturado_can_edit', 'facturado_can_create', 'registros_can_view', 'no_facturado_can_edit', 'facturado_can_deliver', 'no_facturado_can_create'}
+WARNING 2025-12-18 14:18:36,308 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-18 14:18:36,311 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-18 14:18:36,314 basehttp "GET /oidc/callback/?state=BuJXjjdumRluUmiezYXiqZndUpQmOYTm&session_state=033a850a-ab31-46bd-af50-52fe4f464a9d&code=a293288a-0039-484c-a8b4-cb165fd40deb.033a850a-ab31-46bd-af50-52fe4f464a9d.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-18 14:18:36,314 basehttp "GET /oidc/callback/?state=BuJXjjdumRluUmiezYXiqZndUpQmOYTm&session_state=033a850a-ab31-46bd-af50-52fe4f464a9d&code=a293288a-0039-484c-a8b4-cb165fd40deb.033a850a-ab31-46bd-af50-52fe4f464a9d.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+WARNING 2025-12-18 14:18:36,325 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-18 14:18:36,325 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_deliver', 'facturado_can_edit', 'facturado_can_create', 'registros_can_view', 'no_facturado_can_edit', 'facturado_can_deliver', 'no_facturado_can_create'}
+WARNING 2025-12-18 14:18:36,326 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-18 14:18:36,327 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-18 14:18:36,332 basehttp "GET /oidc/callback/?state=saQNFhOncdw9QpN1KMfjLcBwuOB1AhHq&session_state=033a850a-ab31-46bd-af50-52fe4f464a9d&code=65425da9-a703-4ad3-824b-c71614726365.033a850a-ab31-46bd-af50-52fe4f464a9d.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-18 14:18:36,332 basehttp "GET /oidc/callback/?state=saQNFhOncdw9QpN1KMfjLcBwuOB1AhHq&session_state=033a850a-ab31-46bd-af50-52fe4f464a9d&code=65425da9-a703-4ad3-824b-c71614726365.033a850a-ab31-46bd-af50-52fe4f464a9d.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-18 14:18:36,357 basehttp "GET /generar_template_epp/215 HTTP/1.0" 200 7377
+INFO 2025-12-18 14:18:36,357 basehttp "GET /generar_template_epp/215 HTTP/1.0" 200 7377
+INFO 2025-12-18 14:18:36,379 basehttp "GET /generar_template_epp/215 HTTP/1.0" 200 7377
+INFO 2025-12-18 14:18:36,379 basehttp "GET /generar_template_epp/215 HTTP/1.0" 200 7377
+INFO 2025-12-18 14:18:36,594 basehttp "GET /firmas/firma_215_169_urldj4n.png HTTP/1.0" 200 9498
+INFO 2025-12-18 14:18:36,594 basehttp "GET /firmas/firma_215_169_urldj4n.png HTTP/1.0" 200 9498
+INFO 2025-12-18 14:18:39,639 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-18 14:18:39,639 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-18 14:18:41,896 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-18 14:18:41,896 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-18 14:18:44,364 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 14:18:44,364 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 14:24:38,079 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 14:24:38,079 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 14:39:46,892 basehttp "GET /admin/ HTTP/1.0" 302 0
+INFO 2025-12-18 14:39:46,892 basehttp "GET /admin/ HTTP/1.0" 302 0
+WARNING 2025-12-18 14:39:47,427 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-18 14:39:47,427 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_deliver', 'facturado_can_edit', 'facturado_can_create', 'registros_can_view', 'no_facturado_can_edit', 'facturado_can_deliver', 'no_facturado_can_create'}
+WARNING 2025-12-18 14:39:47,429 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-18 14:39:47,432 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-18 14:39:47,437 basehttp "GET /oidc/callback/?state=fdEcWcTk0eXNT7zQvNWLReHKJqLtfqve&session_state=033a850a-ab31-46bd-af50-52fe4f464a9d&code=df07da51-c882-4bcb-a247-e8f5dc727e01.033a850a-ab31-46bd-af50-52fe4f464a9d.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-18 14:39:47,437 basehttp "GET /oidc/callback/?state=fdEcWcTk0eXNT7zQvNWLReHKJqLtfqve&session_state=033a850a-ab31-46bd-af50-52fe4f464a9d&code=df07da51-c882-4bcb-a247-e8f5dc727e01.033a850a-ab31-46bd-af50-52fe4f464a9d.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-18 14:39:47,473 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 14:39:47,473 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 16:45:54,209 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-18 16:45:54,209 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-18 16:45:55,851 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 16:45:55,851 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 16:46:24,174 basehttp "GET /admin/vsm_app/maestro_de_materiales/35618/change/ HTTP/1.0" 302 0
+INFO 2025-12-18 16:46:24,174 basehttp "GET /admin/vsm_app/maestro_de_materiales/35618/change/ HTTP/1.0" 302 0
+WARNING 2025-12-18 16:46:24,773 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-18 16:46:24,774 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_edit', 'no_facturado_can_deliver', 'facturado_can_create', 'facturado_can_deliver', 'no_facturado_can_edit', 'registros_can_view', 'no_facturado_can_create'}
+WARNING 2025-12-18 16:46:24,775 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-18 16:46:24,778 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-18 16:46:24,784 basehttp "GET /oidc/callback/?state=mhhhwf2O9zxAFVPbSQqaQ8UH9rhncesv&session_state=033a850a-ab31-46bd-af50-52fe4f464a9d&code=43695b49-8937-4818-a599-164d44e8d0ba.033a850a-ab31-46bd-af50-52fe4f464a9d.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-18 16:46:24,784 basehttp "GET /oidc/callback/?state=mhhhwf2O9zxAFVPbSQqaQ8UH9rhncesv&session_state=033a850a-ab31-46bd-af50-52fe4f464a9d&code=43695b49-8937-4818-a599-164d44e8d0ba.033a850a-ab31-46bd-af50-52fe4f464a9d.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-18 16:46:24,859 basehttp "GET /admin/vsm_app/maestro_de_materiales/35618/change/ HTTP/1.0" 200 31175
+INFO 2025-12-18 16:46:24,859 basehttp "GET /admin/vsm_app/maestro_de_materiales/35618/change/ HTTP/1.0" 200 31175
+INFO 2025-12-18 16:46:24,905 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 16:46:24,905 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 16:51:43,591 basehttp "GET /admin/vsm_app/maestro_de_materiales/35618/change/ HTTP/1.0" 200 31390
+INFO 2025-12-18 16:51:43,591 basehttp "GET /admin/vsm_app/maestro_de_materiales/35618/change/ HTTP/1.0" 200 31390
+INFO 2025-12-18 16:51:43,627 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 16:51:43,627 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 16:51:44,420 basehttp "GET /admin/vsm_app/maestro_de_materiales/35618/change/ HTTP/1.0" 200 31390
+INFO 2025-12-18 16:51:44,420 basehttp "GET /admin/vsm_app/maestro_de_materiales/35618/change/ HTTP/1.0" 200 31390
+INFO 2025-12-18 16:51:44,451 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 16:51:44,451 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 16:51:46,625 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 16:51:46,625 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 16:54:14,482 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 16:54:14,482 basehttp "GET /admin/ HTTP/1.0" 200 35908
+INFO 2025-12-18 16:54:18,271 basehttp "GET /admin/vsm_app/vsm/ HTTP/1.0" 200 30185
+INFO 2025-12-18 16:54:18,271 basehttp "GET /admin/vsm_app/vsm/ HTTP/1.0" 200 30185
+INFO 2025-12-18 16:54:18,341 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 16:54:18,341 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 16:54:21,633 basehttp "GET /admin/vsm_app/maestro_de_materiales/ HTTP/1.0" 200 80004
+INFO 2025-12-18 16:54:21,633 basehttp "GET /admin/vsm_app/maestro_de_materiales/ HTTP/1.0" 200 80004
+INFO 2025-12-18 16:54:21,722 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 16:54:21,722 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 16:54:23,203 basehttp "GET /admin/vsm_app/maestro_de_materiales/35605/change/ HTTP/1.0" 200 31358
+INFO 2025-12-18 16:54:23,203 basehttp "GET /admin/vsm_app/maestro_de_materiales/35605/change/ HTTP/1.0" 200 31358
+INFO 2025-12-18 16:54:23,249 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 16:54:23,249 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 17:28:36,770 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-18 17:28:36,770 basehttp "GET / HTTP/1.0" 302 0
+WARNING 2025-12-18 17:28:37,092 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-18 17:28:37,092 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_edit', 'no_facturado_can_deliver', 'facturado_can_create', 'facturado_can_deliver', 'no_facturado_can_edit', 'registros_can_view', 'no_facturado_can_create'}
+WARNING 2025-12-18 17:28:37,094 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-18 17:28:37,097 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-18 17:28:37,103 basehttp "GET /oidc/callback/?state=yEZzz3MVcyWgiJqDLgJ5UcvGtlUIkXVu&session_state=033a850a-ab31-46bd-af50-52fe4f464a9d&code=c144a7e9-4112-4c92-ba64-2e42eb848a87.033a850a-ab31-46bd-af50-52fe4f464a9d.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-18 17:28:37,103 basehttp "GET /oidc/callback/?state=yEZzz3MVcyWgiJqDLgJ5UcvGtlUIkXVu&session_state=033a850a-ab31-46bd-af50-52fe4f464a9d&code=c144a7e9-4112-4c92-ba64-2e42eb848a87.033a850a-ab31-46bd-af50-52fe4f464a9d.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-18 17:28:37,150 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-18 17:28:37,150 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-18 17:28:38,373 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24033
+INFO 2025-12-18 17:28:38,373 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24033
+INFO 2025-12-18 17:29:01,171 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-18 17:29:01,171 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-18 17:29:02,573 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 17:29:02,573 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 17:29:24,645 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-18 17:29:24,645 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-18 17:29:25,872 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 17:29:25,872 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 17:29:39,648 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-18 17:29:39,648 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-18 17:29:41,035 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 17:29:41,035 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 17:30:02,242 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-18 17:30:02,242 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-18 17:30:03,396 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 17:30:03,396 autoreload Watching for file changes with StatReloader
+INFO 2025-12-18 17:32:20,246 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24033
+INFO 2025-12-18 17:32:20,246 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24033
+INFO 2025-12-18 17:32:25,020 basehttp "GET /admin/vsm_app/usuarios/ HTTP/1.0" 200 34192
+INFO 2025-12-18 17:32:25,020 basehttp "GET /admin/vsm_app/usuarios/ HTTP/1.0" 200 34192
+INFO 2025-12-18 17:32:25,055 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 17:32:25,055 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 17:32:27,215 basehttp "GET /admin/vsm_app/usuarios/3/change/ HTTP/1.0" 200 254578
+INFO 2025-12-18 17:32:27,215 basehttp "GET /admin/vsm_app/usuarios/3/change/ HTTP/1.0" 200 254578
+INFO 2025-12-18 17:32:27,251 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 17:32:27,251 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 17:32:27,266 basehttp "GET /static/admin/js/calendar.js HTTP/1.0" 200 7788
+INFO 2025-12-18 17:32:27,266 basehttp "GET /static/admin/js/calendar.js HTTP/1.0" 200 7788
+INFO 2025-12-18 17:32:27,267 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.0" 200 19750
+INFO 2025-12-18 17:32:27,267 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.0" 200 19750
+INFO 2025-12-18 17:32:27,400 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.0" 200 677
+INFO 2025-12-18 17:32:27,400 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.0" 200 677
+INFO 2025-12-18 17:32:27,403 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.0" 200 1086
+INFO 2025-12-18 17:32:27,403 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.0" 200 1086
+INFO 2025-12-18 17:32:32,288 basehttp "POST /admin/vsm_app/usuarios/3/change/ HTTP/1.0" 302 0
+INFO 2025-12-18 17:32:32,288 basehttp "POST /admin/vsm_app/usuarios/3/change/ HTTP/1.0" 302 0
+INFO 2025-12-18 17:32:32,317 basehttp "GET /admin/vsm_app/usuarios/ HTTP/1.0" 200 34931
+INFO 2025-12-18 17:32:32,317 basehttp "GET /admin/vsm_app/usuarios/ HTTP/1.0" 200 34931
+INFO 2025-12-18 17:32:32,352 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 17:32:32,352 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 17:32:33,732 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24220
+INFO 2025-12-18 17:32:33,732 basehttp "GET /nuevo_vsm HTTP/1.0" 200 24220
+INFO 2025-12-18 17:35:02,483 basehttp "GET /admin/vsm_app/usuarios/3/change/ HTTP/1.0" 200 254596
+INFO 2025-12-18 17:35:02,483 basehttp "GET /admin/vsm_app/usuarios/3/change/ HTTP/1.0" 200 254596
+INFO 2025-12-18 17:35:02,513 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 17:35:02,513 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 17:35:10,974 basehttp "POST /admin/vsm_app/usuarios/3/change/ HTTP/1.0" 302 0
+INFO 2025-12-18 17:35:10,974 basehttp "POST /admin/vsm_app/usuarios/3/change/ HTTP/1.0" 302 0
+INFO 2025-12-18 17:35:11,006 basehttp "GET /admin/vsm_app/usuarios/ HTTP/1.0" 200 34931
+INFO 2025-12-18 17:35:11,006 basehttp "GET /admin/vsm_app/usuarios/ HTTP/1.0" 200 34931
+INFO 2025-12-18 17:35:11,043 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 17:35:11,043 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 17:35:13,900 basehttp "GET /admin/vsm_app/maestro_de_materiales/ HTTP/1.0" 200 80004
+INFO 2025-12-18 17:35:13,900 basehttp "GET /admin/vsm_app/maestro_de_materiales/ HTTP/1.0" 200 80004
+INFO 2025-12-18 17:35:13,935 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 17:35:13,935 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 17:35:15,807 basehttp "GET /admin/vsm_app/maestro_de_materiales/35609/change/ HTTP/1.0" 200 31370
+INFO 2025-12-18 17:35:15,807 basehttp "GET /admin/vsm_app/maestro_de_materiales/35609/change/ HTTP/1.0" 200 31370
+INFO 2025-12-18 17:35:15,851 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 17:35:15,851 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 17:35:22,877 basehttp "GET /admin/vsm_app/maestro_de_materiales/ HTTP/1.0" 200 80004
+INFO 2025-12-18 17:35:22,877 basehttp "GET /admin/vsm_app/maestro_de_materiales/ HTTP/1.0" 200 80004
+INFO 2025-12-18 17:35:22,916 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-18 17:35:22,916 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342

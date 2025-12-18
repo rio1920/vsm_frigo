@@ -62,6 +62,10 @@ class NroTarjetaInline(admin.ModelAdmin):
     model = nro_tarjeta
     extra = 1
 
+class AlmacenesAdmin(admin.ModelAdmin):
+    list_display = ('almacen', 'descripcion')
+    search_fields = ('almacen', 'descripcion')
+
 admin.site.register(tags_productos, TagsProductosAdmin)
 admin.site.register(perfil_riesgo, perfil_riesgoAdmin)
 admin.site.register(permisos, PermisosAdmin)
@@ -73,3 +77,4 @@ admin.site.register(maestro_de_materiales, MaestroDeMaterialesAdmin)
 admin.site.register(PermisoRetiro, PermisoRetiroAdmin)
 admin.site.register(nro_tarjeta, NroTarjetaInline)
 admin.site.register(relacion_cc_perfil_riesgo, relacion_cc_perfil_riesgoAdmin)
+admin.site.register(almacenes, AlmacenesAdmin)

@@ -36,7 +36,6 @@ def registros(request):
     # ---- FILTROS ----
     solicitante = request.GET.get("solicitante", "").strip()
     retirante = request.GET.get("retirante", "").strip()
-    legajo = request.GET.get("legajo", "").strip()
     cc = request.GET.get("cc", "").strip()
     estado = request.GET.get("estado", "").strip()
 
@@ -84,13 +83,15 @@ def nuevo_vsm(request):
     usuario_logeado = request.user.first_name + " " + request.user.last_name
     centro_usuario = request.user.cc_permitidos.all()
     productos = models.maestro_de_materiales.objects.all()
+    almacenes = request.user.almacenes_permitidos.all()
 
     if request.method == "POST":
         solicitante_id = request.POST.get("solicitante")
         observaciones = request.POST.get("detalles", "")
         centro_costos_id = request.POST.get("centro_costos")
         tipo_entrega = request.POST.get("tipo_entrega")
-        tipo_facturacion = request.POST.get("tipo_facturacion")
+        almacen_id = request.POST.get("almacen")
+        
         retirante = request.POST.get("retirante")
 
         if not solicitante_id:
@@ -129,7 +130,7 @@ def nuevo_vsm(request):
             fecha_solicitud=now(),
             observaciones=observaciones,
             tipo_entrega=tipo_entrega,
-            tipo_facturacion=tipo_facturacion,
+            almacen_id=almacen_id,
         )
 
         for producto, cantidad_solicitada in productos_solicitados:
@@ -151,6 +152,7 @@ def nuevo_vsm(request):
             "usuario_logeado": usuario_logeado,
             "centro_costos": centro_costos,
             "centro_usuario": centro_usuario,
+            "almacenes_usuario": almacenes,
         },
     )
 
@@ -343,11 +345,6 @@ def listar_vsm_pendientes(request):
         },
     }
     return render(request, "listar_vsm_pendientes.html", context)
-
-
-def detalle_vsm(request, pk):
-    vsm = get_object_or_404(VSM, pk=pk)
-    return render(request, "detalle_vsm.html", {"vsm": vsm})
 
 
 def buscar_solicitantes(request):

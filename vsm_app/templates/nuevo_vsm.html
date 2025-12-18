@@ -90,11 +90,12 @@
             <input type="hidden" id="hidden_tipo_entrega" name="tipo_entrega">
           </div>
           <div>
-            <label class="block font-semibold mb-1">Tipo de facturación</label>
-            <select id="tipo_facturacion" name="tipo_facturacion_select"
-              class="w-full rounded-lg border border-gray-600 p-2 bg-white text-black">
-              <option value="NO_FACTURADO" selected>No facturado</option>
-              <option value="FACTURADO">Facturado</option>
+            <label class="block font-semibold mb-1">Almacen</label>
+            <select id="almacen" name="almacen" class="w-full rounded-lg border border-gray-600 p-2 bg-white text-black">
+              <option value="">Seleccione un almacen...</option>
+              {% for almacen in almacenes_usuario %}
+              <option value="{{ almacen.id }}" class="text-black">{{ almacen.almacen }} - {{ almacen.descripcion }}</option>
+              {% endfor %}
             </select>
             <input type="hidden" id="hidden_tipo_facturacion" name="tipo_facturacion">
           </div>

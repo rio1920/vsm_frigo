@@ -4,7 +4,6 @@ from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
 
-
 class centro_costos(models.Model):
     codigo = models.CharField(max_length=100)
     descripcion = models.CharField(max_length=200)
@@ -12,6 +11,12 @@ class centro_costos(models.Model):
     def __str__(self):
         return f"{self.codigo} - {self.descripcion}"
 
+class almacenes(models.Model):
+    almacen = models.CharField(max_length=5)
+    descripcion = models.CharField(max_length=100)
+
+    def __str__(self):
+        return f"{self.almacen} - {self.descripcion}"
 
 class empleados(models.Model):
     legajo = models.IntegerField(unique=True)
@@ -33,7 +38,9 @@ class maestro_de_materiales(models.Model):
     descripcion = models.CharField(max_length=200)
     clase_sap = models.CharField(max_length=10)
     centro = models.CharField(max_length=4)
-    almacen = models.CharField(max_length=4)
+    almacen = models.OneToOneField(
+        almacenes, on_delete=models.CASCADE, null=True, blank=True
+    )
 
     def __str__(self):
         return f"{self.codigo} - {self.descripcion}"
@@ -54,6 +61,9 @@ class Usuarios(AbstractUser):
     permisos = models.ManyToManyField(permisos, related_name="usuarios", blank=True)
     cc_permitidos = models.ManyToManyField(
         centro_costos, related_name="usuarios_permitidos", blank=True
+    )
+    almacenes_permitidos = models.ManyToManyField(
+        almacenes, blank=True
     )
 
     def __str__(self):
