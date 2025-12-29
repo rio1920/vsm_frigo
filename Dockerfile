@@ -6,7 +6,7 @@ RUN groupadd -g $GID myuser && useradd -m -u $UID -g $GID myuser
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
-WORKDIR /app
+WORKDIR /
 
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 

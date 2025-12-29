@@ -60,6 +60,7 @@ urlpatterns = [
     path("get_tags/<int:empleado_id>", views.get_tags_por_empleado, name="get_tags"),
     path("test_sap_connection", views.test_sap_connection, name="test_sap_connection"),
     path("ajax/consultar_stock", views.consultar_stock, name="consultar_stock"),
+    path('ajax/almacenes_por_empresa/', views.obtener_almacenes_por_empresa, name='obtener_almacenes_por_empresa'),
 ]
 
 if settings.DEBUG:

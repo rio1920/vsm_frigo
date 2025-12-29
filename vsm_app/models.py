@@ -13,10 +13,19 @@ class centro_costos(models.Model):
 
 class almacenes(models.Model):
     almacen = models.CharField(max_length=5)
+    empresa = models.ForeignKey(
+        "empresas", on_delete=models.CASCADE, null=True, blank=True
+    )
+
+    def __str__(self):
+        return f"{self.almacen} - {self.empresa.empresa if self.empresa else 'Sin Empresa'}"
+    
+class empresas (models.Model):
+    empresa = models.CharField(max_length=5)
     descripcion = models.CharField(max_length=100)
 
     def __str__(self):
-        return f"{self.almacen} - {self.descripcion}"
+        return f"{self.empresa} - {self.descripcion}"
 
 class empleados(models.Model):
     legajo = models.IntegerField(unique=True)
@@ -62,8 +71,8 @@ class Usuarios(AbstractUser):
     cc_permitidos = models.ManyToManyField(
         centro_costos, related_name="usuarios_permitidos", blank=True
     )
-    almacenes_permitidos = models.ManyToManyField(
-        almacenes, blank=True
+    empresas = models.ManyToManyField(
+        empresas, related_name="usuarios_empresas", blank=True
     )
 
     def __str__(self):
@@ -106,6 +115,7 @@ class VSM(models.Model):
     observaciones_entrega = models.TextField(null=True, blank=True)
     numero_sap = models.CharField(max_length=50, blank=True, null=True)
     anio_documento = models.CharField(max_length=4, null=True, blank=True)
+    almacen = models.ForeignKey(almacenes, on_delete=models.CASCADE, null=True, blank=True)
     active = models.BooleanField(default=True)
     estado_sap = models.CharField(
         max_length=20,
@@ -180,3 +190,13 @@ class relacion_cc_perfil_riesgo(models.Model):
 
     class Meta:
         unique_together = ("centro_costo", "perfil_riesgo", "default")
+
+class permiso_empresa_almacen(models.Model):
+    empresa = models.ForeignKey(empresas, on_delete=models.CASCADE)
+    almacen = models.ForeignKey(almacenes, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"{self.empresa} - {self.almacen}"
+
+    class Meta:
+        unique_together = ("empresa", "almacen")

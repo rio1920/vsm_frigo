@@ -89,16 +89,22 @@
             </select>
             <input type="hidden" id="hidden_tipo_entrega" name="tipo_entrega">
           </div>
-          <div>
-            <label class="block font-semibold mb-1">Almacen</label>
-            <select id="almacen" name="almacen" class="w-full rounded-lg border border-gray-600 p-2 bg-white text-black">
-              <option value="">Seleccione un almacen...</option>
-              {% for almacen in almacenes_usuario %}
-              <option value="{{ almacen.id }}" class="text-black">{{ almacen.almacen }} - {{ almacen.descripcion }}</option>
-              {% endfor %}
-            </select>
-            <input type="hidden" id="hidden_tipo_facturacion" name="tipo_facturacion">
-          </div>
+            <div>
+                <label class="block font-semibold mb-1">Almacen</label>
+                <select id="almacen" name="almacen" class="w-full rounded-lg border border-gray-600 p-2 bg-white text-black">
+                  <option value="" class="text-black">Seleccione un almacén...</option>
+                </select>
+                <input type="hidden" id="hidden_tipo_facturacion" name="tipo_facturacion">
+            </div>
+        </div>
+
+        <div class="mt-2">
+          <label class="block font-semibold mb-1">Empresa que representa: </label>
+          <select name="empresa" id="empresa" class="w-full rounded-lg border border-gray-600 p-2 bg-white text-black">
+            {% for empresa in empresas %}
+            <option value="{{ empresa.id }}" class="text-black">{{ empresa.empresa }} - {{ empresa.descripcion }}</option>
+            {% endfor %}
+          </select>
         </div>
 
         <!-- Solicitante -->
@@ -194,39 +200,7 @@
     {% endfor %}
     {% endif %}
 
-
     {% block scripts %}
-    <script>
-      document.getElementById("retirante").addEventListener("change", function () {
-        const retiranteId = this.value;
-        const tipoEntrega = document.getElementById("tipo_entrega").value;
-
-        if (retiranteId && tipoEntrega === "EPP") {
-          fetch(`/empleados/${retiranteId}/tags/`)
-            .then(res => res.json())
-            .then(data => {
-              const container = document.getElementById("tagsContainer");
-              container.innerHTML = ""; // limpiar
-
-              if (data.tags.length > 0) {
-                data.tags.forEach(tag => {
-                  const span = document.createElement("span");
-                  span.textContent = tag;
-                  span.className = "px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-sm";
-                  container.appendChild(span);
-                });
-
-                document.getElementById("tagsRecomendados").classList.remove("hidden");
-              } else {
-                document.getElementById("tagsRecomendados").classList.add("hidden");
-              }
-            })
-            .catch(err => console.error("Error cargando tags:", err));
-        } else {
-          document.getElementById("tagsRecomendados").classList.add("hidden");
-        }
-      });
-    </script>
 
     <script>
       $(document).ready(function () {
@@ -283,10 +257,12 @@
             dataType: 'json',
             delay: 250,
             data: function (params) {
+              const almacenId = $('#almacen').val();
               return {
                 q: params.term,
                 centro_costo: $centro.val(),   // 👈 centro seleccionado
-                tipo_entrega: $('#tipo_entrega').val() // 👈 nuevo select para EPP o insumos
+                tipo_entrega: $('#tipo_entrega').val(), // 👈 nuevo select para EPP o insumos
+                almacen: almacenId,
               };
             },
             processResults: function (data) {
@@ -299,6 +275,10 @@
 
         // 🔄 refrescar productos cuando cambie el tipo_entrega
         $('#tipo_entrega').on('change', function () {
+          $productos.val(null).trigger('change'); // limpia selección
+        });
+        // 🔄 refrescar productos cuando cambie el almacen
+        $('#almacen').on('change', function () {
           $productos.val(null).trigger('change'); // limpia selección
         });
 
@@ -468,6 +448,65 @@
 
     <script>
       $(document).ready(function () {
+        // =============================================================================== //
+
+      // === Lógica para filtrar almacenes por empresa seleccionada ===
+      const $empresaSelect = $('#empresa');
+      const $almacenSelect = $('#almacen');
+      
+      // Función para limpiar y deshabilitar el select de almacenes
+      function resetAlmacenSelect(message = 'Seleccione una empresa primero') {
+          $almacenSelect.empty();
+          $almacenSelect.append(`<option value="">${message}</option>`);
+          $almacenSelect.prop('disabled', true);
+          // También limpia el select de productos si es necesario
+          $('#select-producto').val(null).trigger('change');
+      }
+
+      // Al iniciar, forzamos el reset
+      if (!$empresaSelect.val()) {
+          resetAlmacenSelect('Seleccione una empresa...');
+      } else {
+          // Si ya hay una empresa seleccionada al cargar, la cargamos
+          filtrarAlmacenes();
+      }
+
+
+      $empresaSelect.on('change', function () {
+          filtrarAlmacenes();
+      });
+
+      function filtrarAlmacenes() {
+          const empresaId = $empresaSelect.val();
+          resetAlmacenSelect('Cargando almacenes...');
+
+          if (empresaId) {
+              $.ajax({
+                  url: '{% url "obtener_almacenes_por_empresa" %}',
+                  data: { empresa_id: empresaId },
+                  dataType: 'json',
+                  success: function (data) {
+                      $almacenSelect.empty();
+                      
+                      if (data.almacenes && data.almacenes.length > 0) {
+                          $almacenSelect.append('<option value="">Seleccione un almacén...</option>');
+                          data.almacenes.forEach(almacen => {
+                              // Usamos el código SAP (almacen.value) como valor
+                              $almacenSelect.append(new Option(almacen.text, almacen.value));
+                          });
+                          $almacenSelect.prop('disabled', false);
+                      } else {
+                          resetAlmacenSelect('No hay almacenes disponibles para esta empresa');
+                      }
+                  },
+                  error: function () {
+                      resetAlmacenSelect('Error al cargar almacenes.');
+                  }
+              });
+          }
+      }        
+
+        // =============================================================================== //
         console.log("✅ DOM y jQuery listos");
 
         let $retiranteSelect = $("#retirante");
@@ -502,7 +541,7 @@
             return;
           }
 
-          let url = `/get_tags/${empleadoId}/`;
+          let url = `/get_tags/${empleadoId}`;
           console.log("🌐 Fetch a:", url);
 
           fetch(url)

@@ -9,7 +9,7 @@ from django.http import JsonResponse
 from django.db.models import Q
 from django.template.loader import render_to_string
 from django.http import HttpResponse
-from .models import empleados, PermisoRetiro, VSM, VSMProducto, maestro_de_materiales
+from .models import empleados, PermisoRetiro, VSM, VSMProducto, maestro_de_materiales, permiso_empresa_almacen, almacenes
 from django.contrib import messages
 from .decorator import permission_required
 from django.utils.safestring import mark_safe
@@ -83,7 +83,8 @@ def nuevo_vsm(request):
     usuario_logeado = request.user.first_name + " " + request.user.last_name
     centro_usuario = request.user.cc_permitidos.all()
     productos = models.maestro_de_materiales.objects.all()
-    almacenes = request.user.almacenes_permitidos.all()
+    empresas = request.user.empresas.all()
+    almacen_id = models.almacenes.objects.filter(empresa__in=empresas)
 
     if request.method == "POST":
         solicitante_id = request.POST.get("solicitante")
@@ -91,7 +92,6 @@ def nuevo_vsm(request):
         centro_costos_id = request.POST.get("centro_costos")
         tipo_entrega = request.POST.get("tipo_entrega")
         almacen_id = request.POST.get("almacen")
-        
         retirante = request.POST.get("retirante")
 
         if not solicitante_id:
@@ -152,7 +152,8 @@ def nuevo_vsm(request):
             "usuario_logeado": usuario_logeado,
             "centro_costos": centro_costos,
             "centro_usuario": centro_usuario,
-            "almacenes_usuario": almacenes,
+            "empresas": empresas,
+            "almacen_id": almacen_id,
         },
     )
 
@@ -186,7 +187,6 @@ def editar_vsm(request, id):
 def eliminar_vsm(request, vsm_id):
     vsm = get_object_or_404(models.VSM, id=vsm_id)
 
-    # Si ya fue enviado a SAP, hago reversa
     if vsm.numero_sap:
         res = eliminar_entrega_de_sap(vsm)
 
@@ -196,7 +196,6 @@ def eliminar_vsm(request, vsm_id):
                 "error": f"No se pudo revertir en SAP: {res.get('error')}"
             })
 
-    # Si todo salió bien, lo elimino de la app
     vsm.active = False
     vsm.save()
 
@@ -413,8 +412,11 @@ def buscar_productos_por_centro(request):
     query = request.GET.get("q", "")
     centro_id = request.GET.get("centro_costo")
     tipo_entrega = request.GET.get("tipo_entrega")
+    # 🆕 1. CAPTURAR EL ID DEL ALMACÉN ENVIADO DESDE EL FRONTEND
+    almacen_id = request.GET.get("almacen")
 
-    if not centro_id:
+    if not centro_id or not almacen_id:
+        # Si no hay centro O almacén seleccionado, no se puede buscar.
         return JsonResponse({"results": []})
 
     try:
@@ -438,12 +440,18 @@ def buscar_productos_por_centro(request):
     codigos = [p.codigo for p in productos if p.codigo]
     print("📦 Códigos consultados a SAP:", codigos)
 
-    stock_dict = get_stock_sap_multiple(codigos, debug=True)
+    # 🆕 2. PASAR EL ID DEL ALMACÉN A LA FUNCIÓN DE SAP
+    stock_dict = get_stock_sap_multiple(
+        codigos, 
+        almacen_id=almacen_id, # <--- ¡Nuevo argumento!
+        debug=True
+    )
     print("📊 Stock devuelto por SAP:", stock_dict)
 
     results = []
     for p in productos:
-        stock = stock_dict.get(p.codigo, None)
+        # El stock_dict ahora solo debería contener stock del almacén solicitado
+        stock = stock_dict.get(p.codigo, None) 
         print(f"➡️ {p.codigo} -> stock {stock}")
 
         if stock and stock > 0:
@@ -456,7 +464,6 @@ def buscar_productos_por_centro(request):
         results = [{"id": "0", "text": "⚠️ No hay productos con stock disponible"}]
 
     return JsonResponse({"results": results})
-
 
 def get_materiales_por_centro(request):
     centro_id = request.GET.get("centro_id")
@@ -608,3 +615,37 @@ def consultar_stock(request):
     stock_data = get_stock_sap_multiple(lista_codigos)
 
     return JsonResponse({"stocks": stock_data})
+
+def obtener_almacenes_por_empresa(request):
+    """
+    Retorna la lista de almacenes permitidos (ID y código SAP)
+    basado en la empresa seleccionada.
+    """
+    empresa_id = request.GET.get('empresa_id')
+
+    if not empresa_id:
+        return JsonResponse({'almacenes': []})
+
+    try:
+        almacenes_permitidos_ids = permiso_empresa_almacen.objects.filter(
+            empresa_id=empresa_id
+        ).values_list('almacen_id', flat=True).distinct()
+        
+        almacenes_data = almacenes.objects.filter(
+            id__in=almacenes_permitidos_ids
+        )
+        
+        results = []
+        for almacen in almacenes_data:
+            results.append({
+                'value': almacen.almacen,
+                'text': f"{almacen.almacen} - {almacen.empresa}", 
+                'id': almacen.id, 
+                'empresa_propietaria_id': almacen.empresa.id
+            })
+            
+    except Exception as e:
+        print(f"Error al obtener almacenes para empresa {empresa_id}: {e}")
+        return JsonResponse({'almacenes': []})
+
+    return JsonResponse({'almacenes': results})

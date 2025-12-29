@@ -70,7 +70,7 @@
           <th class="px-4 py-3 text-left text-sm font-semibold">Solicitante</th>
           <th class="px-4 py-3 text-left text-sm font-semibold">Fecha Solicitud</th>
           <th class="px-4 py-3 text-left text-sm font-semibold">Estado</th>
-          <th class="px-4 py-3 text-left text-sm font-semibold">Tipo Facturacion</th>
+          <th class="px-4 py-3 text-left text-sm font-semibold">Almacen</th>
           <th class="px-4 py-3 text-left text-sm font-semibold">Tipo Entrega</th>
           <th class="px-4 py-3 text-center text-sm font-semibold">Acciones</th>
         </tr>
@@ -99,11 +99,7 @@
               
               {% endif %}
             </td>
-            {% if registro.tipo_facturacion == 'FACTURADO' %}
-            <td class="px-4 py-3"> Facturado </td>
-            {% elif registro.tipo_facturacion == 'NO_FACTURADO' %}
-            <td class="px-4 py-3"> No Facturado </td>
-            {% endif %}
+            <td class="px-4 py-3"> {{ registro.almacen }} </td>
             <td class="px-4 py-3">{{ registro.tipo_entrega }}</td>
             <td class="px-4 py-3 text-center">
               {% if registro.estado == 'pendiente' and registro.tipo_entrega == 'INSUMOS' %}
@@ -236,7 +232,7 @@ document.addEventListener("DOMContentLoaded", function() {
     confirmBtn.onclick = function() {
         if (!selectedVSM) return;
 
-        fetch(`/vsm/${selectedVSM}/eliminar/`, {
+        fetch(`/vsm/${selectedVSM}/eliminar`, {
             method: "POST",
             headers: { "X-CSRFToken": "{{ csrf_token }}" }
         })

@@ -106,31 +106,45 @@ def parse_soap_response(xml_text: str) -> dict:
                     result[tag_name].append(record)
     return result
 
-def get_stock_sap_multiple(codigos: list[str], centro: str = "1000", almacen: str = "1100", debug: bool = False) -> dict[str, int]:
+def get_stock_sap_multiple(codigos: list[str], almacen_id: str = "1100", centro: str = "1000", debug: bool = False) -> dict[str, int]:
+    
+    almacen_buscado = almacen_id.upper() 
+    centro_sap = centro.upper() 
+    
     codigos_norm = [c.lstrip("0") for c in codigos]
     stock_dict = {c: 0 for c in codigos} 
 
     params = {
-        "I_WERKS": centro,
-        "I_LGORT": almacen,
+        "I_WERKS": centro_sap, 
+        "I_LGORT": almacen_buscado, 
         "T_MATNR": codigos,
     }
 
     data = call_sap_rfc("ZRFC_STOCK_SMARTSAFETY", params)
 
     if not data:
-        print("⚠️ Sin respuesta de SAP o error en el RFC.")
         return stock_dict
 
     tabla_stock = data.get("T_STOCK") or data.get("STOCK") or data.get("E_RETURN") or []
+    
+    # 🟢 Iteramos y filtramos
     for item in tabla_stock:
+        # CLAVE: Usar 'LGORT' para filtrar
+        almacen_devuelto = item.get("LGORT", "").strip().upper() 
+
+        # Solo procesamos si coincide con el almacén que el usuario seleccionó
+        if almacen_devuelto != almacen_buscado:
+            continue  
+
         matnr_sap = item.get("MATNR", "").strip().lstrip("0")
         labst = int(float(item.get("LABST", "0")))
 
         if matnr_sap in codigos_norm:
             index = codigos_norm.index(matnr_sap)
-            stock_dict[codigos[index]] = labst
-
+            # Sumamos el stock (aunque en este caso es un único almacén)
+            stock_actual = stock_dict.get(codigos[index], 0)
+            stock_dict[codigos[index]] = stock_actual + labst 
+            
     return stock_dict
 
 
