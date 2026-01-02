@@ -19,6 +19,11 @@ from .utils.sap_rfc import call_sap_rfc, enviar_entrega_a_sap, eliminar_entrega_
 import base64
 from django.core.files.base import ContentFile
 from django.views.decorators.csrf import csrf_exempt
+from vsm_app.utils.sap_rfc import get_stock_sap_multiple
+from django.shortcuts import get_object_or_404, redirect
+from django.utils.timezone import now
+from vsm_app.utils.sap_rfc import get_stock_sap
+
 
 
 def home(request):
@@ -70,11 +75,6 @@ def registros(request):
 
     return render(request, "registros.html", context)
 
-
-from django.shortcuts import get_object_or_404, redirect
-from django.utils.timezone import now
-from vsm_app.utils.sap_rfc import get_stock_sap
-
 @login_required
 @permission_required(["facturado_can_create", "no_facturado_can_create"])
 def nuevo_vsm(request):
@@ -84,16 +84,18 @@ def nuevo_vsm(request):
     centro_usuario = request.user.cc_permitidos.all()
     productos = models.maestro_de_materiales.objects.all()
     empresas = request.user.empresas.all()
-    almacen_id = models.almacenes.objects.filter(empresa__in=empresas)
-
+    almacen_obj_list = models.almacenes.objects.filter(empresa__in=empresas)
     if request.method == "POST":
         solicitante_id = request.POST.get("solicitante")
         observaciones = request.POST.get("detalles", "")
         centro_costos_id = request.POST.get("centro_costos")
         tipo_entrega = request.POST.get("tipo_entrega")
-        almacen_id = request.POST.get("almacen")
+        almacen_codigo_sap = request.POST.get("almacen") 
         retirante = request.POST.get("retirante")
+        tipo_facturacion = request.POST.get("tipo_facturacion", "NO_FACTURADO")
+        estado_aprobacion_inicial = request.POST.get("estado_aprobacion", "APROBADO")
 
+        # --- Validación inicial ---
         if not solicitante_id:
             return render(
                 request,
@@ -104,6 +106,15 @@ def nuevo_vsm(request):
                     "error": "Debe seleccionar un solicitante.",
                 },
             )
+
+        # --- BUSCAR EL OBJETO ALMACÉN POR EL CÓDIGO SAP ---
+        almacen_objeto = None
+        if almacen_codigo_sap:
+            try:
+                almacen_objeto = models.almacenes.objects.get(almacen=almacen_codigo_sap)
+            except models.almacenes.DoesNotExist:
+                messages.error(request, f"❌ El código de almacén '{almacen_codigo_sap}' no fue encontrado.")
+                return redirect("nuevo_vsm") # Redirigir o manejar el error
 
         productos_solicitados = []
         for key, value in request.POST.items():
@@ -119,10 +130,12 @@ def nuevo_vsm(request):
                 except (ValueError, IndexError):
                     continue
 
+        # --- Retirante ---
         retirante_obj = None
         if retirante:
             retirante_obj = get_object_or_404(models.empleados, pk=retirante)
 
+        # --- Creación del VSM ---
         vsm = models.VSM.objects.create(
             centro_costos_id=centro_costos_id,
             solicitante=request.user,
@@ -130,7 +143,9 @@ def nuevo_vsm(request):
             fecha_solicitud=now(),
             observaciones=observaciones,
             tipo_entrega=tipo_entrega,
-            almacen_id=almacen_id,
+            almacen=almacen_objeto, 
+            tipo_facturacion=tipo_facturacion,
+            estado_aprobacion=estado_aprobacion_inicial,
         )
 
         for producto, cantidad_solicitada in productos_solicitados:
@@ -153,7 +168,7 @@ def nuevo_vsm(request):
             "centro_costos": centro_costos,
             "centro_usuario": centro_usuario,
             "empresas": empresas,
-            "almacen_id": almacen_id,
+            "almacen_id": almacen_obj_list,
         },
     )
 
@@ -313,7 +328,6 @@ def listar_vsm_pendientes(request):
 
     solicitante = request.GET.get("solicitante", "").strip()
     retirante = request.GET.get("retirante", "").strip()
-    legajo = request.GET.get("legajo", "").strip()
     cc = request.GET.get("cc", "").strip()
     estado = request.GET.get("estado", "").strip()
 
@@ -405,18 +419,14 @@ def buscar_productos(request):
     return JsonResponse({"results": results})
 
 
-from vsm_app.utils.sap_rfc import get_stock_sap_multiple
-
 
 def buscar_productos_por_centro(request):
     query = request.GET.get("q", "")
     centro_id = request.GET.get("centro_costo")
     tipo_entrega = request.GET.get("tipo_entrega")
-    # 🆕 1. CAPTURAR EL ID DEL ALMACÉN ENVIADO DESDE EL FRONTEND
     almacen_id = request.GET.get("almacen")
 
     if not centro_id or not almacen_id:
-        # Si no hay centro O almacén seleccionado, no se puede buscar.
         return JsonResponse({"results": []})
 
     try:
@@ -440,7 +450,7 @@ def buscar_productos_por_centro(request):
     codigos = [p.codigo for p in productos if p.codigo]
     print("📦 Códigos consultados a SAP:", codigos)
 
-    # 🆕 2. PASAR EL ID DEL ALMACÉN A LA FUNCIÓN DE SAP
+    
     stock_dict = get_stock_sap_multiple(
         codigos, 
         almacen_id=almacen_id, # <--- ¡Nuevo argumento!
@@ -450,7 +460,6 @@ def buscar_productos_por_centro(request):
 
     results = []
     for p in productos:
-        # El stock_dict ahora solo debería contener stock del almacén solicitado
         stock = stock_dict.get(p.codigo, None) 
         print(f"➡️ {p.codigo} -> stock {stock}")
 
@@ -603,7 +612,6 @@ def test_sap_connection(request):
     data = call_sap_rfc("ZRFC_STOCK_SMARTSAFETY")
     return JsonResponse({"data": data}, safe=False)
 
-
 def consultar_stock(request):
     codigos = request.GET.get("codigos")
     if not codigos:
@@ -617,35 +625,36 @@ def consultar_stock(request):
     return JsonResponse({"stocks": stock_data})
 
 def obtener_almacenes_por_empresa(request):
-    """
-    Retorna la lista de almacenes permitidos (ID y código SAP)
-    basado en la empresa seleccionada.
-    """
     empresa_id = request.GET.get('empresa_id')
 
     if not empresa_id:
         return JsonResponse({'almacenes': []})
 
+    results = []
+
     try:
-        almacenes_permitidos_ids = permiso_empresa_almacen.objects.filter(
+        vinculos_permitidos = permiso_empresa_almacen.objects.filter(
             empresa_id=empresa_id
-        ).values_list('almacen_id', flat=True).distinct()
+        ).select_related('almacen')
         
-        almacenes_data = almacenes.objects.filter(
-            id__in=almacenes_permitidos_ids
-        )
-        
-        results = []
-        for almacen in almacenes_data:
+        for vinculo in vinculos_permitidos:
+            almacen = vinculo.almacen
+            
+            aprobadores_ids = list(vinculo.usuarios_aprobadores.values_list('id', flat=True))
+
             results.append({
                 'value': almacen.almacen,
                 'text': f"{almacen.almacen} - {almacen.empresa}", 
                 'id': almacen.id, 
-                'empresa_propietaria_id': almacen.empresa.id
+                
+                'empresa_propietaria_id': almacen.empresa.id,
+                
+                'requiere_aprobacion': vinculo.requiere_aprobacion,
+                'usuarios_aprobadores': aprobadores_ids,
             })
             
     except Exception as e:
-        print(f"Error al obtener almacenes para empresa {empresa_id}: {e}")
+        print(f"Error al obtener almacenes para empresa {empresa_id}: '{e}'")
         return JsonResponse({'almacenes': []})
 
     return JsonResponse({'almacenes': results})

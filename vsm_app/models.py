@@ -127,13 +127,17 @@ class VSM(models.Model):
         default="no_procesado",
     )
     actualizado = models.DateTimeField(auto_now=True)
+    estado_aprobacion = models.CharField(
+        max_length=20,
+        choices=[("aprobado", "Aprobado"), ("rechazado", "Rechazado"), ("pendiente", "Pendiente")],
+        default="aprobado",
+    )
 
     def entrega_completa(self):
         return (
             self.estado == "entregado"
             and self.cantidad_entregada == self.cantidad_solicitada
         )
-
 
 class VSMProducto(models.Model):
     vsm = models.ForeignKey(VSM, on_delete=models.CASCADE)
@@ -194,6 +198,8 @@ class relacion_cc_perfil_riesgo(models.Model):
 class permiso_empresa_almacen(models.Model):
     empresa = models.ForeignKey(empresas, on_delete=models.CASCADE)
     almacen = models.ForeignKey(almacenes, on_delete=models.CASCADE)
+    requiere_aprobacion = models.BooleanField(default=False)
+    usuarios_aprobadores = models.ManyToManyField(Usuarios, blank=True)
 
     def __str__(self):
         return f"{self.empresa} - {self.almacen}"

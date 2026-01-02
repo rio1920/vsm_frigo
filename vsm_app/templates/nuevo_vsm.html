@@ -95,6 +95,7 @@
                   <option value="" class="text-black">Seleccione un almacén...</option>
                 </select>
                 <input type="hidden" id="hidden_tipo_facturacion" name="tipo_facturacion">
+                <input type="hidden" id="hidden_aprobacion_status" name="estado_aprobacion">
             </div>
         </div>
 
@@ -447,125 +448,135 @@
     </script>
 
     <script>
-      $(document).ready(function () {
-        // =============================================================================== //
+        // Se asume que showSuccessToast y showErrorToast están definidos en otro script anterior.
+        // Usaremos showSuccessToast con el parámetro 'type' para manejar los mensajes.
 
-      // === Lógica para filtrar almacenes por empresa seleccionada ===
-      const $empresaSelect = $('#empresa');
-      const $almacenSelect = $('#almacen');
-      
-      // Función para limpiar y deshabilitar el select de almacenes
-      function resetAlmacenSelect(message = 'Seleccione una empresa primero') {
-          $almacenSelect.empty();
-          $almacenSelect.append(`<option value="">${message}</option>`);
-          $almacenSelect.prop('disabled', true);
-          // También limpia el select de productos si es necesario
-          $('#select-producto').val(null).trigger('change');
-      }
+        $(document).ready(function () {
+            // =============================================================================== //
 
-      // Al iniciar, forzamos el reset
-      if (!$empresaSelect.val()) {
-          resetAlmacenSelect('Seleccione una empresa...');
-      } else {
-          // Si ya hay una empresa seleccionada al cargar, la cargamos
-          filtrarAlmacenes();
-      }
+            // === Lógica para filtrar almacenes por empresa seleccionada ===
+            const $empresaSelect = $('#empresa');
+            const $almacenSelect = $('#almacen');
+            const $productos = $('#select-producto');
+            
+            // Función para limpiar y deshabilitar el select de almacenes
+            function resetAlmacenSelect(message = 'Seleccione una empresa primero') {
+                $almacenSelect.empty();
+                $almacenSelect.append(`<option value="">${message}</option>`);
+                $almacenSelect.prop('disabled', true);
+                // También limpia el select de productos y actualiza los campos ocultos
+                $productos.val(null).trigger('change');
+                actualizarDatosOcultos(); 
+            }
 
+            // Al iniciar, forzamos el reset
+            if (!$empresaSelect.val()) {
+                resetAlmacenSelect('Seleccione una empresa...');
+            } else {
+                // Si ya hay una empresa seleccionada al cargar, la cargamos
+                filtrarAlmacenes();
+            }
 
-      $empresaSelect.on('change', function () {
-          filtrarAlmacenes();
-      });
+            $empresaSelect.on('change', function () {
+                filtrarAlmacenes();
+            });
 
-      function filtrarAlmacenes() {
-          const empresaId = $empresaSelect.val();
-          resetAlmacenSelect('Cargando almacenes...');
+            // 🟢 MODIFICACIÓN: Almacenar la data de aprobación y propietario
+            function filtrarAlmacenes() {
+                const empresaId = $empresaSelect.val();
+                resetAlmacenSelect('Cargando almacenes...');
 
-          if (empresaId) {
-              $.ajax({
-                  url: '{% url "obtener_almacenes_por_empresa" %}',
-                  data: { empresa_id: empresaId },
-                  dataType: 'json',
-                  success: function (data) {
-                      $almacenSelect.empty();
-                      
-                      if (data.almacenes && data.almacenes.length > 0) {
-                          $almacenSelect.append('<option value="">Seleccione un almacén...</option>');
-                          data.almacenes.forEach(almacen => {
-                              // Usamos el código SAP (almacen.value) como valor
-                              $almacenSelect.append(new Option(almacen.text, almacen.value));
-                          });
-                          $almacenSelect.prop('disabled', false);
-                      } else {
-                          resetAlmacenSelect('No hay almacenes disponibles para esta empresa');
-                      }
-                  },
-                  error: function () {
-                      resetAlmacenSelect('Error al cargar almacenes.');
-                  }
-              });
-          }
-      }        
+                if (empresaId) {
+                    $.ajax({
+                        url: '{% url "obtener_almacenes_por_empresa" %}',
+                        data: { empresa_id: empresaId },
+                        dataType: 'json',
+                        success: function (data) {
+                            $almacenSelect.empty();
+                            
+                            if (data.almacenes && data.almacenes.length > 0) {
+                                $almacenSelect.append('<option value="">Seleccione un almacén...</option>');
+                                data.almacenes.forEach(almacen => {
+                                    const newOption = new Option(almacen.text, almacen.value);
+                                    // 🟢 Guardar datos en el elemento Option
+                                    $(newOption).data('owning-id', almacen.empresa_propietaria_id); 
+                                    $(newOption).data('requiere-aprobacion', almacen.requiere_aprobacion); 
+                                    $almacenSelect.append(newOption);
+                                });
+                                $almacenSelect.prop('disabled', false);
+                            } else {
+                                resetAlmacenSelect('No hay almacenes disponibles para esta empresa');
+                            }
+                            actualizarDatosOcultos(); // Ejecutar lógica al cargar opciones
+                        },
+                        error: function () {
+                            resetAlmacenSelect('Error al cargar almacenes.');
+                        }
+                    });
+                }
+            }
+            
+            // 🟢 NUEVA FUNCIÓN: Lógica central de Facturación y Aprobación
+            function actualizarDatosOcultos() {
+                const $hiddenFacturacion = $('#hidden_tipo_facturacion');
+                const $hiddenAprobacion = $('#hidden_aprobacion_status');
+                
+                const empresaRepresentadaId = $empresaSelect.val();
+                const selectedWarehouseOption = $almacenSelect.find('option:selected');
+                
+                // Si no hay almacén o empresa seleccionada, limpiamos y ponemos por defecto
+                if (!selectedWarehouseOption.val() || !empresaRepresentadaId) {
+                    $hiddenFacturacion.val('');
+                    $hiddenAprobacion.val('APROBADO'); 
+                    return;
+                }
 
-        // =============================================================================== //
-        console.log("✅ DOM y jQuery listos");
+                const empresaPropietariaId = selectedWarehouseOption.data('owning-id');
+                const requiereAprobacion = selectedWarehouseOption.data('requiere-aprobacion');
 
-        let $retiranteSelect = $("#retirante");
-        let $tagsList = $("#tags_list");
-        let $tipoEntrega = $("#tipo_entrega");  // 👈 select de tipo de entrega
+                /* --- LÓGICA DE TIPO FACTURACIÓN --- */
+                let tipoFacturacion;
+                // Comparar IDs (convertidos a String para seguridad)
+                if (String(empresaRepresentadaId) === String(empresaPropietariaId)) {
+                    tipoFacturacion = 'NO_FACTURADO';
+                } else {
+                    tipoFacturacion = 'FACTURADO';
+                }
+                $hiddenFacturacion.val(tipoFacturacion);
 
-        if ($retiranteSelect.length === 0) {
-          console.error("❌ No se encontró #id_retirante en el DOM");
-          return;
-        }
-        if ($tagsList.length === 0) {
-          console.error("❌ No se encontró #tags_list en el DOM");
-          return;
-        }
+                /* --- LÓGICA DE ESTADO DE APROBACIÓN --- */
+                let estadoAprobacion;
+                if (requiereAprobacion) {
+                    estadoAprobacion = 'PENDIENTE';
+                    showSuccessToast("ATENCIÓN: Este VSM requiere APROBACIÓN.", "error"); // Resaltar como error
+                } else {
+                    estadoAprobacion = 'APROBADO';
+                }
+                $hiddenAprobacion.val(estadoAprobacion);
+                
+                // Opcional: Notificar tipo de facturación
+                if (tipoFacturacion === 'FACTURADO') {
+                    showSuccessToast("Tipo de Facturación: FACTURADO (Empresa no propietaria).", "success");
+                }
+            }
 
-        $retiranteSelect.on("select2:select", function (e) {
-          let empleadoId = $(this).val();
-          let tipoEntrega = $tipoEntrega.val();
+            // 🟢 CONEXIÓN DEL EVENTO 'ALMACEN'
+            // El evento change del almacén debe actualizar los datos ocultos.
+            $('#almacen').on('change', function () {
+                actualizarDatosOcultos(); // 👈 Ejecutar la nueva lógica
+                $productos.val(null).trigger('change'); // limpia selección de productos
+            });
+            
+            // Ejecutar la lógica al cargar si hay valores pre-seleccionados
+            actualizarDatosOcultos();
+            // =============================================================================== //
+            console.log("✅ DOM y jQuery listos");
+            // ... (resto de tu código que sigue: $retiranteSelect, tagsList, etc.) ...
 
-          console.log("👤 Retirante seleccionado:", empleadoId);
-          console.log("📦 Tipo de entrega actual:", tipoEntrega);
+            // Nota: Asegúrate de que tu lógica de tags no se vea afectada por los select2
 
-          // 👇 Solo si es EPP se buscan y muestran tags
-          if (tipoEntrega !== "EPP") {
-            console.log("⚠️ No es EPP, se ignoran tags");
-            $tagsList.empty();  // limpiar lista
-            return;
-          }
-
-          if (!empleadoId) {
-            $tagsList.html("<li class='text-gray-400'>Sin seleccion</li>");
-            return;
-          }
-
-          let url = `/get_tags/${empleadoId}`;
-          console.log("🌐 Fetch a:", url);
-
-          fetch(url)
-            .then(response => response.json())
-            .then(data => {
-              console.log("📦 Datos JSON recibidos:", data);
-              $tagsList.empty();
-
-              if (data.length === 0) {
-                $tagsList.html("<span class='text-gray-400 text-sm'>No tiene tags asociados</span>");
-              } else {
-                data.forEach(tag => {
-                  $tagsList.append(`
-                          <span class="px-3 py-1 rounded-full bg-blue-300 text-blue-800 text-sm font-medium shadow-sm">
-                            ${tag.descripcion}
-                          </span>
-                      `);
-                });
-              }
-            })
-            .catch(err => console.error("❌ Error en fetch:", err));
+            // ... (resto de tu código) ...
         });
-      });
-
     </script>
 
 

@@ -8332,3 +8332,1827 @@ INFO 2025-12-29 13:01:52,479 basehttp "GET /admin/vsm_app/vsm/222/change/ HTTP/1
 INFO 2025-12-29 13:01:52,479 basehttp "GET /admin/vsm_app/vsm/222/change/ HTTP/1.0" 200 265950
 INFO 2025-12-29 13:01:52,524 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
 INFO 2025-12-29 13:01:52,524 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-29 13:41:49,796 basehttp "GET /admin/vsm_app/vsm/ HTTP/1.0" 302 0
+INFO 2025-12-29 13:41:49,796 basehttp "GET /admin/vsm_app/vsm/ HTTP/1.0" 302 0
+WARNING 2025-12-29 13:41:50,126 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-29 13:41:50,127 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_deliver', 'facturado_can_edit', 'facturado_can_create', 'registros_can_view', 'no_facturado_can_deliver', 'no_facturado_can_create', 'no_facturado_can_edit'}
+WARNING 2025-12-29 13:41:50,130 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-29 13:41:50,134 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-29 13:41:50,143 basehttp "GET /oidc/callback/?state=HZX23jGKOM7AQgMopjqUeuh3eMRCrFOy&session_state=a61d2581-d07b-4d92-99e2-769186deea26&code=6a5c426e-0a23-496f-9e54-095109052056.a61d2581-d07b-4d92-99e2-769186deea26.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-29 13:41:50,143 basehttp "GET /oidc/callback/?state=HZX23jGKOM7AQgMopjqUeuh3eMRCrFOy&session_state=a61d2581-d07b-4d92-99e2-769186deea26&code=6a5c426e-0a23-496f-9e54-095109052056.a61d2581-d07b-4d92-99e2-769186deea26.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-29 13:41:50,206 basehttp "GET /admin/vsm_app/vsm/ HTTP/1.0" 200 31314
+INFO 2025-12-29 13:41:50,206 basehttp "GET /admin/vsm_app/vsm/ HTTP/1.0" 200 31314
+INFO 2025-12-29 13:41:50,248 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-29 13:41:50,248 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-29 18:25:53,612 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-29 18:25:53,612 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-29 18:26:03,301 autoreload Watching for file changes with StatReloader
+INFO 2025-12-29 18:26:03,301 autoreload Watching for file changes with StatReloader
+INFO 2025-12-29 18:26:08,125 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-29 18:26:08,125 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-29 18:26:09,197 autoreload Watching for file changes with StatReloader
+INFO 2025-12-29 18:26:09,197 autoreload Watching for file changes with StatReloader
+WARNING 2025-12-29 18:32:21,110 log Not Found: /DevMgmt/DiscoveryTree.xml
+WARNING 2025-12-29 18:32:21,110 log Not Found: /DevMgmt/DiscoveryTree.xml
+WARNING 2025-12-29 18:32:21,130 basehttp "GET /DevMgmt/DiscoveryTree.xml HTTP/1.0" 404 10266
+WARNING 2025-12-29 18:32:21,130 basehttp "GET /DevMgmt/DiscoveryTree.xml HTTP/1.0" 404 10266
+WARNING 2025-12-29 18:32:53,329 log Not Found: /DevMgmt/DiscoveryTree.xml
+WARNING 2025-12-29 18:32:53,329 log Not Found: /DevMgmt/DiscoveryTree.xml
+WARNING 2025-12-29 18:32:53,330 basehttp "GET /DevMgmt/DiscoveryTree.xml HTTP/1.0" 404 10266
+WARNING 2025-12-29 18:32:53,330 basehttp "GET /DevMgmt/DiscoveryTree.xml HTTP/1.0" 404 10266
+WARNING 2025-12-29 18:32:49,383 log Not Found: /DevMgmt/DiscoveryTree.xml
+WARNING 2025-12-29 18:32:49,383 log Not Found: /DevMgmt/DiscoveryTree.xml
+WARNING 2025-12-29 18:32:49,384 basehttp "GET /DevMgmt/DiscoveryTree.xml HTTP/1.0" 404 10266
+WARNING 2025-12-29 18:32:49,384 basehttp "GET /DevMgmt/DiscoveryTree.xml HTTP/1.0" 404 10266
+INFO 2025-12-29 18:32:52,792 basehttp "GET /admin/ HTTP/1.0" 302 0
+INFO 2025-12-29 18:32:52,792 basehttp "GET /admin/ HTTP/1.0" 302 0
+INFO 2025-12-29 18:53:46,012 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-29 18:53:46,012 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-29 18:53:47,350 autoreload Watching for file changes with StatReloader
+INFO 2025-12-29 18:53:47,350 autoreload Watching for file changes with StatReloader
+INFO 2025-12-29 18:57:22,474 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-29 18:57:22,474 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-29 18:57:23,360 autoreload Watching for file changes with StatReloader
+INFO 2025-12-29 18:57:23,360 autoreload Watching for file changes with StatReloader
+INFO 2025-12-29 19:08:15,328 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-29 19:08:15,328 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-29 19:08:09,856 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-29 19:08:09,856 basehttp "GET / HTTP/1.0" 302 0
+WARNING 2025-12-29 19:08:10,712 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-29 19:08:10,712 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_create', 'no_facturado_can_edit', 'facturado_can_create', 'registros_can_view', 'no_facturado_can_deliver', 'facturado_can_edit', 'facturado_can_deliver'}
+WARNING 2025-12-29 19:08:10,717 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-29 19:08:10,721 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-29 19:08:10,726 basehttp "GET /oidc/callback/?state=0O8F45ju9IwTpbSOOazkvT4y2plDTmLE&session_state=84ecac8a-4174-4182-ad6e-d60936cb7882&code=05d24f5b-ea55-4354-a6a1-b622d7fb8311.84ecac8a-4174-4182-ad6e-d60936cb7882.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-29 19:08:10,726 basehttp "GET /oidc/callback/?state=0O8F45ju9IwTpbSOOazkvT4y2plDTmLE&session_state=84ecac8a-4174-4182-ad6e-d60936cb7882&code=05d24f5b-ea55-4354-a6a1-b622d7fb8311.84ecac8a-4174-4182-ad6e-d60936cb7882.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-29 19:08:10,775 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-29 19:08:10,775 basehttp "GET / HTTP/1.0" 200 7812
+WARNING 2025-12-29 19:08:11,041 log Not Found: /favicon.ico
+WARNING 2025-12-29 19:08:11,041 log Not Found: /favicon.ico
+WARNING 2025-12-29 19:08:11,041 basehttp "GET /favicon.ico HTTP/1.0" 404 10207
+WARNING 2025-12-29 19:08:11,041 basehttp "GET /favicon.ico HTTP/1.0" 404 10207
+INFO 2025-12-29 19:08:15,588 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-29 19:08:15,588 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-29 19:08:16,361 basehttp "GET /nuevo_vsm HTTP/1.0" 200 29335
+INFO 2025-12-29 19:08:16,361 basehttp "GET /nuevo_vsm HTTP/1.0" 200 29335
+INFO 2025-12-29 19:08:16,607 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 108
+INFO 2025-12-29 19:08:16,607 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 108
+INFO 2025-12-29 19:08:20,472 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2025-12-29 19:08:20,472 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2025-12-29 19:08:20,586 basehttp "GET /admin/ HTTP/1.0" 200 36421
+INFO 2025-12-29 19:08:20,586 basehttp "GET /admin/ HTTP/1.0" 200 36421
+INFO 2025-12-29 19:08:25,602 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-29 19:08:25,602 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-29 19:08:25,652 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-29 19:08:25,652 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-29 19:08:29,165 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/3/change/ HTTP/1.0" 200 218111
+INFO 2025-12-29 19:08:29,165 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/3/change/ HTTP/1.0" 200 218111
+INFO 2025-12-29 19:08:29,218 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-29 19:08:29,218 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-29 19:08:34,832 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-29 19:08:34,832 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-29 19:08:40,566 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/2/change/ HTTP/1.0" 200 218111
+INFO 2025-12-29 19:08:40,566 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/2/change/ HTTP/1.0" 200 218111
+INFO 2025-12-29 19:08:40,632 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-29 19:08:40,632 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-29 19:08:49,019 basehttp "POST /admin/vsm_app/permiso_empresa_almacen/2/change/ HTTP/1.0" 302 0
+INFO 2025-12-29 19:08:49,019 basehttp "POST /admin/vsm_app/permiso_empresa_almacen/2/change/ HTTP/1.0" 302 0
+INFO 2025-12-29 19:08:49,063 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 30205
+INFO 2025-12-29 19:08:49,063 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 30205
+INFO 2025-12-29 19:08:49,111 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-29 19:08:49,111 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-29 19:09:12,274 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-29 19:09:12,274 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-29 19:09:14,188 autoreload Watching for file changes with StatReloader
+INFO 2025-12-29 19:09:14,188 autoreload Watching for file changes with StatReloader
+INFO 2025-12-29 19:21:53,562 basehttp "POST /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-29 19:21:53,562 basehttp "POST /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-29 19:21:53,605 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-29 19:21:53,605 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-29 19:21:54,460 basehttp "POST /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-29 19:21:54,460 basehttp "POST /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-29 19:21:54,494 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-29 19:21:54,494 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-29 19:21:55,481 basehttp "POST /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-29 19:21:55,481 basehttp "POST /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-29 19:21:55,516 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-29 19:21:55,516 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-29 19:21:56,236 basehttp "POST /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-29 19:21:56,236 basehttp "POST /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-29 19:21:56,269 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-29 19:21:56,269 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-29 19:21:57,005 basehttp "POST /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-29 19:21:57,005 basehttp "POST /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-29 19:21:57,034 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-29 19:21:57,034 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 11:33:25,297 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 11:33:25,297 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 11:51:27,581 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-30 11:51:27,581 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-30 11:51:28,564 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-30 11:51:28,564 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-30 11:51:28,652 basehttp "GET /oidc/callback/?error=login_required&state=e0qV932aMK7RJWovEGjAvxk8305Nqzqz HTTP/1.0" 302 0
+INFO 2025-12-30 11:51:28,652 basehttp "GET /oidc/callback/?error=login_required&state=e0qV932aMK7RJWovEGjAvxk8305Nqzqz HTTP/1.0" 302 0
+INFO 2025-12-30 11:51:28,684 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-30 11:51:28,684 basehttp "GET / HTTP/1.0" 200 6409
+WARNING 2025-12-30 11:51:28,940 log Not Found: /favicon.ico
+WARNING 2025-12-30 11:51:28,940 log Not Found: /favicon.ico
+WARNING 2025-12-30 11:51:28,940 basehttp "GET /favicon.ico HTTP/1.0" 404 10207
+WARNING 2025-12-30 11:51:28,940 basehttp "GET /favicon.ico HTTP/1.0" 404 10207
+INFO 2025-12-30 11:51:38,685 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-30 11:51:38,685 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-30 11:51:38,724 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+INFO 2025-12-30 11:51:38,724 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+WARNING 2025-12-30 11:51:42,810 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-30 11:51:42,810 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'registros_can_view', 'no_facturado_can_edit', 'no_facturado_can_create', 'facturado_can_create', 'facturado_can_deliver', 'no_facturado_can_deliver', 'facturado_can_edit'}
+WARNING 2025-12-30 11:51:42,816 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-30 11:51:42,836 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-30 11:51:42,854 basehttp "GET /oidc/callback/?state=xmN7KT6voqL6QmBGGTkdNcpSRtPoeqx2&session_state=d5ee418f-db9e-49c5-a74b-3ce66f5e0418&code=e059bbf4-8ba1-42fe-8ec8-5d74fee8a7c0.d5ee418f-db9e-49c5-a74b-3ce66f5e0418.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-30 11:51:42,854 basehttp "GET /oidc/callback/?state=xmN7KT6voqL6QmBGGTkdNcpSRtPoeqx2&session_state=d5ee418f-db9e-49c5-a74b-3ce66f5e0418&code=e059bbf4-8ba1-42fe-8ec8-5d74fee8a7c0.d5ee418f-db9e-49c5-a74b-3ce66f5e0418.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-30 11:51:42,890 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-30 11:51:42,890 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-30 11:56:11,075 basehttp "GET /admin/ HTTP/1.0" 200 36458
+INFO 2025-12-30 11:56:11,075 basehttp "GET /admin/ HTTP/1.0" 200 36458
+INFO 2025-12-30 12:53:16,216 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 12:53:16,216 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 12:53:23,032 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-30 12:53:23,032 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-12-30 12:53:23,366 basehttp "GET /oidc/callback/?error=login_required&state=uq6d6tZZCAFMBuj130HSBGn6sFnktPiK HTTP/1.0" 302 0
+INFO 2025-12-30 12:53:23,366 basehttp "GET /oidc/callback/?error=login_required&state=uq6d6tZZCAFMBuj130HSBGn6sFnktPiK HTTP/1.0" 302 0
+INFO 2025-12-30 12:53:23,385 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2025-12-30 12:53:23,385 basehttp "GET / HTTP/1.0" 200 6409
+WARNING 2025-12-30 12:53:23,670 log Not Found: /favicon.ico
+WARNING 2025-12-30 12:53:23,670 log Not Found: /favicon.ico
+WARNING 2025-12-30 12:53:23,670 basehttp "GET /favicon.ico HTTP/1.0" 404 10207
+WARNING 2025-12-30 12:53:23,670 basehttp "GET /favicon.ico HTTP/1.0" 404 10207
+INFO 2025-12-30 12:53:31,889 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-30 12:53:31,889 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2025-12-30 12:53:31,916 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+INFO 2025-12-30 12:53:31,916 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+WARNING 2025-12-30 12:53:35,760 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-30 12:53:35,761 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_deliver', 'no_facturado_can_edit', 'facturado_can_deliver', 'registros_can_view', 'no_facturado_can_create', 'facturado_can_edit', 'facturado_can_create'}
+WARNING 2025-12-30 12:53:35,764 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-30 12:53:35,770 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-30 12:53:35,781 basehttp "GET /oidc/callback/?state=wqvwx1cpJY8goR3KF9w4Um0bxuFwCaH6&session_state=e76f0d1f-a879-403e-a58a-21deddfa4ada&code=7c6eb4fb-3c4a-4e29-9e02-23fbca5c7bc7.e76f0d1f-a879-403e-a58a-21deddfa4ada.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-30 12:53:35,781 basehttp "GET /oidc/callback/?state=wqvwx1cpJY8goR3KF9w4Um0bxuFwCaH6&session_state=e76f0d1f-a879-403e-a58a-21deddfa4ada&code=7c6eb4fb-3c4a-4e29-9e02-23fbca5c7bc7.e76f0d1f-a879-403e-a58a-21deddfa4ada.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-30 12:53:35,802 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-30 12:53:35,802 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-30 12:56:01,957 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-30 12:56:01,957 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2025-12-30 12:56:04,959 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2025-12-30 12:56:04,959 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2025-12-30 12:56:05,059 basehttp "GET /admin/ HTTP/1.0" 200 36473
+INFO 2025-12-30 12:56:05,059 basehttp "GET /admin/ HTTP/1.0" 200 36473
+INFO 2025-12-30 12:56:10,276 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-30 12:56:10,276 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-30 12:56:10,328 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 12:56:10,328 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 12:56:11,612 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/3/change/ HTTP/1.0" 200 32892
+INFO 2025-12-30 12:56:11,612 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/3/change/ HTTP/1.0" 200 32892
+INFO 2025-12-30 12:56:11,642 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 12:56:11,642 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 12:56:15,380 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-30 12:56:15,380 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-30 12:56:19,221 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/2/change/ HTTP/1.0" 200 32900
+INFO 2025-12-30 12:56:19,221 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/2/change/ HTTP/1.0" 200 32900
+INFO 2025-12-30 12:56:19,251 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 12:56:19,251 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 12:56:24,331 basehttp "POST /admin/vsm_app/permiso_empresa_almacen/2/change/ HTTP/1.0" 302 0
+INFO 2025-12-30 12:56:24,331 basehttp "POST /admin/vsm_app/permiso_empresa_almacen/2/change/ HTTP/1.0" 302 0
+INFO 2025-12-30 12:56:24,362 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 30205
+INFO 2025-12-30 12:56:24,362 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 30205
+INFO 2025-12-30 12:56:24,392 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 12:56:24,392 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 13:02:25,944 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/3/change/ HTTP/1.0" 200 32892
+INFO 2025-12-30 13:02:25,944 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/3/change/ HTTP/1.0" 200 32892
+INFO 2025-12-30 13:02:25,978 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 13:02:25,978 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 13:08:52,401 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-30 13:08:52,401 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-30 13:08:54,256 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 13:08:54,256 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 13:10:04,831 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-30 13:10:04,831 autoreload /app/vsm_app/models.py changed, reloading.
+INFO 2025-12-30 13:10:06,543 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 13:10:06,543 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 13:29:37,543 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 302 0
+INFO 2025-12-30 13:29:37,543 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 302 0
+WARNING 2025-12-30 13:29:37,881 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-30 13:29:37,881 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_create', 'no_facturado_can_edit', 'facturado_can_create', 'registros_can_view', 'no_facturado_can_deliver', 'facturado_can_deliver', 'facturado_can_edit'}
+WARNING 2025-12-30 13:29:37,882 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-30 13:29:37,884 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-30 13:29:37,887 basehttp "GET /oidc/callback/?state=iOU39xbyS7AWKN0V2ZsEymkErw7vVxJ5&session_state=e76f0d1f-a879-403e-a58a-21deddfa4ada&code=796db1d7-adad-41b8-b495-e8678292f7d4.e76f0d1f-a879-403e-a58a-21deddfa4ada.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-30 13:29:37,887 basehttp "GET /oidc/callback/?state=iOU39xbyS7AWKN0V2ZsEymkErw7vVxJ5&session_state=e76f0d1f-a879-403e-a58a-21deddfa4ada&code=796db1d7-adad-41b8-b495-e8678292f7d4.e76f0d1f-a879-403e-a58a-21deddfa4ada.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-30 13:29:37,965 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-30 13:29:37,965 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-30 13:29:38,007 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 13:29:38,007 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 13:30:14,146 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/3/change/ HTTP/1.0" 200 32892
+INFO 2025-12-30 13:30:14,146 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/3/change/ HTTP/1.0" 200 32892
+INFO 2025-12-30 13:30:14,179 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 13:30:14,179 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 13:34:51,500 basehttp "GET /nuevo_vsm HTTP/1.0" 200 29335
+INFO 2025-12-30 13:34:51,500 basehttp "GET /nuevo_vsm HTTP/1.0" 200 29335
+INFO 2025-12-30 13:34:51,733 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 108
+INFO 2025-12-30 13:34:51,733 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 108
+INFO 2025-12-30 13:46:54,807 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/3/change/ HTTP/1.0" 302 0
+INFO 2025-12-30 13:46:54,807 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/3/change/ HTTP/1.0" 302 0
+WARNING 2025-12-30 13:46:54,999 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-30 13:46:54,999 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_create', 'no_facturado_can_edit', 'facturado_can_create', 'registros_can_view', 'no_facturado_can_deliver', 'facturado_can_deliver', 'facturado_can_edit'}
+WARNING 2025-12-30 13:46:55,000 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-30 13:46:55,002 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-30 13:46:55,006 basehttp "GET /oidc/callback/?state=SDfAIaIN9ikieApyuTXvJeRIVMgAbBtD&session_state=e76f0d1f-a879-403e-a58a-21deddfa4ada&code=df4e21b9-82fa-45a6-bf77-b38b1d9998c7.e76f0d1f-a879-403e-a58a-21deddfa4ada.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-30 13:46:55,006 basehttp "GET /oidc/callback/?state=SDfAIaIN9ikieApyuTXvJeRIVMgAbBtD&session_state=e76f0d1f-a879-403e-a58a-21deddfa4ada&code=df4e21b9-82fa-45a6-bf77-b38b1d9998c7.e76f0d1f-a879-403e-a58a-21deddfa4ada.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-30 13:46:55,046 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/3/change/ HTTP/1.0" 200 32892
+INFO 2025-12-30 13:46:55,046 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/3/change/ HTTP/1.0" 200 32892
+INFO 2025-12-30 13:46:55,082 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 13:46:55,082 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 13:46:56,167 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-30 13:46:56,167 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-30 13:47:01,833 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/2/change/ HTTP/1.0" 200 32909
+INFO 2025-12-30 13:47:01,833 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/2/change/ HTTP/1.0" 200 32909
+INFO 2025-12-30 13:47:01,862 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 13:47:01,862 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 14:39:12,793 basehttp "GET /home HTTP/1.0" 302 0
+INFO 2025-12-30 14:39:12,793 basehttp "GET /home HTTP/1.0" 302 0
+WARNING 2025-12-30 14:39:13,562 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-30 14:39:13,562 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_create', 'no_facturado_can_edit', 'facturado_can_create', 'registros_can_view', 'no_facturado_can_deliver', 'facturado_can_deliver', 'facturado_can_edit'}
+WARNING 2025-12-30 14:39:13,565 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-30 14:39:13,568 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-30 14:39:13,572 basehttp "GET /oidc/callback/?state=di8N48IQr6tbaAWH1GavXR8pFojgK26B&session_state=e76f0d1f-a879-403e-a58a-21deddfa4ada&code=804b1b50-ac24-4b01-8ca0-d559de240964.e76f0d1f-a879-403e-a58a-21deddfa4ada.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-30 14:39:13,572 basehttp "GET /oidc/callback/?state=di8N48IQr6tbaAWH1GavXR8pFojgK26B&session_state=e76f0d1f-a879-403e-a58a-21deddfa4ada&code=804b1b50-ac24-4b01-8ca0-d559de240964.e76f0d1f-a879-403e-a58a-21deddfa4ada.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-30 14:39:13,605 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-30 14:39:13,605 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2025-12-30 14:40:13,540 basehttp "POST /admin/vsm_app/permiso_empresa_almacen/2/change/ HTTP/1.0" 302 0
+INFO 2025-12-30 14:40:13,540 basehttp "POST /admin/vsm_app/permiso_empresa_almacen/2/change/ HTTP/1.0" 302 0
+INFO 2025-12-30 14:40:13,577 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 30205
+INFO 2025-12-30 14:40:13,577 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 30205
+INFO 2025-12-30 14:40:13,628 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 14:40:13,628 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 15:43:14,877 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+INFO 2025-12-30 15:43:14,877 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+WARNING 2025-12-30 15:43:15,565 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-30 15:43:15,565 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_create', 'no_facturado_can_edit', 'facturado_can_create', 'registros_can_view', 'no_facturado_can_deliver', 'facturado_can_deliver', 'facturado_can_edit'}
+WARNING 2025-12-30 15:43:15,567 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-30 15:43:15,570 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-30 15:43:15,574 basehttp "GET /oidc/callback/?state=LykDQ8seROgrEFtPmFxDH87faeTq8bpw&session_state=e76f0d1f-a879-403e-a58a-21deddfa4ada&code=59fcd07b-8faf-430a-8733-d420505ac002.e76f0d1f-a879-403e-a58a-21deddfa4ada.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-30 15:43:15,574 basehttp "GET /oidc/callback/?state=LykDQ8seROgrEFtPmFxDH87faeTq8bpw&session_state=e76f0d1f-a879-403e-a58a-21deddfa4ada&code=59fcd07b-8faf-430a-8733-d420505ac002.e76f0d1f-a879-403e-a58a-21deddfa4ada.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-30 15:43:15,600 basehttp "GET /nuevo_vsm HTTP/1.0" 200 29335
+INFO 2025-12-30 15:43:15,600 basehttp "GET /nuevo_vsm HTTP/1.0" 200 29335
+INFO 2025-12-30 15:43:15,885 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 108
+INFO 2025-12-30 15:43:15,885 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 108
+INFO 2025-12-30 15:43:19,561 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 69616
+INFO 2025-12-30 15:43:19,561 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 69616
+INFO 2025-12-30 16:05:33,442 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 16:05:33,442 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 16:05:35,564 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 16:05:35,564 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 16:06:53,613 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+INFO 2025-12-30 16:06:53,613 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+WARNING 2025-12-30 16:06:54,394 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-30 16:06:54,394 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_create', 'facturado_can_create', 'registros_can_view', 'no_facturado_can_edit', 'no_facturado_can_deliver', 'facturado_can_deliver', 'facturado_can_edit'}
+WARNING 2025-12-30 16:06:54,395 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-30 16:06:54,398 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-30 16:06:54,412 basehttp "GET /oidc/callback/?state=2euAkjbC0lBEmlAwPWSGzEoLoLprBFBD&session_state=e76f0d1f-a879-403e-a58a-21deddfa4ada&code=378e8adc-28e6-4b40-8d9d-09f1c563bbce.e76f0d1f-a879-403e-a58a-21deddfa4ada.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-30 16:06:54,412 basehttp "GET /oidc/callback/?state=2euAkjbC0lBEmlAwPWSGzEoLoLprBFBD&session_state=e76f0d1f-a879-403e-a58a-21deddfa4ada&code=378e8adc-28e6-4b40-8d9d-09f1c563bbce.e76f0d1f-a879-403e-a58a-21deddfa4ada.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-30 16:06:54,456 basehttp "GET /nuevo_vsm HTTP/1.0" 200 29335
+INFO 2025-12-30 16:06:54,456 basehttp "GET /nuevo_vsm HTTP/1.0" 200 29335
+ERROR 2025-12-30 16:06:54,695 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 651, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 16:06:54,695 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 651, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 16:06:54,699 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97446
+ERROR 2025-12-30 16:06:54,699 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97446
+INFO 2025-12-30 16:06:57,811 basehttp "GET /nuevo_vsm HTTP/1.0" 200 29335
+INFO 2025-12-30 16:06:57,811 basehttp "GET /nuevo_vsm HTTP/1.0" 200 29335
+ERROR 2025-12-30 16:06:57,958 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 651, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 16:06:57,958 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 651, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 16:06:57,959 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97446
+ERROR 2025-12-30 16:06:57,959 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97446
+INFO 2025-12-30 16:07:00,328 basehttp "GET /nuevo_vsm HTTP/1.0" 200 29335
+INFO 2025-12-30 16:07:00,328 basehttp "GET /nuevo_vsm HTTP/1.0" 200 29335
+ERROR 2025-12-30 16:07:00,470 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 651, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 16:07:00,470 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 651, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 16:07:00,472 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97446
+ERROR 2025-12-30 16:07:00,472 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97446
+INFO 2025-12-30 16:07:06,616 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 16:07:06,616 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 16:07:08,555 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 16:07:08,555 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 16:07:11,176 basehttp "GET /nuevo_vsm HTTP/1.0" 200 29335
+INFO 2025-12-30 16:07:11,176 basehttp "GET /nuevo_vsm HTTP/1.0" 200 29335
+INFO 2025-12-30 16:07:11,350 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 17
+INFO 2025-12-30 16:07:11,350 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 17
+INFO 2025-12-30 16:07:11,490 basehttp "GET /nuevo_vsm HTTP/1.0" 200 29335
+INFO 2025-12-30 16:07:11,490 basehttp "GET /nuevo_vsm HTTP/1.0" 200 29335
+INFO 2025-12-30 16:07:11,612 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 17
+INFO 2025-12-30 16:07:11,612 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 17
+INFO 2025-12-30 16:07:28,396 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 16:07:28,396 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 16:07:29,646 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 16:07:29,646 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 16:07:40,118 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-30 16:07:40,118 basehttp "GET /admin/vsm_app/permiso_empresa_almacen/ HTTP/1.0" 200 29430
+INFO 2025-12-30 16:07:40,206 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 16:07:40,206 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 16:07:59,131 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 16:07:59,131 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 16:08:00,347 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 16:08:00,347 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 16:08:02,296 basehttp "GET /nuevo_vsm HTTP/1.0" 200 29335
+INFO 2025-12-30 16:08:02,296 basehttp "GET /nuevo_vsm HTTP/1.0" 200 29335
+INFO 2025-12-30 16:08:02,507 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 108
+INFO 2025-12-30 16:08:02,507 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 108
+INFO 2025-12-30 16:08:13,527 basehttp "GET /admin/vsm_app/usuarios/ HTTP/1.0" 200 34575
+INFO 2025-12-30 16:08:13,527 basehttp "GET /admin/vsm_app/usuarios/ HTTP/1.0" 200 34575
+INFO 2025-12-30 16:08:13,566 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 16:08:13,566 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 16:08:15,786 basehttp "GET /admin/vsm_app/usuarios/3/change/ HTTP/1.0" 200 256472
+INFO 2025-12-30 16:08:15,786 basehttp "GET /admin/vsm_app/usuarios/3/change/ HTTP/1.0" 200 256472
+INFO 2025-12-30 16:08:15,825 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 16:08:15,825 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 16:08:15,990 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.0" 200 677
+INFO 2025-12-30 16:08:15,990 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.0" 200 677
+INFO 2025-12-30 16:08:15,991 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.0" 200 1086
+INFO 2025-12-30 16:08:15,991 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.0" 200 1086
+INFO 2025-12-30 16:08:20,700 basehttp "POST /admin/vsm_app/usuarios/3/change/ HTTP/1.0" 302 0
+INFO 2025-12-30 16:08:20,700 basehttp "POST /admin/vsm_app/usuarios/3/change/ HTTP/1.0" 302 0
+INFO 2025-12-30 16:08:20,737 basehttp "GET /admin/vsm_app/usuarios/ HTTP/1.0" 200 35314
+INFO 2025-12-30 16:08:20,737 basehttp "GET /admin/vsm_app/usuarios/ HTTP/1.0" 200 35314
+INFO 2025-12-30 16:08:20,800 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 16:08:20,800 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 16:08:21,728 basehttp "GET /nuevo_vsm HTTP/1.0" 200 29422
+INFO 2025-12-30 16:08:21,728 basehttp "GET /nuevo_vsm HTTP/1.0" 200 29422
+INFO 2025-12-30 16:08:21,862 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 108
+INFO 2025-12-30 16:08:21,862 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 108
+INFO 2025-12-30 16:08:23,690 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 199
+INFO 2025-12-30 16:08:23,690 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 199
+INFO 2025-12-30 16:16:42,768 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 16:16:42,768 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 16:16:44,836 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 16:16:44,836 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 16:18:17,623 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 16:18:17,623 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 16:18:19,337 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 16:18:19,337 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 16:18:30,966 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 16:18:30,966 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 16:18:32,245 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 16:18:32,245 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 16:28:50,914 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 16:28:50,914 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 16:28:52,884 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 16:28:52,884 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 18:47:09,542 basehttp "GET /admin/vsm_app/empleados/ HTTP/1.0" 302 0
+INFO 2025-12-30 18:47:09,542 basehttp "GET /admin/vsm_app/empleados/ HTTP/1.0" 302 0
+WARNING 2025-12-30 18:47:10,187 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-30 18:47:10,187 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_edit', 'no_facturado_can_create', 'no_facturado_can_deliver', 'facturado_can_edit', 'facturado_can_deliver', 'registros_can_view', 'facturado_can_create'}
+WARNING 2025-12-30 18:47:10,197 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-30 18:47:10,201 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-30 18:47:10,206 basehttp "GET /oidc/callback/?state=c2OUFbQBIZelqFuy1hscwszFCqSZdEPr&session_state=e76f0d1f-a879-403e-a58a-21deddfa4ada&code=4ec0b792-9077-4f58-9f65-e2dd63937221.e76f0d1f-a879-403e-a58a-21deddfa4ada.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-30 18:47:10,206 basehttp "GET /oidc/callback/?state=c2OUFbQBIZelqFuy1hscwszFCqSZdEPr&session_state=e76f0d1f-a879-403e-a58a-21deddfa4ada&code=4ec0b792-9077-4f58-9f65-e2dd63937221.e76f0d1f-a879-403e-a58a-21deddfa4ada.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-30 18:47:10,413 basehttp "GET /admin/vsm_app/empleados/ HTTP/1.0" 200 83184
+INFO 2025-12-30 18:47:10,413 basehttp "GET /admin/vsm_app/empleados/ HTTP/1.0" 200 83184
+INFO 2025-12-30 18:47:10,465 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 18:47:10,465 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 18:47:13,104 basehttp "GET /admin/vsm_app/empleados/?o=1 HTTP/1.0" 200 86889
+INFO 2025-12-30 18:47:13,104 basehttp "GET /admin/vsm_app/empleados/?o=1 HTTP/1.0" 200 86889
+INFO 2025-12-30 18:47:13,134 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 18:47:13,134 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 18:47:23,157 basehttp "GET /admin/vsm_app/empleados/?q=gonzalo&o=1 HTTP/1.0" 200 39659
+INFO 2025-12-30 18:47:23,157 basehttp "GET /admin/vsm_app/empleados/?q=gonzalo&o=1 HTTP/1.0" 200 39659
+INFO 2025-12-30 18:47:23,194 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 18:47:23,194 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 18:47:29,903 basehttp "GET /admin/vsm_app/empleados/15423/change/?_changelist_filters=q%3Dgonzalo%26o%3D1 HTTP/1.0" 200 44316
+INFO 2025-12-30 18:47:29,903 basehttp "GET /admin/vsm_app/empleados/15423/change/?_changelist_filters=q%3Dgonzalo%26o%3D1 HTTP/1.0" 200 44316
+INFO 2025-12-30 18:47:29,931 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 18:47:29,931 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2025-12-30 19:06:58,181 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 19:06:58,181 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 19:07:00,249 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 19:07:00,249 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 19:07:09,020 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+INFO 2025-12-30 19:07:09,020 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+WARNING 2025-12-30 19:07:09,366 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-30 19:07:09,366 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_create', 'facturado_can_edit', 'facturado_can_deliver', 'no_facturado_can_edit', 'registros_can_view', 'no_facturado_can_deliver', 'no_facturado_can_create'}
+WARNING 2025-12-30 19:07:09,368 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-30 19:07:09,369 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-30 19:07:09,373 basehttp "GET /oidc/callback/?state=5BUdqtaTQpH6OhnSW5krre0gn6H8PYIs&session_state=e76f0d1f-a879-403e-a58a-21deddfa4ada&code=b6eb4295-c8c3-4d4a-8ad8-c76580daf774.e76f0d1f-a879-403e-a58a-21deddfa4ada.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-30 19:07:09,373 basehttp "GET /oidc/callback/?state=5BUdqtaTQpH6OhnSW5krre0gn6H8PYIs&session_state=e76f0d1f-a879-403e-a58a-21deddfa4ada&code=b6eb4295-c8c3-4d4a-8ad8-c76580daf774.e76f0d1f-a879-403e-a58a-21deddfa4ada.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-30 19:07:09,408 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2025-12-30 19:07:09,408 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+ERROR 2025-12-30 19:07:09,748 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 657, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 19:07:09,748 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 657, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 19:07:09,750 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97391
+ERROR 2025-12-30 19:07:09,750 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97391
+ERROR 2025-12-30 19:07:11,556 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 657, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 19:07:11,556 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 657, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 19:07:11,557 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 500 100766
+ERROR 2025-12-30 19:07:11,557 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 500 100766
+INFO 2025-12-30 19:07:14,717 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2025-12-30 19:07:14,717 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+ERROR 2025-12-30 19:07:14,867 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 657, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 19:07:14,867 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 657, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 19:07:14,868 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97391
+ERROR 2025-12-30 19:07:14,868 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97391
+INFO 2025-12-30 19:07:15,266 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2025-12-30 19:07:15,266 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+ERROR 2025-12-30 19:07:15,397 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 657, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 19:07:15,397 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 657, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 19:07:15,398 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97391
+ERROR 2025-12-30 19:07:15,398 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97391
+INFO 2025-12-30 19:07:15,749 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2025-12-30 19:07:15,749 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+ERROR 2025-12-30 19:07:15,874 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 657, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 19:07:15,874 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 657, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 19:07:15,875 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97391
+ERROR 2025-12-30 19:07:15,875 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97391
+INFO 2025-12-30 19:07:16,191 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2025-12-30 19:07:16,191 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+ERROR 2025-12-30 19:07:16,313 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 657, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 19:07:16,313 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 657, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 19:07:16,316 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97391
+ERROR 2025-12-30 19:07:16,316 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97391
+INFO 2025-12-30 19:07:16,370 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2025-12-30 19:07:16,370 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+ERROR 2025-12-30 19:07:16,492 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 657, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 19:07:16,492 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 657, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 19:07:16,494 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97391
+ERROR 2025-12-30 19:07:16,494 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97391
+INFO 2025-12-30 19:07:16,554 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2025-12-30 19:07:16,554 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+ERROR 2025-12-30 19:07:16,672 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 657, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 19:07:16,672 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 657, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 19:07:16,674 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97391
+ERROR 2025-12-30 19:07:16,674 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97391
+INFO 2025-12-30 19:07:16,749 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2025-12-30 19:07:16,749 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+ERROR 2025-12-30 19:07:16,883 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 657, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 19:07:16,883 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 657, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 19:07:16,885 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97391
+ERROR 2025-12-30 19:07:16,885 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97391
+INFO 2025-12-30 19:08:36,183 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 19:08:36,183 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 19:08:38,004 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 19:08:38,004 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 19:10:53,993 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2025-12-30 19:10:53,993 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+ERROR 2025-12-30 19:10:54,285 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 654, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 19:10:54,285 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 654, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 19:10:54,286 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97391
+ERROR 2025-12-30 19:10:54,286 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 500 97391
+ERROR 2025-12-30 19:10:57,728 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 654, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 19:10:57,728 log Internal Server Error: /ajax/almacenes_por_empresa/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 654, in obtener_almacenes_por_empresa
+    return JsonResponse({'almacenes': results})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/http/response.py", line 751, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 114, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ManyRelatedManager is not JSON serializable
+ERROR 2025-12-30 19:10:57,729 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 500 100766
+ERROR 2025-12-30 19:10:57,729 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 500 100766
+INFO 2025-12-30 19:12:15,092 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 19:12:15,092 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 19:12:16,967 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 19:12:16,967 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 19:12:19,499 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2025-12-30 19:12:19,499 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2025-12-30 19:12:19,697 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 17
+INFO 2025-12-30 19:12:19,697 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 17
+INFO 2025-12-30 19:12:23,003 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 17
+INFO 2025-12-30 19:12:23,003 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 17
+INFO 2025-12-30 19:13:28,306 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 19:13:28,306 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2025-12-30 19:13:30,286 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 19:13:30,286 autoreload Watching for file changes with StatReloader
+INFO 2025-12-30 19:13:32,804 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2025-12-30 19:13:32,804 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2025-12-30 19:13:33,042 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2025-12-30 19:13:33,042 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2025-12-30 19:13:35,176 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 315
+INFO 2025-12-30 19:13:35,176 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 315
+INFO 2025-12-30 19:29:44,103 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+INFO 2025-12-30 19:29:44,103 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+WARNING 2025-12-30 19:29:44,342 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2025-12-30 19:29:44,343 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_edit', 'facturado_can_deliver', 'no_facturado_can_create', 'registros_can_view', 'facturado_can_create', 'no_facturado_can_deliver', 'no_facturado_can_edit'}
+WARNING 2025-12-30 19:29:44,344 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2025-12-30 19:29:44,346 backends Permisos asignados con éxito a user.permisos.
+INFO 2025-12-30 19:29:44,350 basehttp "GET /oidc/callback/?state=UCiucAyj9a99KetXeITDvzCX3zAqlynW&session_state=e76f0d1f-a879-403e-a58a-21deddfa4ada&code=be8ea700-42d4-4a3c-b954-d2d590153fb5.e76f0d1f-a879-403e-a58a-21deddfa4ada.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-30 19:29:44,350 basehttp "GET /oidc/callback/?state=UCiucAyj9a99KetXeITDvzCX3zAqlynW&session_state=e76f0d1f-a879-403e-a58a-21deddfa4ada&code=be8ea700-42d4-4a3c-b954-d2d590153fb5.e76f0d1f-a879-403e-a58a-21deddfa4ada.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2025-12-30 19:29:44,377 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2025-12-30 19:29:44,377 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2025-12-30 19:29:44,610 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2025-12-30 19:29:44,610 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2025-12-30 19:29:48,522 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 315
+INFO 2025-12-30 19:29:48,522 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 315
+INFO 2025-12-30 19:29:59,959 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 69616
+INFO 2025-12-30 19:29:59,959 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 69616
+INFO 2025-12-30 19:30:03,983 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS&almacen=G001 HTTP/1.0" 200 88
+INFO 2025-12-30 19:30:03,983 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS&almacen=G001 HTTP/1.0" 200 88
+INFO 2025-12-30 19:30:08,318 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=EPP&almacen=G001 HTTP/1.0" 200 88
+INFO 2025-12-30 19:30:08,318 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=EPP&almacen=G001 HTTP/1.0" 200 88
+INFO 2025-12-30 19:30:10,897 basehttp "GET /ajax/empleados?centro_id=5 HTTP/1.0" 200 69616
+INFO 2025-12-30 19:30:10,897 basehttp "GET /ajax/empleados?centro_id=5 HTTP/1.0" 200 69616
+INFO 2025-12-30 19:30:15,884 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=EPP&almacen=G001 HTTP/1.0" 200 88
+INFO 2025-12-30 19:30:15,884 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=EPP&almacen=G001 HTTP/1.0" 200 88
+INFO 2025-12-30 19:30:18,048 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=INSUMOS&almacen=G001 HTTP/1.0" 200 88
+INFO 2025-12-30 19:30:18,048 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=INSUMOS&almacen=G001 HTTP/1.0" 200 88
+INFO 2025-12-30 19:30:19,610 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=INSUMOS&almacen=G001 HTTP/1.0" 200 88
+INFO 2025-12-30 19:30:19,610 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=INSUMOS&almacen=G001 HTTP/1.0" 200 88
+INFO 2025-12-30 19:34:12,809 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=INSUMOS&almacen=G001 HTTP/1.0" 200 88
+INFO 2025-12-30 19:34:12,809 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=INSUMOS&almacen=G001 HTTP/1.0" 200 88
+INFO 2025-12-30 19:34:16,283 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=EPP&almacen=G001 HTTP/1.0" 200 1834
+INFO 2025-12-30 19:34:16,283 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=EPP&almacen=G001 HTTP/1.0" 200 1834
+ERROR 2025-12-30 19:34:19,358 log Internal Server Error: /nuevo_vsm
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2128, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'G001'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/decorator.py", line 37, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 128, in nuevo_vsm
+    vsm = models.VSM.objects.create(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 902, in save
+    self.save_base(
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1881, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1806, in as_sql
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1741, in prepare_value
+    return field.get_db_prep_save(value, connection=self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/fields/related.py", line 1190, in get_db_prep_save
+    return self.target_field.get_db_prep_save(value, connection=connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 1012, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2820, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'G001'.
+ERROR 2025-12-30 19:34:19,358 log Internal Server Error: /nuevo_vsm
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2128, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'G001'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/decorator.py", line 37, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 128, in nuevo_vsm
+    vsm = models.VSM.objects.create(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 902, in save
+    self.save_base(
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1881, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1806, in as_sql
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1741, in prepare_value
+    return field.get_db_prep_save(value, connection=self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/fields/related.py", line 1190, in get_db_prep_save
+    return self.target_field.get_db_prep_save(value, connection=connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 1012, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2820, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'G001'.
+ERROR 2025-12-30 19:34:19,361 basehttp "POST /nuevo_vsm HTTP/1.0" 500 171001
+ERROR 2025-12-30 19:34:19,361 basehttp "POST /nuevo_vsm HTTP/1.0" 500 171001
+INFO 2026-01-02 11:22:44,335 autoreload Watching for file changes with StatReloader
+INFO 2026-01-02 11:22:44,335 autoreload Watching for file changes with StatReloader
+INFO 2026-01-02 11:27:00,209 basehttp "GET / HTTP/1.0" 302 0
+INFO 2026-01-02 11:27:00,209 basehttp "GET / HTTP/1.0" 302 0
+INFO 2026-01-02 11:27:01,425 basehttp "GET / HTTP/1.0" 302 0
+INFO 2026-01-02 11:27:01,425 basehttp "GET / HTTP/1.0" 302 0
+INFO 2026-01-02 11:27:01,625 basehttp "GET /oidc/callback/?error=login_required&state=2w2YuO2YFhXOxLCcBPjAFWTjkPgblGfU HTTP/1.0" 302 0
+INFO 2026-01-02 11:27:01,625 basehttp "GET /oidc/callback/?error=login_required&state=2w2YuO2YFhXOxLCcBPjAFWTjkPgblGfU HTTP/1.0" 302 0
+INFO 2026-01-02 11:27:01,646 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2026-01-02 11:27:01,646 basehttp "GET / HTTP/1.0" 200 6409
+INFO 2026-01-02 11:27:01,746 basehttp "GET /static/css/output.css HTTP/1.0" 304 0
+INFO 2026-01-02 11:27:01,746 basehttp "GET /static/css/output.css HTTP/1.0" 304 0
+INFO 2026-01-02 11:27:01,757 basehttp "GET /static/js/select2.js HTTP/1.0" 304 0
+INFO 2026-01-02 11:27:01,759 basehttp "GET /static/js/jquery.js HTTP/1.0" 304 0
+INFO 2026-01-02 11:27:01,757 basehttp "GET /static/js/select2.js HTTP/1.0" 304 0
+INFO 2026-01-02 11:27:01,759 basehttp "GET /static/js/jquery.js HTTP/1.0" 304 0
+INFO 2026-01-02 11:27:01,761 basehttp "GET /static/js/tailwind.js HTTP/1.0" 304 0
+INFO 2026-01-02 11:27:01,762 basehttp "GET /static/js/on-scan.js HTTP/1.0" 304 0
+INFO 2026-01-02 11:27:01,762 basehttp "GET /static/images/logo.svg HTTP/1.0" 304 0
+INFO 2026-01-02 11:27:01,761 basehttp "GET /static/js/tailwind.js HTTP/1.0" 304 0
+INFO 2026-01-02 11:27:01,762 basehttp "GET /static/js/on-scan.js HTTP/1.0" 304 0
+INFO 2026-01-02 11:27:01,762 basehttp "GET /static/images/logo.svg HTTP/1.0" 304 0
+WARNING 2026-01-02 11:27:01,994 log Not Found: /favicon.ico
+WARNING 2026-01-02 11:27:01,994 log Not Found: /favicon.ico
+WARNING 2026-01-02 11:27:01,995 basehttp "GET /favicon.ico HTTP/1.0" 404 10207
+WARNING 2026-01-02 11:27:01,995 basehttp "GET /favicon.ico HTTP/1.0" 404 10207
+INFO 2026-01-02 11:27:03,798 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2026-01-02 11:27:03,798 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2026-01-02 11:27:03,818 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+INFO 2026-01-02 11:27:03,818 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+WARNING 2026-01-02 11:27:09,691 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2026-01-02 11:27:09,691 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_create', 'registros_can_view', 'no_facturado_can_edit', 'facturado_can_create', 'no_facturado_can_deliver', 'facturado_can_edit', 'facturado_can_deliver'}
+WARNING 2026-01-02 11:27:09,697 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2026-01-02 11:27:09,712 backends Permisos asignados con éxito a user.permisos.
+INFO 2026-01-02 11:27:09,728 basehttp "GET /oidc/callback/?state=JOSUoOJuQ37x1zHQxhaapWng7W0An7Wx&session_state=ee7cc5bd-7911-4b61-bdae-a813cc9c359a&code=5ac216ac-3a51-426e-b039-d48cc728ed42.ee7cc5bd-7911-4b61-bdae-a813cc9c359a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-02 11:27:09,728 basehttp "GET /oidc/callback/?state=JOSUoOJuQ37x1zHQxhaapWng7W0An7Wx&session_state=ee7cc5bd-7911-4b61-bdae-a813cc9c359a&code=5ac216ac-3a51-426e-b039-d48cc728ed42.ee7cc5bd-7911-4b61-bdae-a813cc9c359a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-02 11:27:09,751 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2026-01-02 11:27:09,751 basehttp "GET /home HTTP/1.0" 200 7812
+INFO 2026-01-02 11:32:25,114 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2026-01-02 11:32:25,114 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2026-01-02 11:32:25,451 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2026-01-02 11:32:25,451 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2026-01-02 11:32:27,882 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 315
+INFO 2026-01-02 11:32:27,882 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 315
+INFO 2026-01-02 11:38:38,957 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-02 11:38:38,957 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-02 11:38:40,615 autoreload Watching for file changes with StatReloader
+INFO 2026-01-02 11:38:40,615 autoreload Watching for file changes with StatReloader
+INFO 2026-01-02 11:50:17,529 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-02 11:50:17,529 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-02 11:50:19,337 autoreload Watching for file changes with StatReloader
+INFO 2026-01-02 11:50:19,337 autoreload Watching for file changes with StatReloader
+INFO 2026-01-02 11:50:25,057 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+INFO 2026-01-02 11:50:25,057 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+WARNING 2026-01-02 11:50:25,344 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2026-01-02 11:50:25,344 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_edit', 'no_facturado_can_create', 'facturado_can_create', 'facturado_can_deliver', 'no_facturado_can_deliver', 'facturado_can_edit', 'registros_can_view'}
+WARNING 2026-01-02 11:50:25,346 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2026-01-02 11:50:25,348 backends Permisos asignados con éxito a user.permisos.
+INFO 2026-01-02 11:50:25,353 basehttp "GET /oidc/callback/?state=HPFSg2lyOM4v9RCCH2euVyUdbBdABdo7&session_state=ee7cc5bd-7911-4b61-bdae-a813cc9c359a&code=2f54774f-e48b-4248-8d45-cb101ce615e9.ee7cc5bd-7911-4b61-bdae-a813cc9c359a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-02 11:50:25,353 basehttp "GET /oidc/callback/?state=HPFSg2lyOM4v9RCCH2euVyUdbBdABdo7&session_state=ee7cc5bd-7911-4b61-bdae-a813cc9c359a&code=2f54774f-e48b-4248-8d45-cb101ce615e9.ee7cc5bd-7911-4b61-bdae-a813cc9c359a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-02 11:50:25,398 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2026-01-02 11:50:25,398 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2026-01-02 11:50:25,522 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2026-01-02 11:50:25,522 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2026-01-02 12:02:18,304 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2026-01-02 12:02:18,304 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2026-01-02 12:02:18,535 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2026-01-02 12:02:18,535 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+WARNING 2026-01-02 12:06:50,766 log Forbidden: /ajax/almacenes_por_empresa/
+WARNING 2026-01-02 12:06:50,766 log Forbidden: /ajax/almacenes_por_empresa/
+WARNING 2026-01-02 12:06:50,766 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 403 296
+WARNING 2026-01-02 12:06:50,766 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 403 296
+INFO 2026-01-02 12:06:52,832 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+INFO 2026-01-02 12:06:52,832 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+WARNING 2026-01-02 12:06:53,066 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2026-01-02 12:06:53,066 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_edit', 'no_facturado_can_create', 'facturado_can_create', 'facturado_can_deliver', 'no_facturado_can_deliver', 'facturado_can_edit', 'registros_can_view'}
+WARNING 2026-01-02 12:06:53,067 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2026-01-02 12:06:53,070 backends Permisos asignados con éxito a user.permisos.
+INFO 2026-01-02 12:06:53,074 basehttp "GET /oidc/callback/?state=SWUsoaikC3Kz52Zf2XPwgplQFktwWfL3&session_state=ee7cc5bd-7911-4b61-bdae-a813cc9c359a&code=aaf1c1ae-6262-41a6-9578-720f415c526c.ee7cc5bd-7911-4b61-bdae-a813cc9c359a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-02 12:06:53,074 basehttp "GET /oidc/callback/?state=SWUsoaikC3Kz52Zf2XPwgplQFktwWfL3&session_state=ee7cc5bd-7911-4b61-bdae-a813cc9c359a&code=aaf1c1ae-6262-41a6-9578-720f415c526c.ee7cc5bd-7911-4b61-bdae-a813cc9c359a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-02 12:06:53,094 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2026-01-02 12:06:53,094 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2026-01-02 12:06:53,296 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2026-01-02 12:06:53,296 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2026-01-02 12:06:54,362 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 315
+INFO 2026-01-02 12:06:54,362 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 315
+INFO 2026-01-02 12:07:10,776 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 69616
+INFO 2026-01-02 12:07:10,776 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 69616
+INFO 2026-01-02 12:10:27,340 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS&almacen=G001 HTTP/1.0" 200 88
+INFO 2026-01-02 12:10:27,340 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS&almacen=G001 HTTP/1.0" 200 88
+INFO 2026-01-02 12:46:00,223 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-02 12:46:00,223 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-02 12:46:02,279 autoreload Watching for file changes with StatReloader
+INFO 2026-01-02 12:46:02,279 autoreload Watching for file changes with StatReloader
+INFO 2026-01-02 13:02:08,422 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-02 13:02:08,422 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-02 13:02:10,199 autoreload Watching for file changes with StatReloader
+INFO 2026-01-02 13:02:10,199 autoreload Watching for file changes with StatReloader
+INFO 2026-01-02 13:05:34,075 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-02 13:05:34,075 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-02 13:05:35,770 autoreload Watching for file changes with StatReloader
+INFO 2026-01-02 13:05:35,770 autoreload Watching for file changes with StatReloader
+INFO 2026-01-02 13:05:49,068 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-02 13:05:49,068 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-02 13:05:50,331 autoreload Watching for file changes with StatReloader
+INFO 2026-01-02 13:05:50,331 autoreload Watching for file changes with StatReloader
+INFO 2026-01-02 13:07:04,972 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-02 13:07:04,972 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-02 13:07:06,665 autoreload Watching for file changes with StatReloader
+INFO 2026-01-02 13:07:06,665 autoreload Watching for file changes with StatReloader
+WARNING 2026-01-02 13:11:19,043 log Forbidden: /buscar_productos_por_centro
+WARNING 2026-01-02 13:11:19,043 log Forbidden: /buscar_productos_por_centro
+WARNING 2026-01-02 13:11:19,045 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS&almacen=G001 HTTP/1.0" 403 296
+WARNING 2026-01-02 13:11:19,045 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS&almacen=G001 HTTP/1.0" 403 296
+WARNING 2026-01-02 13:11:25,403 log Forbidden: /buscar_productos_por_centro
+WARNING 2026-01-02 13:11:25,403 log Forbidden: /buscar_productos_por_centro
+WARNING 2026-01-02 13:11:25,403 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=EPP&almacen=G001 HTTP/1.0" 403 296
+WARNING 2026-01-02 13:11:25,403 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=EPP&almacen=G001 HTTP/1.0" 403 296
+WARNING 2026-01-02 13:11:26,921 log Forbidden: /buscar_productos_por_centro
+WARNING 2026-01-02 13:11:26,921 log Forbidden: /buscar_productos_por_centro
+WARNING 2026-01-02 13:11:26,921 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=EPP&almacen=G001 HTTP/1.0" 403 296
+WARNING 2026-01-02 13:11:26,921 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=EPP&almacen=G001 HTTP/1.0" 403 296
+WARNING 2026-01-02 13:11:27,361 log Forbidden: /buscar_productos_por_centro
+WARNING 2026-01-02 13:11:27,361 log Forbidden: /buscar_productos_por_centro
+WARNING 2026-01-02 13:11:27,362 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=EPP&almacen=G001 HTTP/1.0" 403 296
+WARNING 2026-01-02 13:11:27,362 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=EPP&almacen=G001 HTTP/1.0" 403 296
+INFO 2026-01-02 13:11:28,286 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+INFO 2026-01-02 13:11:28,286 basehttp "GET /nuevo_vsm HTTP/1.0" 302 0
+WARNING 2026-01-02 13:11:28,704 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2026-01-02 13:11:28,704 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'facturado_can_create', 'no_facturado_can_deliver', 'facturado_can_edit', 'registros_can_view', 'no_facturado_can_edit', 'no_facturado_can_create', 'facturado_can_deliver'}
+WARNING 2026-01-02 13:11:28,706 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2026-01-02 13:11:28,709 backends Permisos asignados con éxito a user.permisos.
+INFO 2026-01-02 13:11:28,715 basehttp "GET /oidc/callback/?state=us9tTmE29eZAJHZ25eF9dp7c2frHH6mk&session_state=ee7cc5bd-7911-4b61-bdae-a813cc9c359a&code=6f0bbe75-eeb4-46ad-8435-0f15bfcda794.ee7cc5bd-7911-4b61-bdae-a813cc9c359a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-02 13:11:28,715 basehttp "GET /oidc/callback/?state=us9tTmE29eZAJHZ25eF9dp7c2frHH6mk&session_state=ee7cc5bd-7911-4b61-bdae-a813cc9c359a&code=6f0bbe75-eeb4-46ad-8435-0f15bfcda794.ee7cc5bd-7911-4b61-bdae-a813cc9c359a.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-02 13:11:28,757 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2026-01-02 13:11:28,757 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2026-01-02 13:11:29,049 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2026-01-02 13:11:29,049 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2026-01-02 13:11:33,041 basehttp "GET /ajax/empleados?centro_id=5 HTTP/1.0" 200 69616
+INFO 2026-01-02 13:11:33,041 basehttp "GET /ajax/empleados?centro_id=5 HTTP/1.0" 200 69616
+INFO 2026-01-02 13:11:36,056 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 315
+INFO 2026-01-02 13:11:36,056 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 315
+INFO 2026-01-02 13:11:45,032 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=INSUMOS&almacen=G001 HTTP/1.0" 200 88
+INFO 2026-01-02 13:11:45,032 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=INSUMOS&almacen=G001 HTTP/1.0" 200 88
+INFO 2026-01-02 13:11:48,402 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=EPP&almacen=G001 HTTP/1.0" 200 1834
+INFO 2026-01-02 13:11:48,402 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=EPP&almacen=G001 HTTP/1.0" 200 1834
+ERROR 2026-01-02 13:11:52,890 log Internal Server Error: /nuevo_vsm
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2128, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'G001'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/decorator.py", line 37, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 128, in nuevo_vsm
+    vsm = models.VSM.objects.create(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 902, in save
+    self.save_base(
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1881, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1806, in as_sql
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1741, in prepare_value
+    return field.get_db_prep_save(value, connection=self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/fields/related.py", line 1190, in get_db_prep_save
+    return self.target_field.get_db_prep_save(value, connection=connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 1012, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2820, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'G001'.
+ERROR 2026-01-02 13:11:52,890 log Internal Server Error: /nuevo_vsm
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2128, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'G001'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/decorator.py", line 37, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 128, in nuevo_vsm
+    vsm = models.VSM.objects.create(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 902, in save
+    self.save_base(
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1881, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1806, in as_sql
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1741, in prepare_value
+    return field.get_db_prep_save(value, connection=self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/fields/related.py", line 1190, in get_db_prep_save
+    return self.target_field.get_db_prep_save(value, connection=connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 1012, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2820, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'G001'.
+ERROR 2026-01-02 13:11:52,894 basehttp "POST /nuevo_vsm HTTP/1.0" 500 170997
+ERROR 2026-01-02 13:11:52,894 basehttp "POST /nuevo_vsm HTTP/1.0" 500 170997
+INFO 2026-01-02 13:14:59,225 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-02 13:14:59,225 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-02 13:15:01,093 autoreload Watching for file changes with StatReloader
+INFO 2026-01-02 13:15:01,093 autoreload Watching for file changes with StatReloader
+INFO 2026-01-02 13:15:03,410 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2026-01-02 13:15:03,410 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2026-01-02 13:15:03,590 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2026-01-02 13:15:03,590 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2026-01-02 13:15:03,906 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2026-01-02 13:15:03,906 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2026-01-02 13:15:04,022 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2026-01-02 13:15:04,022 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2026-01-02 13:15:06,334 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 315
+INFO 2026-01-02 13:15:06,334 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 315
+INFO 2026-01-02 13:15:13,696 basehttp "GET /ajax/empleados?centro_id=5 HTTP/1.0" 200 69616
+INFO 2026-01-02 13:15:13,696 basehttp "GET /ajax/empleados?centro_id=5 HTTP/1.0" 200 69616
+INFO 2026-01-02 13:15:19,491 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=EPP&almacen=G001 HTTP/1.0" 200 1834
+INFO 2026-01-02 13:15:19,491 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=EPP&almacen=G001 HTTP/1.0" 200 1834
+INFO 2026-01-02 13:15:22,380 basehttp "POST /nuevo_vsm HTTP/1.0" 302 0
+INFO 2026-01-02 13:15:22,380 basehttp "POST /nuevo_vsm HTTP/1.0" 302 0
+INFO 2026-01-02 13:15:22,425 basehttp "GET /home HTTP/1.0" 200 8242
+INFO 2026-01-02 13:15:22,425 basehttp "GET /home HTTP/1.0" 200 8242
+INFO 2026-01-02 13:15:31,502 basehttp "GET /admin/ HTTP/1.0" 200 36487
+INFO 2026-01-02 13:15:31,502 basehttp "GET /admin/ HTTP/1.0" 200 36487
+INFO 2026-01-02 13:15:31,516 basehttp "GET /static/admin/css/base_tailwind.css HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,516 basehttp "GET /static/admin/css/base_tailwind.css HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,517 basehttp "GET /static/admin/css/customized_tailwind.css?v=2 HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,517 basehttp "GET /static/admin/css/customized_tailwind.css?v=2 HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,519 basehttp "GET /static/admin/css/calendar.css HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,519 basehttp "GET /static/admin/css/calendar.css HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,524 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/css/all.min.css HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,524 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/css/all.min.css HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,530 basehttp "GET /static/admin/img/daisyui-logomark.svg HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,530 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,530 basehttp "GET /static/admin/img/daisyui-logomark.svg HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,530 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,531 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,531 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,538 basehttp "GET /static/admin/js/admin/dashboard.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,538 basehttp "GET /static/admin/js/theme-change.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,538 basehttp "GET /static/admin/js/admin/dashboard.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,538 basehttp "GET /static/admin/js/theme-change.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,542 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,542 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,558 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-solid-900.woff2 HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,558 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Medium.ttf HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,558 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-solid-900.woff2 HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,558 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Medium.ttf HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,559 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Regular.ttf HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,559 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Regular.ttf HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,567 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-regular-400.woff2 HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:31,567 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-regular-400.woff2 HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:34,723 basehttp "GET /admin/vsm_app/vsm/ HTTP/1.0" 200 32050
+INFO 2026-01-02 13:15:34,723 basehttp "GET /admin/vsm_app/vsm/ HTTP/1.0" 200 32050
+INFO 2026-01-02 13:15:34,746 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:34,746 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:34,750 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:34,750 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:34,750 basehttp "GET /static/admin/js/core.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:34,750 basehttp "GET /static/admin/js/core.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:34,754 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:34,754 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:34,758 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:34,758 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:34,759 basehttp "GET /static/admin/js/urlify.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:34,759 basehttp "GET /static/admin/js/urlify.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:34,760 basehttp "GET /static/admin/js/actions.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:34,760 basehttp "GET /static/admin/js/actions.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:34,769 basehttp "GET /static/admin/js/query_filter.js?v=3 HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:34,769 basehttp "GET /static/admin/js/query_filter.js?v=3 HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:34,774 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2026-01-02 13:15:34,774 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2026-01-02 13:15:37,123 basehttp "GET /admin/vsm_app/vsm/223/change/ HTTP/1.0" 200 266641
+INFO 2026-01-02 13:15:37,123 basehttp "GET /admin/vsm_app/vsm/223/change/ HTTP/1.0" 200 266641
+INFO 2026-01-02 13:15:37,163 basehttp "GET /static/admin/js/calendar.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:37,163 basehttp "GET /static/admin/js/calendar.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:37,163 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:37,163 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:37,172 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2026-01-02 13:15:37,172 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2026-01-02 13:15:37,192 basehttp "GET /static/admin/js/vendor/select2/i18n/en.js HTTP/1.0" 200 844
+INFO 2026-01-02 13:15:37,192 basehttp "GET /static/admin/js/vendor/select2/i18n/en.js HTTP/1.0" 200 844
+INFO 2026-01-02 13:15:37,194 basehttp "GET /static/admin/css/vendor/select2/select2.css HTTP/1.0" 200 17511
+INFO 2026-01-02 13:15:37,194 basehttp "GET /static/admin/css/autocomplete.css HTTP/1.0" 200 9279
+INFO 2026-01-02 13:15:37,194 basehttp "GET /static/admin/css/vendor/select2/select2.css HTTP/1.0" 200 17511
+INFO 2026-01-02 13:15:37,196 basehttp "GET /static/admin/js/autocomplete.js HTTP/1.0" 200 1501
+INFO 2026-01-02 13:15:37,194 basehttp "GET /static/admin/css/autocomplete.css HTTP/1.0" 200 9279
+INFO 2026-01-02 13:15:37,197 basehttp "GET /static/admin/js/inlines.js HTTP/1.0" 200 15245
+INFO 2026-01-02 13:15:37,196 basehttp "GET /static/admin/js/autocomplete.js HTTP/1.0" 200 1501
+INFO 2026-01-02 13:15:37,197 basehttp "GET /static/admin/js/inlines.js HTTP/1.0" 200 15245
+INFO 2026-01-02 13:15:37,198 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:37,198 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:37,201 basehttp "GET /static/admin/js/vendor/select2/select2.full.js HTTP/1.0" 200 173566
+INFO 2026-01-02 13:15:37,201 basehttp "GET /static/admin/js/vendor/select2/select2.full.js HTTP/1.0" 200 173566
+INFO 2026-01-02 13:15:37,204 basehttp "GET /static/admin/js/change_form.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:15:37,204 basehttp "GET /static/admin/js/change_form.js HTTP/1.0" 304 0
+INFO 2026-01-02 13:17:11,229 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-02 13:17:11,229 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-02 13:17:13,100 autoreload Watching for file changes with StatReloader
+INFO 2026-01-02 13:17:13,100 autoreload Watching for file changes with StatReloader
