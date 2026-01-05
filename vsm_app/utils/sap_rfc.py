@@ -183,7 +183,7 @@ def enviar_entrega_a_sap(vsm):
         items.append({
             "COD_MAT": str(vp.producto.codigo),
             "CENTRO": "1001",
-            "ALMACEN": "G001",
+            "ALMACEN": str(vsm.almacen),
             "CANTIDAD": f"{vp.cantidad_entregada:.3f}",
             "KOSTL": str(vsm.centro_costos.codigo).zfill(10)
         })

@@ -10156,3 +10156,254 @@ INFO 2026-01-02 13:17:11,229 autoreload /app/vsm_app/views.py changed, reloading
 INFO 2026-01-02 13:17:11,229 autoreload /app/vsm_app/views.py changed, reloading.
 INFO 2026-01-02 13:17:13,100 autoreload Watching for file changes with StatReloader
 INFO 2026-01-02 13:17:13,100 autoreload Watching for file changes with StatReloader
+INFO 2026-01-05 13:18:01,777 autoreload /app/vsm_app/utils/sap_rfc.py changed, reloading.
+INFO 2026-01-05 13:18:01,777 autoreload /app/vsm_app/utils/sap_rfc.py changed, reloading.
+INFO 2026-01-05 13:18:03,830 autoreload Watching for file changes with StatReloader
+INFO 2026-01-05 13:18:03,830 autoreload Watching for file changes with StatReloader
+INFO 2026-01-05 13:18:07,017 basehttp "GET / HTTP/1.0" 302 0
+INFO 2026-01-05 13:18:07,017 basehttp "GET / HTTP/1.0" 302 0
+INFO 2026-01-05 13:18:08,259 basehttp "GET / HTTP/1.0" 302 0
+INFO 2026-01-05 13:18:08,259 basehttp "GET / HTTP/1.0" 302 0
+WARNING 2026-01-05 13:18:08,621 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2026-01-05 13:18:08,621 backends Permisos DESEADOS de Keycloak (Nombres): 7 -> {'no_facturado_can_create', 'facturado_can_edit', 'no_facturado_can_edit', 'facturado_can_deliver', 'facturado_can_create', 'no_facturado_can_deliver', 'registros_can_view'}
+WARNING 2026-01-05 13:18:08,623 backends Permisos ENCONTRADOS en la DB: 7
+WARNING 2026-01-05 13:18:08,625 backends Permisos asignados con éxito a user.permisos.
+INFO 2026-01-05 13:18:08,629 basehttp "GET /oidc/callback/?state=EHHsK9H9wi8mGZdtzK9jT8CfvUqgTMNY&session_state=8833e0e0-1274-4c4c-87f1-73503dd7a50e&code=f010c750-5e7e-4a44-8307-c096a9081907.8833e0e0-1274-4c4c-87f1-73503dd7a50e.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-05 13:18:08,629 basehttp "GET /oidc/callback/?state=EHHsK9H9wi8mGZdtzK9jT8CfvUqgTMNY&session_state=8833e0e0-1274-4c4c-87f1-73503dd7a50e&code=f010c750-5e7e-4a44-8307-c096a9081907.8833e0e0-1274-4c4c-87f1-73503dd7a50e.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-05 13:18:08,663 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2026-01-05 13:18:08,663 basehttp "GET / HTTP/1.0" 200 7812
+INFO 2026-01-05 13:18:08,683 basehttp "GET /static/css/output.css HTTP/1.0" 304 0
+INFO 2026-01-05 13:18:08,683 basehttp "GET /static/css/output.css HTTP/1.0" 304 0
+INFO 2026-01-05 13:18:08,690 basehttp "GET /static/js/tailwind.js HTTP/1.0" 304 0
+INFO 2026-01-05 13:18:08,690 basehttp "GET /static/js/tailwind.js HTTP/1.0" 304 0
+INFO 2026-01-05 13:18:08,691 basehttp "GET /static/js/jquery.js HTTP/1.0" 304 0
+INFO 2026-01-05 13:18:08,691 basehttp "GET /static/js/jquery.js HTTP/1.0" 304 0
+INFO 2026-01-05 13:18:08,703 basehttp "GET /static/js/select2.js HTTP/1.0" 304 0
+INFO 2026-01-05 13:18:08,703 basehttp "GET /static/js/select2.js HTTP/1.0" 304 0
+INFO 2026-01-05 13:18:11,083 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2026-01-05 13:18:11,083 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2026-01-05 13:18:11,284 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2026-01-05 13:18:11,284 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2026-01-05 13:18:22,707 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 315
+INFO 2026-01-05 13:18:22,707 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 315
+INFO 2026-01-05 13:24:41,814 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2026-01-05 13:24:41,814 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2026-01-05 13:24:42,041 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2026-01-05 13:24:42,041 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2026-01-05 13:24:43,228 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 315
+INFO 2026-01-05 13:24:43,228 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 315
+INFO 2026-01-05 13:24:52,294 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 69616
+INFO 2026-01-05 13:24:52,294 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 69616
+INFO 2026-01-05 13:24:57,339 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS&almacen=GCAR HTTP/1.0" 200 88
+INFO 2026-01-05 13:24:57,339 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=INSUMOS&almacen=GCAR HTTP/1.0" 200 88
+INFO 2026-01-05 13:25:00,620 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=EPP&almacen=GCAR HTTP/1.0" 200 88
+INFO 2026-01-05 13:25:00,620 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=EPP&almacen=GCAR HTTP/1.0" 200 88
+INFO 2026-01-05 13:25:03,719 basehttp "GET /ajax/empleados?centro_id=5 HTTP/1.0" 200 69616
+INFO 2026-01-05 13:25:03,719 basehttp "GET /ajax/empleados?centro_id=5 HTTP/1.0" 200 69616
+INFO 2026-01-05 13:25:05,080 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=EPP&almacen=GCAR HTTP/1.0" 200 88
+INFO 2026-01-05 13:25:05,080 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=EPP&almacen=GCAR HTTP/1.0" 200 88
+INFO 2026-01-05 13:25:08,639 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=INSUMOS&almacen=GCAR HTTP/1.0" 200 1090
+INFO 2026-01-05 13:25:08,639 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=INSUMOS&almacen=GCAR HTTP/1.0" 200 1090
+ERROR 2026-01-05 13:25:12,126 log Internal Server Error: /nuevo_vsm
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "retirante_id" of relation "vsm_app_vsm" violates not-null constraint
+DETAIL:  Failing row contains (224, INSUMOS, NO_FACTURADO, 2026-01-05 13:25:12.010352+00, null, pendiente, , null, null, t, no_procesado, 2026-01-05 13:25:12.010371+00, 5, null, 3, null, 2, APROBADO).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/decorator.py", line 37, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 139, in nuevo_vsm
+    vsm = models.VSM.objects.create(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 902, in save
+    self.save_base(
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "retirante_id" of relation "vsm_app_vsm" violates not-null constraint
+DETAIL:  Failing row contains (224, INSUMOS, NO_FACTURADO, 2026-01-05 13:25:12.010352+00, null, pendiente, , null, null, t, no_procesado, 2026-01-05 13:25:12.010371+00, 5, null, 3, null, 2, APROBADO).
+
+ERROR 2026-01-05 13:25:12,126 log Internal Server Error: /nuevo_vsm
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "retirante_id" of relation "vsm_app_vsm" violates not-null constraint
+DETAIL:  Failing row contains (224, INSUMOS, NO_FACTURADO, 2026-01-05 13:25:12.010352+00, null, pendiente, , null, null, t, no_procesado, 2026-01-05 13:25:12.010371+00, 5, null, 3, null, 2, APROBADO).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/decorator.py", line 37, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/vsm_app/views.py", line 139, in nuevo_vsm
+    vsm = models.VSM.objects.create(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 902, in save
+    self.save_base(
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/app/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "retirante_id" of relation "vsm_app_vsm" violates not-null constraint
+DETAIL:  Failing row contains (224, INSUMOS, NO_FACTURADO, 2026-01-05 13:25:12.010352+00, null, pendiente, , null, null, t, no_procesado, 2026-01-05 13:25:12.010371+00, 5, null, 3, null, 2, APROBADO).
+
+ERROR 2026-01-05 13:25:12,132 basehttp "POST /nuevo_vsm HTTP/1.0" 500 181561
+ERROR 2026-01-05 13:25:12,132 basehttp "POST /nuevo_vsm HTTP/1.0" 500 181561
+INFO 2026-01-05 13:25:33,901 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 315
+INFO 2026-01-05 13:25:33,901 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 315
+INFO 2026-01-05 13:25:36,927 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2026-01-05 13:25:36,927 basehttp "GET /nuevo_vsm HTTP/1.0" 200 31454
+INFO 2026-01-05 13:25:37,042 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2026-01-05 13:25:37,042 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2026-01-05 13:25:39,586 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 69616
+INFO 2026-01-05 13:25:39,586 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 69616
+INFO 2026-01-05 13:25:43,593 basehttp "GET /ajax/empleados?centro_id=5 HTTP/1.0" 200 69616
+INFO 2026-01-05 13:25:43,593 basehttp "GET /ajax/empleados?centro_id=5 HTTP/1.0" 200 69616
+INFO 2026-01-05 13:25:49,428 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=INSUMOS&almacen= HTTP/1.0" 200 15
+INFO 2026-01-05 13:25:49,428 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=INSUMOS&almacen= HTTP/1.0" 200 15
+INFO 2026-01-05 13:25:53,972 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 315
+INFO 2026-01-05 13:25:53,972 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=2 HTTP/1.0" 200 315
+INFO 2026-01-05 13:25:58,993 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=INSUMOS&almacen=GCAR HTTP/1.0" 200 1090
+INFO 2026-01-05 13:25:58,993 basehttp "GET /buscar_productos_por_centro?centro_costo=5&tipo_entrega=INSUMOS&almacen=GCAR HTTP/1.0" 200 1090
+INFO 2026-01-05 13:26:01,463 basehttp "POST /nuevo_vsm HTTP/1.0" 302 0
+INFO 2026-01-05 13:26:01,463 basehttp "POST /nuevo_vsm HTTP/1.0" 302 0
+INFO 2026-01-05 13:26:01,487 basehttp "GET /home HTTP/1.0" 200 8242
+INFO 2026-01-05 13:26:01,487 basehttp "GET /home HTTP/1.0" 200 8242
+INFO 2026-01-05 13:26:05,019 basehttp "GET /pendientes HTTP/1.0" 200 16559
+INFO 2026-01-05 13:26:05,019 basehttp "GET /pendientes HTTP/1.0" 200 16559
+INFO 2026-01-05 13:26:06,557 basehttp "GET /entregar/225 HTTP/1.0" 200 14066
+INFO 2026-01-05 13:26:06,557 basehttp "GET /entregar/225 HTTP/1.0" 200 14066
+INFO 2026-01-05 13:26:06,588 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6574
+INFO 2026-01-05 13:26:06,588 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6574
+INFO 2026-01-05 13:26:06,588 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2026-01-05 13:26:06,588 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2026-01-05 13:26:37,798 basehttp "POST /entregar/225 HTTP/1.0" 200 98
+INFO 2026-01-05 13:26:37,798 basehttp "POST /entregar/225 HTTP/1.0" 200 98
+INFO 2026-01-05 13:27:07,548 autoreload /app/vsm_app/utils/sap_rfc.py changed, reloading.
+INFO 2026-01-05 13:27:07,548 autoreload /app/vsm_app/utils/sap_rfc.py changed, reloading.
+INFO 2026-01-05 13:27:09,398 autoreload Watching for file changes with StatReloader
+INFO 2026-01-05 13:27:09,398 autoreload Watching for file changes with StatReloader
+INFO 2026-01-05 13:27:12,032 basehttp "GET /entregar/225 HTTP/1.0" 200 14066
+INFO 2026-01-05 13:27:12,032 basehttp "GET /entregar/225 HTTP/1.0" 200 14066
+INFO 2026-01-05 13:27:18,764 basehttp "POST /entregar/225 HTTP/1.0" 200 101
+INFO 2026-01-05 13:27:18,764 basehttp "POST /entregar/225 HTTP/1.0" 200 101
+INFO 2026-01-05 13:27:47,154 autoreload /app/vsm_app/utils/sap_rfc.py changed, reloading.
+INFO 2026-01-05 13:27:47,154 autoreload /app/vsm_app/utils/sap_rfc.py changed, reloading.
+INFO 2026-01-05 13:27:48,883 autoreload Watching for file changes with StatReloader
+INFO 2026-01-05 13:27:48,883 autoreload Watching for file changes with StatReloader
+INFO 2026-01-05 13:27:55,253 basehttp "GET /entregar/225 HTTP/1.0" 200 14066
+INFO 2026-01-05 13:27:55,253 basehttp "GET /entregar/225 HTTP/1.0" 200 14066
+INFO 2026-01-05 13:27:58,666 basehttp "POST /entregar/225 HTTP/1.0" 200 103
+INFO 2026-01-05 13:27:58,666 basehttp "POST /entregar/225 HTTP/1.0" 200 103
+INFO 2026-01-05 13:28:26,522 autoreload /app/vsm_app/utils/sap_rfc.py changed, reloading.
+INFO 2026-01-05 13:28:26,522 autoreload /app/vsm_app/utils/sap_rfc.py changed, reloading.
+INFO 2026-01-05 13:28:27,714 autoreload Watching for file changes with StatReloader
+INFO 2026-01-05 13:28:27,714 autoreload Watching for file changes with StatReloader
+INFO 2026-01-05 13:28:29,807 basehttp "GET /entregar/225 HTTP/1.0" 200 14066
+INFO 2026-01-05 13:28:29,807 basehttp "GET /entregar/225 HTTP/1.0" 200 14066
+INFO 2026-01-05 13:28:45,735 basehttp "POST /entregar/225 HTTP/1.0" 200 105
+INFO 2026-01-05 13:28:45,735 basehttp "POST /entregar/225 HTTP/1.0" 200 105
+INFO 2026-01-05 13:28:52,613 _client HTTP Request: POST https://frclouds4qas.rioplatense.local:10443/sap/bc/soap/rfc "HTTP/1.1 200 OK"
+INFO 2026-01-05 13:28:52,631 basehttp "POST /entregar/225 HTTP/1.0" 200 40
+INFO 2026-01-05 13:28:52,631 basehttp "POST /entregar/225 HTTP/1.0" 200 40
+INFO 2026-01-05 13:28:55,744 basehttp "GET /pendientes HTTP/1.0" 200 15988
+INFO 2026-01-05 13:28:55,744 basehttp "GET /pendientes HTTP/1.0" 200 15988
