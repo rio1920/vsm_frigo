@@ -129,8 +129,12 @@ class VSM(models.Model):
     actualizado = models.DateTimeField(auto_now=True)
     estado_aprobacion = models.CharField(
         max_length=20,
-        choices=[("aprobado", "Aprobado"), ("rechazado", "Rechazado"), ("pendiente", "Pendiente")],
-        default="aprobado",
+        choices=[
+            ("APROBADO", "Aprobado"), 
+            ("RECHAZADO", "Rechazado"), 
+            ("PENDIENTE", "Pendiente")
+        ],
+        default="APROBADO",
     )
 
     def entrega_completa(self):

@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Aprobar Entrega VSM #{{ vsm.id }}{% endblock %}
+
+{% block content %}
+{% include 'navbar.html' %}
+
+
+<div class="flex justify-center mt-4">
+    <div class="w-full max-w-5xl"> 
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert 
+                    {% if message.tags == 'error' %}alert-error{% elif message.tags == 'success' %}alert-success{% else %}alert-info{% endif %} 
+                    shadow-lg mb-4">
+                    <div>
+                        <span class="text-lg">
+                            {{ message }}
+                        </span>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-circle absolute top-2 right-2" onclick="this.parentElement.style.display='none';">
+                        ✕
+                    </button>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+</div>
+<body class="justify-center">
+
+  <div class="bg-base-200 w-full mt-2 mx-auto  max-w-3xl sm:max-w-4xl md:max-w-5xl p-3 sm:p-5 md:p-8 rounded-2xl shadow-xl">
+    
+    <h1 class="text-2xl font-semibold text-center mt-0 mb-6">Revisar y Aprobar VSM #{{ vsm.id }}</h1>
+
+        <form action="{% url 'aprobar_vsm' vsm.id %}" method="post" class="space-y-4" id="formAprobar">
+      {% csrf_token %}
+      
+      <div>
+        <p class="bg-base-100 p-3 rounded-2xl"><span class="font-extrabold">Tipo VSM:</span> {{ vsm.get_tipo_entrega_display }}</p>
+        <p class="bg-base-100 p-3 rounded-2xl"><span class="font-extrabold">Estado Aprobación:</span> <span class="badge badge-warning">{{ vsm.get_estado_aprobacion_display }}</span></p>
+        <p class="bg-base-100 p-3 rounded-2xl"><span class="font-extrabold">Solicitante:</span> {{ vsm.solicitante }}</p>
+        <p class="bg-base-100 p-3 rounded-2xl"><span class="font-extrabold">Retirante:</span> {{ vsm.retirante }}</p>
+      </div>
+
+            <h3 class="text-xl font-semibold mt-3 mb-3">Ítems Solicitados</h3>
+      <table class="w-full text-sm border border-gray-600 rounded-lg overflow-hidden bg-base-100">
+        <thead>
+          <tr>
+            <th class="text-left px-4 py-2">Producto</th>
+            <th class="text-center px-4 py-2">Cantidad Solicitada</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for vsm_producto in vsm.vsmproducto_set.all %}
+          <tr class="border-b border-gray-700">
+            <td class="px-4 py-3">{{ vsm_producto.producto }}</td>
+            <td class="px-4 py-3 text-center">{{ vsm_producto.cantidad_solicitada }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      
+      <div class="flex justify-center items-center gap-4 pt-6">
+        <button type="submit" id="btnAprobarVSM"
+                class="btn btn-lg btn-success py-3 rounded-xl font-medium text-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+          Aprobar VSM
+        </button>
+        
+        <a href="{% url 'listar_vsm_pendientes' %}" class="btn btn-secondary px-6 py-2 rounded-xl font-medium text-sm">
+          Cancelar y Volver
+        </a>
+      </div>
+      
+    </form>
+  </div>
+
+<div id="loaderOverlay" class="fixed inset-0 bg-base-300 bg-opacity-50 flex items-center justify-center hidden z-50">
+  <div class="bg-white text-black px-6 py-4 rounded-lg flex flex-col items-center shadow-lg">
+    <span class="loader mb-3"></span>
+    <p class="text-lg font-semibold">Procesando aprobación, por favor espere...</p>
+  </div>
+</div>
+{% endblock %}

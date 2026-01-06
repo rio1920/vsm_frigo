@@ -95,7 +95,7 @@
                   <option value="" class="text-black">Seleccione un almacén...</option>
                 </select>
                 <input type="hidden" id="hidden_tipo_facturacion" name="tipo_facturacion">
-                <input type="hidden" id="hidden_aprobacion_status" name="estado_aprobacion">
+                <input type="hidden" id="hidden_aprobacion_status" name="estado_aprobacion" value="APROBADO">
             </div>
         </div>
 
@@ -532,7 +532,13 @@
                 }
 
                 const empresaPropietariaId = selectedWarehouseOption.data('owning-id');
+                
+                // 🔑 CORRECCIÓN: Convertir el valor de data-requiere-aprobacion a un booleano estricto.
+                // Usamos el operador ternario para asegurarnos que solo sea true o false.
+                // Un valor de data- en jQuery puede ser true (booleano) o "true" (string).
                 const requiereAprobacion = selectedWarehouseOption.data('requiere-aprobacion');
+                const esRequerida = (requiereAprobacion === true || requiereAprobacion === 'True' || requiereAprobacion === 1);
+
 
                 /* --- LÓGICA DE TIPO FACTURACIÓN --- */
                 let tipoFacturacion;
@@ -546,12 +552,16 @@
 
                 /* --- LÓGICA DE ESTADO DE APROBACIÓN --- */
                 let estadoAprobacion;
-                if (requiereAprobacion) {
+                
+                // Usamos la nueva variable 'esRequerida' que ya está forzada a booleano
+                if (esRequerida) { 
                     estadoAprobacion = 'PENDIENTE';
                     showSuccessToast("ATENCIÓN: Este VSM requiere APROBACIÓN.", "error"); // Resaltar como error
                 } else {
                     estadoAprobacion = 'APROBADO';
                 }
+                
+                // 🟢 ESCRITURA FINAL GARANTIZADA
                 $hiddenAprobacion.val(estadoAprobacion);
                 
                 // Opcional: Notificar tipo de facturación

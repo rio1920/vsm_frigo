@@ -61,6 +61,7 @@ urlpatterns = [
     path("test_sap_connection", views.test_sap_connection, name="test_sap_connection"),
     path("ajax/consultar_stock", views.consultar_stock, name="consultar_stock"),
     path('ajax/almacenes_por_empresa/', views.obtener_almacenes_por_empresa, name='obtener_almacenes_por_empresa'),
+    path('vsm/aprobar/<int:vsm_id>/', views.aprobar_vsm, name='aprobar_vsm'),
 ]
 
 if settings.DEBUG:

@@ -34,7 +34,7 @@
           </c-carddaisy>
         {% endif %}
 
-        {% if user|has_perm:"facturado_can_deliver" %}
+        {% if user|has_perm:"facturado_can_deliver" or user|has_perm:"facturado_can_approve" %}
         <!-- Pendientes -->
           <c-carddaisy
             title="Pendientes" 

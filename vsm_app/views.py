@@ -330,6 +330,7 @@ def listar_vsm_pendientes(request):
     retirante = request.GET.get("retirante", "").strip()
     cc = request.GET.get("cc", "").strip()
     estado = request.GET.get("estado", "").strip()
+    estado_aprobacion = request.GET.get("estado_aprobacion", "").strip()
 
     if solicitante:
         vales = vales.filter(solicitante__username__icontains=solicitante)
@@ -342,6 +343,9 @@ def listar_vsm_pendientes(request):
 
     if estado and estado != "#":
         vales = vales.filter(estado=estado)
+    
+    if estado_aprobacion and estado_aprobacion != "#":
+        vales = vales.filter(estado_aprobacion=estado_aprobacion)
 
     paginator = Paginator(vales, 7)
     page_number = request.GET.get("page")
@@ -355,6 +359,8 @@ def listar_vsm_pendientes(request):
             "retirante": retirante,
             "cc": cc,
             "estado": estado,
+            "estado_aprobacion": estado_aprobacion,
+
         },
     }
     return render(request, "listar_vsm_pendientes.html", context)
@@ -658,3 +664,36 @@ def obtener_almacenes_por_empresa(request):
         return JsonResponse({'almacenes': []})
 
     return JsonResponse({'almacenes': results})
+
+@login_required
+def aprobar_vsm(request, vsm_id):
+    vsm = get_object_or_404(
+        models.VSM.objects.prefetch_related("vsmproducto_set__producto"), 
+        pk=vsm_id
+    )
+
+    if vsm.estado_aprobacion == 'APROBADO':
+        messages.info(request, f"ℹ️ El VSM #{vsm.id} ya se encuentra Aprobado.")
+        return redirect('confirmar_entrega', vsm_id=vsm_id)
+        
+    if request.method == 'POST':
+        try:
+            vsm.estado_aprobacion = 'APROBADO'
+            vsm.save()
+            
+            messages.success(request, f"✅ VSM #{vsm.id} Aprobado con éxito. Ya está disponible para entrega.")
+            
+            return redirect('listar_vsm_pendientes') 
+
+        except Exception as e:
+            messages.error(request, f"Hubo un error al intentar aprobar el VSM: {e}")
+            return redirect('aprobar_vsm', vsm_id=vsm_id)
+
+
+    return render(
+        request, 
+        'aprobar_vsm.html', 
+        {
+            'vsm': vsm,
+        }
+    )
