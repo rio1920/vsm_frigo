@@ -336,7 +336,10 @@ def listar_vsm_pendientes(request):
         vales = vales.filter(solicitante__username__icontains=solicitante)
 
     if retirante:
-        vales = vales.filter(retirante__nombre__icontains=retirante)
+            vales = vales.filter(
+                Q(retirante__nombre__icontains=retirante) |
+                Q(retirante__legajo__icontains=retirante)    
+        )
 
     if cc:
         vales = vales.filter(centro_costos__codigo__icontains=cc)
@@ -407,7 +410,6 @@ def buscar_productos(request):
 
     productos = models.maestro_de_materiales.objects.all()
 
-    # Si hay centro de costo, filtramos por permisos
     if centro_costo_id:
         productos = productos.filter(
             id__in=models.PermisoRetiro.objects.filter(
@@ -415,7 +417,7 @@ def buscar_productos(request):
             ).values_list("producto", flat=True)
         )
 
-    # Filtro por descripción
+
     if query:
         productos = productos.filter(descripcion__icontains=query)
 
@@ -671,25 +673,73 @@ def aprobar_vsm(request, vsm_id):
         models.VSM.objects.prefetch_related("vsmproducto_set__producto"), 
         pk=vsm_id
     )
+    current_user = request.user
+    
+    # --- 1. DETERMINAR EL PERMISO REQUERIDO ---
+    
+    # ASUMIMOS: El retirante (vsm.retirante) tiene un campo 'empresa' que apunta al modelo 'empresas'.
+    try:
+        empresa_asociada = vsm.retirante.empresas
+        almacen_vsm = vsm.almacen
+        
+        # 1.1. Buscar el objeto permiso_empresa_almacen que define la relación
+        permiso_requerido = models.permiso_empresa_almacen.objects.get(
+            empresa=empresa_asociada,
+            almacen=almacen_vsm
+        )
+        
+    except AttributeError:
+        # Esto ocurre si el retirante no tiene una empresa asignada.
+        messages.error(
+            request, 
+            "🚫 Configuración de VSM inválida: El retirante no tiene una empresa asociada."
+        )
+        return redirect('listar_vsm_pendientes')
+        
+    except models.permiso_empresa_almacen.DoesNotExist:
+        # Esto ocurre si NO hay un registro en la tabla de permisos para esa combinación Empresa/Almacén.
+        messages.error(
+            request, 
+            f"🚫 Permiso no definido: No existe una configuración de aprobación para la Empresa '{empresa_asociada}' y el Almacén '{almacen_vsm}'."
+        )
+        return redirect('listar_vsm_pendientes') 
+
+
+    # --- 2. CHEQUEO DE AUTORIZACIÓN (El usuario logueado en la lista M2M) ---
+    
+    # Verificar si el usuario actual (current_user) está en la lista de aprobadores de ese permiso.
+    is_authorized_aprobador = permiso_requerido.usuarios_aprobadores.filter(pk=current_user.pk).exists()
+
+    if not is_authorized_aprobador:
+        messages.error(
+            request, 
+            "🚫 Acceso Denegado: Usted no está autorizado para aprobar VSMs de esta Empresa/Almacén."
+        )
+        return redirect('listar_vsm_pendientes') 
+
+
+    # --- 3. Lógica de Aprobación (Si el usuario es un aprobador válido) ---
 
     if vsm.estado_aprobacion == 'APROBADO':
         messages.info(request, f"ℹ️ El VSM #{vsm.id} ya se encuentra Aprobado.")
         return redirect('confirmar_entrega', vsm_id=vsm_id)
         
     if request.method == 'POST':
+        # ... (Toda la lógica de cambio de estado a APROBADO y redirección a confirmar_entrega) ...
         try:
             vsm.estado_aprobacion = 'APROBADO'
+            # vsm.aprobado_por = current_user # Si tienes el campo
             vsm.save()
             
-            messages.success(request, f"✅ VSM #{vsm.id} Aprobado con éxito. Ya está disponible para entrega.")
-            
-            return redirect('listar_vsm_pendientes') 
+            messages.success(request, f"✅ VSM #{vsm.id} Aprobado con éxito.")
+            return redirect('confirmar_entrega', vsm_id=vsm_id) 
 
         except Exception as e:
             messages.error(request, f"Hubo un error al intentar aprobar el VSM: {e}")
             return redirect('aprobar_vsm', vsm_id=vsm_id)
 
 
+    # --- 4. Renderizado de la Pantalla de Confirmación (GET) ---
     return render(
         request, 
         'aprobar_vsm.html', 

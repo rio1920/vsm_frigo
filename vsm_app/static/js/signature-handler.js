@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Configuración del Canvas de Firma ---
 
     const setupCanvas = () => {
+        const wacomDriver = wacomstu540();
         // Asegura que la pluma tenga un color visible (ej: azul)
         wacomDriver.setPenColorAndWidth('#000000ff', 3);
         // Limpia el canvas en la pantalla y en la tableta Wacom
