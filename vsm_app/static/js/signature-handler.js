@@ -132,61 +132,46 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
 
-    // --- Eventos de UI y Conexión ---
-
-    // 1. Abrir Modal y Conectar Wacom
     abrirFirmaBtn.addEventListener('click', async () => {
         modalFirma.classList.remove('hidden');
         const wacomDriver = new wacomstu540();
         try {
-            // Intentar conectar con la Wacom (se abrirá el selector HID)
             const connected = await wacomDriver.connect();
             
             if (connected) {
                 console.log('✅ Wacom STU-540 conectada y configurada.');
                 
-                // 🚨 NUEVA PRUEBA: Esperar 100ms para asegurar que el driver terminó de leer info.
                 await new Promise(resolve => setTimeout(resolve, 100)); 
                 
-                // Habilitar Modo de Escritura (Modo 1)
                 await wacomDriver.setWritingMode(1); 
                 
-                // Asignar el callback de dibujo al driver
                 wacomDriver.onPenData(handlePenData);
-                
-                // Inicializar el canvas 
+            
                 setupCanvas();
 
             } else {
                 console.warn('⚠️ No se pudo conectar la Wacom. Asegúrate de seleccionarla.');
-                // Opcional: Mostrar mensaje de error al usuario
             }
 
         } catch (error) {
             console.error('❌ Error al conectar o abrir la Wacom:', error);
-            // Si la conexión falla (ej: permisos denegados), cerrar el modal
             modalFirma.classList.add('hidden');
         }
     });
 
-    // 2. Cerrar Modal (Cancelar)
     const closeModal = () => {
         modalFirma.classList.add('hidden');
-        // Opcional: Desconectar el dispositivo si el driver lo permite, 
-        // aunque WebHID suele mantener la conexión hasta que la página se cierra.
     };
 
     cerrarModalFirma.addEventListener('click', closeModal);
     cancelarFirmaBtn.addEventListener('click', closeModal);
 
-    // 3. Guardar Firma
     guardarFirmaBtn.addEventListener('click', () => {
 
         const signatureImage = signatureCanvas.toDataURL('image/png');
         
         console.log('Firma capturada (Base64):', signatureImage.substring(0, 50) + '...');
         
-        // Limpiar y cerrar
         setupCanvas(); 
         closeModal();
     });

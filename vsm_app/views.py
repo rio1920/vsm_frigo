@@ -669,72 +669,33 @@ def obtener_almacenes_por_empresa(request):
 
 @login_required
 def aprobar_vsm(request, vsm_id):
+
     vsm = get_object_or_404(
-        models.VSM.objects.prefetch_related("vsmproducto_set__producto"), 
+        models.VSM.objects.prefetch_related("vsmproducto_set__producto"),
         pk=vsm_id
     )
-    current_user = request.user
-    
-    # --- 1. DETERMINAR EL PERMISO REQUERIDO ---
-    
-    # ASUMIMOS: El retirante (vsm.retirante) tiene un campo 'empresa' que apunta al modelo 'empresas'.
-    try:
-        empresa_asociada = vsm.retirante.empresas
-        almacen_vsm = vsm.almacen
-        permiso_requerido = models.permiso_empresa_almacen.objects.get(
-            empresa=empresa_asociada,
-            almacen=almacen_vsm
-        )
-        
-    except AttributeError:
-        messages.error(
-            request, 
-            "🚫 Configuración de VSM inválida: El retirante no tiene una empresa asociada."
-        )
-        return redirect('listar_vsm_pendientes')
-        
-    except models.permiso_empresa_almacen.DoesNotExist:
-        messages.error(
-            request, 
-            f"🚫 Permiso no definido: No existe una configuración de aprobación para la Empresa '{empresa_asociada}' y el Almacén '{almacen_vsm}'."
-        )
-        return redirect('listar_vsm_pendientes') 
-
-    is_authorized_aprobador = permiso_requerido.usuarios_aprobadores.filter(pk=current_user.pk).exists()
-
-    if not is_authorized_aprobador:
-        messages.error(
-            request, 
-            "🚫 Acceso Denegado: Usted no está autorizado para aprobar VSMs de esta Empresa/Almacén."
-        )
-        return redirect('listar_vsm_pendientes') 
-
-
-    # --- 3. Lógica de Aprobación (Si el usuario es un aprobador válido) ---
 
     if vsm.estado_aprobacion == 'APROBADO':
         messages.info(request, f"ℹ️ El VSM #{vsm.id} ya se encuentra Aprobado.")
         return redirect('confirmar_entrega', vsm_id=vsm_id)
-        
+
+       
     if request.method == 'POST':
-        # ... (Toda la lógica de cambio de estado a APROBADO y redirección a confirmar_entrega) ...
         try:
             vsm.estado_aprobacion = 'APROBADO'
-            # vsm.aprobado_por = current_user # Si tienes el campo
             vsm.save()
-            
-            messages.success(request, f"✅ VSM #{vsm.id} Aprobado con éxito.")
-            return redirect('confirmar_entrega', vsm_id=vsm_id) 
+
+            messages.success(request, f"✅ VSM #{vsm.id} Aprobado con éxito. Ya está disponible para entrega.")
+
+            return redirect('listar_vsm_pendientes')
 
         except Exception as e:
             messages.error(request, f"Hubo un error al intentar aprobar el VSM: {e}")
             return redirect('aprobar_vsm', vsm_id=vsm_id)
 
-
-    # --- 4. Renderizado de la Pantalla de Confirmación (GET) ---
     return render(
-        request, 
-        'aprobar_vsm.html', 
+        request,
+        'aprobar_vsm.html',
         {
             'vsm': vsm,
         }
