@@ -14687,3 +14687,633 @@ WARNING 2026-01-08 15:23:16,110 basehttp "GET /.well-known/appspecific/com.chrom
 WARNING 2026-01-08 15:23:16,110 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
 INFO 2026-01-08 15:23:24,222 basehttp "POST /entregar/234 HTTP/1.0" 200 113
 INFO 2026-01-08 15:23:24,222 basehttp "POST /entregar/234 HTTP/1.0" 200 113
+INFO 2026-01-08 17:25:42,883 basehttp "GET /entregar/234 HTTP/1.0" 302 0
+INFO 2026-01-08 17:25:42,883 basehttp "GET /entregar/234 HTTP/1.0" 302 0
+WARNING 2026-01-08 17:25:43,431 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2026-01-08 17:25:43,431 backends Permisos DESEADOS de Keycloak (Nombres): 8 -> {'no_facturado_can_create', 'facturado_can_create', 'registros_can_view', 'no_facturado_can_deliver', 'facturado_can_approve', 'facturado_can_deliver', 'facturado_can_edit', 'no_facturado_can_edit'}
+WARNING 2026-01-08 17:25:43,433 backends Permisos ENCONTRADOS en la DB: 8
+WARNING 2026-01-08 17:25:43,436 backends Permisos asignados con éxito a user.permisos.
+INFO 2026-01-08 17:25:43,443 basehttp "GET /oidc/callback/?state=yJ4LVzsLA3TFdjtbIpFYoOt1Z7HQCtW1&session_state=3d9288a2-2767-4fa1-bfb9-999708497410&code=c259aab5-7c49-4dd1-9e6c-e88035d8a415.3d9288a2-2767-4fa1-bfb9-999708497410.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-08 17:25:43,443 basehttp "GET /oidc/callback/?state=yJ4LVzsLA3TFdjtbIpFYoOt1Z7HQCtW1&session_state=3d9288a2-2767-4fa1-bfb9-999708497410&code=c259aab5-7c49-4dd1-9e6c-e88035d8a415.3d9288a2-2767-4fa1-bfb9-999708497410.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-08 17:25:43,481 basehttp "GET /entregar/234 HTTP/1.0" 200 11680
+INFO 2026-01-08 17:25:43,481 basehttp "GET /entregar/234 HTTP/1.0" 200 11680
+INFO 2026-01-08 17:25:43,514 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 304 0
+INFO 2026-01-08 17:25:43,514 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 304 0
+WARNING 2026-01-08 17:25:43,563 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 17:25:43,563 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 17:25:43,564 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 17:25:43,564 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-08 17:25:49,353 basehttp "GET /entregar/234 HTTP/1.0" 200 11680
+INFO 2026-01-08 17:25:49,353 basehttp "GET /entregar/234 HTTP/1.0" 200 11680
+WARNING 2026-01-08 17:25:49,407 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 17:25:49,407 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 17:25:49,408 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 17:25:49,408 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-08 17:26:07,358 basehttp "POST /entregar/234 HTTP/1.0" 200 113
+INFO 2026-01-08 17:26:07,358 basehttp "POST /entregar/234 HTTP/1.0" 200 113
+INFO 2026-01-08 18:03:09,898 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-08 18:03:09,898 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-08 18:03:11,722 autoreload Watching for file changes with StatReloader
+INFO 2026-01-08 18:03:11,722 autoreload Watching for file changes with StatReloader
+INFO 2026-01-08 18:04:24,893 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-08 18:04:24,893 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-08 18:04:26,268 autoreload Watching for file changes with StatReloader
+INFO 2026-01-08 18:04:26,268 autoreload Watching for file changes with StatReloader
+INFO 2026-01-08 18:38:45,927 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-08 18:38:45,927 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-08 18:38:47,749 autoreload Watching for file changes with StatReloader
+INFO 2026-01-08 18:38:47,749 autoreload Watching for file changes with StatReloader
+INFO 2026-01-08 18:41:03,267 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-08 18:41:03,267 autoreload /app/vsm_app/views.py changed, reloading.
+INFO 2026-01-08 18:41:03,690 autoreload Watching for file changes with StatReloader
+INFO 2026-01-08 18:41:03,690 autoreload Watching for file changes with StatReloader
+INFO 2026-01-08 18:41:22,617 basehttp "GET /entregar/234 HTTP/1.0" 302 0
+INFO 2026-01-08 18:41:22,617 basehttp "GET /entregar/234 HTTP/1.0" 302 0
+WARNING 2026-01-08 18:41:23,158 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2026-01-08 18:41:23,159 backends Permisos DESEADOS de Keycloak (Nombres): 8 -> {'no_facturado_can_create', 'facturado_can_deliver', 'registros_can_view', 'facturado_can_create', 'no_facturado_can_edit', 'facturado_can_edit', 'no_facturado_can_deliver', 'facturado_can_approve'}
+WARNING 2026-01-08 18:41:23,160 backends Permisos ENCONTRADOS en la DB: 8
+WARNING 2026-01-08 18:41:23,165 backends Permisos asignados con éxito a user.permisos.
+INFO 2026-01-08 18:41:23,169 basehttp "GET /oidc/callback/?state=5AeAASGZY2CKHrwzzkRhGnIuGBbdeO23&session_state=3d9288a2-2767-4fa1-bfb9-999708497410&code=21a67df0-645b-4b05-a772-34328a60f0be.3d9288a2-2767-4fa1-bfb9-999708497410.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-08 18:41:23,169 basehttp "GET /oidc/callback/?state=5AeAASGZY2CKHrwzzkRhGnIuGBbdeO23&session_state=3d9288a2-2767-4fa1-bfb9-999708497410&code=21a67df0-645b-4b05-a772-34328a60f0be.3d9288a2-2767-4fa1-bfb9-999708497410.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-08 18:41:23,218 basehttp "GET /entregar/234 HTTP/1.0" 200 11680
+INFO 2026-01-08 18:41:23,218 basehttp "GET /entregar/234 HTTP/1.0" 200 11680
+INFO 2026-01-08 18:41:23,258 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 304 0
+INFO 2026-01-08 18:41:23,258 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 304 0
+WARNING 2026-01-08 18:41:23,418 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 18:41:23,418 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 18:41:23,419 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 18:41:23,419 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-08 18:41:28,418 basehttp "POST /entregar/234 HTTP/1.0" 200 113
+INFO 2026-01-08 18:41:28,418 basehttp "POST /entregar/234 HTTP/1.0" 200 113
+INFO 2026-01-08 18:43:24,305 basehttp "GET /entregar/234 HTTP/1.0" 200 11680
+INFO 2026-01-08 18:43:24,305 basehttp "GET /entregar/234 HTTP/1.0" 200 11680
+WARNING 2026-01-08 18:43:24,357 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 18:43:24,357 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 18:43:24,358 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 18:43:24,358 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-08 18:43:35,858 basehttp "GET /entregar/234 HTTP/1.0" 200 11680
+INFO 2026-01-08 18:43:35,858 basehttp "GET /entregar/234 HTTP/1.0" 200 11680
+WARNING 2026-01-08 18:43:35,910 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 18:43:35,910 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 18:43:35,911 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 18:43:35,911 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-08 18:43:47,005 _client HTTP Request: POST https://frclouds4qas.rioplatense.local:10443/sap/bc/soap/rfc "HTTP/1.1 200 OK"
+INFO 2026-01-08 18:43:47,022 basehttp "POST /entregar/234 HTTP/1.0" 200 40
+INFO 2026-01-08 18:43:47,022 basehttp "POST /entregar/234 HTTP/1.0" 200 40
+INFO 2026-01-08 18:43:48,982 basehttp "GET /pendientes HTTP/1.0" 200 15398
+INFO 2026-01-08 18:43:48,982 basehttp "GET /pendientes HTTP/1.0" 200 15398
+WARNING 2026-01-08 18:43:49,037 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 18:43:49,037 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 18:43:49,038 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 18:43:49,038 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-08 18:44:19,715 basehttp "GET /admin/ HTTP/1.0" 200 36329
+INFO 2026-01-08 18:44:19,715 basehttp "GET /admin/ HTTP/1.0" 200 36329
+INFO 2026-01-08 18:44:19,746 basehttp "GET /static/admin/css/calendar.css HTTP/1.0" 200 6359
+INFO 2026-01-08 18:44:19,746 basehttp "GET /static/admin/css/calendar.css HTTP/1.0" 200 6359
+INFO 2026-01-08 18:44:19,753 basehttp "GET /static/admin/css/customized_tailwind.css?v=2 HTTP/1.0" 200 34265
+INFO 2026-01-08 18:44:19,753 basehttp "GET /static/admin/css/customized_tailwind.css?v=2 HTTP/1.0" 200 34265
+INFO 2026-01-08 18:44:19,754 basehttp "GET /static/admin/css/base_tailwind.css HTTP/1.0" 200 151172
+INFO 2026-01-08 18:44:19,754 basehttp "GET /static/admin/css/base_tailwind.css HTTP/1.0" 200 151172
+INFO 2026-01-08 18:44:19,770 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/css/all.min.css HTTP/1.0" 200 96518
+INFO 2026-01-08 18:44:19,770 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/css/all.min.css HTTP/1.0" 200 96518
+INFO 2026-01-08 18:44:19,773 basehttp "GET /static/admin/img/daisyui-logomark.svg HTTP/1.0" 200 389
+INFO 2026-01-08 18:44:19,773 basehttp "GET /static/admin/img/daisyui-logomark.svg HTTP/1.0" 200 389
+INFO 2026-01-08 18:44:19,777 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.0" 200 89476
+INFO 2026-01-08 18:44:19,777 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.0" 200 89476
+INFO 2026-01-08 18:44:19,778 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.0" 200 1006
+INFO 2026-01-08 18:44:19,778 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.0" 200 1006
+INFO 2026-01-08 18:44:19,786 basehttp "GET /static/admin/js/theme-change.js HTTP/1.0" 200 3490
+INFO 2026-01-08 18:44:19,786 basehttp "GET /static/admin/js/theme-change.js HTTP/1.0" 200 3490
+INFO 2026-01-08 18:44:19,791 basehttp "GET /static/admin/js/admin/dashboard.js HTTP/1.0" 200 1009
+INFO 2026-01-08 18:44:19,791 basehttp "GET /static/admin/js/admin/dashboard.js HTTP/1.0" 200 1009
+INFO 2026-01-08 18:44:19,795 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.0" 200 4257
+INFO 2026-01-08 18:44:19,795 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.0" 200 4257
+INFO 2026-01-08 18:44:19,922 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-regular-400.woff2 HTTP/1.0" 200 25464
+INFO 2026-01-08 18:44:19,922 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-regular-400.woff2 HTTP/1.0" 200 25464
+INFO 2026-01-08 18:44:19,924 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-solid-900.woff2 HTTP/1.0" 200 157192
+INFO 2026-01-08 18:44:19,924 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-solid-900.woff2 HTTP/1.0" 200 157192
+INFO 2026-01-08 18:44:19,927 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Regular.ttf HTTP/1.0" 200 299684
+INFO 2026-01-08 18:44:19,927 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Regular.ttf HTTP/1.0" 200 299684
+INFO 2026-01-08 18:44:19,932 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Medium.ttf HTTP/1.0" 200 285136
+INFO 2026-01-08 18:44:19,932 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Medium.ttf HTTP/1.0" 200 285136
+INFO 2026-01-08 18:44:21,465 basehttp "GET /admin/vsm_app/vsm/ HTTP/1.0" 200 31309
+INFO 2026-01-08 18:44:21,465 basehttp "GET /admin/vsm_app/vsm/ HTTP/1.0" 200 31309
+INFO 2026-01-08 18:44:21,495 basehttp "GET /static/admin/js/actions.js HTTP/1.0" 200 6783
+INFO 2026-01-08 18:44:21,495 basehttp "GET /static/admin/js/actions.js HTTP/1.0" 200 6783
+INFO 2026-01-08 18:44:21,498 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.0" 200 1531
+INFO 2026-01-08 18:44:21,498 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.0" 200 1531
+INFO 2026-01-08 18:44:21,499 basehttp "GET /static/admin/js/urlify.js HTTP/1.0" 200 8632
+INFO 2026-01-08 18:44:21,499 basehttp "GET /static/admin/js/urlify.js HTTP/1.0" 200 8632
+INFO 2026-01-08 18:44:21,503 basehttp "GET /static/admin/js/core.js HTTP/1.0" 200 5419
+INFO 2026-01-08 18:44:21,503 basehttp "GET /static/admin/js/core.js HTTP/1.0" 200 5419
+INFO 2026-01-08 18:44:21,510 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.0" 200 10019
+INFO 2026-01-08 18:44:21,510 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.0" 200 10019
+INFO 2026-01-08 18:44:21,519 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.0" 200 287630
+INFO 2026-01-08 18:44:21,519 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.0" 200 287630
+INFO 2026-01-08 18:44:21,521 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.0" 200 232381
+INFO 2026-01-08 18:44:21,521 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.0" 200 232381
+INFO 2026-01-08 18:44:21,538 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2026-01-08 18:44:21,538 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2026-01-08 18:44:21,549 basehttp "GET /static/admin/js/query_filter.js?v=3 HTTP/1.0" 200 5384
+INFO 2026-01-08 18:44:21,549 basehttp "GET /static/admin/js/query_filter.js?v=3 HTTP/1.0" 200 5384
+INFO 2026-01-08 18:57:55,163 basehttp "GET /pendientes HTTP/1.0" 302 0
+INFO 2026-01-08 18:57:55,163 basehttp "GET /pendientes HTTP/1.0" 302 0
+WARNING 2026-01-08 18:57:55,841 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2026-01-08 18:57:55,841 backends Permisos DESEADOS de Keycloak (Nombres): 8 -> {'no_facturado_can_create', 'facturado_can_deliver', 'registros_can_view', 'facturado_can_create', 'no_facturado_can_edit', 'facturado_can_edit', 'no_facturado_can_deliver', 'facturado_can_approve'}
+WARNING 2026-01-08 18:57:55,843 backends Permisos ENCONTRADOS en la DB: 8
+WARNING 2026-01-08 18:57:55,846 backends Permisos asignados con éxito a user.permisos.
+INFO 2026-01-08 18:57:55,850 basehttp "GET /oidc/callback/?state=0eNrZPYrtbooolSZe5V4M4Sa85SweQaK&session_state=3d9288a2-2767-4fa1-bfb9-999708497410&code=513855aa-f1ee-4c88-9e5b-6b7947aafc2f.3d9288a2-2767-4fa1-bfb9-999708497410.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-08 18:57:55,850 basehttp "GET /oidc/callback/?state=0eNrZPYrtbooolSZe5V4M4Sa85SweQaK&session_state=3d9288a2-2767-4fa1-bfb9-999708497410&code=513855aa-f1ee-4c88-9e5b-6b7947aafc2f.3d9288a2-2767-4fa1-bfb9-999708497410.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-08 18:57:55,900 basehttp "GET /pendientes HTTP/1.0" 200 15398
+INFO 2026-01-08 18:57:55,900 basehttp "GET /pendientes HTTP/1.0" 200 15398
+WARNING 2026-01-08 18:57:56,003 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 18:57:56,003 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 18:57:56,004 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 18:57:56,004 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-08 19:26:10,632 basehttp "GET /pendientes HTTP/1.0" 302 0
+INFO 2026-01-08 19:26:10,632 basehttp "GET /pendientes HTTP/1.0" 302 0
+WARNING 2026-01-08 19:26:10,878 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2026-01-08 19:26:10,878 backends Permisos DESEADOS de Keycloak (Nombres): 8 -> {'no_facturado_can_create', 'facturado_can_deliver', 'registros_can_view', 'facturado_can_create', 'no_facturado_can_edit', 'facturado_can_edit', 'no_facturado_can_deliver', 'facturado_can_approve'}
+WARNING 2026-01-08 19:26:10,881 backends Permisos ENCONTRADOS en la DB: 8
+WARNING 2026-01-08 19:26:10,884 backends Permisos asignados con éxito a user.permisos.
+INFO 2026-01-08 19:26:10,891 basehttp "GET /oidc/callback/?state=FeuWZoIqTqCcZmdKeXGNNIx7fsbDHsaa&session_state=3d9288a2-2767-4fa1-bfb9-999708497410&code=cdbb9f6b-e91f-4f23-94d1-73c39cd6fdef.3d9288a2-2767-4fa1-bfb9-999708497410.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-08 19:26:10,891 basehttp "GET /oidc/callback/?state=FeuWZoIqTqCcZmdKeXGNNIx7fsbDHsaa&session_state=3d9288a2-2767-4fa1-bfb9-999708497410&code=cdbb9f6b-e91f-4f23-94d1-73c39cd6fdef.3d9288a2-2767-4fa1-bfb9-999708497410.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-08 19:26:10,932 basehttp "GET /pendientes HTTP/1.0" 200 15398
+INFO 2026-01-08 19:26:10,932 basehttp "GET /pendientes HTTP/1.0" 200 15398
+WARNING 2026-01-08 19:26:11,004 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:26:11,004 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:26:11,004 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:26:11,004 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-08 19:26:13,002 basehttp "GET /home HTTP/1.0" 200 7814
+INFO 2026-01-08 19:26:13,002 basehttp "GET /home HTTP/1.0" 200 7814
+WARNING 2026-01-08 19:26:13,052 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:26:13,052 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:26:13,052 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:26:13,052 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-08 19:26:13,993 basehttp "GET /nuevo_vsm HTTP/1.0" 200 32080
+INFO 2026-01-08 19:26:13,993 basehttp "GET /nuevo_vsm HTTP/1.0" 200 32080
+WARNING 2026-01-08 19:26:14,050 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:26:14,050 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:26:14,051 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:26:14,051 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-08 19:26:14,265 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2026-01-08 19:26:14,265 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2026-01-08 19:26:33,986 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 69616
+INFO 2026-01-08 19:26:33,986 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 69616
+INFO 2026-01-08 19:26:40,936 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=EPP&almacen=G001 HTTP/1.0" 200 1834
+INFO 2026-01-08 19:26:40,936 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=EPP&almacen=G001 HTTP/1.0" 200 1834
+INFO 2026-01-08 19:26:42,963 basehttp "POST /nuevo_vsm HTTP/1.0" 302 0
+INFO 2026-01-08 19:26:42,963 basehttp "POST /nuevo_vsm HTTP/1.0" 302 0
+INFO 2026-01-08 19:26:42,991 basehttp "GET /home HTTP/1.0" 200 8244
+INFO 2026-01-08 19:26:42,991 basehttp "GET /home HTTP/1.0" 200 8244
+WARNING 2026-01-08 19:26:43,049 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:26:43,049 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:26:43,050 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:26:43,050 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-08 19:27:11,864 basehttp "GET /pendientes HTTP/1.0" 200 16968
+INFO 2026-01-08 19:27:11,864 basehttp "GET /pendientes HTTP/1.0" 200 16968
+WARNING 2026-01-08 19:27:11,927 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:27:11,927 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:27:11,927 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:27:11,927 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-08 19:27:13,451 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+INFO 2026-01-08 19:27:13,451 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+INFO 2026-01-08 19:27:13,501 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6626
+INFO 2026-01-08 19:27:13,501 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6626
+WARNING 2026-01-08 19:27:13,519 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:27:13,519 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:27:13,519 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:27:13,519 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-08 19:31:15,105 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+INFO 2026-01-08 19:31:15,105 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+INFO 2026-01-08 19:31:15,128 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2026-01-08 19:31:15,128 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2026-01-08 19:31:15,137 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2026-01-08 19:31:15,137 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2026-01-08 19:31:15,149 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6675
+INFO 2026-01-08 19:31:15,153 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2026-01-08 19:31:15,149 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6675
+INFO 2026-01-08 19:31:15,153 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2026-01-08 19:31:15,156 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2026-01-08 19:31:15,156 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2026-01-08 19:31:15,161 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2026-01-08 19:31:15,161 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2026-01-08 19:31:15,174 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2026-01-08 19:31:15,174 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2026-01-08 19:31:15,180 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+INFO 2026-01-08 19:31:15,180 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+WARNING 2026-01-08 19:31:15,194 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:31:15,194 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:31:15,195 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:31:15,195 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:31:15,434 log Not Found: /favicon.ico
+WARNING 2026-01-08 19:31:15,434 log Not Found: /favicon.ico
+WARNING 2026-01-08 19:31:15,435 basehttp "GET /favicon.ico HTTP/1.0" 404 10491
+WARNING 2026-01-08 19:31:15,435 basehttp "GET /favicon.ico HTTP/1.0" 404 10491
+INFO 2026-01-08 19:37:02,467 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+INFO 2026-01-08 19:37:02,467 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+INFO 2026-01-08 19:37:02,497 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2026-01-08 19:37:02,497 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2026-01-08 19:37:02,508 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2026-01-08 19:37:02,512 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2026-01-08 19:37:02,508 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2026-01-08 19:37:02,512 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2026-01-08 19:37:02,519 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2026-01-08 19:37:02,519 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2026-01-08 19:37:02,520 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+INFO 2026-01-08 19:37:02,520 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+INFO 2026-01-08 19:37:02,527 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2026-01-08 19:37:02,527 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2026-01-08 19:37:02,530 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2026-01-08 19:37:02,530 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2026-01-08 19:37:02,531 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6675
+INFO 2026-01-08 19:37:02,531 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6675
+WARNING 2026-01-08 19:37:02,573 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:37:02,573 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:37:02,574 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:37:02,574 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:37:02,816 log Not Found: /favicon.ico
+WARNING 2026-01-08 19:37:02,816 log Not Found: /favicon.ico
+WARNING 2026-01-08 19:37:02,817 basehttp "GET /favicon.ico HTTP/1.0" 404 10491
+WARNING 2026-01-08 19:37:02,817 basehttp "GET /favicon.ico HTTP/1.0" 404 10491
+INFO 2026-01-08 19:39:05,012 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+INFO 2026-01-08 19:39:05,012 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+INFO 2026-01-08 19:39:05,035 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 304 0
+INFO 2026-01-08 19:39:05,035 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 304 0
+WARNING 2026-01-08 19:39:05,070 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:39:05,070 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:39:05,071 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:39:05,071 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-08 19:49:36,647 basehttp "GET /entregar/235 HTTP/1.0" 302 0
+INFO 2026-01-08 19:49:36,647 basehttp "GET /entregar/235 HTTP/1.0" 302 0
+INFO 2026-01-08 19:49:37,156 basehttp "GET /oidc/callback/?error=login_required&state=QZGqYKbN7Ft1qjG9NNtOzURyI0azQ7OB HTTP/1.0" 302 0
+INFO 2026-01-08 19:49:37,156 basehttp "GET /oidc/callback/?error=login_required&state=QZGqYKbN7Ft1qjG9NNtOzURyI0azQ7OB HTTP/1.0" 302 0
+INFO 2026-01-08 19:49:37,163 basehttp "GET / HTTP/1.0" 200 6411
+INFO 2026-01-08 19:49:37,163 basehttp "GET / HTTP/1.0" 200 6411
+INFO 2026-01-08 19:49:37,194 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2026-01-08 19:49:37,194 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2026-01-08 19:49:37,206 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2026-01-08 19:49:37,206 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2026-01-08 19:49:37,207 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+INFO 2026-01-08 19:49:37,207 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+INFO 2026-01-08 19:49:37,214 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2026-01-08 19:49:37,214 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2026-01-08 19:49:37,215 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2026-01-08 19:49:37,215 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2026-01-08 19:49:37,223 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2026-01-08 19:49:37,223 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+WARNING 2026-01-08 19:49:37,231 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:49:37,231 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:49:37,232 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:49:37,232 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:49:37,385 log Not Found: /favicon.ico
+WARNING 2026-01-08 19:49:37,385 log Not Found: /favicon.ico
+WARNING 2026-01-08 19:49:37,386 basehttp "GET /favicon.ico HTTP/1.0" 404 10491
+WARNING 2026-01-08 19:49:37,386 basehttp "GET /favicon.ico HTTP/1.0" 404 10491
+INFO 2026-01-08 19:49:40,188 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2026-01-08 19:49:40,188 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2026-01-08 19:49:40,221 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+INFO 2026-01-08 19:49:40,221 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+WARNING 2026-01-08 19:49:43,370 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2026-01-08 19:49:43,370 backends Permisos DESEADOS de Keycloak (Nombres): 8 -> {'no_facturado_can_create', 'facturado_can_deliver', 'registros_can_view', 'facturado_can_create', 'no_facturado_can_edit', 'facturado_can_edit', 'no_facturado_can_deliver', 'facturado_can_approve'}
+WARNING 2026-01-08 19:49:43,372 backends Permisos ENCONTRADOS en la DB: 8
+WARNING 2026-01-08 19:49:43,374 backends Permisos asignados con éxito a user.permisos.
+INFO 2026-01-08 19:49:43,387 basehttp "GET /oidc/callback/?state=NDjYDrlqh4WJjpPUebwaYBe8gJ3KE361&session_state=1527471e-4560-4e9a-9110-df89ccbfb986&code=f37e6c90-b2ec-4f83-b916-fdfc2ae6d57d.1527471e-4560-4e9a-9110-df89ccbfb986.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-08 19:49:43,387 basehttp "GET /oidc/callback/?state=NDjYDrlqh4WJjpPUebwaYBe8gJ3KE361&session_state=1527471e-4560-4e9a-9110-df89ccbfb986&code=f37e6c90-b2ec-4f83-b916-fdfc2ae6d57d.1527471e-4560-4e9a-9110-df89ccbfb986.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-08 19:49:43,409 basehttp "GET /home HTTP/1.0" 200 7814
+INFO 2026-01-08 19:49:43,409 basehttp "GET /home HTTP/1.0" 200 7814
+WARNING 2026-01-08 19:49:43,521 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:49:43,521 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:49:43,522 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:49:43,522 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-08 19:49:44,826 basehttp "GET /pendientes HTTP/1.0" 200 16968
+INFO 2026-01-08 19:49:44,826 basehttp "GET /pendientes HTTP/1.0" 200 16968
+WARNING 2026-01-08 19:49:44,874 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:49:44,874 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:49:44,875 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:49:44,875 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-08 19:49:47,583 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+INFO 2026-01-08 19:49:47,583 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+INFO 2026-01-08 19:49:47,614 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2026-01-08 19:49:47,614 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2026-01-08 19:49:47,620 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6783
+INFO 2026-01-08 19:49:47,620 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6783
+WARNING 2026-01-08 19:49:47,635 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:49:47,635 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:49:47,636 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:49:47,636 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-08 19:50:01,456 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+INFO 2026-01-08 19:50:01,456 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+WARNING 2026-01-08 19:50:01,499 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:50:01,499 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:50:01,501 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:50:01,501 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-08 19:50:57,872 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+INFO 2026-01-08 19:50:57,872 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+INFO 2026-01-08 19:50:57,895 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2026-01-08 19:50:57,895 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2026-01-08 19:50:57,900 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2026-01-08 19:50:57,900 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2026-01-08 19:50:57,912 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2026-01-08 19:50:57,912 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2026-01-08 19:50:57,918 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+INFO 2026-01-08 19:50:57,918 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+INFO 2026-01-08 19:50:57,929 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2026-01-08 19:50:57,929 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2026-01-08 19:50:57,930 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2026-01-08 19:50:57,930 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2026-01-08 19:50:57,933 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2026-01-08 19:50:57,933 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2026-01-08 19:50:57,941 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6783
+INFO 2026-01-08 19:50:57,941 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6783
+WARNING 2026-01-08 19:50:57,954 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:50:57,954 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:50:57,955 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:50:57,955 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:50:58,196 log Not Found: /favicon.ico
+WARNING 2026-01-08 19:50:58,196 log Not Found: /favicon.ico
+WARNING 2026-01-08 19:50:58,197 basehttp "GET /favicon.ico HTTP/1.0" 404 10491
+WARNING 2026-01-08 19:50:58,197 basehttp "GET /favicon.ico HTTP/1.0" 404 10491
+INFO 2026-01-08 19:51:03,555 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+INFO 2026-01-08 19:51:03,555 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+WARNING 2026-01-08 19:51:03,618 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:51:03,618 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:51:03,619 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:51:03,619 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-08 19:51:06,024 basehttp "GET /pendientes HTTP/1.0" 200 16968
+INFO 2026-01-08 19:51:06,024 basehttp "GET /pendientes HTTP/1.0" 200 16968
+WARNING 2026-01-08 19:51:06,082 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:51:06,082 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:51:06,083 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:51:06,083 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-08 19:51:09,534 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+INFO 2026-01-08 19:51:09,534 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+WARNING 2026-01-08 19:51:09,605 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:51:09,605 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:51:09,606 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:51:09,606 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-08 19:52:43,574 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+INFO 2026-01-08 19:52:43,574 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+INFO 2026-01-08 19:52:43,594 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2026-01-08 19:52:43,594 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2026-01-08 19:52:43,612 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2026-01-08 19:52:43,612 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2026-01-08 19:52:43,613 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2026-01-08 19:52:43,613 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2026-01-08 19:52:43,615 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2026-01-08 19:52:43,615 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2026-01-08 19:52:43,616 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2026-01-08 19:52:43,616 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2026-01-08 19:52:43,627 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6731
+INFO 2026-01-08 19:52:43,627 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+INFO 2026-01-08 19:52:43,627 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6731
+INFO 2026-01-08 19:52:43,628 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2026-01-08 19:52:43,628 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2026-01-08 19:52:43,627 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+WARNING 2026-01-08 19:52:43,647 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:52:43,647 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:52:43,648 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:52:43,648 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:52:43,848 log Not Found: /favicon.ico
+WARNING 2026-01-08 19:52:43,848 log Not Found: /favicon.ico
+WARNING 2026-01-08 19:52:43,849 basehttp "GET /favicon.ico HTTP/1.0" 404 10491
+WARNING 2026-01-08 19:52:43,849 basehttp "GET /favicon.ico HTTP/1.0" 404 10491
+INFO 2026-01-08 19:53:35,590 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+INFO 2026-01-08 19:53:35,590 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+INFO 2026-01-08 19:53:35,617 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 304 0
+INFO 2026-01-08 19:53:35,617 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 304 0
+WARNING 2026-01-08 19:53:35,639 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:53:35,639 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-08 19:53:35,640 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-08 19:53:35,640 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-09 11:12:13,450 autoreload Watching for file changes with StatReloader
+INFO 2026-01-09 11:12:13,450 autoreload Watching for file changes with StatReloader
+INFO 2026-01-09 11:28:21,285 basehttp "GET / HTTP/1.0" 302 0
+INFO 2026-01-09 11:28:21,285 basehttp "GET / HTTP/1.0" 302 0
+INFO 2026-01-09 11:28:21,835 basehttp "GET / HTTP/1.0" 302 0
+INFO 2026-01-09 11:28:21,835 basehttp "GET / HTTP/1.0" 302 0
+INFO 2026-01-09 11:28:22,426 basehttp "GET /oidc/callback/?error=login_required&state=NlZXyEUpzZVRWr9X1e3SU7lKmjruYtOi HTTP/1.0" 302 0
+INFO 2026-01-09 11:28:22,426 basehttp "GET /oidc/callback/?error=login_required&state=NlZXyEUpzZVRWr9X1e3SU7lKmjruYtOi HTTP/1.0" 302 0
+INFO 2026-01-09 11:28:22,448 basehttp "GET / HTTP/1.0" 200 6411
+INFO 2026-01-09 11:28:22,448 basehttp "GET / HTTP/1.0" 200 6411
+INFO 2026-01-09 11:28:22,522 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2026-01-09 11:28:22,522 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2026-01-09 11:28:22,540 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2026-01-09 11:28:22,541 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2026-01-09 11:28:22,540 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2026-01-09 11:28:22,541 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2026-01-09 11:28:22,544 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2026-01-09 11:28:22,544 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2026-01-09 11:28:22,546 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2026-01-09 11:28:22,546 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2026-01-09 11:28:22,550 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+INFO 2026-01-09 11:28:22,550 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+WARNING 2026-01-09 11:28:22,787 log Not Found: /favicon.ico
+WARNING 2026-01-09 11:28:22,787 log Not Found: /favicon.ico
+WARNING 2026-01-09 11:28:22,787 basehttp "GET /favicon.ico HTTP/1.0" 404 10491
+WARNING 2026-01-09 11:28:22,787 basehttp "GET /favicon.ico HTTP/1.0" 404 10491
+INFO 2026-01-09 13:18:36,817 basehttp "GET / HTTP/1.0" 200 6411
+INFO 2026-01-09 13:18:36,817 basehttp "GET / HTTP/1.0" 200 6411
+INFO 2026-01-09 13:18:42,863 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2026-01-09 13:18:42,863 basehttp "GET /auth/login/ HTTP/1.0" 301 0
+INFO 2026-01-09 13:18:42,946 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+INFO 2026-01-09 13:18:42,946 basehttp "GET /oidc/authenticate/ HTTP/1.0" 302 0
+WARNING 2026-01-09 13:18:44,112 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2026-01-09 13:18:44,112 backends Permisos DESEADOS de Keycloak (Nombres): 8 -> {'facturado_can_create', 'facturado_can_approve', 'no_facturado_can_edit', 'no_facturado_can_create', 'facturado_can_deliver', 'registros_can_view', 'facturado_can_edit', 'no_facturado_can_deliver'}
+WARNING 2026-01-09 13:18:44,129 backends Permisos ENCONTRADOS en la DB: 8
+WARNING 2026-01-09 13:18:44,164 backends Permisos asignados con éxito a user.permisos.
+INFO 2026-01-09 13:18:44,181 basehttp "GET /oidc/callback/?state=hZRG2gu2gPKxWBZOj8REO6bpTj3Grp3q&session_state=69df07ed-b984-4d4a-bd28-4dfdc5848adb&code=2e3b2aa7-4124-4bd2-8a58-687138f8b75a.69df07ed-b984-4d4a-bd28-4dfdc5848adb.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-09 13:18:44,181 basehttp "GET /oidc/callback/?state=hZRG2gu2gPKxWBZOj8REO6bpTj3Grp3q&session_state=69df07ed-b984-4d4a-bd28-4dfdc5848adb&code=2e3b2aa7-4124-4bd2-8a58-687138f8b75a.69df07ed-b984-4d4a-bd28-4dfdc5848adb.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-09 13:18:44,214 basehttp "GET /home HTTP/1.0" 200 7814
+INFO 2026-01-09 13:18:44,214 basehttp "GET /home HTTP/1.0" 200 7814
+INFO 2026-01-09 13:18:48,421 basehttp "GET /pendientes HTTP/1.0" 200 16968
+INFO 2026-01-09 13:18:48,421 basehttp "GET /pendientes HTTP/1.0" 200 16968
+INFO 2026-01-09 13:18:49,774 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+INFO 2026-01-09 13:18:49,774 basehttp "GET /entregar/235 HTTP/1.0" 200 11680
+INFO 2026-01-09 13:18:49,800 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2026-01-09 13:18:49,800 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2026-01-09 13:18:49,804 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6960
+INFO 2026-01-09 13:18:49,804 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6960
+INFO 2026-01-09 13:19:12,968 basehttp "POST /entregar/235 HTTP/1.0" 200 113
+INFO 2026-01-09 13:19:12,968 basehttp "POST /entregar/235 HTTP/1.0" 200 113
+INFO 2026-01-09 13:19:54,915 _client HTTP Request: POST https://frclouds4qas.rioplatense.local:10443/sap/bc/soap/rfc "HTTP/1.1 200 OK"
+INFO 2026-01-09 13:19:54,936 basehttp "POST /entregar/235 HTTP/1.0" 200 40
+INFO 2026-01-09 13:19:54,936 basehttp "POST /entregar/235 HTTP/1.0" 200 40
+INFO 2026-01-09 13:19:56,536 basehttp "GET /pendientes HTTP/1.0" 200 16351
+INFO 2026-01-09 13:19:56,536 basehttp "GET /pendientes HTTP/1.0" 200 16351
+INFO 2026-01-09 13:20:01,100 basehttp "GET / HTTP/1.0" 200 7814
+INFO 2026-01-09 13:20:01,100 basehttp "GET / HTTP/1.0" 200 7814
+INFO 2026-01-09 13:20:02,867 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2026-01-09 13:20:02,867 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2026-01-09 13:20:02,994 basehttp "GET /admin/ HTTP/1.0" 200 36347
+INFO 2026-01-09 13:20:02,994 basehttp "GET /admin/ HTTP/1.0" 200 36347
+INFO 2026-01-09 13:20:03,038 basehttp "GET /static/admin/css/calendar.css HTTP/1.0" 200 6359
+INFO 2026-01-09 13:20:03,038 basehttp "GET /static/admin/css/calendar.css HTTP/1.0" 200 6359
+INFO 2026-01-09 13:20:03,040 basehttp "GET /static/admin/css/customized_tailwind.css?v=2 HTTP/1.0" 200 34265
+INFO 2026-01-09 13:20:03,040 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.0" 200 1006
+INFO 2026-01-09 13:20:03,040 basehttp "GET /static/admin/css/customized_tailwind.css?v=2 HTTP/1.0" 200 34265
+INFO 2026-01-09 13:20:03,040 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.0" 200 1006
+INFO 2026-01-09 13:20:03,048 basehttp "GET /static/admin/css/base_tailwind.css HTTP/1.0" 200 151172
+INFO 2026-01-09 13:20:03,048 basehttp "GET /static/admin/css/base_tailwind.css HTTP/1.0" 200 151172
+INFO 2026-01-09 13:20:03,049 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.0" 200 89476
+INFO 2026-01-09 13:20:03,049 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.0" 200 89476
+INFO 2026-01-09 13:20:03,049 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/css/all.min.css HTTP/1.0" 200 96518
+INFO 2026-01-09 13:20:03,049 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/css/all.min.css HTTP/1.0" 200 96518
+INFO 2026-01-09 13:20:03,050 basehttp "GET /static/admin/js/theme-change.js HTTP/1.0" 200 3490
+INFO 2026-01-09 13:20:03,050 basehttp "GET /static/admin/js/theme-change.js HTTP/1.0" 200 3490
+INFO 2026-01-09 13:20:03,053 basehttp "GET /static/admin/js/admin/dashboard.js HTTP/1.0" 200 1009
+INFO 2026-01-09 13:20:03,053 basehttp "GET /static/admin/js/admin/dashboard.js HTTP/1.0" 200 1009
+INFO 2026-01-09 13:20:03,057 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.0" 200 4257
+INFO 2026-01-09 13:20:03,057 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.0" 200 4257
+INFO 2026-01-09 13:20:03,277 basehttp "GET /static/admin/img/daisyui-logomark.svg HTTP/1.0" 200 389
+INFO 2026-01-09 13:20:03,277 basehttp "GET /static/admin/img/daisyui-logomark.svg HTTP/1.0" 200 389
+INFO 2026-01-09 13:20:03,285 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-regular-400.woff2 HTTP/1.0" 200 25464
+INFO 2026-01-09 13:20:03,285 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-regular-400.woff2 HTTP/1.0" 200 25464
+INFO 2026-01-09 13:20:03,301 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-solid-900.woff2 HTTP/1.0" 200 157192
+INFO 2026-01-09 13:20:03,301 basehttp "GET /static/admin/fonts/fontawesome-free-6.6.0-web/webfonts/fa-solid-900.woff2 HTTP/1.0" 200 157192
+INFO 2026-01-09 13:20:03,301 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Medium.ttf HTTP/1.0" 200 285136
+INFO 2026-01-09 13:20:03,301 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Medium.ttf HTTP/1.0" 200 285136
+INFO 2026-01-09 13:20:03,303 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Regular.ttf HTTP/1.0" 200 299684
+INFO 2026-01-09 13:20:03,303 basehttp "GET /static/admin/fonts/Ubuntu/Ubuntu-Regular.ttf HTTP/1.0" 200 299684
+INFO 2026-01-09 13:20:05,241 basehttp "GET /admin/vsm_app/vsm/ HTTP/1.0" 200 32044
+INFO 2026-01-09 13:20:05,241 basehttp "GET /admin/vsm_app/vsm/ HTTP/1.0" 200 32044
+INFO 2026-01-09 13:20:05,275 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.0" 200 10019
+INFO 2026-01-09 13:20:05,275 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.0" 200 10019
+INFO 2026-01-09 13:20:05,275 basehttp "GET /static/admin/js/urlify.js HTTP/1.0" 200 8632
+INFO 2026-01-09 13:20:05,275 basehttp "GET /static/admin/js/urlify.js HTTP/1.0" 200 8632
+INFO 2026-01-09 13:20:05,276 basehttp "GET /static/admin/js/actions.js HTTP/1.0" 200 6783
+INFO 2026-01-09 13:20:05,276 basehttp "GET /static/admin/js/actions.js HTTP/1.0" 200 6783
+INFO 2026-01-09 13:20:05,278 basehttp "GET /static/admin/js/core.js HTTP/1.0" 200 5419
+INFO 2026-01-09 13:20:05,278 basehttp "GET /static/admin/js/core.js HTTP/1.0" 200 5419
+INFO 2026-01-09 13:20:05,298 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.0" 200 1531
+INFO 2026-01-09 13:20:05,298 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.0" 200 1531
+INFO 2026-01-09 13:20:05,299 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.0" 200 287630
+INFO 2026-01-09 13:20:05,299 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.0" 200 287630
+INFO 2026-01-09 13:20:05,306 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.0" 200 232381
+INFO 2026-01-09 13:20:05,306 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.0" 200 232381
+INFO 2026-01-09 13:20:05,308 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2026-01-09 13:20:05,308 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2026-01-09 13:20:05,526 basehttp "GET /static/admin/js/query_filter.js?v=3 HTTP/1.0" 200 5384
+INFO 2026-01-09 13:20:05,526 basehttp "GET /static/admin/js/query_filter.js?v=3 HTTP/1.0" 200 5384
+INFO 2026-01-09 13:20:08,319 basehttp "GET /admin/vsm_app/vsm/235/change/ HTTP/1.0" 200 267307
+INFO 2026-01-09 13:20:08,319 basehttp "GET /admin/vsm_app/vsm/235/change/ HTTP/1.0" 200 267307
+INFO 2026-01-09 13:20:08,349 basehttp "GET /static/admin/css/autocomplete.css HTTP/1.0" 200 9279
+INFO 2026-01-09 13:20:08,349 basehttp "GET /static/admin/css/autocomplete.css HTTP/1.0" 200 9279
+INFO 2026-01-09 13:20:08,350 basehttp "GET /static/admin/css/vendor/select2/select2.css HTTP/1.0" 200 17511
+INFO 2026-01-09 13:20:08,350 basehttp "GET /static/admin/css/vendor/select2/select2.css HTTP/1.0" 200 17511
+INFO 2026-01-09 13:20:08,351 basehttp "GET /static/admin/js/calendar.js HTTP/1.0" 200 7788
+INFO 2026-01-09 13:20:08,351 basehttp "GET /static/admin/js/calendar.js HTTP/1.0" 200 7788
+INFO 2026-01-09 13:20:08,355 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.0" 200 19750
+INFO 2026-01-09 13:20:08,355 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.0" 200 19750
+INFO 2026-01-09 13:20:08,359 basehttp "GET /static/admin/js/vendor/select2/i18n/en.js HTTP/1.0" 200 844
+INFO 2026-01-09 13:20:08,359 basehttp "GET /static/admin/js/vendor/select2/i18n/en.js HTTP/1.0" 200 844
+INFO 2026-01-09 13:20:08,363 basehttp "GET /static/admin/js/autocomplete.js HTTP/1.0" 200 1501
+INFO 2026-01-09 13:20:08,363 basehttp "GET /static/admin/js/autocomplete.js HTTP/1.0" 200 1501
+INFO 2026-01-09 13:20:08,367 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.0" 200 492
+INFO 2026-01-09 13:20:08,367 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.0" 200 492
+INFO 2026-01-09 13:20:08,369 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2026-01-09 13:20:08,369 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2026-01-09 13:20:08,370 basehttp "GET /static/admin/js/inlines.js HTTP/1.0" 200 15245
+INFO 2026-01-09 13:20:08,370 basehttp "GET /static/admin/js/inlines.js HTTP/1.0" 200 15245
+INFO 2026-01-09 13:20:08,371 basehttp "GET /static/admin/js/vendor/select2/select2.full.js HTTP/1.0" 200 173566
+INFO 2026-01-09 13:20:08,371 basehttp "GET /static/admin/js/vendor/select2/select2.full.js HTTP/1.0" 200 173566
+INFO 2026-01-09 13:20:08,520 basehttp "GET /static/admin/js/change_form.js HTTP/1.0" 200 607
+INFO 2026-01-09 13:20:08,520 basehttp "GET /static/admin/js/change_form.js HTTP/1.0" 200 607
+INFO 2026-01-09 13:20:08,632 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.0" 200 1086
+INFO 2026-01-09 13:20:08,632 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.0" 200 1086
+INFO 2026-01-09 13:20:08,632 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.0" 200 677
+INFO 2026-01-09 13:20:08,632 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.0" 200 677
+INFO 2026-01-09 13:20:12,579 basehttp "GET /firmas/firma_235_188_h4XrXUA.png HTTP/1.0" 200 9498
+INFO 2026-01-09 13:20:12,579 basehttp "GET /firmas/firma_235_188_h4XrXUA.png HTTP/1.0" 200 9498
+INFO 2026-01-09 13:28:46,642 basehttp "GET /admin/vsm_app/usuarios/ HTTP/1.0" 200 34575
+INFO 2026-01-09 13:28:46,642 basehttp "GET /admin/vsm_app/usuarios/ HTTP/1.0" 200 34575
+INFO 2026-01-09 13:28:46,681 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2026-01-09 13:28:46,681 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2026-01-09 13:28:49,175 basehttp "GET /admin/vsm_app/usuarios/3/change/ HTTP/1.0" 200 256601
+INFO 2026-01-09 13:28:49,175 basehttp "GET /admin/vsm_app/usuarios/3/change/ HTTP/1.0" 200 256601
+INFO 2026-01-09 13:28:49,211 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2026-01-09 13:28:49,211 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+INFO 2026-01-09 13:51:59,319 basehttp "GET /home HTTP/1.0" 302 0
+INFO 2026-01-09 13:51:59,319 basehttp "GET /home HTTP/1.0" 302 0
+WARNING 2026-01-09 13:52:03,744 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2026-01-09 13:52:03,744 backends Permisos DESEADOS de Keycloak (Nombres): 8 -> {'facturado_can_create', 'facturado_can_approve', 'no_facturado_can_edit', 'no_facturado_can_create', 'facturado_can_deliver', 'registros_can_view', 'facturado_can_edit', 'no_facturado_can_deliver'}
+WARNING 2026-01-09 13:52:03,745 backends Permisos ENCONTRADOS en la DB: 8
+WARNING 2026-01-09 13:52:03,748 backends Permisos asignados con éxito a user.permisos.
+INFO 2026-01-09 13:52:03,753 basehttp "GET /oidc/callback/?state=UIaHyCGiO52LxULjXlJPuU3KZ3yuKZ8I&session_state=69df07ed-b984-4d4a-bd28-4dfdc5848adb&code=2f803ddf-0e97-4794-ae51-8d9f29fcefae.69df07ed-b984-4d4a-bd28-4dfdc5848adb.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-09 13:52:03,753 basehttp "GET /oidc/callback/?state=UIaHyCGiO52LxULjXlJPuU3KZ3yuKZ8I&session_state=69df07ed-b984-4d4a-bd28-4dfdc5848adb&code=2f803ddf-0e97-4794-ae51-8d9f29fcefae.69df07ed-b984-4d4a-bd28-4dfdc5848adb.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-09 13:52:03,773 basehttp "GET /home HTTP/1.0" 200 7814
+INFO 2026-01-09 13:52:03,773 basehttp "GET /home HTTP/1.0" 200 7814
+INFO 2026-01-09 14:05:32,695 basehttp "GET /pendientes HTTP/1.0" 200 16351
+INFO 2026-01-09 14:05:32,695 basehttp "GET /pendientes HTTP/1.0" 200 16351
+INFO 2026-01-09 14:05:34,293 basehttp "GET /home HTTP/1.0" 200 7814
+INFO 2026-01-09 14:05:34,293 basehttp "GET /home HTTP/1.0" 200 7814
+INFO 2026-01-09 14:05:50,141 basehttp "GET /nuevo_vsm HTTP/1.0" 200 32080
+INFO 2026-01-09 14:05:50,141 basehttp "GET /nuevo_vsm HTTP/1.0" 200 32080
+INFO 2026-01-09 14:05:50,526 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2026-01-09 14:05:50,526 basehttp "GET /ajax/almacenes_por_empresa/?empresa_id=1 HTTP/1.0" 200 166
+INFO 2026-01-09 14:05:56,048 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 69616
+INFO 2026-01-09 14:05:56,048 basehttp "GET /ajax/empleados?centro_id=23 HTTP/1.0" 200 69616
+INFO 2026-01-09 14:06:02,181 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=EPP&almacen=G001 HTTP/1.0" 200 1834
+INFO 2026-01-09 14:06:02,181 basehttp "GET /buscar_productos_por_centro?centro_costo=23&tipo_entrega=EPP&almacen=G001 HTTP/1.0" 200 1834
+INFO 2026-01-09 14:06:05,758 basehttp "POST /nuevo_vsm HTTP/1.0" 302 0
+INFO 2026-01-09 14:06:05,758 basehttp "POST /nuevo_vsm HTTP/1.0" 302 0
+INFO 2026-01-09 14:06:05,781 basehttp "GET /home HTTP/1.0" 200 8244
+INFO 2026-01-09 14:06:05,781 basehttp "GET /home HTTP/1.0" 200 8244
+INFO 2026-01-09 14:09:15,745 basehttp "GET /pendientes HTTP/1.0" 302 0
+INFO 2026-01-09 14:09:15,745 basehttp "GET /pendientes HTTP/1.0" 302 0
+WARNING 2026-01-09 14:09:16,236 backends Sincronización de permisos iniciada para el usuario: lcingolani@rioplatense.com
+WARNING 2026-01-09 14:09:16,236 backends Permisos DESEADOS de Keycloak (Nombres): 8 -> {'facturado_can_create', 'facturado_can_approve', 'no_facturado_can_edit', 'no_facturado_can_create', 'facturado_can_deliver', 'registros_can_view', 'facturado_can_edit', 'no_facturado_can_deliver'}
+WARNING 2026-01-09 14:09:16,238 backends Permisos ENCONTRADOS en la DB: 8
+WARNING 2026-01-09 14:09:16,240 backends Permisos asignados con éxito a user.permisos.
+INFO 2026-01-09 14:09:16,246 basehttp "GET /oidc/callback/?state=4nXbboQfrQIPPSLdhW1HJ3tRuqtSTY7G&session_state=69df07ed-b984-4d4a-bd28-4dfdc5848adb&code=2ec235ca-5210-47a2-80b9-76ffad9f7faf.69df07ed-b984-4d4a-bd28-4dfdc5848adb.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-09 14:09:16,246 basehttp "GET /oidc/callback/?state=4nXbboQfrQIPPSLdhW1HJ3tRuqtSTY7G&session_state=69df07ed-b984-4d4a-bd28-4dfdc5848adb&code=2ec235ca-5210-47a2-80b9-76ffad9f7faf.69df07ed-b984-4d4a-bd28-4dfdc5848adb.27d3a9ea-ccd7-44f6-b789-9f1c6a357eba HTTP/1.0" 302 0
+INFO 2026-01-09 14:09:16,318 basehttp "GET /pendientes HTTP/1.0" 200 17921
+INFO 2026-01-09 14:09:16,318 basehttp "GET /pendientes HTTP/1.0" 200 17921
+INFO 2026-01-09 14:09:17,349 basehttp "GET /entregar/236 HTTP/1.0" 200 11680
+INFO 2026-01-09 14:09:17,349 basehttp "GET /entregar/236 HTTP/1.0" 200 11680
+INFO 2026-01-09 14:09:17,377 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 304 0
+INFO 2026-01-09 14:09:17,377 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 304 0
+INFO 2026-01-09 14:14:38,312 basehttp "GET /entregar/236 HTTP/1.0" 200 11680
+INFO 2026-01-09 14:14:38,312 basehttp "GET /entregar/236 HTTP/1.0" 200 11680
+INFO 2026-01-09 14:14:38,330 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6830
+INFO 2026-01-09 14:14:38,330 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6830
+WARNING 2026-01-09 14:14:41,789 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-09 14:14:41,789 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-09 14:14:41,790 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-09 14:14:41,790 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-09 14:14:43,532 basehttp "GET /entregar/236 HTTP/1.0" 200 11680
+INFO 2026-01-09 14:14:43,532 basehttp "GET /entregar/236 HTTP/1.0" 200 11680
+INFO 2026-01-09 14:14:43,562 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2026-01-09 14:14:43,562 basehttp "GET /static/css/output.css HTTP/1.0" 200 102713
+INFO 2026-01-09 14:14:43,565 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2026-01-09 14:14:43,565 basehttp "GET /static/js/jquery.js HTTP/1.0" 200 89501
+INFO 2026-01-09 14:14:43,581 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2026-01-09 14:14:43,581 basehttp "GET /static/js/on-scan.js HTTP/1.0" 200 6771
+INFO 2026-01-09 14:14:43,583 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+INFO 2026-01-09 14:14:43,583 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+INFO 2026-01-09 14:14:43,583 basehttp "GET /static/images/logo.svg HTTP/1.0" 200 7646
+WARNING 2026-01-09 14:14:43,590 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+INFO 2026-01-09 14:14:43,583 basehttp "GET /static/js/wacomstu540.js HTTP/1.0" 200 14610
+WARNING 2026-01-09 14:14:43,590 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-09 14:14:43,593 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-09 14:14:43,593 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-09 14:14:43,596 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2026-01-09 14:14:43,596 basehttp "GET /static/js/select2.js HTTP/1.0" 200 73164
+INFO 2026-01-09 14:14:43,597 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6830
+INFO 2026-01-09 14:14:43,597 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 200 6830
+INFO 2026-01-09 14:14:43,620 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+INFO 2026-01-09 14:14:43,620 basehttp "GET /static/js/tailwind.js HTTP/1.0" 200 407360
+WARNING 2026-01-09 14:14:43,837 log Not Found: /favicon.ico
+WARNING 2026-01-09 14:14:43,837 log Not Found: /favicon.ico
+WARNING 2026-01-09 14:14:43,838 basehttp "GET /favicon.ico HTTP/1.0" 404 10491
+WARNING 2026-01-09 14:14:43,838 basehttp "GET /favicon.ico HTTP/1.0" 404 10491
+INFO 2026-01-09 14:16:02,594 basehttp "GET /entregar/236 HTTP/1.0" 200 11680
+INFO 2026-01-09 14:16:02,594 basehttp "GET /entregar/236 HTTP/1.0" 200 11680
+INFO 2026-01-09 14:16:02,619 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 304 0
+INFO 2026-01-09 14:16:02,619 basehttp "GET /static/js/signature-handler.js HTTP/1.0" 304 0
+WARNING 2026-01-09 14:16:02,639 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-09 14:16:02,639 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-09 14:16:02,640 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+WARNING 2026-01-09 14:16:02,640 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.0" 404 10639
+INFO 2026-01-09 14:16:46,643 basehttp "POST /entregar/236 HTTP/1.0" 200 113
+INFO 2026-01-09 14:16:46,643 basehttp "POST /entregar/236 HTTP/1.0" 200 113

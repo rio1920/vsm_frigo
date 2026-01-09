@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const signatureCanvas = document.getElementById('signatureCanvas');
     const form = document.getElementById("formEntrega");
     const ctx = signatureCanvas.getContext('2d');
+    
 
     // Inicializa la librería del driver
     let lastX = null;
@@ -20,14 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Configuración del Canvas de Firma ---
 
     const setupCanvas = () => {
-        const wacomDriver = wacomstu540();
+        const wacomDriver = new wacomstu540();
         // Asegura que la pluma tenga un color visible (ej: azul)
         wacomDriver.setPenColorAndWidth('#000000ff', 3);
         // Limpia el canvas en la pantalla y en la tableta Wacom
         ctx.clearRect(0, 0, signatureCanvas.width, signatureCanvas.height);
         wacomDriver.clearScreen();
-        // Opcional: muestra una imagen de fondo en la Wacom (requiere lógica de imagen)
-        // wacomDriver.setImage(null); 
+
+        wacomDriver.setInking(true);
         
         isSigning = false;
         lastX = null;
@@ -41,6 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const x = packet.cx; 
         const y = packet.cy; 
+
+        // AÑADE ESTO:
+        if (penDown) {
+            console.log(`[DATA] Lápiz tocando. Coords: ${packet.cx}, ${packet.cy}`);
+        }
 
         if (penDown) {
             if (isSigning && lastX !== null && lastY !== null) {
@@ -120,7 +126,6 @@ document.addEventListener('DOMContentLoaded', () => {
             ocultarLoader();
             showToast("Error de conexión con el servidor ❌", "error");
         } finally {
-            // 6. Limpiar y cerrar modal
             setupCanvas(); 
             closeModal();
         }
@@ -132,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. Abrir Modal y Conectar Wacom
     abrirFirmaBtn.addEventListener('click', async () => {
         modalFirma.classList.remove('hidden');
-        const wacomDriver = wacomstu540();
+        const wacomDriver = new wacomstu540();
         try {
             // Intentar conectar con la Wacom (se abrirá el selector HID)
             const connected = await wacomDriver.connect();
@@ -140,10 +145,16 @@ document.addEventListener('DOMContentLoaded', () => {
             if (connected) {
                 console.log('✅ Wacom STU-540 conectada y configurada.');
                 
+                // 🚨 NUEVA PRUEBA: Esperar 100ms para asegurar que el driver terminó de leer info.
+                await new Promise(resolve => setTimeout(resolve, 100)); 
+                
+                // Habilitar Modo de Escritura (Modo 1)
+                await wacomDriver.setWritingMode(1); 
+                
                 // Asignar el callback de dibujo al driver
                 wacomDriver.onPenData(handlePenData);
                 
-                // Inicializar el canvas
+                // Inicializar el canvas 
                 setupCanvas();
 
             } else {
@@ -170,10 +181,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. Guardar Firma
     guardarFirmaBtn.addEventListener('click', () => {
-        // Aquí obtienes la imagen de la firma del canvas
+
         const signatureImage = signatureCanvas.toDataURL('image/png');
         
-        // **TODO:** Implementar la lógica para enviar 'signatureImage' al servidor
         console.log('Firma capturada (Base64):', signatureImage.substring(0, 50) + '...');
         
         // Limpiar y cerrar

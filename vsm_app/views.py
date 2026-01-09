@@ -681,15 +681,12 @@ def aprobar_vsm(request, vsm_id):
     try:
         empresa_asociada = vsm.retirante.empresas
         almacen_vsm = vsm.almacen
-        
-        # 1.1. Buscar el objeto permiso_empresa_almacen que define la relación
         permiso_requerido = models.permiso_empresa_almacen.objects.get(
             empresa=empresa_asociada,
             almacen=almacen_vsm
         )
         
     except AttributeError:
-        # Esto ocurre si el retirante no tiene una empresa asignada.
         messages.error(
             request, 
             "🚫 Configuración de VSM inválida: El retirante no tiene una empresa asociada."
@@ -697,17 +694,12 @@ def aprobar_vsm(request, vsm_id):
         return redirect('listar_vsm_pendientes')
         
     except models.permiso_empresa_almacen.DoesNotExist:
-        # Esto ocurre si NO hay un registro en la tabla de permisos para esa combinación Empresa/Almacén.
         messages.error(
             request, 
             f"🚫 Permiso no definido: No existe una configuración de aprobación para la Empresa '{empresa_asociada}' y el Almacén '{almacen_vsm}'."
         )
         return redirect('listar_vsm_pendientes') 
 
-
-    # --- 2. CHEQUEO DE AUTORIZACIÓN (El usuario logueado en la lista M2M) ---
-    
-    # Verificar si el usuario actual (current_user) está en la lista de aprobadores de ese permiso.
     is_authorized_aprobador = permiso_requerido.usuarios_aprobadores.filter(pk=current_user.pk).exists()
 
     if not is_authorized_aprobador:
